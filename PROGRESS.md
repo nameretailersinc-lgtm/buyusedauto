@@ -31,6 +31,15 @@ No external deployment or performance result is claimed until verified.
 - [x] Final browser rerun after contrast and test assertion corrections: all 12 tests passed across full run and targeted rerun.
 - [x] Actual Lighthouse measurements and final QA report: performance 98/91/90 on home/loan/guide; accessibility, best practices and SEO 100 across all three. See `docs/QA.md` for limits and remaining performance improvements.
 
+## GitHub Actions CI/CD
+
+- [x] Added PR/main application checks, browser/SEO HTTP audits and Docker health validation workflow.
+- [x] Added opt-in main-only VPS deployment using a tested commit archive, verified SSH host key, serialized releases and attempted image rollback.
+- [x] Preserved the server checkout, existing production environment, host Nginx and certificate setup.
+- [x] Workflow YAML/gating checks, deployment and inline Bash syntax, lint and 46 automated tests passed locally.
+- [ ] Configure GitHub production environment, SSH secrets and VPS_DEPLOY_ENABLED.
+- [ ] Verify first hosted CI run, real SSH deployment and rollback on the VPS.
+
 ## Docker deployment follow-through
 
 - [x] Reviewed existing committed Dockerfile, Compose, Nginx bootstrap/HTTPS and renewal setup.

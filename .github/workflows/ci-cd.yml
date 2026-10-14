@@ -1,0 +1,132 @@
+name: CI and VPS deployment
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Application checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      NEXT_TELEMETRY_DISABLED: '1'
+      SITE_INDEXING: enabled
+      NEXT_PUBLIC_SITE_URL: https://buyusedautomobiles.com
+      TEST_BASE_URL: http://127.0.0.1:3417
+      PLAYWRIGHT_CHANNEL: chromium
+      SEO_EXPECT_CLEAN_SCHEMA: 'true'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: npm run typecheck
+      - name: Validate deployment shell syntax
+        run: bash -n deploy/github-deploy.sh
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+      - name: Start standalone server
+        run: |
+          cp -r public .next/standalone/public
+          mkdir -p .next/standalone/.next/static
+          cp -r .next/static/. .next/standalone/.next/static/
+          PORT=3417 HOSTNAME=127.0.0.1 node .next/standalone/server.js > /tmp/buyusedauto-ci.log 2>&1 &
+          echo "$!" > /tmp/buyusedauto-ci.pid
+          for attempt in $(seq 1 60); do
+            if curl --silent --fail --max-time 3 "$TEST_BASE_URL/api/health" >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/buyusedauto-ci.log
+          exit 1
+      - run: npm run audit:seo
+      - run: npm run check:site
+      - run: npm run test:e2e
+      - name: Validate Compose and Docker runtime
+        run: |
+          cp .env.example .env
+          docker compose -f compose.yaml -f compose.host-nginx.yaml config --quiet
+          docker build --build-arg SITE_INDEXING=disabled -t buyusedauto-ci .
+          docker run -d --name buyusedauto-ci -p 127.0.0.1:3419:3000 buyusedauto-ci
+          for attempt in $(seq 1 90); do
+            health=$(docker inspect --format '{{.State.Health.Status}}' buyusedauto-ci)
+            if [ "$health" = healthy ]; then curl --fail --max-time 10 http://127.0.0.1:3419/api/health; exit 0; fi
+            if [ "$health" = unhealthy ]; then break; fi
+            sleep 2
+          done
+          docker logs buyusedauto-ci
+          exit 1
+      - name: Save QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-${{ github.sha }}
+          path: |
+            reports/
+            playwright-report/
+            test-results/
+          retention-days: 7
+          if-no-files-found: ignore
+      - name: Stop owned CI server
+        if: always()
+        run: |
+          if [ -f /tmp/buyusedauto-ci.pid ]; then kill "$(cat /tmp/buyusedauto-ci.pid)" 2>/dev/null || true; fi
+          docker rm -f buyusedauto-ci 2>/dev/null || true
+
+  deploy:
+    name: Deploy app to VPS
+    needs: checks
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.VPS_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    environment: production
+    concurrency:
+      group: buyusedauto-production
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configure SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.VPS_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          test -n "$DEPLOY_KEY" && test -n "$KNOWN_HOSTS"
+          install -d -m 700 "$HOME/.ssh"
+          printf '%s\n' "$DEPLOY_KEY" > "$HOME/.ssh/deploy_key"
+          printf '%s\n' "$KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/deploy_key" "$HOME/.ssh/known_hosts"
+      - name: Upload and deploy the tested commit
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_PORT: ${{ secrets.VPS_PORT }}
+          COMMIT: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          [[ "$COMMIT" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$VPS_HOST" =~ ^[a-zA-Z0-9.-]+$ ]]
+          [[ "$VPS_USER" =~ ^[a-zA-Z_][a-zA-Z0-9_-]*$ ]]
+          port="${VPS_PORT:-22}"
+          [[ "$port" =~ ^[0-9]+$ ]]
+          archive="/tmp/buyusedauto-${COMMIT}.tar.gz"
+          git archive --format=tar.gz --output="$archive" "$COMMIT"
+          scp -i "$HOME/.ssh/deploy_key" -P "$port" -o BatchMode=yes -o StrictHostKeyChecking=yes "$archive" "$VPS_USER@$VPS_HOST:$archive"
+          ssh -i "$HOME/.ssh/deploy_key" -p "$port" -o BatchMode=yes -o StrictHostKeyChecking=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=10 "$VPS_USER@$VPS_HOST" "bash -s -- $COMMIT" < deploy/github-deploy.sh
+      - name: Remove runner SSH key
+        if: always()
+        run: rm -f "$HOME/.ssh/deploy_key"

@@ -55,6 +55,8 @@ Public environment variables are embedded in the build; redeploy after changes. 
 
 ## Deploy to Vercel
 
+For the current VPS behind existing host Nginx, see `docs/HOST_NGINX_DEPLOYMENT.md`. GitHub Actions CI/CD is available through `.github/workflows/ci-cd.yml`; configure it using `docs/CI_CD.md`. Deployment is disabled until the repository variable and production SSH secrets are configured.
+
 1. Complete the launch blockers in `LAUNCH_CHECKLIST.md`, particularly operator identity, contact, and policy review.
 2. Push the repository to your Git provider and import it into the intended Vercel project. Select Next.js and the repository root. Use `npm ci` and `npm run build`.
 3. Set the production environment variables. Keep ads and analytics blank until their account and privacy configuration is verified.
