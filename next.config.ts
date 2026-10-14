@@ -4,6 +4,7 @@ const canIndex=indexingEnabled(process.env);
 const origin=normalizeSiteOrigin(process.env.NEXT_PUBLIC_SITE_URL||"https://buyusedautomobiles.com");
 const host=new URL(origin).hostname;
 const nextConfig: NextConfig = {
+  output: "standalone",
   distDir:process.env.NEXT_BUILD_DIR===".next-preview"?".next-preview":".next",
   poweredByHeader: false,
   trailingSlash: false,

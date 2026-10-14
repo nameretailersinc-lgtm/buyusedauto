@@ -1,0 +1,13 @@
+node_modules
+.next
+.next-preview
+.git
+.env*
+!.env.example
+.ssh-known-hosts
+.npm-cache
+.lighthouse-*
+reports
+test-results
+playwright-report
+*.tsbuildinfo

@@ -10,6 +10,7 @@ test-results/
 playwright-report/
 *.tsbuildinfo
 .vercel/
+.ssh-known-hosts
 .lighthouse-*/
 reports/*.png
 reports/lighthouse-*.html
