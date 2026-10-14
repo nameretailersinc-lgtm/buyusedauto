@@ -1,0 +1,5 @@
+# Use with compose.yaml and start ONLY app. Existing host Nginx owns 80/443.
+services:
+  app:
+    ports:
+      - "127.0.0.1:3017:3000"
