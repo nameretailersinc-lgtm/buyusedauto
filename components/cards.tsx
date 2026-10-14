@@ -1,0 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
+import {Tool} from "@/data/tools";
+import {Guide} from "@/data/guides";
+import {Icon} from "./icon";
+import {guideImages} from "@/data/visuals";
+export function ToolCard({tool,index}:{tool:Tool;index?:number}){return <Link className="tool-card" href={`/${tool.slug}`}><div className="card-top"><span className="tool-icon"><Icon name={tool.icon}/></span><span className="micro">{index!==undefined?String(index+1).padStart(2,"0"):tool.category}</span></div><h3>{tool.name}</h3><p>{tool.description.split(". ")[0]}.</p><span className="card-link">Open tool <Icon name="arrow"/></span></Link>;}
+export function GuideCard({guide,index=0}:{guide:Guide;index?:number}){const kind=guide.category==="Financing"||guide.category==="Ownership"?"financing":guide.slug.includes("negotiat")||guide.category==="Selling"?"negotiation":"inspection";return <article className={`guide-card guide-${kind}`}><Link href={`/guides/${guide.slug}`} className="guide-art" aria-label={`Read ${guide.title}`}><Image src={`/images/${guideImages[guide.slug]||`guide-${kind}`}.webp`} alt="" fill sizes="(max-width: 760px) 50vw, 400px"/><div className="guide-art-badge"><span className="tool-icon"><Icon name={kind==="financing"?"calculator":kind==="negotiation"?"car":"check"}/></span><span>{String(index+1).padStart(2,"0")}</span></div></Link><div className="guide-card-body"><span className="eyebrow">{guide.category} <span>· {guide.readingMinutes} min read</span></span><h3><Link href={`/guides/${guide.slug}`}>{guide.title}</Link></h3><p>{guide.description}</p><Link className="card-link" href={`/guides/${guide.slug}`}>Read guide <Icon name="arrow"/></Link></div></article>;}

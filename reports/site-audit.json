@@ -1,0 +1,240 @@
+{
+  "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
+  "pages": 33,
+  "internalLinks": 135,
+  "failures": [],
+  "warnings": [],
+  "details": [
+    {
+      "path": "/",
+      "title": "Free used car tools for better buying decisions",
+      "descriptionLength": 156,
+      "schemaCount": 3,
+      "h1": "Your next car.A smarter decision."
+    },
+    {
+      "path": "/tools",
+      "title": "Used car calculators and planning tools | BuyUsedAutomobiles",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "The right tool.A clearer decision."
+    },
+    {
+      "path": "/guides",
+      "title": "Used car buying guides and practical advice",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "A little research.A better car decision."
+    },
+    {
+      "path": "/about",
+      "title": "About BuyUsedAutomobiles | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "About BuyUsedAutomobiles"
+    },
+    {
+      "path": "/contact",
+      "title": "Contact and corrections | BuyUsedAutomobiles",
+      "descriptionLength": 161,
+      "schemaCount": 2,
+      "h1": "Contact and corrections"
+    },
+    {
+      "path": "/privacy-policy",
+      "title": "Privacy policy | BuyUsedAutomobiles",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "Privacy policy"
+    },
+    {
+      "path": "/terms",
+      "title": "Terms of use | BuyUsedAutomobiles",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "Terms of use"
+    },
+    {
+      "path": "/disclaimer",
+      "title": "Estimates, assumptions, and disclaimers | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "Estimates, assumptions, and disclaimers"
+    },
+    {
+      "path": "/editorial-policy",
+      "title": "Our editorial and calculation policy | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Our editorial and calculation policy"
+    },
+    {
+      "path": "/guides/category/buying",
+      "title": "Buying guides for used-car decisions | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Buying guides"
+    },
+    {
+      "path": "/car-loan-calculator",
+      "title": "Car loan calculator | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "Car loan calculator"
+    },
+    {
+      "path": "/car-depreciation-calculator",
+      "title": "Car depreciation calculator | BuyUsedAutomobiles",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "Car depreciation calculator"
+    },
+    {
+      "path": "/what-is-my-car-worth",
+      "title": "What is my car worth? | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "What is my car worth?"
+    },
+    {
+      "path": "/total-cost-of-ownership-calculator",
+      "title": "Total cost of ownership calculator | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "Total cost of ownership calculator"
+    },
+    {
+      "path": "/car-affordability-calculator",
+      "title": "Car affordability calculator | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "Car affordability calculator"
+    },
+    {
+      "path": "/fuel-cost-calculator",
+      "title": "Fuel cost calculator | BuyUsedAutomobiles",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "Fuel cost calculator"
+    },
+    {
+      "path": "/trade-in-value-estimator",
+      "title": "Trade-in value estimator | BuyUsedAutomobiles",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "Trade-in value estimator"
+    },
+    {
+      "path": "/lease-vs-buy-calculator",
+      "title": "Lease vs. buy calculator | BuyUsedAutomobiles",
+      "descriptionLength": 151,
+      "schemaCount": 2,
+      "h1": "Lease vs. buy calculator"
+    },
+    {
+      "path": "/used-car-inspection-checklist",
+      "title": "Used car inspection checklist | BuyUsedAutomobiles",
+      "descriptionLength": 160,
+      "schemaCount": 2,
+      "h1": "Used car inspection checklist"
+    },
+    {
+      "path": "/used-car-price-negotiation-calculator",
+      "title": "Used car price negotiation calculator | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Used car price negotiation calculator"
+    },
+    {
+      "path": "/car-sales-tax-calculator",
+      "title": "Car sales tax calculator | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Car sales tax calculator"
+    },
+    {
+      "path": "/guides/how-to-inspect-a-used-car",
+      "title": "How to inspect a used car before you buy | BuyUsedAutomobiles",
+      "descriptionLength": 151,
+      "schemaCount": 2,
+      "h1": "How to inspect a used car before you buy"
+    },
+    {
+      "path": "/guides/how-to-check-a-cars-history",
+      "title": "How to check a car’s history before buying | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "How to check a car’s history before buying"
+    },
+    {
+      "path": "/guides/how-to-negotiate-a-used-car-price",
+      "title": "How to negotiate a used-car price with evidence",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "How to negotiate a used-car price with evidence"
+    },
+    {
+      "path": "/guides/real-cost-of-car-ownership",
+      "title": "How to calculate the real cost of car ownership",
+      "descriptionLength": 151,
+      "schemaCount": 2,
+      "h1": "How to calculate the real cost of car ownership"
+    },
+    {
+      "path": "/guides/how-to-compare-used-car-loans",
+      "title": "How to compare used-car loans beyond the payment",
+      "descriptionLength": 150,
+      "schemaCount": 2,
+      "h1": "How to compare used-car loans beyond the payment"
+    },
+    {
+      "path": "/guides/trade-in-vs-private-sale",
+      "title": "Trade-in vs. private sale: compare your net proceeds",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "Trade-in vs. private sale: compare your net proceeds"
+    },
+    {
+      "path": "/car-loan-calculator/10000-car-loan",
+      "title": "$10,000 car loan: leave room for repairs | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "$10,000 car loan: leave room for repairs"
+    },
+    {
+      "path": "/car-loan-calculator/25000-car-loan",
+      "title": "$25,000 car loan: compare down payments | BuyUsedAutomobiles",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "$25,000 car loan: compare down payments"
+    },
+    {
+      "path": "/car-loan-calculator/40000-car-loan",
+      "title": "$40,000 car loan: test the full car budget | BuyUsedAutomobiles",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "$40,000 car loan: test the full car budget"
+    },
+    {
+      "path": "/car-loan-payment/15000-at-0-for-36-months",
+      "title": "$15,000 at 0% for 36 months: payment example",
+      "descriptionLength": 152,
+      "schemaCount": 2,
+      "h1": "$15,000 at 0% for 36 months: payment example"
+    },
+    {
+      "path": "/car-loan-payment/20000-at-8-for-48-months",
+      "title": "$20,000 at 8% for 48 months: loan comparison",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "$20,000 at 8% for 48 months: loan comparison"
+    },
+    {
+      "path": "/car-loan-payment/25000-at-12-for-72-months",
+      "title": "$25,000 at 12% for 72 months: interest impact",
+      "descriptionLength": 148,
+      "schemaCount": 2,
+      "h1": "$25,000 at 12% for 72 months: interest impact"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { siteUrl } from "@/lib/site";
+export function JsonLd({data}:{data:Record<string,unknown>|Record<string,unknown>[]}) {return <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data).replace(/</g,"\\u003c")}}/>;}
+export function Breadcrumbs({items}:{items:{name:string;href:string}[]}) {const all=[{name:"Home",href:"/"},...items];return <><nav className="breadcrumbs" aria-label="Breadcrumb"><ol>{all.map((item,i)=><li key={item.href}>{i<all.length-1?<Link href={item.href}>{item.name}</Link>:<span aria-current="page">{item.name}</span>}</li>)}</ol></nav><JsonLd data={{"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:all.map((item,i)=>({"@type":"ListItem",position:i+1,name:item.name,item:`${siteUrl}${item.href}`}))}}/></>;}

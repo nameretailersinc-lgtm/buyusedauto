@@ -1,0 +1,16 @@
+import sharp from "sharp";
+import {mkdir,writeFile} from "node:fs/promises";
+const [logo,cover]=process.argv.slice(2);
+if(!logo||!cover)throw new Error("Pass the generated logo and social-cover source PNG paths.");
+await mkdir("public/brand",{recursive:true});
+for(const [name,size] of [["logo-mark",256],["social-avatar",1080],["logo-master",1254]])await sharp(logo).resize(size,size,{fit:"contain"}).png().toFile(`public/brand/${name}.png`);
+await sharp("public/brand/logo-wordmark.svg").resize(1640,288).png().toFile("public/brand/logo-wordmark.png");
+await sharp(logo).resize(192,192).webp({quality:95}).toFile("public/brand/logo-mark.webp");
+for(const [name,size] of [["favicon-48",48],["apple-touch-icon",180],["icon-192",192],["icon-512",512]])await sharp(logo).resize(size,size).png().toFile(`public/${name}.png`);
+const sizes=[16,32,48];const pngs=await Promise.all(sizes.map(size=>sharp(logo).resize(size,size).png().toBuffer()));
+const head=Buffer.alloc(6+16*sizes.length);head.writeUInt16LE(1,2);head.writeUInt16LE(sizes.length,4);let offset=head.length;
+pngs.forEach((png,i)=>{const index=6+i*16;head[index]=sizes[i];head[index+1]=sizes[i];head.writeUInt16LE(1,index+4);head.writeUInt16LE(32,index+6);head.writeUInt32LE(png.length,index+8);head.writeUInt32LE(offset,index+12);offset+=png.length;});
+await writeFile("public/favicon.ico",Buffer.concat([head,...pngs]));
+await sharp(cover).resize(1200,630,{fit:"cover"}).png().toFile("public/brand/social-cover-1200x630.png");
+await sharp(cover).resize(1200,630,{fit:"cover"}).webp({quality:87}).toFile("public/brand/social-cover-1200x630.webp");
+console.log("Exported site logo, social avatar/cover, favicon ICO/PNG, Apple icon and app icons.");

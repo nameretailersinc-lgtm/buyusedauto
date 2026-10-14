@@ -1,0 +1,24 @@
+# BuyUsedAutomobiles
+
+> Free US-focused used-car planning tools and practical buying guides. USD by default. Estimates are not quotes, offers, appraisals, inspections, or professional advice.
+
+## Tools
+- /car-loan-calculator — Fixed monthly amortization, trade equity, extra payments.
+- /car-depreciation-calculator — Editable compound-decline scenario.
+- /what-is-my-car-worth — Generic modeled value; no live market data.
+- /total-cost-of-ownership-calculator — Depreciation, operating costs, and interest without double-counting principal.
+- /car-affordability-calculator — Explicit 20/4/10 and additional budget constraints.
+- /fuel-cost-calculator — Miles/US gallons or kilometers/liters, USD.
+- /trade-in-value-estimator — Modeled trade range and loan payoff equity.
+- /lease-vs-buy-calculator — Equal-horizon cash costs less buying equity.
+- /used-car-inspection-checklist — Observations and concerns, not safety certification.
+- /used-car-price-negotiation-calculator — User-supplied comparable value and repair deductions.
+- /car-sales-tax-calculator — User-verified rate and taxable base; no automatic current state rates.
+
+## Context
+- /guides — Six original practical guides with primary-source references.
+- /editorial-policy — Research, AI assistance, correction, and commercial disclosure standards.
+- /disclaimer — Method limitations.
+- /privacy-policy — Browser calculations, URL sharing, optional analytics.
+
+Defaults are hypothetical. No invented experts or reviews. Shared calculator queries are not independent content pages. Canonicals omit query strings. No guaranteed rich results, search rankings, or advertising approval.

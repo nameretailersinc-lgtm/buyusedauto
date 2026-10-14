@@ -1,0 +1,11 @@
+import Image from "next/image";
+import Link from "next/link";
+import {metadata as meta} from "@/lib/site";
+import {Breadcrumbs,JsonLd} from "@/components/seo";
+import {tools} from "@/data/tools";
+import {collectionSchema} from "@/lib/structured-data";
+import {ToolsExplorer} from "@/components/tools-explorer";
+import {BudgetBanner} from "@/components/budget-banner";
+import {Icon} from "@/components/icon";
+export const metadata=meta("Used car calculators and planning tools","Find the right free tool for your next car decision. Compare loans, estimate ownership costs, inspect a vehicle, and plan a supported offer before buying.","/tools");
+export default function Tools(){return <div className="collection-page"><JsonLd data={collectionSchema("Used car calculators and planning tools","/tools",tools.map(t=>({name:t.name,path:`/${t.slug}`})))}/><section className="collection-hero"><Image src="/images/coastal-sedan.webp" alt="" fill preload sizes="100vw"/><div className="container"><Breadcrumbs items={[{name:"Tools",href:"/tools"}]}/><div className="collection-copy"><span className="eyebrow pill">The complete car-buying toolkit</span><h1>The right tool.<br/>A clearer decision.</h1><p>Plan the purchase, compare the costs, and know what to check. Eleven free tools, with the assumptions always in view.</p><div className="tool-badges"><span><Icon name="shield"/>Always free</span><span><Icon name="check"/>No sign-up</span><span><Icon name="calculator"/>Your numbers, explained</span></div></div></div></section><div className="container"><div className="journey-strip"><span>Not sure where to start?</span><Link href="/car-affordability-calculator"><b>01</b>Find your budget <Icon name="arrow"/></Link><Link href="/used-car-inspection-checklist"><b>02</b>Check the car <Icon name="arrow"/></Link><Link href="/total-cost-of-ownership-calculator"><b>03</b>See the full cost <Icon name="arrow"/></Link></div><ToolsExplorer/><div className="helpful-note"><Icon name="book"/><div><h2>The numbers are only part of the story.</h2><p>Pair the tools with a practical guide before your next viewing, quote, or conversation.</p></div><Link href="/guides" className="text-link">Explore the guides <Icon name="arrow"/></Link></div><BudgetBanner/></div></div>;}

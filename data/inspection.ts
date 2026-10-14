@@ -1,0 +1,7 @@
+export const inspectionGroups = [
+  {title:"Identity & paperwork", items:["VIN matches the car, title, and records", "Seller identity and authority to sell checked", "Title status, liens, and transfer process verified", "Vehicle history, mileage timeline, and recalls checked", "Warranty or as-is terms and promises recorded"]},
+  {title:"Exterior & tires",items:["Body panels, paint, glass, and visible corrosion observed", "Tire wear, damage, and tire dates noted", "Lights, signals, and visible lenses checked", "Leaks or staining around the parked car noted", "Flood or structural damage concerns recorded"]},
+  {title:"Cabin & controls",items:["Seat belts, seats, and door operation checked", "Warning lamps illuminate and clear as expected", "Heat, air conditioning, and windows checked", "Odors, water marks, and damp carpet noted", "Keys, accessories, and infotainment checked"]},
+  {title:"Mechanical observations",items:["Cold start observed with seller permission", "Unusual noises, smoke, or smells recorded", "Service records and upcoming maintenance reviewed", "Accessible fluid observations noted with engine safe", "Independent inspection arranged; findings reviewed"]},
+  {title:"Test drive & decision",items:["Insurance, permission, and a safe route confirmed", "Steering, braking, and ride concerns noted", "Transmission behavior observed in normal driving", "Repair estimates and unanswered questions listed", "Written out-the-door terms checked before commitment"]},
+];
