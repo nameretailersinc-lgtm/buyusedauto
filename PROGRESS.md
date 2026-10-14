@@ -38,6 +38,8 @@ No external deployment or performance result is claimed until verified.
 - [x] Health endpoint retains its response and explicitly emits noindex.
 - [x] Completed the audited before/after URL inventory in `docs/SEO_AUDIT.md`.
 - [x] Lint and all 46 current tests passed during this deployment review.
+- [x] Production build and HTTP audit passed: 33 sitemap URLs, 135 internal destinations, no failures/warnings.
+- [x] Standalone server smoke test passed for health, calculator, guide, favicon, logo, sitemap and OG PNG endpoint. This verifies the local package, not the Linux Docker image.
 - [ ] Docker build/Compose/Nginx validation on a machine with Docker installed.
 - [ ] Verify actual VPS deployment, certificate issuance/renewal, DNS and production HTTP checks.
 - [ ] Pakistan/global catalogue, data ingestion, database and admin expansion from the attached brief. These are not implemented or included in the current deployment.

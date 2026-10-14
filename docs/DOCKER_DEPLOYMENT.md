@@ -1,5 +1,7 @@
 # Docker deployment to 5.189.158.75
 
+**For the user's server with existing Nginx websites, use [HOST_NGINX_DEPLOYMENT.md](HOST_NGINX_DEPLOYMENT.md) instead.** The dedicated Docker Nginx setup below requires exclusive use of ports 80/443 and is not the correct path for that shared host.
+
 This setup runs Next.js as a non-root user behind Nginx. Only Nginx publishes ports; the app is private to Docker. Certificates and ACME challenges live in persistent Docker volumes. No database is required by the current app.
 
 ## 1. Upload the changes to GitHub
@@ -143,3 +145,5 @@ curl -f https://buyusedautomobiles.com/sitemap.xml
 The tool URL should return 200, slash/www variants should permanently redirect, and production sitemap URLs must be canonical and indexable. Run `npm run deploy:check:production` in the source checkout with the same production environment before building. Re-run the SEO/browser audit against the deployed origin using a matching built route manifest. Confirm mailbox delivery and review the operator/policy details.
 
 Docker is unavailable in the current development environment. Container build, Compose parsing, Nginx runtime validation, certificate issuance and deployment have not been verified here. Local application checks do not establish a successful VPS deployment. The new Pakistan/global catalogue work is a separate pending implementation; this deployment serves the existing calculator and guide site.
+
+Local validation completed during this follow-through: lint, 46 automated tests and production build passed; HTTP audit passed all 33 sitemap pages and 135 internal destinations. The actual `.next/standalone/server.js` package also returned 200 for the health endpoint, calculator, guide, favicon, logo, sitemap and OG endpoint after copying public/static assets as the Dockerfile does. The health response preserves `{ "status": "ok" }`, with `no-store` and `noindex` headers.

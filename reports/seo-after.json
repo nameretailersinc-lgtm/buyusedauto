@@ -91,7 +91,7 @@
         "WebSite",
         "BreadcrumbList"
       ],
-      "mainWordCount": 477,
+      "mainWordCount": 488,
       "inboundPages": [
         "/about",
         "/car-affordability-calculator",
@@ -1328,7 +1328,7 @@
         "CollectionPage",
         "BreadcrumbList"
       ],
-      "mainWordCount": 380,
+      "mainWordCount": 394,
       "inboundPages": [
         "/",
         "/about",
@@ -1852,12 +1852,6 @@
     {
       "path": "/sitemaps/invalid.xml",
       "status": 404
-    },
-    {
-      "path": "/tools?utm_source=audit",
-      "requestHost": "www.buyusedautomobiles.com",
-      "status": 308,
-      "location": "https://buyusedautomobiles.com/tools?utm_source=audit"
     }
   ],
   "duplicateParagraphSignals": []
