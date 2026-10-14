@@ -15,3 +15,5 @@ export const categoryCopy={
   Ownership:{icon:"wallet",image:"fuel-stop",title:"Plan for the miles ahead.",description:"Make room for fuel, maintenance, insurance, and the value a car may lose."},
   Selling:{icon:"arrows",image:"car-keys",title:"Know your options before the handover.",description:"Compare a trade-in with a private sale and focus on the proceeds you keep."},
 };
+
+export const toolImageAlt:Record<ToolId,string>={loan:"SUV parked beside a mountain road",depreciation:"Sedan parked at a coastal overlook",value:"Car keys being handed over beside a parked sedan",ownership:"Station wagon refueling at a roadside station",affordability:"Sedan parked at a coastal overlook",fuel:"Station wagon refueling at a roadside station",trade:"Car keys being handed over beside a parked sedan",lease:"Sedan parked at a coastal overlook",inspection:"Car with its hood raised for a workshop inspection",negotiation:"Handshake beside a parked car",tax:"Calculator, paperwork, pen and car key on a desk"};
