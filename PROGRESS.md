@@ -13,7 +13,7 @@ The latest business and quality requirements supersede the larger launch counts 
 ## External launch dependencies
 
 - Verify operator identity and a working contact address before public launch.
-- Connect the domain and deploy to the requested Vercel account.
+- Deploy to the selected VPS at 5.189.158.75, configure DNS/TLS, and verify public HTTP behavior. Vercel remains an alternative documented target.
 - Configure Search Console and optional GA4.
 - Obtain AdSense approval and configure a Google-certified CMP before activating ads.
 - Independent editorial/legal review of original content and policies.
@@ -30,3 +30,14 @@ No external deployment or performance result is claimed until verified.
 - [x] Browser checks passed for all eight redesigned page families on mobile, with no detected WCAG A/AA violations or horizontal overflow.
 - [x] Final browser rerun after contrast and test assertion corrections: all 12 tests passed across full run and targeted rerun.
 - [x] Actual Lighthouse measurements and final QA report: performance 98/91/90 on home/loan/guide; accessibility, best practices and SEO 100 across all three. See `docs/QA.md` for limits and remaining performance improvements.
+
+## Docker deployment follow-through
+
+- [x] Reviewed existing committed Dockerfile, Compose, Nginx bootstrap/HTTPS and renewal setup.
+- [x] Isolated active Nginx configuration from tracked templates through `NGINX_CONFIG`; documented migration and updates.
+- [x] Health endpoint retains its response and explicitly emits noindex.
+- [x] Completed the audited before/after URL inventory in `docs/SEO_AUDIT.md`.
+- [x] Lint and all 46 current tests passed during this deployment review.
+- [ ] Docker build/Compose/Nginx validation on a machine with Docker installed.
+- [ ] Verify actual VPS deployment, certificate issuance/renewal, DNS and production HTTP checks.
+- [ ] Pakistan/global catalogue, data ingestion, database and admin expansion from the attached brief. These are not implemented or included in the current deployment.

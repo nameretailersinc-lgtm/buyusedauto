@@ -93,4 +93,41 @@ The source/configuration is ready for a Vercel preview. A public commercial laun
 
 The table below compares intended canonical path coverage in the two local builds. All listed content paths returned HTTP 200 before and after. Canonicals remain self-referencing; query input state does not alter them.
 
-<!-- ROUTE_INVENTORY -->
+| Canonical path | Before sitemap | After sitemap | After robots intent | After schema |
+| --- | --- | --- | --- | --- |
+ | / | Included | Included | index, follow | Organization, WebSite, BreadcrumbList |
+ | /about | Included | Included | index, follow | BreadcrumbList, AboutPage |
+ | /car-affordability-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-depreciation-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-calculator/10000-car-loan | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-calculator/25000-car-loan | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-calculator/40000-car-loan | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-payment/15000-at-0-for-36-months | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-payment/20000-at-8-for-48-months | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-loan-payment/25000-at-12-for-72-months | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /car-sales-tax-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /contact | Included | Included | index, follow | BreadcrumbList, ContactPage |
+ | /disclaimer | Included | Included | index, follow | BreadcrumbList, WebPage |
+ | /editorial-policy | Included | Included | index, follow | BreadcrumbList, WebPage |
+ | /fuel-cost-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /guides | Included | Included | index, follow | CollectionPage, BreadcrumbList |
+ | /guides/category/buying | Included | Included | index, follow | CollectionPage, BreadcrumbList |
+ | /guides/category/financing | Included | Excluded | noindex, follow | CollectionPage, BreadcrumbList |
+ | /guides/category/ownership | Included | Excluded | noindex, follow | CollectionPage, BreadcrumbList |
+ | /guides/category/selling | Included | Excluded | noindex, follow | CollectionPage, BreadcrumbList |
+ | /guides/how-to-check-a-cars-history | Included | Included | index, follow | BreadcrumbList, Article |
+ | /guides/how-to-compare-used-car-loans | Included | Included | index, follow | BreadcrumbList, Article |
+ | /guides/how-to-inspect-a-used-car | Included | Included | index, follow | BreadcrumbList, Article |
+ | /guides/how-to-negotiate-a-used-car-price | Included | Included | index, follow | BreadcrumbList, Article |
+ | /guides/real-cost-of-car-ownership | Included | Included | index, follow | BreadcrumbList, Article |
+ | /guides/trade-in-vs-private-sale | Included | Included | index, follow | BreadcrumbList, Article |
+ | /lease-vs-buy-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /privacy-policy | Included | Included | index, follow | BreadcrumbList, WebPage |
+ | /terms | Included | Included | index, follow | BreadcrumbList, WebPage |
+ | /tools | Included | Included | index, follow | CollectionPage, BreadcrumbList |
+ | /total-cost-of-ownership-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /trade-in-value-estimator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /used-car-inspection-checklist | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /used-car-price-negotiation-calculator | Included | Included | index, follow | BreadcrumbList, WebApplication |
+ | /what-is-my-car-worth | Included | Included | index, follow | BreadcrumbList, WebApplication |

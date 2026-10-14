@@ -1,6 +1,8 @@
 node_modules/
 .next/
 .next-preview/
+deploy/nginx/active.conf
+deploy/nginx/active.conf.bootstrap-backup
 out/
 .npm-cache/
 .env*

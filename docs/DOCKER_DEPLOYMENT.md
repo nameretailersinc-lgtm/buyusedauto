@@ -12,7 +12,7 @@ git commit -m "Add Docker and Nginx VPS deployment"
 git push origin HEAD
 ```
 
-These commands leave your existing `.env.example` edits out of the commit. If you want those changes in GitHub, review and commit them separately. Deploy the branch you pushed; use that branch name in the clone command below if it is not the default branch.
+Review and commit any intended `.env.example` changes separately. Never commit the actual `.env` file. Deploy the branch you pushed; use that branch name in the clone command below if it is not the default branch.
 
 ## 2. DNS and server prerequisites
 
@@ -57,6 +57,12 @@ If the repository is private, authenticate Git with your GitHub credentials or a
 
 Set `NEXT_PUBLIC_SITE_URL=https://buyusedautomobiles.com`, `SITE_INDEXING=enabled`, and your verified operator name, address, and contact email. Analytics, Search Console, and AdSense IDs are optional. Public variables are compiled into the build: rebuild after changing `.env`.
 
+For staging, use `SITE_INDEXING=disabled`. The legal operator name is still required before a public commercial launch; the supplied address and email do not establish it. Set `NGINX_CONFIG=./deploy/nginx/active.conf` in `.env` and prepare this ignored local configuration:
+
+```sh
+cp deploy/nginx/default.conf deploy/nginx/active.conf
+```
+
 ```sh
 docker compose config --quiet
 docker compose up -d --build app nginx
@@ -78,8 +84,8 @@ docker compose run --rm certbot certonly --webroot -w /var/www/certbot --email Y
 Only after issuance succeeds, switch Nginx to HTTPS:
 
 ```sh
-cp deploy/nginx/default.conf deploy/nginx/http-bootstrap.conf.backup
-cat deploy/nginx/https.conf.template > deploy/nginx/default.conf
+cp deploy/nginx/active.conf deploy/nginx/active.conf.bootstrap-backup
+cat deploy/nginx/https.conf.template > deploy/nginx/active.conf
 docker compose exec -T nginx nginx -t
 docker compose exec -T nginx nginx -s reload
 curl -f https://buyusedautomobiles.com/api/health
@@ -112,7 +118,7 @@ docker compose ps
 curl -f https://buyusedautomobiles.com/api/health
 ```
 
-The HTTPS configuration is a local change to `deploy/nginx/default.conf`. If a future pull changes that file, back it up, resolve the Git conflict, then restore the HTTPS template and validate/reload Nginx. Do not discard the HTTPS configuration blindly. Nginx resolves the app through Docker DNS so replacement containers remain reachable.
+The active HTTPS configuration is in ignored `deploy/nginx/active.conf`, selected through `NGINX_CONFIG` in `.env`, so pulling tracked template changes does not overwrite it. Review relevant template changes and deliberately apply them to the active file, then validate/reload Nginx. If upgrading an earlier installation that edited `default.conf`, first copy its working configuration to `active.conf`, set `NGINX_CONFIG`, and recreate Nginx to use the new mount. Nginx resolves the app through Docker DNS so replacement containers remain reachable.
 
 ```sh
 docker compose logs --tail=100 app nginx
@@ -120,3 +126,20 @@ docker compose exec -T nginx nginx -t
 ```
 
 Container restart policies bring services back after a reboot. Keep the `.env` and certificate volumes backed up securely. Avoid `docker compose down -v`: it deletes certificate volumes. To roll back app code, select a previously working commit and rebuild the app, preserving `.env` and the active HTTPS configuration.
+
+## 7. Verification before public launch
+
+```sh
+docker compose config --quiet
+docker compose exec -T nginx nginx -t
+curl -f https://buyusedautomobiles.com/api/health
+curl -I https://buyusedautomobiles.com/tools
+curl -I https://buyusedautomobiles.com/tools/
+curl -I https://www.buyusedautomobiles.com/tools
+curl -f https://buyusedautomobiles.com/robots.txt
+curl -f https://buyusedautomobiles.com/sitemap.xml
+```
+
+The tool URL should return 200, slash/www variants should permanently redirect, and production sitemap URLs must be canonical and indexable. Run `npm run deploy:check:production` in the source checkout with the same production environment before building. Re-run the SEO/browser audit against the deployed origin using a matching built route manifest. Confirm mailbox delivery and review the operator/policy details.
+
+Docker is unavailable in the current development environment. Container build, Compose parsing, Nginx runtime validation, certificate issuance and deployment have not been verified here. Local application checks do not establish a successful VPS deployment. The new Pakistan/global catalogue work is a separate pending implementation; this deployment serves the existing calculator and guide site.
