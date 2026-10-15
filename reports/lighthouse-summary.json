@@ -3,14 +3,14 @@
     "page": "/",
     "mode": "mobile simulated throttling; local production server",
     "scores": {
-      "performance": 99,
+      "performance": 95,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcpMs": 1947.4549000000002,
+    "lcpMs": 2876.94055,
     "cls": 0,
-    "tbtMs": 69.5,
+    "tbtMs": 73.5,
     "inp": "Not measured; requires field interaction data"
   },
   {
@@ -22,23 +22,23 @@
       "best-practices": 100,
       "seo": 100
     },
-    "lcpMs": 2909.0752500000003,
+    "lcpMs": 2910.498375,
     "cls": 0,
-    "tbtMs": 54,
+    "tbtMs": 61,
     "inp": "Not measured; requires field interaction data"
   },
   {
     "page": "/guides/how-to-inspect-a-used-car",
     "mode": "mobile simulated throttling; local production server",
     "scores": {
-      "performance": 97,
+      "performance": 95,
       "accessibility": 100,
       "best-practices": 100,
       "seo": 100
     },
-    "lcpMs": 2681.9871249999997,
+    "lcpMs": 2809.906375,
     "cls": 0,
-    "tbtMs": 64.90257499999973,
+    "tbtMs": 66.81872500000009,
     "inp": "Not measured; requires field interaction data"
   }
 ]

@@ -1,0 +1,16 @@
+# 90-day growth roadmap
+
+Prepared 2026-10-15. Days below are proposed working windows after checkpoint acceptance, not traffic, ranking, approval or revenue forecasts. Execution depends on evidence and owner inputs. No deployment is authorized by this document.
+
+| Window | Work | Evidence of completion / decision |
+| --- | --- | --- |
+| Days 1–14 | Resolve pure-library audit findings; add required financial edge tests; improve existing loan/ownership workflows; centralize markets/assumptions; review source provenance and dates. | Build/lint/unit/browser checks pass; every original tool/URL retained; actual report records failures and limits. |
+| Days 15–30 | Use supplied GSC exports to revise keyword owners, prioritize existing impressions and inspect indexing/canonical exclusions. Finish owner identity/contact confirmation. Prepare Pakistan source and content bundle. | Dated GSC period/query/page/country/device evidence, reviewed keyword map, no empty country routes; current official financing sources or explicit blocks. |
+| Days 31–45 | Prepare concrete deployment candidate for explicit owner approval; separately verify hosting headers/assets, submit sitemap through owner's GSC access after authorized deployment. Add real GA only when provided; validate consent and sanitized events. | Deployed response tests only after approval; GSC submission/verification evidence; no invented indexing or analytics results. |
+| Days 46–60 | Compare matched GSC periods and query clusters; improve useful pages with impressions and weak click-through/intent fit. Review crawl exclusions and Google-selected canonicals. | Actual impressions/clicks/CTR/position by deduplicated cluster, with reporting periods and caveats; no claim that technical changes caused traffic gains. |
+| Days 61–75 | Assess Pakistan launch readiness; research India/UK next using local official sources and country exports. Gather reliability/price evidence if accessible. | Complete localized calculator + two real guides and approval before any country hub; no generic amortization branded as Ijarah. No reliability list without model-specific evidence. |
+| Days 76–90 | Reassess maintenance capacity and data coverage before further countries. If AdSense account is provided, prepare real publisher/CMP/slot integration for review and consent/CLS testing. | Real IDs only; certified CMP and regional consent verified; no ad requests before required consent; measured filled/unfilled slot behavior. Approval remains external. |
+
+Recurring review: correct reported calculation defects promptly; check cited rules when changed; retain source dates and old evidence; monitor field CWV only with real GSC/CrUX data. Local Lighthouse is diagnostic and does not substitute for field INP. Publish fewer maintained pages when evidence is limited.
+
+Blockers: GSC exports/reporting access, licensed keyword metrics, operator identity and monitored contact confirmation, current bank product interpretation, native review for translations, accessible reliability/price datasets, GA property, Bing account and AdSense publisher/CMP/inventory. These do not block pure-function fixes, better existing content or local QA. No numerical growth scenario is supplied because neither cluster volumes nor a defensible CTR model was requested/provided.

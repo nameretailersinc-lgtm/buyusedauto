@@ -1,0 +1,56 @@
+[
+  {
+    "path": "/",
+    "width": 360,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/car-loan-calculator",
+    "width": 360,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/car-loan-calculator",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/car-loan-calculator",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/guides/how-to-inspect-a-used-car",
+    "width": 360,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/guides/how-to-inspect-a-used-car",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/guides/how-to-inspect-a-used-car",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  }
+]
