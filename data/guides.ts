@@ -1,7 +1,10 @@
+import {internationalGuide} from "./international-guide";
+
 export type GuideSection = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
+  links?: {title: string; url: string}[];
 };
 
 export type Guide = {
@@ -11,14 +14,17 @@ export type Guide = {
   category: 'Buying' | 'Financing' | 'Ownership' | 'Selling';
   intro: string;
   readingMinutes: number;
+  updated?: string;
   sections: GuideSection[];
   sources: { title: string; url: string }[];
   relatedTools: string[];
+  reviewedOn?: string;
 };
 
 export const guides: Guide[] = [
   {
     slug: 'how-to-inspect-a-used-car',
+    updated: '2026-10-15',
     title: 'How to inspect a used car before you buy',
     description: 'Inspect a used car with a practical sequence for documents, condition, a test drive, and an independent mechanic. Turn findings into a buying decision.',
     category: 'Buying',
@@ -26,7 +32,8 @@ export const guides: Guide[] = [
     readingMinutes: 7,
     sections: [
       {
-        heading: '1. Arrange the inspection before the appointment',
+        heading: '1. Questions to ask a private seller before the appointment',
+        bullets: ['How long have you owned the car, and why are you selling?', 'Is the title in your name, and is there outstanding finance?', 'What accident, flood or other damage do you know about?', 'Which repairs and scheduled services have invoices?', 'May my independent mechanic inspect it before I commit?', 'Which faults, warning lights or intermittent symptoms should I investigate?'],
         paragraphs: [
           'Ask for the VIN, current mileage, service records, title status, and permission for an independent inspection before you travel. Confirm which shop will inspect the car, who pays, and how it will get there. Choose a shop familiar with that powertrain. A general inspection may need a separate specialist for a high-voltage battery, modified vehicle, or suspected structural repair.',
           'Schedule daylight and enough time to look without rushing. Ask the seller to leave the engine cold if practical; a pre-warmed engine changes what you can observe at startup. Bring a flashlight, a phone for permitted photos, and your written questions. Avoid inspecting on a roadside or crawling beneath an unsupported vehicle. You do not need to perform repairs to be a careful buyer.',
@@ -50,8 +57,9 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '4. Let the mechanic measure what matters',
+        heading: '4. How to check a used car engine before buying',
         paragraphs: [
+          'With permission, observe a cold start from a safe position and note warning lights, persistent smoke, unusual noises and visible leaks for the mechanic. Keep clear of hot or moving components; never open a hot coolant cap. Ask the shop to assess the engine and cooling system rather than treating a quiet idle as proof of condition.',
           'A visible tire check can reveal cuts, bulges, or uneven wear, but ask the shop to measure tread and assess tire condition and age. Check the vehicle placard for specified sizes and pressure rather than using a tire sidewall maximum as the operating target. NHTSA emphasizes that maintenance and tire condition matter to safety.',
           'Ask the inspector to document brake condition, leaks, suspension wear, corrosion, cooling-system concerns, and signs of previous repair. Request a scan and an explanation of any diagnostic findings. A code identifies a system or condition to investigate; it is not automatically a quote for a particular replacement part. Recent code clearing or incomplete readiness information also needs context.',
           'For a hybrid or EV, ask exactly what battery assessment the inspection includes and what it cannot establish. A dashboard range estimate is not a battery health certificate. Never open high-voltage components yourself. Obtain model-specific professional advice when range, charging behavior, or battery history is central to your decision.'
@@ -74,8 +82,9 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '7. Make the decision and keep the evidence',
+        heading: '7. Mileage, first-time buyer decisions and the evidence file',
         paragraphs: [
+          'There is no universal mileage cutoff that this checklist can certify. Compare the odometer with service records, the maintenance schedule for the exact engine and transmission, and the inspection findings. Ask which scheduled jobs are due and price those jobs before deciding whether a high-mileage car fits your budget.',
           'Compare the inspected vehicle with your alternatives using total cost, suitability, and unresolved risk. Keep the inspection report, quote, warranty terms, and promised-work agreement together. Before collection, confirm promised work was completed and inspect the car again for changes in condition or mileage.',
           'A checklist with every box marked does not predict the next failure or replace a professional assessment. Its value is that it makes unanswered questions visible. Use the ownership calculator to add insurance, fuel, maintenance, and financing before deciding that the purchase price fits your budget.',
           'If you decline the car, save the useful lessons and move on. The money spent on an inspection can still have served its purpose by identifying a purchase that does not match your needs.'
@@ -92,6 +101,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'how-to-check-a-cars-history',
+    updated: '2026-10-15',
     title: 'How to check a car’s history before buying',
     description: 'Build a useful vehicle history check from VIN matching, title records, recall searches, mileage evidence, and an inspection. Learn what reports cannot prove.',
     category: 'Buying',
@@ -123,8 +133,9 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '4. Reconstruct mileage as a timeline',
+        heading: '4. How much mileage is too much for a used car?',
         paragraphs: [
+          'There is no universal mileage cutoff that establishes whether a used car is a good purchase. Compare documented maintenance, age, driving use, upcoming scheduled work and an independent inspection. A lower odometer reading does not replace that evidence. Use the exact model maintenance schedule and written repair estimates to compare two candidates at the same total budget.',
           'Create a list with date, mileage, source, and notes for each available record. NHTSA recommends comparing the displayed odometer with title and maintenance records and considering whether physical wear fits the mileage. Wear is a clue, not a precise measuring device: a replacement seat or a heavily used city car can complicate the picture.',
           'Suppose a hypothetical car shows 41,200 miles in a service record, 48,900 at inspection, and 47,300 in a later listing. The sequence needs explanation. A typing mistake is possible, but so are more serious problems. Ask the record provider or seller for the underlying document and a documented correction; do not quietly remove the inconvenient entry from your comparison.',
           'Record units as well as numbers. An imported or cross-border vehicle may have kilometer-based records, and a replaced instrument cluster needs documentation. Do not infer fraud solely from an apparent decline before examining units and original records. If the discrepancy remains unresolved, regard the stated mileage and valuation as uncertain.'
@@ -454,4 +465,5 @@ export const guides: Guide[] = [
     ],
     relatedTools: ['trade-in-value-estimator', 'what-is-my-car-worth', 'car-sales-tax-calculator', 'total-cost-of-ownership-calculator']
   },
+  internationalGuide,
 ];

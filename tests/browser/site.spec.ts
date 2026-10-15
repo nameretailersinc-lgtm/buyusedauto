@@ -1,6 +1,16 @@
 import {test,expect} from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import {tools} from "../../data/tools";
+test("international guide is readable without JavaScript and accessible on mobile",async({browser,page})=>{
+  const path="/guides/international-used-car-buying-checks";
+  const context=await browser.newContext({javaScriptEnabled:false});const staticPage=await context.newPage();
+  await staticPage.goto(path);await expect(staticPage.locator(".article-section")).toHaveCount(7);
+  await expect(staticPage.locator("main")).toContainText("Punjab");await expect(staticPage.locator("main")).toContainText("Dubai");
+  await expect(staticPage.locator('link[rel="canonical"]')).toHaveAttribute("href",`https://buyusedautomobiles.com${path}`);await context.close();
+  await page.setViewportSize({width:390,height:844});await page.goto(path);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  expect((await new AxeBuilder({page}).analyze()).violations).toEqual([]);
+});
 test("server-rendered content, new branding and contact survive without JavaScript",async({browser})=>{
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();
   await page.goto("/car-loan-calculator");await expect(page.locator(".result-primary strong").first()).toHaveText("$396.02");

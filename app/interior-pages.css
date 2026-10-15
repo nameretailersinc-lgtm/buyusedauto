@@ -16,3 +16,6 @@
 @media(max-width:760px){.guide-card p{font-size:.82rem}.footer-grid>div>a:not(.brand),.footer-grid>div>p,.footer-bottom{font-size:.78rem}.hero-proof strong,.hero-proof span,.quick-note{font-size:.75rem}.hero-proof{flex-wrap:wrap}.hero-proof>div{min-width:150px}}
 .article-section{content-visibility:auto;contain-intrinsic-size:auto 500px}
 @media print{.article-section{content-visibility:visible;contain-intrinsic-size:none}}
+
+.inspection-print-status{display:none}
+@media print{.inspection-item select,.inspection-summary .text-button,.inspection-summary .share-status{display:none!important}.inspection-print-status{display:inline;font-weight:600;flex-shrink:0}.inspection-summary{break-inside:avoid}.tool-hero-image{display:none!important}}

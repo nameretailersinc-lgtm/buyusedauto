@@ -1,7 +1,8 @@
 import type {ToolId} from "./tools";
 export const toolImages:Record<ToolId,string>={loan:"mountain-suv",depreciation:"coastal-sedan",value:"car-keys",ownership:"fuel-stop",affordability:"coastal-sedan",fuel:"fuel-stop",trade:"car-keys",lease:"coastal-sedan",inspection:"inspection-workshop",negotiation:"guide-negotiation",tax:"guide-financing"};
-export const guideImages:Record<string,string>={"how-to-inspect-a-used-car":"inspection-workshop","how-to-check-a-cars-history":"guide-inspection","how-to-negotiate-a-used-car-price":"guide-negotiation","real-cost-of-car-ownership":"fuel-stop","how-to-compare-used-car-loans":"guide-financing","trade-in-vs-private-sale":"car-keys"};
+export const guideImages:Record<string,string>={"international-used-car-buying-checks":"guide-inspection","how-to-inspect-a-used-car":"inspection-workshop","how-to-check-a-cars-history":"guide-inspection","how-to-negotiate-a-used-car-price":"guide-negotiation","real-cost-of-car-ownership":"fuel-stop","how-to-compare-used-car-loans":"guide-financing","trade-in-vs-private-sale":"car-keys"};
 export const guideImageAlt:Record<string,string>={
+  "international-used-car-buying-checks":"Illustration of a magnifying glass held beside a car headlight.",
   "how-to-inspect-a-used-car":"Illustration of a white car with its hood open for a workshop inspection.",
   "how-to-check-a-cars-history":"Illustration of a magnifying glass held beside a car's headlight.",
   "how-to-negotiate-a-used-car-price":"Illustration of a handshake beside a parked car.",

@@ -1,7 +1,7 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 33,
-  "internalLinks": 135,
+  "pages": 34,
+  "internalLinks": 145,
   "failures": [],
   "warnings": [],
   "details": [
@@ -77,10 +77,10 @@
     },
     {
       "path": "/car-loan-calculator",
-      "title": "Car loan calculator | BuyUsedAutomobiles",
+      "title": "Used car loan calculator with taxes and fees",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "Car loan calculator"
+      "h1": "Used car loan calculator with taxes and fees"
     },
     {
       "path": "/car-depreciation-calculator",
@@ -98,10 +98,10 @@
     },
     {
       "path": "/total-cost-of-ownership-calculator",
-      "title": "Total cost of ownership calculator | BuyUsedAutomobiles",
+      "title": "Used car total cost of ownership calculator",
       "descriptionLength": 157,
       "schemaCount": 2,
-      "h1": "Total cost of ownership calculator"
+      "h1": "Used car total cost of ownership calculator"
     },
     {
       "path": "/car-affordability-calculator",
@@ -134,7 +134,7 @@
     {
       "path": "/used-car-inspection-checklist",
       "title": "Used car inspection checklist | BuyUsedAutomobiles",
-      "descriptionLength": 160,
+      "descriptionLength": 151,
       "schemaCount": 2,
       "h1": "Used car inspection checklist"
     },
@@ -193,6 +193,13 @@
       "descriptionLength": 155,
       "schemaCount": 2,
       "h1": "Trade-in vs. private sale: compare your net proceeds"
+    },
+    {
+      "path": "/guides/international-used-car-buying-checks",
+      "title": "Used car buying checks by country: official resources",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "Used car buying checks by country: official resources"
     },
     {
       "path": "/car-loan-calculator/10000-car-loan",
