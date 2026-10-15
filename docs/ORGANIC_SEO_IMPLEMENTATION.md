@@ -50,6 +50,7 @@ All search volumes, difficulty scores, rankings, traffic estimates, geographic d
 | 20 | best used cars for long distance commuting | Reserved `/guides/used-cars-for-long-distance-commuting` | P3: unpublished; compare operating cost, suitability and inspection evidence |
 | 21 | used Toyota Corolla common problems by year | Reserved `/guides/used-toyota-corolla-by-year` | P3: unpublished; model-year/engine/market source matrix needed |
 
+
 | 22 | used Honda Civic common problems by year | Reserved `/guides/used-honda-civic-by-year` | P3: unpublished; same evidence requirement |
 | 23 | Toyota Corolla vs Honda Civic used car comparison | Reserved `/guides/used-corolla-vs-civic` | P3: unpublished; comparable generations/markets needed |
 | 24 | used Toyota Camry best years to buy | Reserved `/guides/used-toyota-camry-by-year` | P3: unpublished; no unsupported best-year labels |
