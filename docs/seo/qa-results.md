@@ -49,3 +49,25 @@ CSV integrity checks passed: 75 rows in each file, all quantitative demand metri
 The intentional behavior change is that excess down payment/trade credit produces no loan and reports unallocated credit instead of an error. The original invalid-term and input-error contracts still pass. Required boundary tests exercise 0% interest, 1/84/96-month terms, zero/excess down financing, negative equity, extra payments above balance, final cents, extreme scales and invalid inputs. Independent payment reference solves discounted cash flows by bisection instead of copying the production formula; principal/payment conservation is also checked. Inherited condition/trim keys are rejected. No new market terms, lender rates or tax tables were asserted.
 
 The existing browser suite again passes its representative mobile/dark-theme axe assertions and print/CSV/share/restoration workflows. Phase 3 did not rerun Lighthouse or the full 360/768/1280 screenshot matrix; Phase 2 values/captures remain the baseline, not post-change performance measurements. Final performance/responsive evidence is still required after subsequent UI work. Country-specific calculation behavior, real analytics/account reporting and external rich-result validation are not covered by this phase.
+
+## Phase 4 ownership comparison and finance guide — 2026-10-15
+
+| Check | Actual result |
+| --- | --- |
+| `npm test` | Exit 0; 69 tests across three files, including five new ownership comparison cases; reported 769 ms |
+| `npm run lint` | Exit 0 on final sources |
+| `npm run build` | Exit 0 on final sources; TypeScript completed and 47/47 static build entries generated |
+| `npm run typecheck` | Exit 0 before final comparison-only CSS refinement; final build also passed TypeScript |
+| Full `TEST_BASE_URL=http://127.0.0.1:3100 npm run test:e2e` | Exit 0; all 18 tests passed in 1.2 minutes after fixing a new ambiguous locator and table-focus issue |
+| Final targeted browser rerun after scoped comparison-table wrapping CSS | `npm run test:e2e -- --grep 'new versus used\|interest walkthrough'`: exit 0; two affected tests passed in 8.4 s, including focus, no table overflow at 360 px and axe assertions |
+| HTTP audit | Exit 0; `reports/seo-global-phase4.json`: 37 pages, 34 sitemap URLs, 148 internal destinations and eight images; zero failures/warnings/duplicate-paragraph signals |
+| Route inventory comparison | Same content paths as the original baseline; all eleven original tools retained |
+| Final responsive/axe capture script | Exit 0; six captures (ownership with saved comparison and updated interest guide, each at 360/768/1280 px). HTTP 200 and no document overflow in all six; no comparison-table overflow at all three widths; no selected-tag axe violations on mobile ownership with comparison active |
+
+New browser coverage checks that saved assumptions remain fixed, current new-car inputs are distinct, unequal ownership period/distance suppress comparison totals/export, matching inputs restore comparison, CSV downloads, and the current vehicle label/input URL reloads without pretending to restore tab-local saved data. The new no-JavaScript test verifies the interest walkthrough and ownership method remain server-rendered, and the Article language/date agree with the US guide. Existing loan, fuel, checklist, export, URL restoration, navigation, consent and responsive tests still pass.
+
+Initial findings and fixes: the first new content test failed because `article` also matched related cards; it now targets `.editorial-prose`. An initial screenshot/axe harness required an explicit browser context and was corrected. The mobile comparison initially failed `scrollable-region-focusable`; labeled keyboard-focusable regions fixed that issue. Subsequent visual review prompted scoped table wrapping so both vehicle columns fit a phone; final affected tests and captures pass. No assertion was weakened to ignore a violation.
+
+Evidence: `reports/seo-phase4/responsive.json`, six full-page PNGs under `reports/seo-phase4/screenshots/`, and `reports/seo-phase4/comparison-360.png`. The detail capture can include fixed navigation/result chrome due to element screenshot stitching; full-page captures and actual browser assertions are the layout evidence. Automated checks and these captures are not a full manual accessibility certification.
+
+Fresh local mobile Lighthouse completed successfully before the final comparison-only wrapping CSS. Single-run observations: homepage performance 92 / LCP 2976.60 ms / TBT 144.5 ms; loan 96 / 2814.23 ms / 41.5 ms; inspection guide 89 / 2894.15 ms / 282.64 ms. Accessibility, best practices and SEO each scored 100 on all three, with CLS 0. Summary preserved at `reports/seo-phase4/lighthouse-summary.json`. Scores vary with local activity; do not infer a causal improvement/regression or passing field CWV. The final comparison CSS and active ownership scenario were checked with responsive/axe browser tests, not a separate Lighthouse run. No field INP, production metrics or hosted rich-result validation is claimed.

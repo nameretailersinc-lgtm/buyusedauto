@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/total-cost-of-ownership-calculator",
+    "width": 360,
+    "status": 200,
+    "overflow": false,
+    "axeViolations": [],
+    "comparisonOverflow": false
+  },
+  {
+    "path": "/total-cost-of-ownership-calculator",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "comparisonOverflow": false
+  },
+  {
+    "path": "/total-cost-of-ownership-calculator",
+    "width": 1280,
+    "status": 200,
+    "overflow": false,
+    "comparisonOverflow": false
+  },
+  {
+    "path": "/guides/how-to-compare-used-car-loans",
+    "width": 360,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/guides/how-to-compare-used-car-loans",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/guides/how-to-compare-used-car-loans",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  }
+]

@@ -1,3 +1,4 @@
+import {monthlyInterestExample,loanTermExample,loanTermDifference} from "./finance-examples";
 import {internationalGuide} from "./international-guide";
 
 export type GuideSection = {
@@ -19,6 +20,7 @@ export type Guide = {
   sources: { title: string; url: string }[];
   relatedTools: string[];
   reviewedOn?: string;
+  language?: string;
 };
 
 export const guides: Guide[] = [
@@ -251,6 +253,8 @@ export const guides: Guide[] = [
     title: 'How to calculate the real cost of car ownership',
     description: 'Compare used cars with a complete ownership budget for depreciation, fuel, insurance, maintenance, taxes, and interest. Avoid double-counting the loan.',
     category: 'Ownership',
+    updated: '2026-10-15',
+    reviewedOn: '2026-10-15',
     intro: 'Ownership cost is the value your car loses plus the money spent using, maintaining, insuring, and financing it. Compare cars over the same period and mileage. Keep this economic cost separate from your monthly cash budget so you do not count both loan principal and depreciation as separate costs.',
     readingMinutes: 7,
     sections: [
@@ -297,6 +301,7 @@ export const guides: Guide[] = [
       {
         heading: '6. Test the assumptions that can change the result',
         paragraphs: [
+          'To compare a new car with a used car, enter the used vehicle first and save it for comparison in the ownership calculator. Then choose New car and replace price, resale, insurance, maintenance, fees and financing with quotes or explicit UNVERIFIED assumptions for that vehicle. Keep ownership period and annual distance identical. The label itself changes no costs, and neither vehicle type is assumed to be cheaper.',
           'Create a base case and a less favorable case. In the example, reducing resale value from $9,000 to $7,000 adds $2,000 to ownership cost. Adding $1,500 of repairs adds another $1,500. The combined increase is $3,500, or about $58 a month when averaged over five years. Your actual need for cash will depend on when those events occur.',
           'Compare the margin between vehicles with this uncertainty. If candidate A is only $500 cheaper over five years but has less predictable repairs, the arithmetic alone does not establish a strong winner. Conversely, a recurring $100 monthly cost difference becomes $6,000 over the same period and deserves attention.',
           'Avoid treating all risks as independent. Higher mileage can increase fuel costs, accelerate maintenance, and affect resale at once. A useful second scenario changes those related assumptions together. Keep the original scenario saved so you can see what caused the result to move.'
@@ -320,9 +325,11 @@ export const guides: Guide[] = [
   },
   {
     slug: 'how-to-compare-used-car-loans',
-    title: 'How to compare used-car loans beyond the payment',
-    description: 'Compare used-car loan offers by amount financed, APR, term, interest, fees, and flexibility. See how a longer term changes cost with a worked example.',
+    title: 'How car loan interest is calculated and how to compare offers',
+    description: 'Learn how monthly car loan interest is calculated, work through a payment example, and compare rates, APR, terms and total borrowing costs.',
     category: 'Financing',
+    updated: '2026-10-15',
+    reviewedOn: '2026-10-15',
     intro: 'Compare used-car loans using the same amount financed and term, then examine APR, finance charges, fees, and payment rules. A smaller payment can come from borrowing for longer and cost more overall. Use actual lender disclosures for the decision; a calculator illustrates assumptions and is not a credit offer.',
     readingMinutes: 7,
     sections: [
@@ -343,8 +350,10 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '3. Read APR alongside the full disclosure',
+        heading: '3. How interest is calculated on a car loan',
         paragraphs: [
+          'For this fixed-rate monthly model, monthly rate = annual contract rate divided by 1,200; interest for a month = opening balance multiplied by monthly rate. Subtract that interest from the payment to find principal repaid, then use the reduced balance for the next month. The division converts an annual percentage to a monthly decimal rate; it does not mean that APR and the contractual interest rate are interchangeable.',
+          monthlyInterestExample,
           'The CFPB explains that APR includes the interest rate and certain borrowing fees, making it a broader comparison measure than the interest rate alone. Compare APR with APR. A payment calculator that treats APR as the periodic interest rate is an approximation when fees make APR differ from the contract rate.',
           'The Truth in Lending disclosures include key figures such as APR, finance charge, amount financed, and total of payments. Review them before signing and ask how any unfamiliar fee is treated. Check the number and timing of payments as well as the payment amount. Use the actual disclosure to compare the lender’s proposed transaction.',
           'For a standard fixed-rate loan without fees, a monthly amortization illustration can closely explain the relationship between principal, rate, and term. Real contracts may accrue interest daily, adjust the last payment, or use other provisions. A difference of a few dollars deserves an explanation rather than an assumption that either the tool or the lender must be wrong.'
@@ -353,8 +362,8 @@ export const guides: Guide[] = [
       {
         heading: '4. See what a longer term changes',
         paragraphs: [
-          'Consider a hypothetical $20,000 fixed-rate loan at 8% annual interest, no fees, and equal monthly payments. At 48 months, the calculated payment is about $488.26 and total interest is about $3,436.41. At 72 months, the payment is about $350.66 and total interest is about $5,247.87. This is a mathematical illustration, not a current lender quote.',
-          'Extending the term reduces the monthly payment by about $137.59 but adds about $1,811.46 of interest. Totals use unrounded payments before display, so multiplying the displayed cents may differ slightly. The extra two years also change how long the debt remains in your budget and how much you may owe when you want to sell.',
+          loanTermExample,
+          loanTermDifference,
           'A longer term may be the only payment that appears manageable, but that is a reason to reassess the purchase amount and total household budget. It does not establish that the car is affordable. Model a less expensive vehicle or different down payment without exhausting money needed for repairs and other essential expenses.'
         ]
       },
@@ -384,6 +393,8 @@ export const guides: Guide[] = [
       }
     ],
     sources: [
+      { title: 'CFPB: Amortization and your auto loan', url: 'https://www.consumerfinance.gov/ask-cfpb/what-is-amortization-and-how-could-it-affect-my-auto-loan-en-771/' },
+      { title: 'CFPB: Simple and precomputed interest', url: 'https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-simple-interest-rate-and-precomputed-interest-on-an-auto-loan-en-841/' },
       { title: 'CFPB: How to compare auto loan offers', url: 'https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/' },
       { title: 'CFPB: Auto loan key terms, including APR', url: 'https://www.consumerfinance.gov/consumer-tools/auto-loans/answers/key-terms/' },
       { title: 'CFPB: Truth in Lending disclosures', url: 'https://www.consumerfinance.gov/ask-cfpb/what-is-a-truth-in-lending-disclosure-for-an-auto-loan-en-787/' },

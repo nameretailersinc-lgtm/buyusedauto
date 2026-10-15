@@ -7,6 +7,7 @@ export const internationalGuide: Guide = {
   category: "Buying",
   readingMinutes: 7,
   reviewedOn: "2026-10-15",
+  language: "en",
   intro: "A vehicle history search, a registration record and an ownership transfer answer different questions. Start with the authority responsible for the actual vehicle and transaction. This guide points to official resources for four markets and explains the gaps to resolve before paying. Pakistan guidance below is scoped to Punjab, and UAE guidance to Dubai; do not apply those procedures nationwide.",
   sections: [
     {

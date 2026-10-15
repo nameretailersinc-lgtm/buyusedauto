@@ -1,0 +1,32 @@
+.tableRegion[tabindex] {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.tableRegion table {
+  width: 100%;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.tableRegion table th,
+.tableRegion table td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding: 12px 8px;
+  vertical-align: top;
+}
+
+.tableRegion table thead th:first-child {
+  width: 40%;
+}
+
+.tableRegion table caption {
+  white-space: normal;
+}
+
+@media print {
+  .tableRegion[tabindex] {
+    overflow: visible;
+  }
+}

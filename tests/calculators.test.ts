@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { monthlyPayment, loan, compareLoanPayoff, depreciation, valuation, fuel, ownership, affordability, leaseVsBuy, negotiation, salesTax, inspectionProgress } from "../lib/calculators";
+import { monthlyPayment, loan, compareLoanPayoff, compareOwnership, depreciation, valuation, fuel, ownership, affordability, leaseVsBuy, negotiation, salesTax, inspectionProgress } from "../lib/calculators";
 const base = { price: 25000, down: 5000, trade: 0, payoff: 0, fees: 0, rate: 7, months: 60, extra: 0 };
 describe("loan math", () => {
   it("matches an independently computed amortization example", () => { expect(monthlyPayment(20000, 7, 60)).toBeCloseTo(396.02397, 4); });
@@ -103,6 +103,32 @@ describe("affordability",()=>{
   it("enforces 20% down and a 48-month loan",()=>{const x=affordability(6000,500,4000,200,7);expect(x.price).toBeLessThanOrEqual(20000);expect(x.payment).toBeLessThanOrEqual(400.01);});
   it("returns zero finance capacity when running costs exceed budget",()=>{const x=affordability(3000,1000,2000,400,7);expect(x.price).toBe(2000);expect(x.payment).toBe(0);});
   it("does not invent an affordable loan without a down payment",()=>expect(affordability(6000,0,0,100,0).price).toBe(0));
+});
+describe("matched new and used ownership scenarios",()=>{
+  const saved={price:20000,resale:10000,years:5,miles:12000,mpg:30,fuelPrice:3,insurance:1200,maintenance:600,annualFees:100,purchaseFees:1000,down:20000,rate:0,months:60};
+  it("compares economic cost without counting purchase principal twice",()=>{
+    const result=compareOwnership(saved,{...saved,price:30000,resale:18000,down:30000});
+    expect(result.saved.total).toBe(26500);
+    expect(result.current.total).toBe(28500);
+    expect(result.difference).toBe(2000);
+    expect(result.monthlyDifference).toBeCloseTo(2000/60,8);
+    expect(result.current.parts.find(part=>part.label==="Loan interest")?.value).toBe(0);
+  });
+  it("isolates a recurring cost and preserves the saved input",()=>{
+    const original={...saved};
+    const result=compareOwnership(saved,{...saved,maintenance:700});
+    expect(result.difference).toBe(500);
+    expect(saved).toEqual(original);
+    expect(compareOwnership({...saved,maintenance:700},saved).difference).toBe(-500);
+  });
+  it.each([{...saved,years:4},{...saved,miles:15000}])("rejects unequal horizon or driving assumptions",current=>{
+    expect(()=>compareOwnership(saved,current)).toThrow("same ownership period and annual distance");
+  });
+  it("allows matched zero-distance scenarios without a per-mile result",()=>{
+    const result=compareOwnership({...saved,miles:0},{...saved,miles:0});
+    expect(result.difference).toBe(0);
+    expect(result.saved.perMile).toBeNull();
+  });
 });
 describe("lease, negotiation, tax, inspection",()=>{
   it("compares the same horizon and subtracts sale equity",()=>{const x=leaseVsBuy({price:20000,down:2000,rate:0,loanMonths:60,horizon:36,resale:12000,leasePayment:250,leaseDue:1000,leaseFees:300,extraMiles:1000,mileageFee:.25});expect(x.balance).toBe(7200);expect(x.buyCost).toBe(8000);expect(x.leaseCost).toBe(10550);});

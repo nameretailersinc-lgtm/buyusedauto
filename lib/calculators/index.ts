@@ -93,6 +93,13 @@ export function affordability(grossMonthly: number, debts: number, down: number,
   const principal = Math.max(0, price - down);
   return { price: cents(price), payment: cents(monthlyPayment(principal, rate, 48)), paymentBudget: cents(paymentBudget), principal: cents(principal), transportBudget: cents(grossMonthly * 0.1) };
 }
+/** Compare economic cost only across the same ownership period and usage. */
+export function compareOwnership(saved: TcoInput, current: TcoInput) {
+  const a = ownership(saved);
+  const b = ownership(current);
+  if (saved.years !== current.years || saved.miles !== current.miles) throw new Error("Use the same ownership period and annual distance for both vehicles before comparing costs.");
+  return { saved: a, current: b, difference: cents(b.total - a.total), monthlyDifference: (b.total - a.total) / (saved.years * 12) };
+}
 export type LeaseInput = { price: number; down: number; rate: number; loanMonths: number; horizon: number; resale: number; leasePayment: number; leaseDue: number; leaseFees: number; extraMiles: number; mileageFee: number };
 export function leaseVsBuy(input: LeaseInput) {
   Object.entries(input).forEach(([key, value]) => valid(value, key));
