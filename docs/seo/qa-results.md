@@ -32,3 +32,20 @@ The keyword CSV and map are planning artifacts with UNVERIFIED metrics. Country-
 Responsive production captures completed for home, loan and inspection guide at each of 360/768/1280 px (nine PNG files in `reports/seo-baseline/screenshots/`). All nine requests returned 200 and no horizontal document overflow was detected. Machine observations are saved in `reports/seo-baseline/responsive.json`; screenshots alone do not establish full manual visual/accessibility conformance. The successful Lighthouse summary is also preserved separately under `reports/seo-baseline/` for subsequent implementation comparison.
 
 CSV integrity checks passed: 75 rows in each file, all quantitative demand metrics UNVERIFIED, no duplicate keyword/country/language keys, one provisional primary per cluster and matching research/map target assignments. A first PowerShell check used scalar `.Count` and incorrectly flagged a primary-count error; array-normalized validation passed without CSV changes. `git diff --check` passed. No new code tests were added for this documentation/audit phase.
+
+## Phase 3 financial implementation — 2026-10-15
+
+| Check | Actual result |
+| --- | --- |
+| `npm run lint` | Exit 0 on final application sources |
+| `npm test` | Exit 0; 3 files, 64 tests passed (47 baseline, 17 added cases); final run reported 853 ms |
+| `npm run build` | Exit 0; TypeScript and static generation completed, 47/47 build entries |
+| `npm run typecheck` | Exit 0 after final build |
+| `TEST_BASE_URL=http://127.0.0.1:3100 npm run test:e2e` | Exit 0; 16 tests passed in 1.1 minutes, including all original tools and updated zero-financing behavior |
+| `TEST_BASE_URL=http://127.0.0.1:3100 SEO_AUDIT_OUTPUT=reports/seo-global-phase3.json npm run audit:seo` | Exit 0; 37 pages, 34 sitemap URLs, 148 internal destinations, eight images; zero failures/warnings/duplicate-paragraph signals |
+| HTTP artifact comparison and HTML assertions | Same route paths as baseline; early-payoff explanation, UNVERIFIED assumption label and dated CFPB citations present in server HTML |
+| `git diff --check` | Passed |
+
+The intentional behavior change is that excess down payment/trade credit produces no loan and reports unallocated credit instead of an error. The original invalid-term and input-error contracts still pass. Required boundary tests exercise 0% interest, 1/84/96-month terms, zero/excess down financing, negative equity, extra payments above balance, final cents, extreme scales and invalid inputs. Independent payment reference solves discounted cash flows by bisection instead of copying the production formula; principal/payment conservation is also checked. Inherited condition/trim keys are rejected. No new market terms, lender rates or tax tables were asserted.
+
+The existing browser suite again passes its representative mobile/dark-theme axe assertions and print/CSV/share/restoration workflows. Phase 3 did not rerun Lighthouse or the full 360/768/1280 screenshot matrix; Phase 2 values/captures remain the baseline, not post-change performance measurements. Final performance/responsive evidence is still required after subsequent UI work. Country-specific calculation behavior, real analytics/account reporting and external rich-result validation are not covered by this phase.

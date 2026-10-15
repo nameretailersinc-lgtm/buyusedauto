@@ -1,4 +1,5 @@
 import { depreciationModel as model } from "../../data/depreciation";
+import { markets, type Currency } from "../markets";
 
 export function valid(value: number, label: string, min = 0, max = 100000000) {
   if (!Number.isFinite(value) || value < min || value > max) throw new Error(`${label} must be between ${min.toLocaleString("en-US")} and ${max.toLocaleString("en-US")}.`);
@@ -15,13 +16,16 @@ export function monthlyPayment(principal: number, annualRate: number, months: nu
   const r = annualRate / 1200;
   return principal === 0 ? 0 : r === 0 ? principal / months : principal * r / -Math.expm1(-months * Math.log1p(r));
 }
-export type LoanInput = { price: number; down: number; trade: number; payoff: number; fees: number; rate: number; months: number; extra: number };
+export type LoanInput = { price: number; down: number; trade: number; payoff: number; fees: number; rate: number; months: number; extra: number; tax?: number; currency?: Currency };
 export type PaymentRow = { month: number; payment: number; principal: number; interest: number; balance: number };
 export function loan(input: LoanInput) {
-  Object.entries(input).forEach(([key, value]) => valid(value, key));
-  const net = input.price + input.fees + input.payoff - input.down - input.trade;
-  if (net < 0) throw new Error("Down payment and trade credit exceed the purchase cost and existing loan payoff.");
-  const principal = cents(net);
+  for (const key of ["price", "down", "trade", "payoff", "fees", "rate", "months", "extra"] as const) valid(input[key], key);
+  const tax = valid(input.tax ?? 0, "Financed tax");
+  const currency = input.currency ?? "USD";
+  if (!Object.values(markets).some(market => market.currency === currency)) throw new Error("Choose a supported currency. Currency does not convert amounts.");
+  const net = input.price + input.fees + tax + input.payoff - input.down - input.trade;
+  const principal = cents(Math.max(0, net));
+  const unappliedCredit = cents(Math.max(0, -net));
   const payment = monthlyPayment(principal, input.rate, input.months);
   const schedule: PaymentRow[] = [];
   let balance = principal;
@@ -33,7 +37,13 @@ export function loan(input: LoanInput) {
     schedule.push({ month, payment: paid, principal: principalPaid, interest, balance });
   }
   const interest = cents(schedule.reduce((sum, row) => sum + row.interest, 0));
-  return { principal, payment: cents(payment), interest, total: cents(principal + interest), months: schedule.length, schedule };
+  return { principal, payment: cents(payment), interest, total: cents(principal + interest), months: schedule.length, schedule, unappliedCredit, currency };
+}
+/** Same inputs and rate; compare principal-only extra payments with scheduled repayment. */
+export function compareLoanPayoff(input: LoanInput) {
+  const baseline = loan({ ...input, extra: 0 });
+  const accelerated = loan(input);
+  return { baseline, accelerated, interestSaved: cents(baseline.interest - accelerated.interest), monthsSaved: baseline.months - accelerated.months };
 }
 export function depreciation(price: number, years: number, first: number, annual: number) {
   valid(price, "Starting value"); integer(years, "Years", 0, 40); valid(first, "First-year decline", 0, 100); valid(annual, "Annual decline", 0, 100);
@@ -43,7 +53,7 @@ export function depreciation(price: number, years: number, first: number, annual
 }
 export function valuation(price: number, age: number, mileage: number, condition: keyof typeof model.conditions, trim: keyof typeof model.trims) {
   valid(price, "Original base MSRP", 1); integer(age, "Vehicle age", 0, 40); valid(mileage, "Odometer", 0, 2000000);
-  if (!(condition in model.conditions) || !(trim in model.trims)) throw new Error("Choose a listed condition and trim.");
+  if (!Object.hasOwn(model.conditions, condition) || !Object.hasOwn(model.trims, trim)) throw new Error("Choose a listed condition and trim.");
   const base = depreciation(price, age, model.firstYearPercent, model.laterYearPercent).residual;
   const difference = mileage - age * model.expectedAnnualMiles;
   const adjustment = Math.max(-model.maxMileageAdjustment, Math.min(model.maxMileageAdjustment, -difference * model.mileageAdjustmentPerMile));
@@ -92,7 +102,7 @@ export function leaseVsBuy(input: LeaseInput) {
   const paid = paidRows.reduce((sum, row) => sum + row.payment, 0);
   const balance = paidRows.at(-1)?.balance ?? 0;
   const equity = input.resale - balance;
-  const buyCost = cents(input.down + paid - equity);
+  const buyCost = cents(Math.min(input.down, input.price) + paid - equity);
   const leaseCost = cents(input.leaseDue + input.leasePayment * input.horizon + input.leaseFees + input.extraMiles * input.mileageFee);
   return { buyCost, leaseCost, equity: cents(equity), balance, difference: cents(leaseCost - buyCost), buyPayment: buying.payment };
 }
