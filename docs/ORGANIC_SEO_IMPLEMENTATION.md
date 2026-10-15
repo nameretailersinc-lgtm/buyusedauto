@@ -53,6 +53,7 @@ All search volumes, difficulty scores, rankings, traffic estimates, geographic d
 | 23 | Toyota Corolla vs Honda Civic used car comparison | Reserved `/guides/used-corolla-vs-civic` | P3: unpublished; comparable generations/markets needed |
 | 24 | used Toyota Camry best years to buy | Reserved `/guides/used-toyota-camry-by-year` | P3: unpublished; no unsupported best-year labels |
 | 25 | used Ford Focus automatic transmission problems | Reserved `/guides/used-ford-focus-transmissions` | P3: unpublished; distinguish exact gearbox, market and service actions |
+
 | 26 | used Hyundai Tucson reliability by model year | Reserved `/guides/used-hyundai-tucson-by-year` | P3: unpublished; exact engines/years/markets needed |
 | 27 | how to buy a used car in the UK privately | `/guides/international-used-car-buying-checks` (section `#section-2`) | P2: official DVLA/MOT workflow; introductory coverage |
 | 28 | how to check used car history in Australia | `/guides/international-used-car-buying-checks` (section `#section-3`) | P2: official PPSR and state-authority guidance |
