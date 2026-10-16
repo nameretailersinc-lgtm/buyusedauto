@@ -26,7 +26,8 @@ export type Guide = {
 export const guides: Guide[] = [
   {
     slug: 'how-to-inspect-a-used-car',
-    updated: '2026-10-15',
+    updated: '2026-10-16',
+    reviewedOn: '2026-10-16',
     title: 'How to inspect a used car before you buy',
     description: 'Inspect a used car with a practical sequence for documents, condition, a test drive, and an independent mechanic. Turn findings into a buying decision.',
     category: 'Buying',
@@ -35,15 +36,18 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: '1. Questions to ask a private seller before the appointment',
+        links: [{title: 'FTC: arranging an independent inspection', url: 'https://consumer.ftc.gov/articles/buying-used-car-dealer'}],
         bullets: ['How long have you owned the car, and why are you selling?', 'Is the title in your name, and is there outstanding finance?', 'What accident, flood or other damage do you know about?', 'Which repairs and scheduled services have invoices?', 'May my independent mechanic inspect it before I commit?', 'Which faults, warning lights or intermittent symptoms should I investigate?'],
         paragraphs: [
           'Ask for the VIN, current mileage, service records, title status, and permission for an independent inspection before you travel. Confirm which shop will inspect the car, who pays, and how it will get there. Choose a shop familiar with that powertrain. A general inspection may need a separate specialist for a high-voltage battery, modified vehicle, or suspected structural repair.',
           'Schedule daylight and enough time to look without rushing. Ask the seller to leave the engine cold if practical; a pre-warmed engine changes what you can observe at startup. Bring a flashlight, a phone for permitted photos, and your written questions. Avoid inspecting on a roadside or crawling beneath an unsupported vehicle. You do not need to perform repairs to be a careful buyer.',
+          'For a dealer purchase, the FTC suggests a mobile mechanic or asking the dealer to take the car to your chosen facility if off-site access is restricted. If independent inspection is refused altogether, consider another dealer. Agree on access before paying for a report or traveling.',
           'Set a simple boundary in advance: an unexplained identity discrepancy, refusal of a reasonable inspection, or unresolved safety concern means you pause. That boundary is easier to maintain before you have spent hours negotiating or become attached to a particular color.'
         ]
       },
       {
         heading: '2. Match the car to the paperwork',
+        links: [{title: 'FTC: dealer Buyers Guide and written promises', url: 'https://consumer.ftc.gov/articles/buying-used-car-dealer'}],
         paragraphs: [
           'Read the VIN on the vehicle and compare it with the title, listing, service invoices, and history report. Record the mileage you actually see. A dealer stock number is not a substitute for a VIN. Ask the seller to explain mismatches and verify the explanation through the issuing organization before proceeding.',
           'For a dealer sale, read the Buyers Guide. The FTC explains that this document identifies warranty coverage or an as-is sale and that an independent mechanical inspection remains useful even when the car is described as certified. Get any promised repairs in writing. A sales conversation and a completed repair invoice are different kinds of evidence.',
@@ -52,6 +56,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '3. Walk around, then inspect the cabin',
+        links: [{title: 'FTC: flood-damage clues and mechanic checks', url: 'https://consumer.ftc.gov/consumer-alerts/2018/10/dont-get-swamped-buying-flood-damaged-car'}],
         paragraphs: [
           'View the body from several angles and compare adjacent panels. Note inconsistent paint, uneven gaps, cracked lamps, damaged glass, and visible corrosion. These observations are prompts for the mechanic, not a remote diagnosis of a crash. Open doors, the trunk, and the hood with the seller present. Check that latches and the features you will use operate consistently.',
           'The FTC identifies water staining, silt, unusual odors, and moisture in lights as possible flood clues. Record clusters of clues rather than treating one smell as proof. A heavily cleaned interior cannot establish whether hidden wiring or restraint components were exposed to water. Suspected flood damage warrants a specialist assessment, and walking away is reasonable when the history remains unclear.',
@@ -60,6 +65,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '4. How to check a used car engine before buying',
+        links: [{title: 'NHTSA TireWise: tire pressure, tread and aging', url: 'https://www.nhtsa.gov/vehicle-safety/tires'}],
         paragraphs: [
           'With permission, observe a cold start from a safe position and note warning lights, persistent smoke, unusual noises and visible leaks for the mechanic. Keep clear of hot or moving components; never open a hot coolant cap. Ask the shop to assess the engine and cooling system rather than treating a quiet idle as proof of condition.',
           'A visible tire check can reveal cuts, bulges, or uneven wear, but ask the shop to measure tread and assess tire condition and age. Check the vehicle placard for specified sizes and pressure rather than using a tire sidewall maximum as the operating target. NHTSA emphasizes that maintenance and tire condition matter to safety.',
@@ -69,6 +75,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '5. Take a normal, lawful test drive',
+        links: [{title: 'NHTSA: VIN recall lookup and coverage limits', url: 'https://www.nhtsa.gov/recalls'}],
         paragraphs: [
           'Agree on a route that includes the kind of driving you do, subject to insurance arrangements and local rules. Start with normal controls: startup behavior, warning lights, steering feel, visibility, and parking. Then observe acceleration, gear changes, braking, vibration, and noises at legal speeds. Keep your attention on driving and have a passenger take notes if needed.',
           'Do not provoke a skid, disable safety equipment, or attempt an emergency maneuver to test the car. Stop if you observe a serious warning, smoke, overheating, or braking problem. Describe symptoms precisely to the mechanic: a vibration at a certain speed is more useful than saying the car feels bad.',
@@ -78,17 +85,18 @@ export const guides: Guide[] = [
       {
         heading: '6. Turn findings into a repair budget',
         paragraphs: [
-          'Have the inspector separate immediate safety work, scheduled maintenance, comfort repairs, and items to monitor. Ask for written estimates with labor, parts, and uncertainty. A possible transmission problem with no diagnosis should not be converted into a confident small discount. Decide whether the uncertainty itself exceeds what you can take on.',
+          'Have the inspector separate immediate safety work, scheduled maintenance, comfort repairs, and items to monitor. Ask for a written report identifying the make, model and VIN, with repair estimates. Clarify labor, parts, uncertainty and anything the inspector could not check. A possible transmission problem with no diagnosis should not be converted into a confident small discount. Decide whether the uncertainty itself exceeds what you can take on.',
           'For an illustrative purchase, assume the vehicle costs $15,500 and the inspection identifies $650 of tires and $450 of brake work. Your initial outlay becomes $16,600 before tax, registration, inspection fees, and other costs. If you also want a $1,000 repair reserve, you need access to $17,600 plus those other charges. These are example amounts, not typical repair prices.',
           'Use the inspection checklist to preserve findings and the negotiation calculator to explore an offer. Do not subtract the same defect twice if your comparison price already reflects that condition. A negotiated discount only helps when you can fund and arrange the actual repair.'
         ]
       },
       {
-        heading: '7. Mileage, first-time buyer decisions and the evidence file',
+        heading: '7. Save your used car inspection checklist and evidence',
         paragraphs: [
           'There is no universal mileage cutoff that this checklist can certify. Compare the odometer with service records, the maintenance schedule for the exact engine and transmission, and the inspection findings. Ask which scheduled jobs are due and price those jobs before deciding whether a high-mileage car fits your budget.',
           'Compare the inspected vehicle with your alternatives using total cost, suitability, and unresolved risk. Keep the inspection report, quote, warranty terms, and promised-work agreement together. Before collection, confirm promised work was completed and inspect the car again for changes in condition or mileage.',
           'A checklist with every box marked does not predict the next failure or replace a professional assessment. Its value is that it makes unanswered questions visible. Use the ownership calculator to add insurance, fuel, maintenance, and financing before deciding that the purchase price fits your budget.',
+          'For a printable used car inspection checklist, open our checklist tool and choose Print / save PDF. Save a blank copy before the visit or mark your observations and save the resulting report. The PDF contains your recorded notes, not an inspection certificate. Keep the independent mechanic’s report alongside it.',
           'If you decline the car, save the useful lessons and move on. The money spent on an inspection can still have served its purpose by identifying a purchase that does not match your needs.'
         ]
       }
@@ -97,7 +105,7 @@ export const guides: Guide[] = [
       { title: 'FTC: Buying a used car from a dealer', url: 'https://consumer.ftc.gov/articles/buying-used-car-dealer' },
       { title: 'FTC: Flood-damaged car warning signs', url: 'https://consumer.ftc.gov/consumer-alerts/2018/10/dont-get-swamped-buying-flood-damaged-car' },
       { title: 'NHTSA: Check for recalls and lookup limitations', url: 'https://www.nhtsa.gov/recalls' },
-      { title: 'NHTSA: Tire safety and maintenance', url: 'https://www.nhtsa.gov/tires/safety-and-savings-ride-your-tires' }
+      { title: 'NHTSA TireWise: pressure, tread, sizing and aging', url: 'https://www.nhtsa.gov/vehicle-safety/tires' }
     ],
     relatedTools: ['used-car-inspection-checklist', 'used-car-price-negotiation-calculator', 'total-cost-of-ownership-calculator']
   },

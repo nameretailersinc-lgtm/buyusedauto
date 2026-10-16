@@ -99,3 +99,7 @@ Build, lint and all 81 unit tests pass, including an affiliate event payload/pri
 ## Source review continuation - 2026-10-16
 
 Completed the history guide review against its four primary sources and improved free VIN-check intent coverage on the existing URL. Contextual official links make the scope of each check clearer. Review evidence: `history-source-review.md`; QA: `qa-results.md` and `reports/seo-history-review.json`. The Pakistan calculator once again has a descriptive visible H1 following the visual redesign. Remaining source reviews: inspection, negotiation, trade-in/private-sale. GSC exports remain absent; account availability alone does not provide performance data.
+
+## Inspection source review - 2026-10-16
+
+Completed inspection guidance review with contextual official links, dealer inspection-access options, written report identifiers and a printable-checklist workflow. Replaced the general NHTSA tire citation with detailed TireWise guidance. Evidence and scope: `inspection-source-review.md`; checks: `qa-results.md`. Remaining editorial source reviews: negotiation and trade-in/private-sale. Also corrected transient share-control contrast during theme changes after an owner-supplied CI failure; no accessibility rule was disabled. No deployment or GSC performance claim.
