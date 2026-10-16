@@ -102,3 +102,13 @@ Fresh local mobile Lighthouse used the existing audit runner with only its targe
 | Pakistan contract guide | 97 / 100 / 100 / 100 | 2544.64 ms | 0 | 57 ms |
 
 These single local lab runs do not establish passing field CWV; INP and actual production performance remain unmeasured. No Google-hosted rich-result result, bank-offer reconciliation, live KIBOR, current fee/tax table, Urdu review, actual GSC/GA result or AdSense approval is claimed. `git diff --check` passed before committing the checkpoint.
+
+## Phase 6 branding and event groundwork — 2026-10-16
+
+`npm test`: 80 tests pass across five files, including consent/privacy-signal/withdrawal/query-removal checks for usage events. `npm run lint` and final production build pass (52 static build entries, TypeScript included). Initial build caught a missing JSX expression brace in the Pakistan event handler; corrected before validation. ImageResponse uses its own image renderer, with a documented targeted lint exception for its image node.
+
+`reports/seo-global-phase6.json`: 40 content routes, 37 sitemap URLs, 154 internal destinations and eight editorial images, no failures/warnings/duplicate-paragraph signals. Captured homepage at 360/768/1280 with no horizontal overflow (`reports/seo-phase6/branding.json`). Static social cover and dynamic `/og?title=Loan%20calculator` render the new logo; dynamic route returned 200 and its image is preserved as `reports/seo-phase6/og.png`. Full logo SVGs contain actual paths and no embedded image/base64 raster. Existing icon and social asset URLs were retained.
+
+The full browser run initially found one stale assertion expecting `logo-mark` in the header; the new full wordmark replaces it, and the assertion was updated to the actual wordmark asset. Other regression results and the affected rerun are recorded below. No real GA network/property verification is claimed: GA is not configured, and events remain disabled without explicit consent and an enabled property. Checklist/affiliate-specific event wiring remains pending. Prior Lighthouse results remain historical; this phase does not claim new CWV measurements.
+
+Full browser result: 19 passed and the single obsolete-logo assertion failed in 1.3 minutes. After updating only that asset assertion, the affected test rerun passed in 5.7 seconds, including no-JavaScript content, branding, contact and guide checks. All 20 test cases therefore have passing results on the final application build; the complete suite was not rerun after this test-only correction. `git diff --check` passed. Generated `next-env.d.ts` build-type imports are retained as generated.

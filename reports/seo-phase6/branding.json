@@ -1,0 +1,17 @@
+[
+  {
+    "width": 360,
+    "overflow": false,
+    "logo": "/_next/image?url=%2Fbrand%2Flogo-wordmark.webp&w=3840&q=75"
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "logo": "/_next/image?url=%2Fbrand%2Flogo-wordmark.webp&w=3840&q=75"
+  },
+  {
+    "width": 1280,
+    "overflow": false,
+    "logo": "/_next/image?url=%2Fbrand%2Flogo-wordmark.webp&w=3840&q=75"
+  }
+]

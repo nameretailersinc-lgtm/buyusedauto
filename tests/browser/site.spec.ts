@@ -16,7 +16,7 @@ test("server-rendered content, new branding and contact survive without JavaScri
   await page.goto("/car-loan-calculator");await expect(page.locator(".result-primary strong").first()).toHaveText("$396.02");
   await expect(page.getByRole("heading",{name:"How it works",exact:true})).toBeVisible();
   await expect(page.locator('link[rel="icon"][href="/favicon-48.png"]')).toHaveCount(1);
-  await expect(page.locator('.site-header img[src*="logo-mark"]')).toBeVisible();
+  await expect(page.locator('.site-header img[src*="logo-wordmark"]')).toBeVisible();
   await page.goto("/contact");await expect(page.locator('main a[href="mailto:info@nameretailer.com"]').first()).toBeVisible();
   await expect(page.locator("main")).toContainText("26 - G Hamriyah Freezone Sharjah, United Arab Emirates");
   await page.goto("/guides/how-to-inspect-a-used-car");await expect(page.locator(".article-section")).toHaveCount(7);

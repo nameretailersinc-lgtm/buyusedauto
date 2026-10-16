@@ -1,0 +1,2140 @@
+{
+  "scope": "Local production HTML and HTTP audit; not Search Console indexing evidence or external rich-result validation",
+  "expectIndexable": true,
+  "pagesChecked": 40,
+  "sitemapUrlCount": 37,
+  "internalDestinations": 154,
+  "imagesChecked": 8,
+  "failures": [],
+  "warnings": [],
+  "robots": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: https://buyusedautomobiles.com/sitemap.xml\n",
+  "sitemaps": [
+    {
+      "group": "core",
+      "path": "/sitemaps/core.xml",
+      "status": 200,
+      "urls": [
+        "https://buyusedautomobiles.com/",
+        "https://buyusedautomobiles.com/tools",
+        "https://buyusedautomobiles.com/guides",
+        "https://buyusedautomobiles.com/about",
+        "https://buyusedautomobiles.com/contact",
+        "https://buyusedautomobiles.com/privacy-policy",
+        "https://buyusedautomobiles.com/terms",
+        "https://buyusedautomobiles.com/disclaimer",
+        "https://buyusedautomobiles.com/editorial-policy",
+        "https://buyusedautomobiles.com/guides/category/buying"
+      ]
+    },
+    {
+      "group": "tools",
+      "path": "/sitemaps/tools.xml",
+      "status": 200,
+      "urls": [
+        "https://buyusedautomobiles.com/car-loan-calculator",
+        "https://buyusedautomobiles.com/car-depreciation-calculator",
+        "https://buyusedautomobiles.com/what-is-my-car-worth",
+        "https://buyusedautomobiles.com/total-cost-of-ownership-calculator",
+        "https://buyusedautomobiles.com/car-affordability-calculator",
+        "https://buyusedautomobiles.com/fuel-cost-calculator",
+        "https://buyusedautomobiles.com/trade-in-value-estimator",
+        "https://buyusedautomobiles.com/lease-vs-buy-calculator",
+        "https://buyusedautomobiles.com/used-car-inspection-checklist",
+        "https://buyusedautomobiles.com/used-car-price-negotiation-calculator",
+        "https://buyusedautomobiles.com/car-sales-tax-calculator"
+      ]
+    },
+    {
+      "group": "guides",
+      "path": "/sitemaps/guides.xml",
+      "status": 200,
+      "urls": [
+        "https://buyusedautomobiles.com/guides/how-to-inspect-a-used-car",
+        "https://buyusedautomobiles.com/guides/how-to-check-a-cars-history",
+        "https://buyusedautomobiles.com/guides/how-to-negotiate-a-used-car-price",
+        "https://buyusedautomobiles.com/guides/real-cost-of-car-ownership",
+        "https://buyusedautomobiles.com/guides/how-to-compare-used-car-loans",
+        "https://buyusedautomobiles.com/guides/trade-in-vs-private-sale",
+        "https://buyusedautomobiles.com/guides/international-used-car-buying-checks"
+      ]
+    },
+    {
+      "group": "scenarios",
+      "path": "/sitemaps/scenarios.xml",
+      "status": 200,
+      "urls": [
+        "https://buyusedautomobiles.com/car-loan-calculator/10000-car-loan",
+        "https://buyusedautomobiles.com/car-loan-calculator/25000-car-loan",
+        "https://buyusedautomobiles.com/car-loan-calculator/40000-car-loan",
+        "https://buyusedautomobiles.com/car-loan-payment/15000-at-0-for-36-months",
+        "https://buyusedautomobiles.com/car-loan-payment/20000-at-8-for-48-months",
+        "https://buyusedautomobiles.com/car-loan-payment/25000-at-12-for-72-months"
+      ]
+    },
+    {
+      "group": "pk",
+      "path": "/sitemaps/pk.xml",
+      "status": 200,
+      "urls": [
+        "https://buyusedautomobiles.com/pk/car-financing-calculator",
+        "https://buyusedautomobiles.com/pk/guides/conventional-vs-islamic-car-finance",
+        "https://buyusedautomobiles.com/pk/guides/used-car-financing-quote-checklist"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Free used car tools for better buying decisions",
+      "description": "Make a more informed used-car decision with free calculators, practical buying guides, and transparent estimates. Plan your budget and total ownership cost.",
+      "canonical": "https://buyusedautomobiles.com",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 498,
+      "inboundPages": [
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "title": "About BuyUsedAutomobiles | BuyUsedAutomobiles",
+      "description": "Learn why BuyUsedAutomobiles builds free, transparent calculators and practical guides to help people make more informed used-car decisions before purchase.",
+      "canonical": "https://buyusedautomobiles.com/about",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "AboutPage"
+      ],
+      "mainWordCount": 348,
+      "inboundPages": [
+        "/",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/car-affordability-calculator",
+      "status": 200,
+      "title": "Car affordability calculator | BuyUsedAutomobiles",
+      "description": "Estimate a car budget with the 20/4/10 guideline, current debt, operating costs, and down payment. See the assumptions and stress-test an affordable payment.",
+      "canonical": "https://buyusedautomobiles.com/car-affordability-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1032,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/car-depreciation-calculator",
+      "status": 200,
+      "title": "Car depreciation calculator | BuyUsedAutomobiles",
+      "description": "Explore a car’s estimated value over time using editable depreciation assumptions. Compare annual losses and residual value before planning your purchase.",
+      "canonical": "https://buyusedautomobiles.com/car-depreciation-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 978,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/car-loan-calculator",
+      "status": 200,
+      "title": "Used car loan calculator with taxes and fees",
+      "description": "Estimate a used car payment, see total interest, and compare repayment terms. Add a trade-in or extra payments to explore the full amortization schedule.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1349,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/car-loan-calculator/10000-car-loan",
+      "status": 200,
+      "title": "$10,000 car loan: leave room for repairs | BuyUsedAutomobiles",
+      "description": "Plan a $10,000 used-car purchase with a 20% down payment. Compare loan terms, estimate interest, and leave room for inspection, taxes, and immediate repairs.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-calculator/10000-car-loan",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 664,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-loan-calculator/25000-car-loan",
+      "status": 200,
+      "title": "$25,000 car loan: compare down payments | BuyUsedAutomobiles",
+      "description": "Explore a $25,000 used-car purchase with $5,000 down. Compare monthly payments, total interest, extra payments, and the effect of changing your cash deposit.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-calculator/25000-car-loan",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 659,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-loan-calculator/40000-car-loan",
+      "status": 200,
+      "title": "$40,000 car loan: test the full car budget | BuyUsedAutomobiles",
+      "description": "Estimate a $40,000 car purchase with $8,000 down, then compare loan terms and interest. Check insurance, running costs, and depreciation before committing.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-calculator/40000-car-loan",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 669,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-loan-payment/15000-at-0-for-36-months",
+      "status": 200,
+      "title": "$15,000 at 0% for 36 months: payment example",
+      "description": "See a $15,000 balance repaid at zero interest over 36 months. Check the final rounding payment and compare the cash price, fees, and any forgone rebate.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-payment/15000-at-0-for-36-months",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 667,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-loan-payment/20000-at-8-for-48-months",
+      "status": 200,
+      "title": "$20,000 at 8% for 48 months: loan comparison",
+      "description": "Calculate payments on a $20,000 balance at 8% for 48 months. Compare shorter and longer terms, total interest, and extra payments using explicit assumptions.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-payment/20000-at-8-for-48-months",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 703,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-loan-payment/25000-at-12-for-72-months",
+      "status": 200,
+      "title": "$25,000 at 12% for 72 months: interest impact",
+      "description": "Explore the interest cost of $25,000 financed at 12% for 72 months. Compare a shorter term, extra payments, and the remaining balance before buying.",
+      "canonical": "https://buyusedautomobiles.com/car-loan-payment/25000-at-12-for-72-months",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 712,
+      "inboundPages": [
+        "/car-loan-calculator"
+      ]
+    },
+    {
+      "path": "/car-sales-tax-calculator",
+      "status": 200,
+      "title": "Car sales tax calculator | BuyUsedAutomobiles",
+      "description": "Estimate vehicle sales tax from your verified combined rate, taxable fees, and allowed trade credit. Find official state resources and see the taxable base.",
+      "canonical": "https://buyusedautomobiles.com/car-sales-tax-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1115,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "title": "Contact and corrections | BuyUsedAutomobiles",
+      "description": "Find out how to report a calculation issue, unclear assumption, or source correction to BuyUsedAutomobiles, including what information helps reproduce a problem.",
+      "canonical": "https://buyusedautomobiles.com/contact",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "ContactPage"
+      ],
+      "mainWordCount": 179,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/disclaimer",
+      "status": 200,
+      "title": "Estimates, assumptions, and disclaimers | BuyUsedAutomobiles",
+      "description": "See the limits of our financial models, car-value scenarios, tax estimates, inspection checklist, and guides before using them to inform a used-car decision.",
+      "canonical": "https://buyusedautomobiles.com/disclaimer",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "mainWordCount": 285,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/editorial-policy",
+      "status": 200,
+      "title": "Our editorial and calculation policy | BuyUsedAutomobiles",
+      "description": "Learn how BuyUsedAutomobiles separates formulas from assumptions, uses primary sources, handles corrections, and keeps commercial relationships transparent.",
+      "canonical": "https://buyusedautomobiles.com/editorial-policy",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "mainWordCount": 428,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/fuel-cost-calculator",
+      "status": 200,
+      "title": "Fuel cost calculator | BuyUsedAutomobiles",
+      "description": "Calculate trip and annual fuel costs in miles and US gallons or kilometers and liters. Compare efficiency and pump prices with a clear, shareable summary.",
+      "canonical": "https://buyusedautomobiles.com/fuel-cost-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 985,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/guides",
+      "status": 200,
+      "title": "Used car buying guides and practical advice",
+      "description": "Read practical guides to inspecting a used car, checking its history, comparing loans, negotiating the price, and understanding the full cost of ownership.",
+      "canonical": "https://buyusedautomobiles.com/guides",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 405,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/guides/category/buying",
+      "status": 200,
+      "title": "Buying guides for used-car decisions | BuyUsedAutomobiles",
+      "description": "Explore our buying guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.",
+      "canonical": "https://buyusedautomobiles.com/guides/category/buying",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 260,
+      "inboundPages": [
+        "/guides",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks"
+      ]
+    },
+    {
+      "path": "/guides/category/financing",
+      "status": 200,
+      "title": "Financing guides for used-car decisions | BuyUsedAutomobiles",
+      "description": "Explore our financing guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.",
+      "canonical": "https://buyusedautomobiles.com/guides/category/financing",
+      "metaRobots": [
+        "noindex, follow",
+        "noindex, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": true,
+      "robotsBlocked": false,
+      "inSitemap": false,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 133,
+      "inboundPages": [
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-compare-used-car-loans"
+      ]
+    },
+    {
+      "path": "/guides/category/ownership",
+      "status": 200,
+      "title": "Ownership guides for used-car decisions | BuyUsedAutomobiles",
+      "description": "Explore our ownership guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.",
+      "canonical": "https://buyusedautomobiles.com/guides/category/ownership",
+      "metaRobots": [
+        "noindex, follow",
+        "noindex, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": true,
+      "robotsBlocked": false,
+      "inSitemap": false,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 127,
+      "inboundPages": [
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/selling",
+        "/guides/real-cost-of-car-ownership"
+      ]
+    },
+    {
+      "path": "/guides/category/selling",
+      "status": 200,
+      "title": "Selling guides for used-car decisions | BuyUsedAutomobiles",
+      "description": "Explore our selling guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.",
+      "canonical": "https://buyusedautomobiles.com/guides/category/selling",
+      "metaRobots": [
+        "noindex, follow",
+        "noindex, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": true,
+      "robotsBlocked": false,
+      "inSitemap": false,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 129,
+      "inboundPages": [
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/trade-in-vs-private-sale"
+      ]
+    },
+    {
+      "path": "/guides/how-to-check-a-cars-history",
+      "status": 200,
+      "title": "How to check a car’s history before buying | BuyUsedAutomobiles",
+      "description": "Build a useful vehicle history check from VIN matching, title records, recall searches, mileage evidence, and an inspection. Learn what reports cannot prove.",
+      "canonical": "https://buyusedautomobiles.com/guides/how-to-check-a-cars-history",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1720,
+      "inboundPages": [
+        "/guides",
+        "/guides/category/buying",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/guides/how-to-compare-used-car-loans",
+      "status": 200,
+      "title": "How car loan interest is calculated and how to compare offers",
+      "description": "Learn how monthly car loan interest is calculated, work through a payment example, and compare rates, APR, terms and total borrowing costs.",
+      "canonical": "https://buyusedautomobiles.com/guides/how-to-compare-used-car-loans",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1811,
+      "inboundPages": [
+        "/",
+        "/car-affordability-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/guides",
+        "/guides/category/financing",
+        "/total-cost-of-ownership-calculator"
+      ]
+    },
+    {
+      "path": "/guides/how-to-inspect-a-used-car",
+      "status": 200,
+      "title": "How to inspect a used car before you buy | BuyUsedAutomobiles",
+      "description": "Inspect a used car with a practical sequence for documents, condition, a test drive, and an independent mechanic. Turn findings into a buying decision.",
+      "canonical": "https://buyusedautomobiles.com/guides/how-to-inspect-a-used-car",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1822,
+      "inboundPages": [
+        "/",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/total-cost-of-ownership-calculator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator"
+      ]
+    },
+    {
+      "path": "/guides/how-to-negotiate-a-used-car-price",
+      "status": 200,
+      "title": "How to negotiate a used-car price with evidence",
+      "description": "Negotiate a used-car price using comparable listings, inspection findings, an itemized purchase quote, and a firm budget. Work through a realistic example.",
+      "canonical": "https://buyusedautomobiles.com/guides/how-to-negotiate-a-used-car-price",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1637,
+      "inboundPages": [
+        "/",
+        "/car-affordability-calculator",
+        "/car-loan-calculator",
+        "/car-sales-tax-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/used-car-price-negotiation-calculator"
+      ]
+    },
+    {
+      "path": "/guides/international-used-car-buying-checks",
+      "status": 200,
+      "title": "Used car buying checks by country: official resources",
+      "description": "Find official used-car checks for the UK, Australia, Pakistan and UAE. Separate vehicle history, seller authority and transfer requirements before paying.",
+      "canonical": "https://buyusedautomobiles.com/guides/international-used-car-buying-checks",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1439,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/guides/real-cost-of-car-ownership",
+      "status": 200,
+      "title": "How to calculate the real cost of car ownership",
+      "description": "Compare used cars with a complete ownership budget for depreciation, fuel, insurance, maintenance, taxes, and interest. Avoid double-counting the loan.",
+      "canonical": "https://buyusedautomobiles.com/guides/real-cost-of-car-ownership",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1738,
+      "inboundPages": [
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/ownership",
+        "/total-cost-of-ownership-calculator"
+      ]
+    },
+    {
+      "path": "/guides/trade-in-vs-private-sale",
+      "status": 200,
+      "title": "Trade-in vs. private sale: compare your net proceeds",
+      "description": "Compare a trade-in with selling privately after loan payoff, selling costs, possible tax treatment, and your time. Work through a clear break-even example.",
+      "canonical": "https://buyusedautomobiles.com/guides/trade-in-vs-private-sale",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 1672,
+      "inboundPages": [
+        "/car-sales-tax-calculator",
+        "/guides",
+        "/guides/category/selling",
+        "/trade-in-value-estimator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/lease-vs-buy-calculator",
+      "status": 200,
+      "title": "Lease vs. buy calculator | BuyUsedAutomobiles",
+      "description": "Compare leasing and buying over the same time period. Include upfront cash, fees, extra mileage, loan balance, and estimated resale equity in one view.",
+      "canonical": "https://buyusedautomobiles.com/lease-vs-buy-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1095,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/pk/car-financing-calculator",
+      "status": 200,
+      "title": "Pakistan car financing calculator: PKR estimates",
+      "description": "Estimate conventional car payments with manual KIBOR assumptions, or add an Ijarah or Diminishing Musharakah quote schedule. No current bank rates supplied.",
+      "canonical": "https://buyusedautomobiles.com/pk/car-financing-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 555,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/pk/guides/conventional-vs-islamic-car-finance",
+      "status": 200,
+      "title": "Conventional vs Islamic car finance in Pakistan",
+      "description": "Compare a conventional repayment quote, Ijarah rentals and Diminishing Musharakah unit purchases without treating different contracts as the same loan.",
+      "canonical": "https://buyusedautomobiles.com/pk/guides/conventional-vs-islamic-car-finance",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 890,
+      "inboundPages": [
+        "/pk/car-financing-calculator",
+        "/pk/guides/used-car-financing-quote-checklist"
+      ]
+    },
+    {
+      "path": "/pk/guides/used-car-financing-quote-checklist",
+      "status": 200,
+      "title": "Pakistan used-car financing quote checklist",
+      "description": "Check the vehicle, PKR cash requirements, KIBOR terms, takaful, rental or unit-purchase schedule and settlement conditions before financing a used car in Pakistan.",
+      "canonical": "https://buyusedautomobiles.com/pk/guides/used-car-financing-quote-checklist",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "Article"
+      ],
+      "mainWordCount": 885,
+      "inboundPages": [
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance"
+      ]
+    },
+    {
+      "path": "/privacy-policy",
+      "status": 200,
+      "title": "Privacy policy | BuyUsedAutomobiles",
+      "description": "Understand how calculator inputs, shared links, local preferences, optional analytics, and hosting requests are handled on the BuyUsedAutomobiles website.",
+      "canonical": "https://buyusedautomobiles.com/privacy-policy",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "mainWordCount": 460,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/terms",
+      "status": 200,
+      "title": "Terms of use | BuyUsedAutomobiles",
+      "description": "Read the terms for using BuyUsedAutomobiles calculators and guides, including acceptable use, estimated results, external resources, and site availability.",
+      "canonical": "https://buyusedautomobiles.com/terms",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "mainWordCount": 296,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/tools",
+      "status": 200,
+      "title": "Used car calculators and planning tools | BuyUsedAutomobiles",
+      "description": "Find the right free tool for your next car decision. Compare loans, estimate ownership costs, inspect a vehicle, and plan a supported offer before buying.",
+      "canonical": "https://buyusedautomobiles.com/tools",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "mainWordCount": 410,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/total-cost-of-ownership-calculator",
+      "status": 200,
+      "title": "Car ownership cost calculator: new vs used | BuyUsedAutomobiles",
+      "description": "Compare new vs used car ownership costs with your own prices, resale assumptions, insurance, maintenance, fuel and financing. Review equal-period scenarios.",
+      "canonical": "https://buyusedautomobiles.com/total-cost-of-ownership-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1273,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/trade-in-value-estimator",
+      "status": 200,
+      "title": "Trade-in value estimator | BuyUsedAutomobiles",
+      "description": "Estimate a modeled trade-in range and the equity left after your loan payoff. Prepare comparable written offers and separate your trade from the next deal.",
+      "canonical": "https://buyusedautomobiles.com/trade-in-value-estimator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1007,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/used-car-inspection-checklist",
+      "status": 200,
+      "title": "Used car inspection checklist | BuyUsedAutomobiles",
+      "description": "Use a 25-point used car inspection checklist, flag concerns, and print or save a PDF report. Export your observations before an independent inspection.",
+      "canonical": "https://buyusedautomobiles.com/used-car-inspection-checklist",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 1254,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-price-negotiation-calculator",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/used-car-price-negotiation-calculator",
+      "status": 200,
+      "title": "Used car price negotiation calculator | BuyUsedAutomobiles",
+      "description": "Build a used-car opening offer from comparable value and documented repairs. Separate vehicle price from fees and set a reasoned ceiling before negotiating.",
+      "canonical": "https://buyusedautomobiles.com/used-car-price-negotiation-calculator",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 999,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/what-is-my-car-worth"
+      ]
+    },
+    {
+      "path": "/what-is-my-car-worth",
+      "status": 200,
+      "title": "What is my car worth? | BuyUsedAutomobiles",
+      "description": "Model a used car’s private-sale, trade-in, and retail value range from age, mileage, and condition. See transparent assumptions and verify with local offers.",
+      "canonical": "https://buyusedautomobiles.com/what-is-my-car-worth",
+      "metaRobots": [
+        "index, follow",
+        "index, follow, max-image-preview:large"
+      ],
+      "headerRobots": "",
+      "noindex": false,
+      "robotsBlocked": false,
+      "inSitemap": true,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "WebApplication"
+      ],
+      "mainWordCount": 981,
+      "inboundPages": [
+        "/",
+        "/about",
+        "/car-affordability-calculator",
+        "/car-depreciation-calculator",
+        "/car-loan-calculator",
+        "/car-loan-calculator/10000-car-loan",
+        "/car-loan-calculator/25000-car-loan",
+        "/car-loan-calculator/40000-car-loan",
+        "/car-loan-payment/15000-at-0-for-36-months",
+        "/car-loan-payment/20000-at-8-for-48-months",
+        "/car-loan-payment/25000-at-12-for-72-months",
+        "/car-sales-tax-calculator",
+        "/contact",
+        "/disclaimer",
+        "/editorial-policy",
+        "/fuel-cost-calculator",
+        "/guides",
+        "/guides/category/buying",
+        "/guides/category/financing",
+        "/guides/category/ownership",
+        "/guides/category/selling",
+        "/guides/how-to-check-a-cars-history",
+        "/guides/how-to-compare-used-car-loans",
+        "/guides/how-to-inspect-a-used-car",
+        "/guides/how-to-negotiate-a-used-car-price",
+        "/guides/international-used-car-buying-checks",
+        "/guides/real-cost-of-car-ownership",
+        "/guides/trade-in-vs-private-sale",
+        "/lease-vs-buy-calculator",
+        "/pk/car-financing-calculator",
+        "/pk/guides/conventional-vs-islamic-car-finance",
+        "/pk/guides/used-car-financing-quote-checklist",
+        "/privacy-policy",
+        "/terms",
+        "/tools",
+        "/total-cost-of-ownership-calculator",
+        "/trade-in-value-estimator",
+        "/used-car-inspection-checklist",
+        "/used-car-price-negotiation-calculator"
+      ]
+    }
+  ],
+  "statusChecks": [
+    {
+      "path": "/about/",
+      "status": 308,
+      "location": "/about"
+    },
+    {
+      "path": "/car-affordability-calculator/",
+      "status": 308,
+      "location": "/car-affordability-calculator"
+    },
+    {
+      "path": "/car-depreciation-calculator/",
+      "status": 308,
+      "location": "/car-depreciation-calculator"
+    },
+    {
+      "path": "/car-loan-calculator/",
+      "status": 308,
+      "location": "/car-loan-calculator"
+    },
+    {
+      "path": "/car-loan-calculator/10000-car-loan/",
+      "status": 308,
+      "location": "/car-loan-calculator/10000-car-loan"
+    },
+    {
+      "path": "/car-loan-calculator/25000-car-loan/",
+      "status": 308,
+      "location": "/car-loan-calculator/25000-car-loan"
+    },
+    {
+      "path": "/car-loan-calculator/40000-car-loan/",
+      "status": 308,
+      "location": "/car-loan-calculator/40000-car-loan"
+    },
+    {
+      "path": "/car-loan-payment/15000-at-0-for-36-months/",
+      "status": 308,
+      "location": "/car-loan-payment/15000-at-0-for-36-months"
+    },
+    {
+      "path": "/car-loan-payment/20000-at-8-for-48-months/",
+      "status": 308,
+      "location": "/car-loan-payment/20000-at-8-for-48-months"
+    },
+    {
+      "path": "/car-loan-payment/25000-at-12-for-72-months/",
+      "status": 308,
+      "location": "/car-loan-payment/25000-at-12-for-72-months"
+    },
+    {
+      "path": "/car-sales-tax-calculator/",
+      "status": 308,
+      "location": "/car-sales-tax-calculator"
+    },
+    {
+      "path": "/contact/",
+      "status": 308,
+      "location": "/contact"
+    },
+    {
+      "path": "/disclaimer/",
+      "status": 308,
+      "location": "/disclaimer"
+    },
+    {
+      "path": "/editorial-policy/",
+      "status": 308,
+      "location": "/editorial-policy"
+    },
+    {
+      "path": "/fuel-cost-calculator/",
+      "status": 308,
+      "location": "/fuel-cost-calculator"
+    },
+    {
+      "path": "/guides/",
+      "status": 308,
+      "location": "/guides"
+    },
+    {
+      "path": "/guides/category/buying/",
+      "status": 308,
+      "location": "/guides/category/buying"
+    },
+    {
+      "path": "/guides/category/financing/",
+      "status": 308,
+      "location": "/guides/category/financing"
+    },
+    {
+      "path": "/guides/category/ownership/",
+      "status": 308,
+      "location": "/guides/category/ownership"
+    },
+    {
+      "path": "/guides/category/selling/",
+      "status": 308,
+      "location": "/guides/category/selling"
+    },
+    {
+      "path": "/guides/how-to-check-a-cars-history/",
+      "status": 308,
+      "location": "/guides/how-to-check-a-cars-history"
+    },
+    {
+      "path": "/guides/how-to-compare-used-car-loans/",
+      "status": 308,
+      "location": "/guides/how-to-compare-used-car-loans"
+    },
+    {
+      "path": "/guides/how-to-inspect-a-used-car/",
+      "status": 308,
+      "location": "/guides/how-to-inspect-a-used-car"
+    },
+    {
+      "path": "/guides/how-to-negotiate-a-used-car-price/",
+      "status": 308,
+      "location": "/guides/how-to-negotiate-a-used-car-price"
+    },
+    {
+      "path": "/guides/international-used-car-buying-checks/",
+      "status": 308,
+      "location": "/guides/international-used-car-buying-checks"
+    },
+    {
+      "path": "/guides/real-cost-of-car-ownership/",
+      "status": 308,
+      "location": "/guides/real-cost-of-car-ownership"
+    },
+    {
+      "path": "/guides/trade-in-vs-private-sale/",
+      "status": 308,
+      "location": "/guides/trade-in-vs-private-sale"
+    },
+    {
+      "path": "/lease-vs-buy-calculator/",
+      "status": 308,
+      "location": "/lease-vs-buy-calculator"
+    },
+    {
+      "path": "/pk/car-financing-calculator/",
+      "status": 308,
+      "location": "/pk/car-financing-calculator"
+    },
+    {
+      "path": "/pk/guides/conventional-vs-islamic-car-finance/",
+      "status": 308,
+      "location": "/pk/guides/conventional-vs-islamic-car-finance"
+    },
+    {
+      "path": "/pk/guides/used-car-financing-quote-checklist/",
+      "status": 308,
+      "location": "/pk/guides/used-car-financing-quote-checklist"
+    },
+    {
+      "path": "/privacy-policy/",
+      "status": 308,
+      "location": "/privacy-policy"
+    },
+    {
+      "path": "/terms/",
+      "status": 308,
+      "location": "/terms"
+    },
+    {
+      "path": "/tools/",
+      "status": 308,
+      "location": "/tools"
+    },
+    {
+      "path": "/total-cost-of-ownership-calculator/",
+      "status": 308,
+      "location": "/total-cost-of-ownership-calculator"
+    },
+    {
+      "path": "/trade-in-value-estimator/",
+      "status": 308,
+      "location": "/trade-in-value-estimator"
+    },
+    {
+      "path": "/used-car-inspection-checklist/",
+      "status": 308,
+      "location": "/used-car-inspection-checklist"
+    },
+    {
+      "path": "/used-car-price-negotiation-calculator/",
+      "status": 308,
+      "location": "/used-car-price-negotiation-calculator"
+    },
+    {
+      "path": "/what-is-my-car-worth/",
+      "status": 308,
+      "location": "/what-is-my-car-worth"
+    },
+    {
+      "path": "/not-a-real-page",
+      "status": 404
+    },
+    {
+      "path": "/guides/not-a-real-guide",
+      "status": 404
+    },
+    {
+      "path": "/guides/category/not-a-category",
+      "status": 404
+    },
+    {
+      "path": "/car-loan-calculator/not-a-scenario",
+      "status": 404
+    },
+    {
+      "path": "/car-loan-payment/not-a-scenario",
+      "status": 404
+    },
+    {
+      "path": "/sitemaps/invalid.xml",
+      "status": 404
+    }
+  ],
+  "duplicateParagraphSignals": []
+}
