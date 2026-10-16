@@ -1,0 +1,16 @@
+.brand.brand-logo {
+  display: inline-flex;
+  flex-shrink: 0;
+  padding: 4px;
+  border-radius: 6px;
+  background: #fff;
+  line-height: 0;
+}
+.brand.brand-logo img {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+@media (max-width:760px) {
+  .header-inner .brand.brand-logo img { width: 132px; }
+}

@@ -5,6 +5,7 @@ const origin=normalizeSiteOrigin(process.env.NEXT_PUBLIC_SITE_URL||"https://buyu
 const host=new URL(origin).hostname;
 const nextConfig: NextConfig = {
   output: "standalone",
+  outputFileTracingIncludes: {"/og":["./public/brand/logo-wordmark.svg"]},
   distDir:process.env.NEXT_BUILD_DIR===".next-preview"?".next-preview":".next",
   poweredByHeader: false,
   trailingSlash: false,

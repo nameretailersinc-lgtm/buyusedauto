@@ -1,4 +1,5 @@
 "use client";
+import {trackUsage} from "@/lib/analytics";
 import {useEffect,useRef,useState} from "react";
 import dynamic from "next/dynamic";
 import {type Tool,type Field} from "@/data/tools";
@@ -20,14 +21,17 @@ export default function Calculator({tool,prefill={}}:{tool:Tool;prefill?:Inputs}
   const [state,setState]=useState("");
   const [vehicle,setVehicle]=useState<"used"|"new">("used");
   const resultRef=useRef<HTMLDivElement>(null);
+  const started=useRef(false);const completed=useRef("");
+  function markStarted(){if(!started.current){trackUsage({name:"calculator_started",tool:tool.id,country:"US"});started.current=true;}}
   useEffect(()=>{
-    const restore=()=>{const q=new URLSearchParams(location.search);const next={...defaults};for(const f of tool.fields){const raw=q.get(f.key);if(raw!==null&&raw.length<40)next[f.key]=raw;}setInputs(next);setVehicle(q.get("vehicle")==="new"?"new":"used");const region=q.get("state");setState(states.some(s=>s[0]===region)?region!:"");};
+    const restore=()=>{started.current=false;completed.current="";const q=new URLSearchParams(location.search);const next={...defaults};for(const f of tool.fields){const raw=q.get(f.key);if(raw!==null&&raw.length<40)next[f.key]=raw;}setInputs(next);setVehicle(q.get("vehicle")==="new"?"new":"used");const region=q.get("state");setState(states.some(s=>s[0]===region)?region!:"");};
     restore();window.addEventListener("popstate",restore);return()=>window.removeEventListener("popstate",restore);
     // Defaults remain fixed per generated page; browser back/forward restores query state.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[tool.id]);
   function updateUrl(next:Inputs,region=state,currentVehicle=vehicle){const url=new URL(location.href);url.search="";for(const [key,value] of Object.entries(next)){if(value!==defaults[key])url.searchParams.set(key,value);}if(region)url.searchParams.set("state",region);if(tool.id==="ownership"&&currentVehicle==="new")url.searchParams.set("vehicle","new");history.replaceState(null,"",url);}
   function update(key:string,value:string){
+    markStarted();
     let next={...inputs,[key]:value};
     if(key==="units"&&value!==inputs.units){const metric=value==="metric";const ratio=metric?1.609344:1/1.609344;const efficiency=Number(inputs.efficiency);next={...next,distance:String(Math.round(Number(inputs.distance)*ratio*100)/100),annualDistance:String(Math.round(Number(inputs.annualDistance)*ratio)),efficiency:efficiency>0?String(Math.round(235.214583/efficiency*100)/100):"",price:String(Math.round(Number(inputs.price)*(metric?1/3.785411784:3.785411784)*10000)/10000)};}
     if(key==="distanceUnit"&&value!==inputs.distanceUnit)next.mileage=String(Math.round(Number(inputs.mileage)*(value==="km"?1.609344:1/1.609344)));
@@ -38,13 +42,13 @@ export default function Calculator({tool,prefill={}}:{tool:Tool;prefill?:Inputs}
   function fieldUnit(field:Field){if(tool.id==="fuel"&&inputs.units==="metric"){if(["distance","annualDistance"].includes(field.key))return"km";if(field.key==="efficiency")return"L/100 km";if(field.key==="price")return"$/liter";}if(field.key==="mileage")return inputs.distanceUnit;return field.unit;}
   async function share(){updateUrl(inputs);try{await navigator.clipboard.writeText(location.href);setStatus("Link copied. Your inputs are included in the URL.");}catch{setStatus("Your inputs are saved in the address bar. Copy that URL to share.");}}
   function download(){if(!result)return;const rows=[[tool.name,"USD; estimated values"],["Input","Value"],...tool.fields.map(f=>[f.label,`${inputs[f.key]} ${fieldUnit(f)||""}`]),[],[result.label,result.value],...result.metrics.map(m=>[m.label,m.value]),["Assumptions",result.note]];if(result.schedule)rows.push([],["Month","Payment","Principal","Interest","Balance"],...result.schedule.map(r=>[String(r.month),String(r.payment),String(r.principal),String(r.interest),String(r.balance)]));else if(result.table)rows.push([],result.table.headers,...result.table.rows);saveCsv(`${tool.slug}.csv`,rows);}
-  function reset(){setInputs(defaults);setState("");setSnapshot(null);setVehicle("used");setStatus("");updateUrl(defaults,"","used");}
+  function reset(){started.current=false;completed.current="";setInputs(defaults);setState("");setSnapshot(null);setVehicle("used");setStatus("");updateUrl(defaults,"","used");}
   const selectedState=states.find(s=>s[0]===state);
   return <>
     <section className={`calculator calculator-${tool.id}`} aria-label={tool.name}>
       <div className="calculator-top"><div><h2>Your numbers, a clearer picture.</h2><p>Adjust the details to explore your estimated result.</p></div><span className="currency-label">Currency <strong>USD ($)</strong></span></div>
       <div className="calculator-layout">
-        <form className="calculator-form" noValidate onSubmit={e=>{e.preventDefault();setStatus(result?"Result calculated using the inputs shown.":"");resultRef.current?.focus();resultRef.current?.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",block:"nearest"});}}>
+        <form className="calculator-form" noValidate onSubmit={e=>{e.preventDefault();markStarted();const fingerprint=JSON.stringify(inputs);if(result&&completed.current!==fingerprint){trackUsage({name:"calculator_completed",tool:tool.id,country:"US"});completed.current=fingerprint;}setStatus(result?"Result calculated using the inputs shown.":"");resultRef.current?.focus();resultRef.current?.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",block:"nearest"});}}>
           {tool.id==="ownership"&&<div className="field"><label htmlFor="ownership-vehicle">Vehicle being modeled</label><select id="ownership-vehicle" value={vehicle} onChange={e=>{const next=e.target.value as "used"|"new";setVehicle(next);updateUrl(inputs,state,next);}}><option value="used">Used car</option><option value="new">New car</option></select><small>This label does not change any assumptions. Enter quotes for this vehicle, save it for comparison, then model the other vehicle with the same period and annual distance.</small></div>}
           {tool.id==="tax"&&<div className="state-resource field"><label htmlFor="state">Registration state or district</label><select id="state" value={state} onChange={e=>{setState(e.target.value);updateUrl(inputs,e.target.value);}}><option value="">Choose an official resource</option>{states.map(([code,name])=><option key={code} value={code}>{name}</option>)}</select>{selectedState?<a href={selectedState[2]} target="_blank" rel="noopener noreferrer">Verify rates and rules with {selectedState[1]} ↗</a>:<small>State selection does not fill in a tax rate.</small>}</div>}
           <div className="fields-grid">{tool.fields.map(field=><div className="field" key={field.key}>
