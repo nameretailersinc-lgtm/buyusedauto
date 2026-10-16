@@ -130,3 +130,9 @@ Footer polish: added reusable inline SVG share, WhatsApp and LinkedIn icons plus
 ## Footer layout correction - 2026-10-16
 
 Moved market selection, privacy and sharing out of the narrow brand column into a separate responsive footer utility row. Removed legacy share class collisions, used compact joined controls, and replaced approximate social line drawings with filled SVG brand silhouettes. Inspected desktop and mobile screenshots. Browser verification at 360/768/1440 px: no horizontal overflow; clipboard receives the canonical page URL; privacy dialog opens; WhatsApp/LinkedIn URLs contain the page URL; footer axe WCAG A/AA checks report no violations. TypeScript and lint pass.
+
+## Car-history source review and search intent - 2026-10-16
+
+Reviewed the four linked DOJ/NICB/NHTSA sources for the history guide; recorded support and limits in `docs/seo/history-source-review.md`. Added contextual primary-source links, a concise comparison of free VIN services and provider-priced reports, and explicit recall exclusions. Visible source-review date and Article modification date now reflect the substantive review. Existing URL and seven-section structure remain. Restored the Pakistan calculator's descriptive visible H1 after the UI redesign; metadata and canonical remain unchanged.
+
+Validation: lint, production build (including TypeScript) and 81 unit tests pass. Targeted no-JavaScript browser test passes for contextual official links, review date, Article modification date, canonical and descriptive Pakistan heading. `reports/seo-history-review.json`: 40 pages, 37 sitemap URLs, 154 internal destinations, eight images; zero failures, warnings or duplicate-paragraph signals. No Search Console exports are present; no search performance or indexing improvement is claimed. Inspection, negotiation and trade-in guide source reviews remain next. No deployment.

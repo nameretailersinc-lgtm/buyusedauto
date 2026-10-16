@@ -103,7 +103,8 @@ export const guides: Guide[] = [
   },
   {
     slug: 'how-to-check-a-cars-history',
-    updated: '2026-10-15',
+    updated: '2026-10-16',
+    reviewedOn: '2026-10-16',
     title: 'How to check a car’s history before buying',
     description: 'Build a useful vehicle history check from VIN matching, title records, recall searches, mileage evidence, and an inspection. Learn what reports cannot prove.',
     category: 'Buying',
@@ -120,6 +121,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '2. Understand what title-history data contains',
+        links: [{title: 'DOJ: NMVTIS consumer information and state title records', url: 'https://vehiclehistory.bja.ojp.gov/nmvtis_consumers'}],
         paragraphs: [
           'The Department of Justice describes NMVTIS as a source of title, brand, odometer, and certain salvage or total-loss information. Access consumer reports through an approved provider linked from the official NMVTIS site. A brand is a designation applied to a vehicle’s record; terms and thresholds vary by state.',
           'Read the event dates and reporting sources rather than only a report’s opening summary. Identify where a title was issued, whether a brand appears, and what the latest reported odometer reading represents. An interstate move may be ordinary relocation, so ask for context instead of treating every state change as misconduct.',
@@ -127,15 +129,25 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '3. Add theft and recall checks without overreading them',
+        heading: '3. Free VIN checks: theft records and open recalls',
+        bullets: [
+          'NICB VINCheck: a free check of participating insurers, not a full accident history or a law-enforcement search.',
+          'NHTSA VIN lookup: open safety recalls for a specific vehicle, not a list of every repair or non-safety service campaign.',
+          'NMVTIS consumer reports: title brands and reported odometer, salvage and total-loss information through approved providers; check the provider for its price.'
+        ],
+        links: [
+          {title: 'NICB: run VINCheck and read its limitations', url: 'https://www.nicb.org/vincheck'},
+          {title: 'NHTSA: check a VIN for unrepaired safety recalls', url: 'https://www.nhtsa.gov/recalls'}
+        ],
         paragraphs: [
           'NICB VINCheck searches participating insurers’ records for certain unrecovered theft and salvage or flood reports. NICB explicitly says it is not a comprehensive history report and does not query law-enforcement records. Use it as an additional signal. An empty result means no matching information was returned from that source, not that every possible record is clean.',
-          'Separately, NHTSA’s VIN lookup helps identify unrepaired safety recalls. Its limitations include some newly announced recalls, older recalls, and other excluded categories; it does not show a complete record of completed recall repairs. Ask a manufacturer dealer about a discrepancy and keep any repair confirmation.',
+          'Separately, NHTSA’s VIN lookup helps identify unrepaired safety recalls. It excludes completed recall repairs, some newly announced recalls, non-safety service campaigns and international vehicles. Recalls more than 15 years old are generally excluded unless a manufacturer provides additional coverage. Ask a manufacturer dealer about a discrepancy and keep any repair confirmation.',
           'Do these checks using the VIN you verified on the car. A screenshot supplied by a seller can be stale or refer to a different identifier. Save your results with the date you searched so you know when to recheck. For a vehicle you buy, follow manufacturer instructions and keep recall contact details current.'
         ]
       },
       {
         heading: '4. How much mileage is too much for a used car?',
+        links: [{title: 'NHTSA: compare odometer, title and maintenance records', url: 'https://www.nhtsa.gov/vehicle-safety/odometer-fraud'}],
         paragraphs: [
           'There is no universal mileage cutoff that establishes whether a used car is a good purchase. Compare documented maintenance, age, driving use, upcoming scheduled work and an independent inspection. A lower odometer reading does not replace that evidence. Use the exact model maintenance schedule and written repair estimates to compare two candidates at the same total budget.',
           'Create a list with date, mileage, source, and notes for each available record. NHTSA recommends comparing the displayed odometer with title and maintenance records and considering whether physical wear fits the mileage. Wear is a clue, not a precise measuring device: a replacement seat or a heavily used city car can complicate the picture.',

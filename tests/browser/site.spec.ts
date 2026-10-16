@@ -74,3 +74,25 @@ test("state resource never silently supplies a tax rate",async({page})=>{await p
 test("no ads or analytics requests without consent",async({page})=>{const tracking:string[]=[];page.on("request",r=>{if(/google-analytics|googletagmanager|googlesyndication|doubleclick/.test(r.url()))tracking.push(r.url());});await page.goto("/car-loan-calculator");await page.getByRole("button",{name:"Privacy choices"}).click();await page.getByRole("button",{name:"Reject optional"}).click();await page.reload();expect(tracking).toEqual([]);});
 test("mobile layout, dark theme, and accessibility",async({page})=>{await page.setViewportSize({width:390,height:844});for(const path of ["/","/car-loan-calculator","/guides/how-to-inspect-a-used-car"]){await page.goto(path);await page.evaluate(()=>document.fonts.ready);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);const result=await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze();expect(result.violations).toEqual([]);}await page.getByRole("button",{name:"Use dark theme"}).click();await expect(page.locator("html")).toHaveAttribute("data-theme","dark");const result=await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze();expect(result.violations).toEqual([]);});
 test("screenshots and print summary",async({page})=>{await page.setViewportSize({width:1440,height:1050});await page.goto("/");await page.screenshot({path:"reports/home-desktop.png",fullPage:true});await page.setViewportSize({width:390,height:844});await page.screenshot({path:"reports/home-mobile.png",fullPage:true});await page.goto("/car-loan-calculator");await page.screenshot({path:"reports/loan-mobile.png",fullPage:true});await page.emulateMedia({media:"print"});await expect(page.locator(".print-inputs")).toBeVisible();await expect(page.locator(".site-header")).toBeHidden();});
+
+test("reviewed history guidance and Pakistan heading are present without JavaScript",async({browser})=>{
+  const context=await browser.newContext({javaScriptEnabled:false});
+  const page=await context.newPage();
+  await page.goto('/guides/how-to-check-a-cars-history');
+  const article=page.locator('main');
+  await expect(page.locator('.article-section')).toHaveCount(7);
+  await expect(article).toContainText('Sources checked');
+  await expect(article).toContainText('16 October 2026');
+  await expect(article).toContainText('Free VIN checks: theft records and open recalls');
+  await expect(article).toContainText('Recalls more than 15 years old');
+  await expect(page.locator('#section-3 a[href="https://www.nicb.org/vincheck"]')).toHaveCount(1);
+  await expect(page.locator('#section-3 a[href="https://www.nhtsa.gov/recalls"]')).toHaveCount(1);
+  const schema=await page.locator('script[type="application/ld+json"]').allTextContents();
+  const articleSchema=schema.map(text=>JSON.parse(text)).find(item=>item['@type']==='Article');
+  expect(articleSchema.dateModified).toBe('2026-10-16');
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href','https://buyusedautomobiles.com/guides/how-to-check-a-cars-history');
+  await page.goto('/pk/car-financing-calculator');
+  await expect(page.locator('h1')).toHaveCount(1);
+  await expect(page.locator('h1')).toHaveText('Pakistan car financing calculator.');
+  await context.close();
+});
