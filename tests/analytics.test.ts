@@ -22,6 +22,10 @@ describe("consent-gated usage events",()=>{
   it.each([{doNotTrack:"1",globalPrivacyControl:false},{doNotTrack:"0",globalPrivacyControl:true}])("respects browser privacy signals",signal=>{
     vi.stubGlobal("navigator",signal);expect(trackUsage({name:"calculator_started",tool:"loan",country:"US"})).toBe(false);expect(send).not.toHaveBeenCalled();
   });
+  it("records affiliate clicks without a destination URL or partner identity",()=>{
+    expect(trackUsage({name:"outbound_affiliate_click",country:"PK"})).toBe(true);
+    expect(send).toHaveBeenCalledWith("event","outbound_affiliate_click",{send_to:"G-TEST123",country:"PK",page_location:"https://example.invalid/car-loan-calculator",page_referrer:""});
+  });
   it("blocks withdrawn consent and unavailable storage",()=>{
     (window as unknown as Record<string,unknown>)["ga-disable-G-TEST123"]=true;
     expect(trackUsage({name:"country_selected",country:"PK"})).toBe(false);
