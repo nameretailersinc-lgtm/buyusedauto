@@ -1,5 +1,6 @@
 "use client";
 import {Icon} from "./icon";
+import {SocialIcon} from "./social-icon";
 import styles from "./share-actions.module.css";
 import {useState} from "react";
 import {usePathname} from "next/navigation";
@@ -13,5 +14,5 @@ export function ShareActions(){
       else{await navigator.clipboard.writeText(url);setStatus("Page link copied.");}
     }catch(error){if(error instanceof Error&&error.name==="AbortError")return;setStatus("Copy the page address to share it.");}
   }
-  return <div className={`share-actions no-print ${styles.actions}`} aria-label="Share this page"><button type="button" onClick={share}><Icon name="share"/>Share page</button><a href={`https://wa.me/?text=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer"><Icon name="whatsapp"/>WhatsApp<span className="sr-only"> (opens in a new tab)</span></a><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer"><Icon name="linkedin"/>LinkedIn<span className="sr-only"> (opens in a new tab)</span></a><span role="status">{status}</span></div>;
+  return <div className={`no-print ${styles.actions}`} aria-label="Share this page"><button type="button" onClick={share}><Icon name="share"/>Share page</button><a href={`https://wa.me/?text=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer"><SocialIcon name="whatsapp"/>WhatsApp<span className="sr-only"> (opens in a new tab)</span></a><a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`} target="_blank" rel="noopener noreferrer"><SocialIcon name="linkedin"/>LinkedIn<span className="sr-only"> (opens in a new tab)</span></a><span role="status">{status}</span></div>;
 }

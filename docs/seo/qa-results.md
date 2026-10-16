@@ -126,3 +126,7 @@ Validation: lint, TypeScript, production build and all 81 unit tests pass. Both 
 Corrected the CI standalone asset copy to copy public directory contents into the destination. A traced logo can create the destination before the copy; copying the directory itself then nests assets under public/public. Local standalone verification with the corrected copy passes all image and brand asset requests. Hosted CI has not been rerun here. No deployment performed.
 
 Footer polish: added reusable inline SVG share, WhatsApp and LinkedIn icons plus the existing shield icon for privacy choices. Scoped controls use consistent 44 px targets, theme colors, spacing and hover states; visible labels and external-link descriptions remain intact.
+
+## Footer layout correction - 2026-10-16
+
+Moved market selection, privacy and sharing out of the narrow brand column into a separate responsive footer utility row. Removed legacy share class collisions, used compact joined controls, and replaced approximate social line drawings with filled SVG brand silhouettes. Inspected desktop and mobile screenshots. Browser verification at 360/768/1440 px: no horizontal overflow; clipboard receives the canonical page URL; privacy dialog opens; WhatsApp/LinkedIn URLs contain the page URL; footer axe WCAG A/AA checks report no violations. TypeScript and lint pass.
