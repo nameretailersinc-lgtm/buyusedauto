@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Script from "next/script";
 import { Icon } from "./icon";
+import styles from "./share-actions.module.css";
 declare global {interface Window {dataLayer: unknown[]; gtag?: (...args: unknown[])=>void;}}
 const key="bua-privacy-v1";
 const ga=process.env.NEXT_PUBLIC_GA_ID;
@@ -52,7 +53,7 @@ export function Preferences() {
     });}
   }
   return <>
-    <button className="text-button" onClick={()=>{setDraft(allowed);setOpen(true);setManage(true);}}>Privacy choices</button>
+    <button className={`text-button ${styles.privacy}`} onClick={()=>{setDraft(allowed);setOpen(true);setManage(true);}}><Icon name="shield"/>Privacy choices</button>
     {open&&<div className="consent-panel" role="dialog" aria-labelledby="privacy-title">
       <h2 id="privacy-title">Your privacy, your choice.</h2>
       <p>The calculators work without optional cookies. {validGa?"With your permission, Google Analytics helps us understand how the tools are used.":"Analytics and advertising are currently disabled."} We never send calculator inputs to analytics.</p>

@@ -116,3 +116,13 @@ Full browser result: 19 passed and the single obsolete-logo assertion failed in 
 ## Phase 7 event completion â€” 2026-10-16
 
 Branch: `main`, explicitly requested by owner. `npm test`: five files, 81 tests passed (2.86 s). `npm run lint`: exit 0. `npm run build`: exit 0, TypeScript passed and 52 static entries generated. Targeted production browser run `npm run test:e2e -- --grep 'checklist|inspection report|no ads or analytics'` passed all three affected checks. The existing partner registry is empty; affiliate handler payload/consent behavior is unit-tested, not validated against a real affiliate relationship or GA account. No complete browser-suite or Lighthouse rerun was necessary for this event-only change; prior full-suite and performance limits remain as recorded. `git diff --check` passed before commit.
+
+## Pakistan calculator design and CI assets — 2026-10-16
+
+Restyled the Pakistan calculator on main with the existing scenic automotive header, green theme tokens, a responsive form/results workspace, amount units, empty-state guidance, itemized totals, guide sidebar and FAQ disclosures. Calculation logic and manual quote assumptions are unchanged. Desktop (1440 px) and mobile (390 px) screenshots inspected locally.
+
+Validation: lint, TypeScript, production build and all 81 unit tests pass. Both Pakistan production browser tests pass, including conventional/Ijarah/Diminishing Musharakah calculations, validation, 360 px overflow, axe accessibility and crawlability. SEO audit: 40 pages, 37 sitemap URLs, 154 internal destinations, eight images, zero failures or warnings (reports/seo-after.json).
+
+Corrected the CI standalone asset copy to copy public directory contents into the destination. A traced logo can create the destination before the copy; copying the directory itself then nests assets under public/public. Local standalone verification with the corrected copy passes all image and brand asset requests. Hosted CI has not been rerun here. No deployment performed.
+
+Footer polish: added reusable inline SVG share, WhatsApp and LinkedIn icons plus the existing shield icon for privacy choices. Scoped controls use consistent 44 px targets, theme colors, spacing and hover states; visible labels and external-link descriptions remain intact.

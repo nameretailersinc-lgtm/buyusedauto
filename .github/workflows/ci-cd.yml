@@ -41,7 +41,8 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Start standalone server
         run: |
-          cp -r public .next/standalone/public
+          mkdir -p .next/standalone/public
+          cp -r public/. .next/standalone/public/
           mkdir -p .next/standalone/.next/static
           cp -r .next/static/. .next/standalone/.next/static/
           PORT=3417 HOSTNAME=127.0.0.1 node .next/standalone/server.js > /tmp/buyusedauto-ci.log 2>&1 &
