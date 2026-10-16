@@ -22,7 +22,7 @@ jobs:
       PLAYWRIGHT_CHANNEL: chromium
       SEO_EXPECT_CLEAN_SCHEMA: 'true'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - uses: actions/setup-node@v4
@@ -98,7 +98,7 @@ jobs:
       group: buyusedauto-production
       cancel-in-progress: false
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           persist-credentials: false
       - name: Configure SSH
