@@ -1,7 +1,7 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 34,
-  "internalLinks": 145,
+  "pages": 37,
+  "internalLinks": 151,
   "failures": [],
   "warnings": [],
   "details": [
@@ -98,10 +98,10 @@
     },
     {
       "path": "/total-cost-of-ownership-calculator",
-      "title": "Used car total cost of ownership calculator",
-      "descriptionLength": 157,
+      "title": "Car ownership cost calculator: new vs used | BuyUsedAutomobiles",
+      "descriptionLength": 156,
       "schemaCount": 2,
-      "h1": "Used car total cost of ownership calculator"
+      "h1": "Car ownership cost calculator: new vs used"
     },
     {
       "path": "/car-affordability-calculator",
@@ -182,10 +182,10 @@
     },
     {
       "path": "/guides/how-to-compare-used-car-loans",
-      "title": "How to compare used-car loans beyond the payment",
-      "descriptionLength": 150,
+      "title": "How car loan interest is calculated and how to compare offers",
+      "descriptionLength": 139,
       "schemaCount": 2,
-      "h1": "How to compare used-car loans beyond the payment"
+      "h1": "How car loan interest is calculated and how to compare offers"
     },
     {
       "path": "/guides/trade-in-vs-private-sale",
@@ -242,6 +242,27 @@
       "descriptionLength": 148,
       "schemaCount": 2,
       "h1": "$25,000 at 12% for 72 months: interest impact"
+    },
+    {
+      "path": "/pk/car-financing-calculator",
+      "title": "Pakistan car financing calculator: PKR estimates",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Pakistan car financing calculator"
+    },
+    {
+      "path": "/pk/guides/conventional-vs-islamic-car-finance",
+      "title": "Conventional vs Islamic car finance in Pakistan",
+      "descriptionLength": 151,
+      "schemaCount": 2,
+      "h1": "Conventional vs Islamic car finance in Pakistan"
+    },
+    {
+      "path": "/pk/guides/used-car-financing-quote-checklist",
+      "title": "Pakistan used-car financing quote checklist",
+      "descriptionLength": 163,
+      "schemaCount": 2,
+      "h1": "Pakistan used-car financing quote checklist"
     }
   ]
 }

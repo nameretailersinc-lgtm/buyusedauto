@@ -1,0 +1,59 @@
+[
+  {
+    "path": "/pk/car-financing-calculator",
+    "width": 360,
+    "status": 200,
+    "overflow": false,
+    "axeViolations": []
+  },
+  {
+    "path": "/pk/car-financing-calculator",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/pk/car-financing-calculator",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/pk/guides/conventional-vs-islamic-car-finance",
+    "width": 360,
+    "status": 200,
+    "overflow": false,
+    "axeViolations": []
+  },
+  {
+    "path": "/pk/guides/conventional-vs-islamic-car-finance",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/pk/guides/conventional-vs-islamic-car-finance",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/pk/guides/used-car-financing-quote-checklist",
+    "width": 360,
+    "status": 200,
+    "overflow": false,
+    "axeViolations": []
+  },
+  {
+    "path": "/pk/guides/used-car-financing-quote-checklist",
+    "width": 768,
+    "status": 200,
+    "overflow": false
+  },
+  {
+    "path": "/pk/guides/used-car-financing-quote-checklist",
+    "width": 1280,
+    "status": 200,
+    "overflow": false
+  }
+]

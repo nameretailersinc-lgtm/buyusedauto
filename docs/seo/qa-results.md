@@ -71,3 +71,34 @@ Initial findings and fixes: the first new content test failed because `article` 
 Evidence: `reports/seo-phase4/responsive.json`, six full-page PNGs under `reports/seo-phase4/screenshots/`, and `reports/seo-phase4/comparison-360.png`. The detail capture can include fixed navigation/result chrome due to element screenshot stitching; full-page captures and actual browser assertions are the layout evidence. Automated checks and these captures are not a full manual accessibility certification.
 
 Fresh local mobile Lighthouse completed successfully before the final comparison-only wrapping CSS. Single-run observations: homepage performance 92 / LCP 2976.60 ms / TBT 144.5 ms; loan 96 / 2814.23 ms / 41.5 ms; inspection guide 89 / 2894.15 ms / 282.64 ms. Accessibility, best practices and SEO each scored 100 on all three, with CLS 0. Summary preserved at `reports/seo-phase4/lighthouse-summary.json`. Scores vary with local activity; do not infer a causal improvement/regression or passing field CWV. The final comparison CSS and active ownership scenario were checked with responsive/axe browser tests, not a separate Lighthouse run. No field INP, production metrics or hosted rich-result validation is claimed.
+
+## Phase 5 Pakistan bundle — 2026-10-16
+
+| Check | Actual result |
+| --- | --- |
+| `npm test` | Exit 0; four files, 75 tests passed; final run reported 1.06 s |
+| `npm run lint` | Exit 0 after calculation data was separated from JSX rendering; no lint suppression added |
+| `npm run build` | Exit 0; TypeScript completed, 52/52 static build entries generated, including three Pakistan pages and sitemap infrastructure |
+| `TEST_BASE_URL=http://127.0.0.1:3100 npm run test:e2e` | Final run exit 0; all 20 tests passed in 1.3 minutes |
+| Full SEO/HTTP audit | `SEO_AUDIT_OUTPUT=reports/seo-global-phase5.json npm run audit:seo`: exit 0; 40 content routes, 37 sitemap URLs, 154 internal destinations, eight images; no failures, warnings or duplicate-paragraph signals |
+| Sitemap-only site checker | `npm run check:site`: exit 0; 37 canonical pages, 151 checked internal destinations, no failures/warnings; `reports/site-audit.json` |
+| Original URL comparison | Every original baseline content path retained; three deliberate Pakistan content routes added |
+| Invalid Pakistan routes | `/pk/not-a-page` and `/pk/guides/not-a-guide` return 404 |
+| Responsive and axe capture script | Exit 0; nine captures across calculator and both guides at 360/768/1280 px; all return 200, no document overflow; zero selected-tag axe violations on each mobile page |
+| Country selector | Explicit US → PK and PK → US navigation passed; no automatic geolocation routing implemented |
+| Keyword artifacts | Both CSVs retain 75 rows; Pakistan owners updated to implemented paths; demand metrics remain UNVERIFIED |
+
+New pure-function cases cover the fixed manual benchmark/spread scenario, invalid combined rate, Ijarah cash/refund reconciliation, distinct rental versus ownership purchases, incompatible deposit assumptions, fractional-cent/nonfinite amounts, and malformed numeric schedules. Browser checks exercise all three modes, quote-field clearing on mode changes, malformed schedule error states, mobile axe and server-rendered explanations/guide text. Canonicals and sitemap country segments are checked; no false hreflang equivalences are asserted. Existing export, URL restoration, comparison, checklist, navigation, no-JavaScript and consent tests pass.
+
+Initial failures were corrected rather than excluded: React's lint rule rejected JSX construction inside calculation try/catch, so the catch now handles calculation data only. New browser locators initially matched the footer's share status and Next's route announcer as well as the calculator result/error; both now target the calculator section. The final full suite passes with the financial expectations unchanged.
+
+Screenshots and observations: `reports/seo-phase5/screenshots/` (nine PNGs) and `reports/seo-phase5/responsive.json`. These are local automated checks, not exhaustive manual WCAG certification. The unrelated owner-added logo asset is not part of this change.
+
+Fresh local mobile Lighthouse used the existing audit runner with only its target list/output paths changed in an ignored temporary runner (`.npm-cache/lighthouse-pk.mjs`). Final command `TEST_BASE_URL=http://127.0.0.1:3100 node .npm-cache/lighthouse-pk.mjs` exited 0 outside the sandbox after browser regression finished. Summary: `reports/seo-phase5/lighthouse-summary.json`; raw HTML/JSON remain in `.npm-cache/lighthouse-pk-*` locally.
+
+| Page | Performance / accessibility / best practices / SEO | LCP | CLS | TBT |
+| --- | --- | --- | --- | --- |
+| Pakistan calculator | 90 / 100 / 100 / 100 | 2904.37 ms | 0 | 251 ms |
+| Pakistan contract guide | 97 / 100 / 100 / 100 | 2544.64 ms | 0 | 57 ms |
+
+These single local lab runs do not establish passing field CWV; INP and actual production performance remain unmeasured. No Google-hosted rich-result result, bank-offer reconciliation, live KIBOR, current fee/tax table, Urdu review, actual GSC/GA result or AdSense approval is claimed. `git diff --check` passed before committing the checkpoint.

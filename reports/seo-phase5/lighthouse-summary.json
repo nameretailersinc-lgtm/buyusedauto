@@ -1,0 +1,30 @@
+[
+  {
+    "page": "/pk/car-financing-calculator",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 90,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2904.365875,
+    "cls": 0,
+    "tbtMs": 250.99999999999977,
+    "inp": "Not measured; requires field interaction data"
+  },
+  {
+    "page": "/pk/guides/conventional-vs-islamic-car-finance",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2544.641125,
+    "cls": 0,
+    "tbtMs": 57,
+    "inp": "Not measured; requires field interaction data"
+  }
+]

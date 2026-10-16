@@ -1,3 +1,4 @@
+import {readSitemapUrls} from "./sitemap-urls.mjs";
 import {load} from "cheerio";
 import {readFile,mkdir,writeFile} from "node:fs/promises";
 import {request as httpRequest} from "node:http";
@@ -13,7 +14,8 @@ const normalize=url=>new URL(url).href;
 async function get(path){return fetch(new URL(path,base),{redirect:"manual"});}
 const root=await get("/sitemap.xml");assert(root.status===200,"Root sitemap must return 200");
 const rootXml=load(await root.text(),{xmlMode:true});
-const sitemapUrls=rootXml("url > loc").map((_,el)=>rootXml(el).text()).get();
+const sitemapUrls=await readSitemapUrls(base);
+assert(rootXml("sitemapindex").length===1,"Root sitemap must be an index");
 assert(new Set(sitemapUrls).size===sitemapUrls.length,"Duplicate root sitemap URLs");
 const sitemapPaths=sitemapUrls.map(url=>new URL(url).pathname);
 if(!expectIndexable)assert(sitemapUrls.length===0,"Disabled/preview build must not advertise indexable sitemap URLs");
@@ -22,7 +24,7 @@ try{manifest=JSON.parse(await readFile(`${process.env.NEXT_BUILD_DIR||".next"}/p
 const paths=Object.keys(manifest.routes).filter(p=>!/^\/(?:_|robots\.txt|sitemap\.xml|sitemaps\/|ads\.txt)/.test(p));
 const robotsResponse=await get("/robots.txt");const robots=await robotsResponse.text();assert(robotsResponse.status===200,"robots.txt must return 200");
 const disallows=[...robots.matchAll(/^Disallow:\s*(.+)$/gm)].map(m=>m[1].trim());
-for(const [group,path] of [["core","/sitemaps/core.xml"],["tools","/sitemaps/tools.xml"],["guides","/sitemaps/guides.xml"],["scenarios","/sitemaps/scenarios.xml"]]){
+for(const [group,path] of [["core","/sitemaps/core.xml"],["tools","/sitemaps/tools.xml"],["guides","/sitemaps/guides.xml"],["scenarios","/sitemaps/scenarios.xml"],["pk","/sitemaps/pk.xml"]]){
   const response=await get(path);assert(response.status===200,`${path}: HTTP ${response.status}`);
   const $=load(await response.text(),{xmlMode:true});const urls=$("url > loc").map((_,el)=>$(el).text()).get();
   sitemaps.push({group,path,status:response.status,urls});

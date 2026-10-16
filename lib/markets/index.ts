@@ -1,7 +1,7 @@
 /** Display conventions only. No current rates, taxes, fees or eligibility rules. */
 export const markets = {
-  US: { name: "United States", currency: "USD", locale: "en-US", distance: "miles", fuel: "US gallons" },
-  PK: { name: "Pakistan", currency: "PKR", locale: "en-PK", distance: "kilometers", fuel: "liters" },
+  US: { name: "United States", currency: "USD", locale: "en-US", distance: "miles", fuel: "US gallons", path:"/tools" },
+  PK: { name: "Pakistan", currency: "PKR", locale: "en-PK", distance: "kilometers", fuel: "liters", path:"/pk/car-financing-calculator" },
   IN: { name: "India", currency: "INR", locale: "en-IN", distance: "kilometers", fuel: "liters" },
   GB: { name: "United Kingdom", currency: "GBP", locale: "en-GB", distance: "miles", fuel: "liters" },
   CA: { name: "Canada", currency: "CAD", locale: "en-CA", distance: "kilometers", fuel: "liters" },
