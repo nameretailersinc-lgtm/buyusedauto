@@ -9,5 +9,5 @@ export function GuideSectionDetails({section}: {section: GuideSection}) {
 }
 
 export function GuideSectionLinks({links}: {links: NonNullable<GuideSection["links"]>}) {
-  return <ul>{links.map(link => <li key={link.url}>{link.url.startsWith("/") ? <Link href={link.url}>{link.title}</Link> : <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>}</li>)}</ul>;
+  return <ul className="guide-resource-links">{links.map(link => <li key={link.url}>{link.url.startsWith("/") ? <Link href={link.url}>{link.title}<span aria-hidden="true">→</span></Link> : <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}<span aria-hidden="true">↗</span></a>}</li>)}</ul>;
 }

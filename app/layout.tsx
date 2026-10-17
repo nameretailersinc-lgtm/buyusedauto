@@ -7,6 +7,7 @@ import "./reference-design.css";
 import "./navigation.css";
 import "./interior-pages.css";
 import "./branding.css";
+import "./country-guides.css";
 const sans=DM_Sans({subsets:["latin"],display:"swap",variable:"--font-body"});
 const display=Manrope({subsets:["latin"],display:"swap",variable:"--font-display"});
 export const metadata:Metadata={...metadataBase(),metadataBase:new URL(siteUrl),verification:{google:process.env.NEXT_PUBLIC_GSC_VERIFICATION||undefined},icons:{icon:[{url:"/favicon.svg",type:"image/svg+xml"},{url:"/favicon.ico",sizes:"16x16 32x32 48x48"},{url:"/favicon-48.png",type:"image/png",sizes:"48x48"}],apple:[{url:"/apple-touch-icon.png",sizes:"180x180",type:"image/png"}]}};
