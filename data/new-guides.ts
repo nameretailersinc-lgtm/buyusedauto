@@ -5,7 +5,7 @@ const faq = (items: [string, string][]): GuideSection => ({heading: "Frequently 
 const ftc = {title: "FTC: Buying a used car from a dealer", url: "https://consumer.ftc.gov/articles/buying-used-car-dealer"};
 const ownershipTool = "total-cost-of-ownership-calculator";
 
-export const newGuides: Guide[] = [
+const articleDrafts: Guide[] = [
   {
     slug: "best-time-to-buy-a-used-car", title: "Best Time to Buy a Used Car in 2026: When Can You Save the Most?",
     description: "Explore year-end shopping, monthly sales targets, seasonal demand, older inventory, and financing to find a used car deal that fits your local market.",
@@ -120,3 +120,21 @@ export const newGuides: Guide[] = [
     ], sources: [ftc, {title: "NHTSA: Tire safety and maintenance", url: "https://www.nhtsa.gov/vehicle-safety/tires"}], relatedTools: [ownershipTool, "car-affordability-calculator"]
   }
 ];
+
+const internalLinkPlan: Record<string, {heading: string; links: {title: string; url: string}[]}[]> = {
+  "used-car-buying-checklist-first-time-buyers": [{heading: "Step 8: Arrange a Professional Inspection", links: [{title: "How to inspect a used car before you buy", url: "/guides/how-to-inspect-a-used-car"}]}],
+  "how-many-miles-is-too-many-for-a-used-car": [{heading: "How to Inspect a High-Mileage Used Car", links: [{title: "Used car inspection guide", url: "/guides/how-to-inspect-a-used-car"}, {title: "Check vehicle history and recorded mileage", url: "/guides/how-to-check-a-cars-history"}]}],
+  "how-to-avoid-used-car-scams": [{heading: "4. Fake Vehicle History Reports", links: [{title: "How to check a car's history", url: "/guides/how-to-check-a-cars-history"}]}, {heading: "How to Buy a Used Car Safely Online", links: [{title: "Used car buying checklist", url: "/guides/used-car-buying-checklist-first-time-buyers"}]}],
+  "used-car-vs-new-car": [{heading: "Which Should You Choose?", links: [{title: "Compare total ownership costs", url: "/total-cost-of-ownership-calculator"}, {title: "Check your car affordability budget", url: "/car-affordability-calculator"}]}],
+  "used-car-maintenance-costs": [{heading: "How to Estimate Maintenance Before Buying", links: [{title: "The real cost of car ownership", url: "/guides/real-cost-of-car-ownership"}, {title: "Used car inspection guide", url: "/guides/how-to-inspect-a-used-car"}]}],
+  "best-time-to-buy-a-used-car": [{heading: "4. Look for Older Inventory", links: [{title: "How to negotiate a used car price", url: "/guides/how-to-negotiate-a-used-car-price"}, {title: "Car value calculator", url: "/what-is-my-car-worth"}]}],
+};
+
+export const newGuides: Guide[] = articleDrafts.map(guide => ({
+  ...guide,
+  sections: guide.sections.map((section, index) => {
+    const planned = internalLinkPlan[guide.slug]?.find(item => item.heading === section.heading)?.links ?? [];
+    const centralResource = index === guide.sections.length - 1 ? [{title: "Complete used car buying guide: the full 12-step process", url: "/guides/complete-used-car-buying-guide"}] : [];
+    return {...section, links: [...(section.links ?? []), ...planned, ...centralResource]};
+  }),
+}));

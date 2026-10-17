@@ -3,6 +3,7 @@ import {tools} from "../data/tools";
 import {toolContent} from "../data/tool-content";
 import {guides} from "../data/guides";
 import {newGuides} from "../data/new-guides";
+import {pillarGuide} from "../data/pillar-guide";
 import {scenarios,scenarioPath} from "../data/scenarios";
 import {states} from "../data/states";
 describe("content and routing contracts",()=>{
@@ -10,7 +11,7 @@ describe("content and routing contracts",()=>{
   it("keeps tool and scenario scope focused and route slugs unique",()=>{expect(tools).toHaveLength(11);expect(guides.length).toBeGreaterThanOrEqual(5);expect(scenarios.length).toBeLessThanOrEqual(30);const routes=[...tools.map(t=>`/${t.slug}`),...guides.map(g=>`/guides/${g.slug}`),...scenarios.map(scenarioPath)];expect(new Set(routes).size).toBe(routes.length);});
   it("every tool has distinct methodology, five FAQs, and resolved related links",()=>{for(const t of tools){const c=toolContent[t.id];expect(c.formula.length).toBeGreaterThan(40);expect(c.faq.length).toBeGreaterThanOrEqual(5);expect(new Set(c.faq.map(f=>f.question)).size).toBe(c.faq.length);for(const slug of c.related)expect(tools.some(t=>t.slug===slug)).toBe(true);expect(c.sources.every(s=>s.url.startsWith("https://"))).toBe(true);}});
   it("guides have substantive content, primary-source references, and working tool slugs",()=>{
-    const suppliedSlugs=new Set(newGuides.map(g=>g.slug));
+    const suppliedSlugs=new Set([...newGuides,pillarGuide].map(g=>g.slug));
     const primarySourceHosts=new Set(["consumer.ftc.gov","www.nhtsa.gov","www.consumerfinance.gov","vehiclehistory.bja.ojp.gov","www.nicb.org","comptroller.texas.gov","www.dmv.ca.gov"]);
     for(const g of guides){
       if(suppliedSlugs.has(g.slug)){

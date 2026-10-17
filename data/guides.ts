@@ -1,6 +1,7 @@
 import {monthlyInterestExample,loanTermExample,loanTermDifference} from "./finance-examples";
 import {internationalGuide} from "./international-guide";
 import {newGuides} from "./new-guides";
+import {pillarGuide} from "./pillar-guide";
 
 export type GuideSection = {
   heading: string;
@@ -8,7 +9,7 @@ export type GuideSection = {
   bullets?: string[];
   links?: {title: string; url: string}[];
   table?: {headers: string[]; rows: string[][]};
-  subsections?: {heading: string; paragraphs: string[]}[];
+  subsections?: GuideSection[];
 };
 
 export type Guide = {
@@ -27,6 +28,7 @@ export type Guide = {
 };
 
 export const guides: Guide[] = [
+  pillarGuide,
   {
     slug: 'how-to-inspect-a-used-car',
     updated: '2026-10-16',

@@ -13,6 +13,7 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "check:site": "node scripts/check-site.mjs",
+    "check:guide-publishing": "node scripts/check-guide-publishing.mjs",
     "audit:lighthouse": "node scripts/lighthouse.mjs",
     "audit:seo": "node scripts/seo-audit.mjs",
     "report:gsc": "node scripts/gsc-report.mjs",

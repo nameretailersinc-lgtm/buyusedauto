@@ -1,5 +1,6 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "complete-used-car-buying-guide": ["guide-first-time-checklist", "Buyer using a clipboard to inspect the exterior of a parked used car."],
   "best-time-to-buy-a-used-car": ["guide-best-time", "Buyer comparing used cars on a dealership forecourt in autumn."],
   "how-many-miles-is-too-many-for-a-used-car": ["guide-mileage", "Odometer and dashboard inside a well-maintained used car."],
   "used-car-buying-checklist-first-time-buyers": ["guide-first-time-checklist", "First-time buyer inspecting a parked sedan with a clipboard."],
