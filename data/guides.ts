@@ -437,6 +437,8 @@ export const guides: Guide[] = [
   },
   {
     slug: 'trade-in-vs-private-sale',
+    updated: '2026-10-17',
+    reviewedOn: '2026-10-17',
     title: 'Trade-in vs. private sale: compare your net proceeds',
     description: 'Compare a trade-in with selling privately after loan payoff, selling costs, possible tax treatment, and your time. Work through a clear break-even example.',
     category: 'Selling',
@@ -461,9 +463,10 @@ export const guides: Guide[] = [
       },
       {
         heading: '3. Verify whether tax treatment changes the comparison',
+        links: [{title: 'Texas Comptroller: trade-in value, eligibility and separate sales', url: 'https://comptroller.texas.gov/taxes/publications/96-254/trade-ins.php'}],
         paragraphs: [
           'Trade-in tax treatment depends on the state and transaction. Some transactions receive an allowance that reduces the taxable amount of the replacement purchase; others do not. Enter zero benefit until you have verified the applicable rules. An assumed tax percentage multiplied by the trade value is not a universal entitlement.',
-          'Texas provides a specific example: the Comptroller explains that a qualifying vehicle trade in the same transaction can reduce the taxable selling price, while proceeds from a separate private sale or sale to another dealer do not provide that trade-in deduction. That is a Texas rule with conditions, not a rule for all US buyers.',
+          'Texas provides a specific example: the Comptroller explains that a qualifying vehicle trade can reduce the taxable selling price when it is part of the same sales transaction and transferred directly to the seller. Proceeds from a separate private sale or sale to another dealer do not provide that trade-in deduction. That is a Texas rule with conditions, not a rule for all US buyers.',
           'Ask the relevant revenue or motor-vehicle agency about caps, eligibility, timing, and how a particular replacement transaction is treated. Obtain the dealer’s itemized tax calculation. Distinguish the gross trade allowance from equity after loan payoff; tax rules may use one figure while your available cash depends on the other.'
         ]
       },
@@ -471,7 +474,7 @@ export const guides: Guide[] = [
         heading: '4. Calculate the private-sale break-even price',
         paragraphs: [
           'Use a scenario rather than a promise. Suppose a written trade offer is $10,000, a verified transaction-specific tax benefit would be $600, and payoff is $6,000. The trade route provides $4,600 of combined equity and tax benefit. Suppose a private buyer would pay $11,500 and you expect $250 of selling costs. Private net cash after payoff is $5,250.',
-          'The private route is ahead by $650 before valuing your time and other costs. In this scenario, its break-even sale price is $10,850: the $10,000 trade offer plus the $600 tax benefit plus $250 of private selling costs. The identical payoff cancels when comparing the routes, although it still matters for the cash you receive.',
+          'The private route is ahead by $650 before valuing your time and other costs. In this scenario, its break-even sale price is $10,850: the $10,000 trade offer plus the $600 tax benefit plus $250 of private selling costs. The identical payoff cancels when comparing the routes, although it still matters for the cash you receive. If the routes settle on different dates, obtain a dated payoff for each and include any difference instead of assuming it cancels.',
           'These amounts are illustrative and assume the tax benefit applies exactly as stated. If there is no qualifying benefit, the private break-even price falls to $10,250. If your private sale is delayed and incurs another $150 of carrying costs, include it. Use ranges when the selling price or timing remains uncertain.'
         ]
       },
@@ -485,6 +488,15 @@ export const guides: Guide[] = [
       },
       {
         heading: '6. Prepare a safe, documented private sale',
+        bullets: [
+          'Agree with the lender how payoff, lien release and title delivery will happen.',
+          'Verify payment with your bank; do not treat available check funds as proof of a genuine payment.',
+          'Complete the required title and seller-notice steps for your state and retain confirmation.'
+        ],
+        links: [
+          {title: 'FTC: fake checks, available funds and overpayments', url: 'https://consumer.ftc.gov/articles/how-spot-avoid-and-report-fake-check-scams'},
+          {title: 'California DMV: title transfer and separate seller notice', url: 'https://www.dmv.ca.gov/portal/vehicle-registration/titles/title-transfers-and-changes/'}
+        ],
         paragraphs: [
           'Arrange viewings in a suitable public setting and confirm test-drive arrangements with your insurer. Keep control of the vehicle and documents while allowing a legitimate buyer to inspect and verify them. Share the information necessary for the transaction while limiting exposure of unrelated personal records.',
           'Discuss payment with your bank before the handoff and verify payment through channels you obtain independently. The FTC warns that funds appearing in your account do not establish that a deposited check is genuine; fake checks can be discovered later. Reject overpayment-and-refund arrangements. A screenshot, payment email, or claimed urgency is not settlement confirmation.',
@@ -493,6 +505,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '7. Keep the replacement deal and handoff transparent',
+        links: [{title: 'CFPB: how rolling negative equity into a new loan increases debt', url: 'https://www.consumerfinance.gov/data-research/research-reports/data-spotlight-negative-equity-findings-from-the-auto-finance-data-pilot/'}],
         paragraphs: [
           'When trading, compare the replacement vehicle’s price before and after the allowance is introduced. A generous trade figure can be offset elsewhere in the transaction. Verify payoff handling in writing and follow up with the old lender to confirm the loan has been settled. Keep making required payments until the lender confirms what is due.',
           'Before handing over either a traded or privately sold car, remove personal belongings and account access from infotainment, connected-car services, toll devices, and garage-door settings. Follow the manufacturer’s instructions for data removal. Coordinate insurance and registration changes with the relevant providers and state requirements so the timing is correct.',

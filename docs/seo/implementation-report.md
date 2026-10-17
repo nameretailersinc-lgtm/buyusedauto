@@ -107,3 +107,7 @@ Completed inspection guidance review with contextual official links, dealer insp
 ## Negotiation source review completion - 2026-10-17
 
 Completed the October 16 negotiation source review and added a practical itemized-quote checklist with contextual primary-source links. Retained all existing URLs and scenarios. Evidence: `negotiation-source-review.md`, `qa-results.md` and updated `reports/seo-after.json`. Remaining source review: trade-in/private-sale. GSC exports remain absent; no demand, ranking or traffic metrics were invented.
+
+## First-pass guide source reviews completed - 2026-10-17
+
+Completed trade-in/private-sale review and made tax scope, dated payoffs and handoff tasks clearer on its existing URL. `source-review-index.md` now records dates and evidence for all existing guides. Cited-source reviews are complete for this pass; ongoing monitoring, professional validation where appropriate and owner data remain separate work. All prior review dates are retained. GSC exports and field performance evidence remain missing; no ranking, indexing or traffic outcome is inferred.
