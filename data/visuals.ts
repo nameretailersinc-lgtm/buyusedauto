@@ -1,5 +1,7 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "conventional-vs-islamic-car-finance": ["guide-financing", "Calculator and vehicle finance paperwork on a desk."],
+  "used-car-financing-quote-checklist": ["guide-country-pakistan", "Buyer and mechanic inspecting a used car in Pakistan."],
   "buy-used-car-pakistan": ["guide-country-pakistan", "Buyer and mechanic inspecting a compact sedan on a Lahore forecourt."],
   "buy-used-car-uae": ["guide-country-uae", "Buyer inspecting a used SUV on a Dubai forecourt."],
   "buy-used-car-usa": ["guide-country-usa", "Buyer examining a used sedan at an American dealership."],

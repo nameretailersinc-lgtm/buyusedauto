@@ -1,4 +1,5 @@
 import {readSitemapUrls} from "./sitemap-urls.mjs";
+import {paginationRedirectTarget} from "./seo-route-policy.mjs";
 import {load} from "cheerio";
 import {readFile,mkdir,writeFile} from "node:fs/promises";
 import {request as httpRequest} from "node:http";
@@ -33,7 +34,19 @@ const grouped=sitemaps.flatMap(s=>s.urls);assert(new Set(grouped).size===grouped
 assert([...new Set(grouped.map(normalize))].sort().join("\n")===[...new Set(sitemapUrls.map(normalize))].sort().join("\n"),"Root and grouped sitemaps must contain the same canonical set");
 const titles=new Map(),descriptions=new Map();
 for(const path of paths){
-  const response=await get(path);const html=await response.text();const $=load(html);
+  const response=await get(path);
+  const redirectTarget=paginationRedirectTarget(path);
+  if(redirectTarget){
+    const location=response.headers.get("location");
+    assert(response.status===308,`${path}: page-one alias must permanently redirect`);
+    assert(!!location&&new URL(location,base).pathname===redirectTarget,`${path}: incorrect pagination redirect target`);
+    assert(!sitemapPaths.includes(path),`${path}: redirect alias must not appear in a sitemap`);
+    const target=await get(redirectTarget);assert(target.status===200,`${path}: redirect destination must return 200`);
+    statuses.push({path,status:response.status,location});
+    await response.body?.cancel();await target.body?.cancel();
+    continue;
+  }
+  const html=await response.text();const $=load(html);
   const title=$("title").text(),description=$('meta[name="description"]').attr("content")||"";
   const canonicals=$('link[rel="canonical"]').map((_,el)=>$(el).attr("href")).get();
   const canonical=canonicals[0];const metaRobots=$('meta[name="robots"],meta[name="googlebot"]').map((_,el)=>$(el).attr("content")||"").get();
