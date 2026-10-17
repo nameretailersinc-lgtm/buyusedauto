@@ -111,3 +111,7 @@ Completed the October 16 negotiation source review and added a practical itemize
 ## First-pass guide source reviews completed - 2026-10-17
 
 Completed trade-in/private-sale review and made tax scope, dated payoffs and handoff tasks clearer on its existing URL. `source-review-index.md` now records dates and evidence for all existing guides. Cited-source reviews are complete for this pass; ongoing monitoring, professional validation where appropriate and owner data remain separate work. All prior review dates are retained. GSC exports and field performance evidence remain missing; no ranking, indexing or traffic outcome is inferred.
+
+## Search Console reporting workflow - 2026-10-17
+
+Prepared the next data-driven SEO step with `npm run report:gsc`. The command reads supplied CSVs and an explicit context manifest, produces separate exported-row summaries and query/page review candidates, and rejects missing or ambiguous input. Input instructions and an intentionally incomplete example configuration are in `docs/seo/inputs/`. Tests use synthetic data only. Real exports remain absent; no account access, sitemap submission, ranking/traffic claim or deployment occurred. Once exports are available, review the candidates against page intent and obtain page-filtered queries before attributing queries to URLs.

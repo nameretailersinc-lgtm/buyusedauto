@@ -15,6 +15,7 @@
     "check:site": "node scripts/check-site.mjs",
     "audit:lighthouse": "node scripts/lighthouse.mjs",
     "audit:seo": "node scripts/seo-audit.mjs",
+    "report:gsc": "node scripts/gsc-report.mjs",
     "deploy:check": "node scripts/deployment-check.mjs",
     "deploy:check:production": "node scripts/deployment-check.mjs --production"
   },

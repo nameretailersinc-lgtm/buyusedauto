@@ -1,6 +1,6 @@
 import {readFile,mkdir,writeFile} from "node:fs/promises";
 import {dirname,resolve} from "node:path";
-import {createReport} from "./gsc-report-lib.mjs";
+import {createReport,validateConfig} from "./gsc-report-lib.mjs";
 
 const args=process.argv.slice(2);
 if(args.length===1&&args[0]==="--help"){
@@ -13,9 +13,10 @@ if(args.length===1&&args[0]==="--help"){
     const configPath=resolve(options["--config"]),output=resolve(options["--output"]);
     const config=JSON.parse(await readFile(configPath,"utf8"));
     // Validate the manifest before opening its referenced CSVs.
-    const {validateConfig}=await import("./gsc-report-lib.mjs");validateConfig(config);
+    validateConfig(config);
     const sourcePaths=Object.fromEntries(Object.entries(config.tables).map(([dimension,file])=>[dimension,resolve(dirname(configPath),file)]));
-    if(output===configPath||Object.values(sourcePaths).includes(output))throw new Error("Output must not overwrite the config or input CSVs");
+    const pathKey=path=>process.platform==="win32"?path.toLowerCase():path;
+    if([configPath,...Object.values(sourcePaths)].some(path=>pathKey(path)===pathKey(output)))throw new Error("Output must not overwrite the config or input CSVs");
     const sources=Object.fromEntries(await Promise.all(Object.entries(sourcePaths).map(async([dimension,file])=>[dimension,await readFile(file,"utf8")])));
     const report=createReport(config,sources);
     await mkdir(dirname(output),{recursive:true});await writeFile(output,JSON.stringify(report,null,2)+"\n");

@@ -14,6 +14,10 @@ playwright-report/
 .vercel/
 .ssh-known-hosts
 .lighthouse-*/
+# Search Console inputs and local reports can contain unpublished query data.
+docs/seo/inputs/*.csv
+docs/seo/inputs/gsc-report.json
+reports/gsc-report*.json
 reports/*.png
 reports/lighthouse-*.html
 reports/lighthouse-home.json

@@ -61,10 +61,11 @@ export function analyzeTable(source,dimension,config){
   const csv=parseCsv(source);if(!csv.length)throw new Error(`${dimension}: CSV has no header`);
   const header=csv[0].map(value=>value.trim());
   if(new Set(header).size!==header.length)throw new Error(`${dimension}: duplicate headers`);
+  const allowed=new Set([...dimensions[dimension],"Clicks","Impressions","CTR","Position"]);
+  if(header.some(value=>!allowed.has(value)))throw new Error(`${dimension}: unsupported columns; use an English single-period dimension export`);
   const keyIndex=header.findIndex(value=>dimensions[dimension].includes(value));
   const indexes=Object.fromEntries(["Clicks","Impressions","Position"].map(name=>[name,header.indexOf(name)]));
   if(keyIndex<0||Object.values(indexes).some(index=>index<0))throw new Error(`${dimension}: expected English ${dimensions[dimension][0]}, Clicks, Impressions and Position columns; comparison exports are unsupported`);
-  if(header.some(value=>/\b(?:difference|previous|last|compared)\b/i.test(value)))throw new Error(`${dimension}: comparison exports are unsupported`);
   const seen=new Set();const rows=csv.slice(1).map((cells,index)=>{
     const line=index+2;
     if(cells.length!==header.length)throw new Error(`${dimension} row ${line}: column count differs from header`);
@@ -79,11 +80,13 @@ export function analyzeTable(source,dimension,config){
   rows.sort((a,b)=>b.impressions-a.impressions||b.clicks-a.clicks||a.key.localeCompare(b.key));
   const clicks=rows.reduce((sum,row)=>sum+row.clicks,0),impressions=rows.reduce((sum,row)=>sum+row.impressions,0);
   if(!Number.isSafeInteger(clicks)||!Number.isSafeInteger(impressions))throw new Error(`${dimension}: totals exceed safe integer precision`);
+  const weightedPosition=rows.reduce((sum,row)=>sum+row.position*row.impressions,0);
+  if(!Number.isFinite(weightedPosition))throw new Error(`${dimension}: weighted position exceeds numeric precision`);
   const [minPosition,maxPosition]=config.reviewRules.positionRange;
   const enough=row=>row.impressions>=config.reviewRules.minImpressions;
   return {
     rowCount:rows.length,
-    exportedRowsOnly:{clicks,impressions,ctr:impressions?clicks/impressions:null,impressionWeightedPosition:impressions?rows.reduce((sum,row)=>sum+row.position*row.impressions,0)/impressions:null},
+    exportedRowsOnly:{clicks,impressions,ctr:impressions?clicks/impressions:null,impressionWeightedPosition:impressions?weightedPosition/impressions:null},
     topByImpressions:rows.slice(0,25),
     reviewCandidates:["queries","pages"].includes(dimension)?{
       lowCtr:rows.filter(row=>enough(row)&&row.ctr<=config.reviewRules.maxCtr).slice(0,25),

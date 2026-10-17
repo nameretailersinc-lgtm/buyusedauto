@@ -1,0 +1,19 @@
+{
+  "property": "https://buyusedautomobiles.com/",
+  "startDate": "REPLACE_WITH_YYYY-MM-DD",
+  "endDate": "REPLACE_WITH_YYYY-MM-DD",
+  "exportedOn": "REPLACE_WITH_YYYY-MM-DD",
+  "searchType": "web",
+  "filters": {},
+  "tables": {
+    "queries": "Queries.csv",
+    "pages": "Pages.csv",
+    "countries": "Countries.csv",
+    "devices": "Devices.csv"
+  },
+  "reviewRules": {
+    "minImpressions": 100,
+    "maxCtr": 0.02,
+    "positionRange": [8, 30]
+  }
+}
