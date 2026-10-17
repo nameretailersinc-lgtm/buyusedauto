@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen",
+  "promptTemplate": "Use case: photorealistic-natural. Asset type: landscape editorial website guide cover. Primary request: {scene} Style: realistic professional automotive editorial photography, restrained natural colors, landscape 3:2 composition with the subject centered for responsive cropping. Constraints: no logos, no watermarks, no text overlays, no promotional claims.",
+  "assets": [
+    {
+      "path": "public/images/guide-best-time.webp",
+      "scene": "A buyer comparing a row of used cars at a dealership on a calm late-autumn afternoon, fallen leaves, natural warm light."
+    },
+    {
+      "path": "public/images/guide-mileage.webp",
+      "scene": "Close-up of a used car dashboard odometer showing 120000 miles, steering wheel and well cared for interior, daylight."
+    },
+    {
+      "path": "public/images/guide-first-time-checklist.webp",
+      "scene": "A first-time buyer holding a clipboard beside a parked used sedan, inspecting the exterior in daylight."
+    },
+    {
+      "path": "public/images/guide-used-vs-new.webp",
+      "scene": "Two unbranded sedans side by side, one older well maintained model and one modern new model, neutral dealership forecourt."
+    },
+    {
+      "path": "public/images/guide-scams.webp",
+      "scene": "Buyer verifying a parked used car VIN through the windshield while holding vehicle documents, natural daylight."
+    },
+    {
+      "path": "public/images/guide-maintenance-costs.webp",
+      "scene": "Mechanic inspecting a used car in a tidy workshop, with maintenance tools and a service clipboard on a nearby workbench."
+    }
+  ]
+}

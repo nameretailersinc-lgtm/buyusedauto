@@ -1,11 +1,14 @@
 import {monthlyInterestExample,loanTermExample,loanTermDifference} from "./finance-examples";
 import {internationalGuide} from "./international-guide";
+import {newGuides} from "./new-guides";
 
 export type GuideSection = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
   links?: {title: string; url: string}[];
+  table?: {headers: string[]; rows: string[][]};
+  subsections?: {heading: string; paragraphs: string[]}[];
 };
 
 export type Guide = {
@@ -522,4 +525,5 @@ export const guides: Guide[] = [
     relatedTools: ['trade-in-value-estimator', 'what-is-my-car-worth', 'car-sales-tax-calculator', 'total-cost-of-ownership-calculator']
   },
   internationalGuide,
+  ...newGuides,
 ];

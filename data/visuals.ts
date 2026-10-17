@@ -1,4 +1,12 @@
 import type {ToolId} from "./tools";
+const newGuideVisuals = {
+  "best-time-to-buy-a-used-car": ["guide-best-time", "Buyer comparing used cars on a dealership forecourt in autumn."],
+  "how-many-miles-is-too-many-for-a-used-car": ["guide-mileage", "Odometer and dashboard inside a well-maintained used car."],
+  "used-car-buying-checklist-first-time-buyers": ["guide-first-time-checklist", "First-time buyer inspecting a parked sedan with a clipboard."],
+  "used-car-vs-new-car": ["guide-used-vs-new", "An older sedan and a modern sedan parked side by side."],
+  "how-to-avoid-used-car-scams": ["guide-scams", "Buyer checking vehicle identification against paperwork."],
+  "used-car-maintenance-costs": ["guide-maintenance-costs", "Mechanic inspecting a used car in a workshop with service tools nearby."],
+};
 export const toolImages:Record<ToolId,string>={loan:"mountain-suv",depreciation:"coastal-sedan",value:"car-keys",ownership:"fuel-stop",affordability:"coastal-sedan",fuel:"fuel-stop",trade:"car-keys",lease:"coastal-sedan",inspection:"inspection-workshop",negotiation:"guide-negotiation",tax:"guide-financing"};
 export const guideImages:Record<string,string>={"international-used-car-buying-checks":"guide-inspection","how-to-inspect-a-used-car":"inspection-workshop","how-to-check-a-cars-history":"guide-inspection","how-to-negotiate-a-used-car-price":"guide-negotiation","real-cost-of-car-ownership":"fuel-stop","how-to-compare-used-car-loans":"guide-financing","trade-in-vs-private-sale":"car-keys"};
 export const guideImageAlt:Record<string,string>={
@@ -10,6 +18,10 @@ export const guideImageAlt:Record<string,string>={
   "how-to-compare-used-car-loans":"Illustration of a calculator, paperwork, pen and car key on a desk.",
   "trade-in-vs-private-sale":"Illustration of car keys being handed over beside a parked sedan.",
 };
+for (const [slug, [image, alt]] of Object.entries(newGuideVisuals)) {
+  guideImages[slug] = image;
+  guideImageAlt[slug] = alt;
+}
 export const categoryCopy={
   Buying:{icon:"check",image:"inspection-workshop",title:"Buy with your eyes open.",description:"Inspect the car, understand its history, and build an offer you can explain."},
   Financing:{icon:"calculator",image:"coastal-sedan",title:"Look beyond the monthly payment.",description:"Understand the loan, check your budget, and compare the full cost of borrowing."},
