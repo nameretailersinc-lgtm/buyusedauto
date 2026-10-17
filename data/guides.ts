@@ -198,6 +198,8 @@ export const guides: Guide[] = [
   },
   {
     slug: 'how-to-negotiate-a-used-car-price',
+    updated: '2026-10-16',
+    reviewedOn: '2026-10-16',
     title: 'How to negotiate a used-car price with evidence',
     description: 'Negotiate a used-car price using comparable listings, inspection findings, an itemized purchase quote, and a firm budget. Work through a realistic example.',
     category: 'Buying',
@@ -221,7 +223,14 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '3. Ask for one itemized purchase quote',
+        heading: '3. Ask for one itemized out-the-door quote',
+        bullets: [
+          'Identify the VIN, quote date and any conditions attached to the advertised price.',
+          'List the vehicle price, dealer charges, taxes and registration charges separately.',
+          'Show each optional product and its price; request a revised quote for products you decline.',
+          'Compare the purchase total before financing, then assess the separate borrowing costs.'
+        ],
+        links: [{title: 'FTC: written out-the-door quotes and optional add-ons', url: 'https://consumer.ftc.gov/articles/buying-used-car-dealer'}],
         paragraphs: [
           'Request a written out-the-door quote for the actual VIN before discussing a monthly payment. The FTC recommends written total-price quotes when buying from dealers. Ask for the vehicle price, each dealer charge, taxes, title or registration charges, and every optional product. State which products you do not want so the quote can be revised clearly.',
           'Distinguish government charges from dealer charges, and verify unfamiliar items. Whether a particular fee is regulated or taxable depends on the jurisdiction; a label alone does not settle it. If a fee cannot be changed, you can still decide whether the total deal is competitive. Use a tax estimate as a planning input, then obtain the applicable official calculation.',
@@ -230,6 +239,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '4. Turn inspection evidence into an offer',
+        links: [{title: 'FTC: independent inspection and written repair estimates', url: 'https://consumer.ftc.gov/articles/buying-used-car-dealer'}],
         paragraphs: [
           'Use a written inspection to separate known repair needs from speculation. Get an estimate for necessary work, then compare the vehicle with examples in similar condition. Do not subtract the full cost of a repair from a comparison price that already assumes that repair is needed. Also consider whether you want to manage the work at all.',
           'Imagine close comparisons suggest a $16,500 asking-price reference. This car needs a quoted $700 tire replacement and $300 service that those comparisons do not need. A $15,500 condition-adjusted reference follows from those assumptions. An opening offer of $15,200 leaves a $300 negotiation margin, but neither number guarantees acceptance or proves the car’s market value.',
@@ -238,10 +248,11 @@ export const guides: Guide[] = [
       },
       {
         heading: '5. Evaluate the whole counteroffer',
+        links: [{title: 'CFPB: compare loan amount, APR, interest rate and term', url: 'https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/'}],
         paragraphs: [
           'A lower vehicle price can be offset by another charge, a smaller trade-in allowance, or a different finance arrangement. Compare the new worksheet against the previous version line by line. Track the sale of your current vehicle separately so you can see what the dealer is paying for it and how much debt must be settled.',
           'Using hypothetical figures, offer A has a $15,500 vehicle price, $450 in dealer charges, and $1,150 in estimated government charges: $17,100 total. Offer B has a $15,200 vehicle price, $850 in dealer charges, and the same assumed $1,150: $17,200 total. The smaller headline price is $100 more expensive in this example. Actual taxes may change with taxable fees.',
-          'If financing is part of the counteroffer, compare the amount financed, APR, term, finance charge, and any conditions. A payment reduction achieved by adding months does not tell you whether the purchase became cheaper. Use the loan calculator to understand the timing and total cost before responding.'
+          'If financing is part of the counteroffer, compare the amount financed, APR, interest rate, term, finance charge, and any conditions. A payment reduction achieved by adding months does not tell you whether the purchase became cheaper. Use the loan calculator to understand the timing and total cost before responding.'
         ]
       },
       {
@@ -254,6 +265,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '7. Close only when the final numbers match',
+        links: [{title: 'FTC: review add-on prices and terms before signing', url: 'https://consumer.ftc.gov/consumer-alerts/2020/07/ftc-announces-auto-buyers-study-reports'}],
         paragraphs: [
           'Read the final purchase and finance documents at your own pace. Check the VIN, mileage, selling price, taxes, fees, products, trade-in amount, payoff, and cash due. Ask for a corrected document when a figure differs; a verbal explanation does not update a signed agreement.',
           'The FTC advises buyers to review proposed add-ons and their costs. Assess any product against its coverage, exclusions, deductible, cancellation terms, and price. A product you decide to buy belongs in your total budget, including the interest if it is financed. Do not let a small monthly presentation hide its full cost.',

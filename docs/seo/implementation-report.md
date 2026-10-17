@@ -103,3 +103,7 @@ Completed the history guide review against its four primary sources and improved
 ## Inspection source review - 2026-10-16
 
 Completed inspection guidance review with contextual official links, dealer inspection-access options, written report identifiers and a printable-checklist workflow. Replaced the general NHTSA tire citation with detailed TireWise guidance. Evidence and scope: `inspection-source-review.md`; checks: `qa-results.md`. Remaining editorial source reviews: negotiation and trade-in/private-sale. Also corrected transient share-control contrast during theme changes after an owner-supplied CI failure; no accessibility rule was disabled. No deployment or GSC performance claim.
+
+## Negotiation source review completion - 2026-10-17
+
+Completed the October 16 negotiation source review and added a practical itemized-quote checklist with contextual primary-source links. Retained all existing URLs and scenarios. Evidence: `negotiation-source-review.md`, `qa-results.md` and updated `reports/seo-after.json`. Remaining source review: trade-in/private-sale. GSC exports remain absent; no demand, ranking or traffic metrics were invented.
