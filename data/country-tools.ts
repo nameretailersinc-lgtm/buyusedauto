@@ -1,0 +1,8 @@
+export const countryTools = [
+  {country:"pakistan",name:"Pakistan",currency:"PKR",locale:"en-PK",unit:"km",economy:"km/l",image:"guide-country-pakistan",guide:"buy-used-car-pakistan",fees:"Annual token tax and registration reserve",other:"Annual tolls, parking and tracker costs",source:"https://excise.punjab.gov.pk/services",sourceName:"Punjab Excise services (other provinces differ)"},
+  {country:"uae",name:"UAE",currency:"AED",locale:"en-AE",unit:"km",economy:"l/100km",image:"guide-country-uae",guide:"buy-used-car-uae",fees:"Annual registration and testing reserve",other:"Annual tolls, parking and other costs",source:"https://rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=584",sourceName:"Dubai RTA registration services (other emirates differ)"},
+  {country:"uk",name:"UK",currency:"GBP",locale:"en-GB",unit:"miles",economy:"imperial mpg",image:"guide-country-uk",guide:"buy-used-car-uk",fees:"Annual vehicle tax and MOT reserve",other:"Annual parking, clean-air charges and tolls",source:"https://www.gov.uk/browse/driving/vehicle-tax-mot-insurance",sourceName:"GOV.UK vehicle tax, MOT and insurance"},
+  {country:"germany",name:"Germany",currency:"EUR",locale:"en-DE",unit:"km",economy:"l/100km",image:"guide-country-europe",guide:"buy-used-car-europe",fees:"Annual vehicle tax and HU inspection reserve",other:"Annual parking and other running costs",source:"https://europa.eu/youreurope/citizens/vehicles/registration/formalities/index_en.htm",sourceName:"Your Europe registration formalities"},
+] as const;
+export type CountryTool = typeof countryTools[number];
+export const countryToolPath=(country:string)=>`/tools/${country}/car-running-cost-calculator`;
