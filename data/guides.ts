@@ -2,6 +2,7 @@ import {monthlyInterestExample,loanTermExample,loanTermDifference} from "./finan
 import {internationalGuide} from "./international-guide";
 import {newGuides} from "./new-guides";
 import {pillarGuide} from "./pillar-guide";
+import {countryGuides} from "./country-guides";
 
 export type GuideSection = {
   heading: string;
@@ -13,6 +14,8 @@ export type GuideSection = {
 };
 
 export type Guide = {
+  seoTitle?: string;
+  region?: 'PK' | 'AE' | 'US' | 'GB' | 'EU';
   slug: string;
   title: string;
   description: string;
@@ -29,6 +32,7 @@ export type Guide = {
 
 export const guides: Guide[] = [
   pillarGuide,
+  ...countryGuides,
   {
     slug: 'how-to-inspect-a-used-car',
     updated: '2026-10-16',

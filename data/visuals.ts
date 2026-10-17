@@ -1,5 +1,10 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "buy-used-car-pakistan": ["guide-country-pakistan", "Buyer and mechanic inspecting a compact sedan on a Lahore forecourt."],
+  "buy-used-car-uae": ["guide-country-uae", "Buyer inspecting a used SUV on a Dubai forecourt."],
+  "buy-used-car-usa": ["guide-country-usa", "Buyer examining a used sedan at an American dealership."],
+  "buy-used-car-uk": ["guide-country-uk", "Buyer and mechanic inspecting a hatchback outside a British garage."],
+  "buy-used-car-europe": ["guide-country-europe", "Buyer inspecting a compact hatchback at a European garage."],
   "complete-used-car-buying-guide": ["guide-first-time-checklist", "Buyer using a clipboard to inspect the exterior of a parked used car."],
   "best-time-to-buy-a-used-car": ["guide-best-time", "Buyer comparing used cars on a dealership forecourt in autumn."],
   "how-many-miles-is-too-many-for-a-used-car": ["guide-mileage", "Odometer and dashboard inside a well-maintained used car."],

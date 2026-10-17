@@ -1,0 +1,26 @@
+{
+  "mode": "built-in image_gen",
+  "promptTemplate": "Use case: photorealistic-natural. Asset type: editorial cover for a country-specific used car buying guide. Primary request: {scene} Professional realistic automotive photography, landscape 3:2 composition, centered subjects suitable for responsive cropping, natural restrained colors. No logos, watermarks, readable registration details, document text, or text overlays. Do not depict an official endorsement.",
+  "assets": [
+    {
+      "path": "public/images/guide-country-pakistan.webp",
+      "scene": "An independent mechanic and buyer inspecting a clean compact used sedan in a Lahore neighborhood forecourt, Pakistani urban architecture, natural daylight, right-hand-drive car."
+    },
+    {
+      "path": "public/images/guide-country-uae.webp",
+      "scene": "A buyer examining a used full-size SUV in a Dubai vehicle forecourt, contemporary low-rise buildings and subtle desert landscaping, bright warm daylight, left-hand-drive car."
+    },
+    {
+      "path": "public/images/guide-country-usa.webp",
+      "scene": "A buyer checking a used midsize sedan with a clipboard on a suburban American dealership forecourt, a pickup parked in the background, natural daylight, left-hand-drive car."
+    },
+    {
+      "path": "public/images/guide-country-uk.webp",
+      "scene": "A buyer and mechanic inspecting a used compact hatchback outside a British brick garage on an overcast day, right-hand-drive car, blank yellow rear plate."
+    },
+    {
+      "path": "public/images/guide-country-europe.webp",
+      "scene": "A buyer inspecting a used compact hatchback on a European garage forecourt with understated continental architecture, blank white long registration plate, soft natural daylight."
+    }
+  ]
+}

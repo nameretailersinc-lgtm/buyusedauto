@@ -4,6 +4,7 @@ import {toolContent} from "../data/tool-content";
 import {guides} from "../data/guides";
 import {newGuides} from "../data/new-guides";
 import {pillarGuide} from "../data/pillar-guide";
+import {countryGuides} from "../data/country-guides";
 import {scenarios,scenarioPath} from "../data/scenarios";
 import {states} from "../data/states";
 describe("content and routing contracts",()=>{
@@ -11,8 +12,8 @@ describe("content and routing contracts",()=>{
   it("keeps tool and scenario scope focused and route slugs unique",()=>{expect(tools).toHaveLength(11);expect(guides.length).toBeGreaterThanOrEqual(5);expect(scenarios.length).toBeLessThanOrEqual(30);const routes=[...tools.map(t=>`/${t.slug}`),...guides.map(g=>`/guides/${g.slug}`),...scenarios.map(scenarioPath)];expect(new Set(routes).size).toBe(routes.length);});
   it("every tool has distinct methodology, five FAQs, and resolved related links",()=>{for(const t of tools){const c=toolContent[t.id];expect(c.formula.length).toBeGreaterThan(40);expect(c.faq.length).toBeGreaterThanOrEqual(5);expect(new Set(c.faq.map(f=>f.question)).size).toBe(c.faq.length);for(const slug of c.related)expect(tools.some(t=>t.slug===slug)).toBe(true);expect(c.sources.every(s=>s.url.startsWith("https://"))).toBe(true);}});
   it("guides have substantive content, primary-source references, and working tool slugs",()=>{
-    const suppliedSlugs=new Set([...newGuides,pillarGuide].map(g=>g.slug));
-    const primarySourceHosts=new Set(["consumer.ftc.gov","www.nhtsa.gov","www.consumerfinance.gov","vehiclehistory.bja.ojp.gov","www.nicb.org","comptroller.texas.gov","www.dmv.ca.gov"]);
+    const suppliedSlugs=new Set([...newGuides,pillarGuide,...countryGuides].map(g=>g.slug));
+    const primarySourceHosts=new Set(["consumer.ftc.gov","www.nhtsa.gov","www.consumerfinance.gov","vehiclehistory.bja.ojp.gov","www.nicb.org","comptroller.texas.gov","www.dmv.ca.gov","excise.punjab.gov.pk","www.excise.gos.pk","islamabadexcise.gov.pk","www.kpexcise.gov.pk","rta.ae","www.moi.gov.ae","www.gov.uk","europa.eu"]);
     for(const g of guides){
       if(suppliedSlugs.has(g.slug)){
         expect(g.sections.length,g.slug).toBeGreaterThanOrEqual(5);
@@ -28,7 +29,7 @@ describe("content and routing contracts",()=>{
       for(const slug of g.relatedTools)expect(tools.some(t=>t.slug===slug),`${g.slug}: ${slug}`).toBe(true);
       for(const section of g.sections){
         if(section.table){expect(section.table.headers.length).toBeGreaterThan(1);for(const row of section.table.rows)expect(row).toHaveLength(section.table.headers.length);}
-        for(const link of section.links??[]){if(link.url.startsWith("/"))expect(link.url==="/guides"||tools.some(t=>link.url===`/${t.slug}`)||guides.some(other=>link.url===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}
+        for(const link of section.links??[]){if(link.url.startsWith("/"))expect(link.url==="/guides"||link.url==="/pk/car-financing-calculator"||tools.some(t=>link.url===`/${t.slug}`)||guides.some(other=>link.url===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}
       }
     }
   });
