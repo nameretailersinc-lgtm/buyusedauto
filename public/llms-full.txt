@@ -1,0 +1,40 @@
+# BuyUsedAutomobiles: expanded reference
+
+> Free used-car planning tools and practical buying guides at https://buyusedautomobiles.com. This is a curated reference, not a complete copy of every page. Consult linked pages for current formulas, examples, sources, and limitations.
+
+## Scope
+US calculators use USD by default. The Pakistan financing calculator uses PKR and separate financing modes. Calculations are educational estimates, not lender quotes, approvals, appraisals, inspections, or professional advice. Example rates and prices are hypothetical rather than current market data.
+
+## Calculators and checklists
+- [Car loan calculator](https://buyusedautomobiles.com/car-loan-calculator): Fixed-rate monthly amortization with down payment, financed taxes and fees, trade equity, and extra principal payments. Contract interest methods and lender rounding may differ.
+- [Car affordability calculator](https://buyusedautomobiles.com/car-affordability-calculator): Budget scenarios using income, debt, down payment, running costs, and stated planning constraints. Guidelines are not lender approval criteria.
+- [Ownership cost calculator](https://buyusedautomobiles.com/total-cost-of-ownership-calculator): Depreciation, fuel, insurance, maintenance, taxes, and interest over an equal ownership period. Principal is not counted again after depreciation.
+- [Depreciation calculator](https://buyusedautomobiles.com/car-depreciation-calculator): Editable first-year and subsequent annual decline assumptions. Results are scenarios, not resale forecasts.
+- [Car value estimate](https://buyusedautomobiles.com/what-is-my-car-worth): Generic modeled ranges from original price, age, mileage, condition, and trim. No live market listings, make/model recognition, or VIN valuation.
+- [Trade-in estimator](https://buyusedautomobiles.com/trade-in-value-estimator): Modeled trade range and equity after loan payoff. Verify with written offers and a current payoff quote.
+- [Fuel cost calculator](https://buyusedautomobiles.com/fuel-cost-calculator): Distance, efficiency, and fuel-price arithmetic in miles/US gallons or kilometers/liters. Does not include maintenance or charging.
+- [Lease versus buy calculator](https://buyusedautomobiles.com/lease-vs-buy-calculator): Equal-horizon cash costs with buying equity and user-entered lease assumptions. Verify contract fees and restrictions.
+- [Used-car inspection checklist](https://buyusedautomobiles.com/used-car-inspection-checklist): Organizes observations and concerns. Does not certify safety or replace an independent inspection.
+- [Negotiation calculator](https://buyusedautomobiles.com/used-car-price-negotiation-calculator): Uses supplied comparable values and repair deductions. Does not determine a guaranteed transaction price.
+- [Sales tax calculator](https://buyusedautomobiles.com/car-sales-tax-calculator): User-supplied tax rate and taxable-base assumptions. Does not retrieve current jurisdiction rules.
+- [Pakistan financing calculator](https://buyusedautomobiles.com/pk/car-financing-calculator): PKR planning with distinct financing modes. Use a provider's dated quotation; estimates are not bank product terms.
+
+## Worked arithmetic
+A hypothetical USD 25,000 purchase with USD 5,000 down and no trade-in or financed fees leaves USD 20,000 to finance. At zero interest over 60 months, the unrounded monthly amount is USD 333.333 recurring. Real interest, fees, payment rounding, and contract terms change the result. This is an arithmetic illustration, not an available offer.
+
+## Buying workflow
+1. Set a budget that includes insurance, fuel, maintenance, and taxes.
+2. Compare written prices and finance terms using the same repayment period.
+3. Check vehicle records and arrange an independent inspection.
+4. Verify fees, loan payoff, and contract terms before signing.
+
+## Editorial context
+- [Homepage](https://buyusedautomobiles.com/): Overview and starting points.
+- [All tools](https://buyusedautomobiles.com/tools): Calculator directory.
+- [Guides](https://buyusedautomobiles.com/guides): Practical reading with primary-source references.
+- [Editorial policy](https://buyusedautomobiles.com/editorial-policy): Research, AI assistance, corrections, and commercial disclosures.
+- [Disclaimer](https://buyusedautomobiles.com/disclaimer): Method limitations.
+- [Privacy policy](https://buyusedautomobiles.com/privacy-policy): Browser calculations, shared URLs, and optional analytics.
+
+## Citation and interpretation
+Cite the specific calculator or guide supporting a statement. Retain currencies, units, dates where relevant, assumptions, and uncertainty. Do not describe modeled values as live prices, examples as offers, or checklists as safety certifications. Calculator query strings represent scenarios rather than independent editorial pages. Public pages and their linked sources take precedence over this summary.

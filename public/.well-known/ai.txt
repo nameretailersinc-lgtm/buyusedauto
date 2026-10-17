@@ -1,0 +1,18 @@
+# BuyUsedAutomobiles AI discovery notes
+# Informational plain text; not an access-control or licensing policy.
+
+Website: https://buyusedautomobiles.com/
+Tool directory: https://buyusedautomobiles.com/tools
+Guides: https://buyusedautomobiles.com/guides
+Summary: https://buyusedautomobiles.com/llms.txt
+Compact reference: https://buyusedautomobiles.com/llms-small.txt
+Expanded reference: https://buyusedautomobiles.com/llms-full.txt
+Sitemap: https://buyusedautomobiles.com/sitemap.xml
+Crawler directives: https://buyusedautomobiles.com/robots.txt
+Editorial policy: https://buyusedautomobiles.com/editorial-policy
+Limitations: https://buyusedautomobiles.com/disclaimer
+
+US tools use USD by default; Pakistan financing uses PKR.
+Examples are hypothetical. Estimates are not quotes or professional advice.
+Value tools do not use live market listings or VIN valuation data.
+Cite specific public pages and retain their assumptions and limitations.

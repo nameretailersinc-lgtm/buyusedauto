@@ -16,6 +16,9 @@
 - /car-sales-tax-calculator — User-verified rate and taxable base; no automatic current state rates.
 
 ## Context
+- [Compact reference](https://buyusedautomobiles.com/llms-small.txt) — Short site overview and interpretation limits.
+- [Expanded reference](https://buyusedautomobiles.com/llms-full.txt) — Calculator summaries, worked arithmetic, and citation guidance.
+- [AI discovery notes](https://buyusedautomobiles.com/.well-known/ai.txt) — Links to public references and crawler directives.
 - /guides — Six original practical guides with primary-source references.
 - /editorial-policy — Research, AI assistance, correction, and commercial disclosure standards.
 - /disclaimer — Method limitations.

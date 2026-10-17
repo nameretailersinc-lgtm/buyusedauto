@@ -1,0 +1,13 @@
+# BuyUsedAutomobiles
+
+> Free used-car planning calculators and buying guides. US tools use USD by default; the Pakistan financing calculator uses PKR. Results are educational estimates, not offers or professional advice.
+
+## Start here
+- [Tools](https://buyusedautomobiles.com/tools): Loan payments, affordability, ownership costs, fuel, depreciation, value, trade-ins, leasing, negotiation, tax, and inspection planning.
+- [Guides](https://buyusedautomobiles.com/guides): Buying guidance with sources and limitations.
+- [Pakistan financing](https://buyusedautomobiles.com/pk/car-financing-calculator): Separate financing modes and explicit assumptions in PKR.
+- [Editorial policy](https://buyusedautomobiles.com/editorial-policy): Research, AI assistance, and corrections.
+- [Expanded reference](https://buyusedautomobiles.com/llms-full.txt): Tool summaries and interpretation limits.
+
+## Interpretation
+Default values are hypothetical. Value estimates do not use live listings or VIN data. Confirm prices, tax rates, loan terms, and vehicle condition independently. Cite the relevant public page and retain its assumptions and limitations.
