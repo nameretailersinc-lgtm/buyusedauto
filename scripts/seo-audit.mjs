@@ -1,4 +1,5 @@
 import {readSitemapUrls} from "./sitemap-urls.mjs";
+import {hasFreeApplicationOffer} from "./application-schema-policy.mjs";
 import {paginationRedirectTarget} from "./seo-route-policy.mjs";
 import {load} from "cheerio";
 import {readFile,mkdir,writeFile} from "node:fs/promises";
@@ -63,6 +64,7 @@ for(const path of paths){
   if(!expectIndexable)assert(noindex,`${path}: preview/disabled page lacks noindex`);
   const schema=[];$('script[type="application/ld+json"]').each((_,el)=>{try{const value=JSON.parse($(el).text());schema.push(...(Array.isArray(value)?value:[value]));}catch{failures.push(`${path}: malformed JSON-LD`);}});
   for(const node of schema){assert(node["@context"]==="https://schema.org",`${path}: JSON-LD context`);assert(!node.aggregateRating&&!node.review&&!node.reviewedBy,`${path}: unexpected review/rating claim`);
+    if(node["@type"]==="WebApplication")assert(hasFreeApplicationOffer(node,path),`${path}: free offer/currency`);
     if(cleanSchema)assert(!["FAQPage","HowTo"].includes(node["@type"]),`${path}: obsolete rich-result targeting markup`);
     if(node["@type"]==="CollectionPage"){assert(node.mainEntity?.["@type"]==="ItemList",`${path}: collection must list real items`);for(const item of node.mainEntity?.itemListElement||[])assert($("main a[href]").toArray().some(el=>new URL($(el).attr("href"),base+path).pathname===new URL(item.url).pathname),`${path}: structured collection item is not visibly linked`);}
     if(node["@type"]==="Article")assert(node.headline&&node.image&&node.author?.["@type"]==="Organization"&&node.mainEntityOfPage,`${path}: article identity/image/byline`);

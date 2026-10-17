@@ -1,0 +1,13 @@
+# 30/60/90-day SEO roadmap
+
+Prepared 18 October 2026. Windows start when this implementation is accepted. They are work priorities, not traffic or ranking forecasts. No deployment was performed.
+
+| Window | Work | Evidence and completion condition |
+| --- | --- | --- |
+| Days 1–30 | Review this tested change, confirm operator/contact details, deploy through the owner's approved process when authorized. Re-run HTTP/browser checks against the actual deployment. Supply GSC exports and inspect representative loan, guide, regional and pagination URLs. Submit the existing root sitemap only through authorized account access. | Deployed hash and dated HTTP report; sitemap fetch status; Google-selected/user canonical and actual indexing state per inspected URL; keyword estimates retain source/date/market caveats. |
+| Days 31–60 | Compare matched complete GSC periods. Review queries with impressions for the established loan, tax, private-seller, inspection, negotiation and ownership owners. Improve snippets and missing answers based on actual intent. Review broad buying-guide overlap and source maintenance. Investigate mobile LCP using current lab waterfalls and available field evidence. | Query/page/country/device evidence with filters and periods; no summing overlapping keywords; source review notes; measured before/after lab results distinguished from CrUX. Preserve existing URLs unless evidence supports consolidation. |
+| Days 61–90 | Reassess content and market expansion capacity. Research a limited state-tax ruleset only if authoritative rules, effective dates, exceptions and ongoing maintenance are available. Consider reliability comparisons or live value support only with lawful model/year and dated pricing evidence. | Explicit dataset coverage and unsupported cases; independently checked calculations; current citations and reviewer scope. Keep unsupported state/reliability pages unpublished. Re-run route, formula, accessibility and browser checks for any implementation. |
+
+Maintain the loan/payoff workflow on one canonical route; maintain insurance and maintenance as editable ownership inputs rather than separate quote tools. Keep existing Pakistan/UK/UAE and other regional tools linked naturally. Add hreflang only after an editorial equivalence review of actual regional/language alternatives.
+
+Recurring: monitor calculation defects and crawl/server errors, verify changed official sources, retain original reporting periods, and reassess pages with actual impressions before adding new pages. Analytics measurement needs a real configured property and existing consent behavior; accounts and tracking IDs must not be invented.

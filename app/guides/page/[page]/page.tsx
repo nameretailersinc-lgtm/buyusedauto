@@ -9,7 +9,7 @@ export function generateStaticParams(){return Array.from({length:Math.ceil(guide
 function parsePage(value:string){if(!/^[1-9]\d*$/.test(value)||!paginateGuides(guides,Number(value)))notFound();return Number(value);}
 export async function generateMetadata({params}:{params:Promise<{page:string}>}){
   const page=parsePage((await params).page);
-  return metadata(`Used car buying guides — Page ${page}`,`Browse page ${page} of our used car guides. Compare vehicle checks, local registration advice, financing, and ownership planning.`,guidePagePath(page));
+  return metadata(`Used car buying guides — Page ${page}`,`Browse page ${page} of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.`,guidePagePath(page));
 }
 export default async function Page({params}:{params:Promise<{page:string}>}){
   const page=parsePage((await params).page);

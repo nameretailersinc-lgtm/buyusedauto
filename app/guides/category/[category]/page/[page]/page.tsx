@@ -14,7 +14,7 @@ async function resolve(params:Promise<{category:string;page:string}>){
 }
 export async function generateMetadata({params}:{params:Promise<{category:string;page:string}>}){
   const {category,page}=await resolve(params);
-  return metadata(`${category} used car guides — Page ${page}`,`Browse page ${page} of our ${category.toLowerCase()} guides for used car decisions, with practical checks, clear examples, and official resources.`,guidePagePath(page,category));
+  return metadata(`${category} used car guides — Page ${page}`,`Browse page ${page} of our ${category.toLowerCase()} guides for used car decisions, with practical vehicle checks, clear worked examples, official resources, and related planning tools.`,guidePagePath(page,category));
 }
 export default async function Page({params}:{params:Promise<{category:string;page:string}>}){
   const {category,page}=await resolve(params);

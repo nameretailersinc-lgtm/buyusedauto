@@ -11,7 +11,7 @@ import Link from "next/link";
 import type {Guide as GuideData} from "@/data/guides";
 import {tools} from "@/data/tools";
 import {guideImages,guideImageAlt} from "@/data/visuals";
-import {metadata,siteUrl,siteName} from "@/lib/site";
+import {siteUrl,siteName} from "@/lib/site";
 import {Breadcrumbs,JsonLd} from "@/components/seo";
 import {Icon} from "@/components/icon";
 import {GuideCard} from "@/components/cards";

@@ -29,7 +29,7 @@ describe("content and routing contracts",()=>{
       for(const slug of g.relatedTools)expect(tools.some(t=>t.slug===slug),`${g.slug}: ${slug}`).toBe(true);
       for(const section of g.sections){
         if(section.table){expect(section.table.headers.length).toBeGreaterThan(1);for(const row of section.table.rows)expect(row).toHaveLength(section.table.headers.length);}
-        for(const link of section.links??[]){if(link.url.startsWith("/"))expect(link.url==="/guides"||link.url==="/pk/car-financing-calculator"||tools.some(t=>link.url===`/${t.slug}`)||guides.some(other=>link.url===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}
+        for(const link of section.links??[]){if(link.url.startsWith("/")){const path=new URL(link.url,"https://buyusedautomobiles.com").pathname;expect(path==="/guides"||path==="/pk/car-financing-calculator"||tools.some(t=>path===`/${t.slug}`)||guides.some(other=>path===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}}
       }
     }
   });

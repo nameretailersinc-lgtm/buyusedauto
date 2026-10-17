@@ -1,5 +1,6 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "how-to-buy-a-used-car-from-a-private-seller": ["car-keys", "Illustration of car keys being handed over beside a parked sedan."],
   "conventional-vs-islamic-car-finance": ["guide-financing", "Calculator and vehicle finance paperwork on a desk."],
   "used-car-financing-quote-checklist": ["guide-country-pakistan", "Buyer and mechanic inspecting a used car in Pakistan."],
   "buy-used-car-pakistan": ["guide-country-pakistan", "Buyer and mechanic inspecting a compact sedan on a Lahore forecourt."],

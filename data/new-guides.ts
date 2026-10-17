@@ -77,7 +77,7 @@ const articleDrafts: Guide[] = [
     ], sources: [ftc], relatedTools: [ownershipTool, "car-loan-calculator"]
   },
   {
-    slug: "how-to-avoid-used-car-scams", title: "How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know",
+    slug: "how-to-avoid-used-car-scams", seoTitle: "How to Avoid Used Car Scams: 10 Warning Signs", title: "How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know",
     description: "Recognize ten used car scam warning signs, verify sellers and vehicle records, and plan inspections, payments, and ownership transfers before committing.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 5,
     intro: "To avoid used car scams, verify the seller's identity, confirm vehicle ownership, compare the VIN with official records, inspect the vehicle in person, and use secure payment methods. Be especially cautious of unusually low prices, pressure to pay immediately, and sellers who refuse independent inspections.",

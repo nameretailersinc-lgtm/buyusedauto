@@ -1,4 +1,5 @@
 import {readSitemapUrls} from "./sitemap-urls.mjs";
+import {hasFreeApplicationOffer} from "./application-schema-policy.mjs";
 import {load} from "cheerio";
 import {mkdir,writeFile} from "node:fs/promises";
 const base=process.env.TEST_BASE_URL||"http://127.0.0.1:3000";
@@ -14,7 +15,7 @@ function validateSchema(node,path,$){
   assert(node["@context"]==="https://schema.org",`${path}: schema context`);
   assert(typeof node["@type"]==="string",`${path}: schema type`);
   if(node["@type"]==="BreadcrumbList"){assert(Array.isArray(node.itemListElement)&&node.itemListElement.length>0,`${path}: breadcrumbs empty`);node.itemListElement?.forEach((item,i)=>{assert(item.position===i+1&&!!item.name&&/^https?:\/\//.test(item.item),`${path}: breadcrumb item ${i}`);});}
-  if(node["@type"]==="WebApplication"){assert(node.offers?.price==="0"&&node.offers.priceCurrency===(path.startsWith("/pk/")?"PKR":"USD"),`${path}: free offer`);assert(!!node.name&&!!node.applicationCategory&&!!node.operatingSystem,`${path}: application required fields`);}
+  if(node["@type"]==="WebApplication"){assert(hasFreeApplicationOffer(node,path),`${path}: free offer/currency`);assert(!!node.name&&!!node.applicationCategory&&!!node.operatingSystem,`${path}: application required fields`);}
   if(node["@type"]==="FAQPage"){assert(node.mainEntity?.length>=3,`${path}: FAQ entries`);for(const q of node.mainEntity||[]){assert(q["@type"]==="Question"&&q.acceptedAnswer?.["@type"]==="Answer",`${path}: FAQ types`);assert($("main").text().includes(q.name)&&$("main").text().includes(q.acceptedAnswer.text),`${path}: FAQ not visible in HTML`);}}
   if(node["@type"]==="Article"){assert(!!node.headline&&!!node.mainEntityOfPage&&node.author?.["@type"]==="Organization",`${path}: article fields`);assert(!node.reviewedBy,`${path}: unexpected reviewer`);}
 }

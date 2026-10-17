@@ -8,7 +8,7 @@ import {CountryRunningCalculator} from "@/components/country-running-calculator"
 export const dynamicParams=false;
 export function generateStaticParams(){return countryTools.map(market=>({country:market.country}));}
 async function resolve(params:Promise<{country:string}>){const {country}=await params;const selected=countryTools.find(item=>item.country===country);if(!selected)notFound();return selected;}
-export async function generateMetadata({params}:{params:Promise<{country:string}>}){const market=await resolve(params);return metadata(`${market.name} car running cost calculator (${market.currency})`,`Estimate ${market.name} car fuel and ownership costs in ${market.currency}. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.`,countryToolPath(market.country),{image:`/images/${market.image}.webp`});}
+export async function generateMetadata({params}:{params:Promise<{country:string}>}){const market=await resolve(params);return metadata(`${market.name} car running cost calculator (${market.currency})`,`Estimate ${market.name} car fuel and ownership costs in ${market.currency}. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.`,countryToolPath(market.country),{image:`/images/${market.image}.webp`,locale:market.locale.replace("-","_")});}
 export default async function Page({params}:{params:Promise<{country:string}>}){
   const market=await resolve(params);const path=countryToolPath(market.country);const title=`${market.name} car running cost calculator`;
   const faqs=[

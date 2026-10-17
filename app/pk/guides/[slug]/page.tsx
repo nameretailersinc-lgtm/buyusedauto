@@ -1,8 +1,6 @@
-import Link from "next/link";
 import {notFound} from "next/navigation";
 import {pkGuides,pkSources,pkCalculatorPath} from "@/data/pakistan";
 import {metadata as pageMetadata} from "@/lib/site";
-import {Breadcrumbs,JsonLd} from "@/components/seo";
 export const dynamicParams=false;
 export function generateStaticParams(){return pkGuides.map(guide=>({slug:guide.slug}));}
 export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const guide=pkGuides.find(item=>item.slug===slug);if(!guide)return {};const result=pageMetadata(guide.title,guide.description,`/pk/guides/${slug}`);return {...result,openGraph:{...result.openGraph,locale:"en_PK",type:"article" as const}};}

@@ -16,14 +16,16 @@ export function monthlyPayment(principal: number, annualRate: number, months: nu
   const r = annualRate / 1200;
   return principal === 0 ? 0 : r === 0 ? principal / months : principal * r / -Math.expm1(-months * Math.log1p(r));
 }
-export type LoanInput = { price: number; down: number; trade: number; payoff: number; fees: number; rate: number; months: number; extra: number; tax?: number; currency?: Currency };
+export type LoanInput = { price: number; down: number; trade: number; payoff: number; fees: number; rate: number; months: number; extra: number; tax?: number; title?: number; registration?: number; currency?: Currency };
 export type PaymentRow = { month: number; payment: number; principal: number; interest: number; balance: number };
 export function loan(input: LoanInput) {
   for (const key of ["price", "down", "trade", "payoff", "fees", "rate", "months", "extra"] as const) valid(input[key], key);
   const tax = valid(input.tax ?? 0, "Financed tax");
+  const title = valid(input.title ?? 0, "Financed title fee");
+  const registration = valid(input.registration ?? 0, "Financed registration fee");
   const currency = input.currency ?? "USD";
   if (!Object.values(markets).some(market => market.currency === currency)) throw new Error("Choose a supported currency. Currency does not convert amounts.");
-  const net = input.price + input.fees + tax + input.payoff - input.down - input.trade;
+  const net = input.price + input.fees + tax + title + registration + input.payoff - input.down - input.trade;
   const principal = cents(Math.max(0, net));
   const unappliedCredit = cents(Math.max(0, -net));
   const payment = monthlyPayment(principal, input.rate, input.months);

@@ -3,6 +3,7 @@ import type {Guide} from './guides';
 // Adapted from the supplied pillar draft; examples are hypothetical.
 export const pillarGuide: Guide = {
   "slug": "complete-used-car-buying-guide",
+  "seoTitle": "Complete Used Car Buying Guide: 12 Practical Steps",
   "title": "Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car",
   "description": "Plan a used car purchase in 12 steps, from budget and vehicle history to inspection, financing, negotiation, and a verified ownership transfer.",
   "category": "Buying",
@@ -37,6 +38,7 @@ export const pillarGuide: Guide = {
         "Use this page to plan the full purchase. Follow the detailed guides below for your budget, mileage, inspection, seller verification, and timing questions."
       ],
       "links": [
+        {"title": "How to buy a used car from a private seller", "url": "/guides/how-to-buy-a-used-car-from-a-private-seller"},
         {
           "title": "Used Car Buying Checklist",
           "url": "/guides/used-car-buying-checklist-first-time-buyers"

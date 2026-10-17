@@ -1,5 +1,7 @@
 # Owner-supplied SEO inputs
 
+Update 18 October 2026: the new master brief supplies approximate Keyword Planner monthly estimates for US keyword clusters. They are recorded in `docs/seo-keyword-map.md` as owner-provided figures, without an original export date or targeting configuration. The historical paragraph below describes the earlier baseline. No actual GSC export was found during this checkpoint; the IDE-referenced `Table.csv` was absent at its supplied path.
+
 Place GSC query/page/country/device exports and licensed Ahrefs, Semrush or Keyword Planner CSV exports or screenshots here. Include the source, market database, language, export date and reporting period. Do not include credentials or personal account information.
 
 At baseline on 2026-10-15, no exports were supplied. The request refers to verified USA Semrush data but contains no metric rows. Pakistan ranges are described without actual ranges. Neither statement establishes numeric volume, KD or CPC. Treat missing metrics as UNVERIFIED, never zero, and do not scrape verification-protected keyword tools.

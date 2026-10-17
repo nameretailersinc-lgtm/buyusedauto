@@ -1,7 +1,7 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 37,
-  "internalLinks": 151,
+  "pages": 60,
+  "internalLinks": 446,
   "failures": [],
   "warnings": [],
   "details": [
@@ -72,6 +72,48 @@
       "path": "/guides/category/buying",
       "title": "Buying guides for used-car decisions | BuyUsedAutomobiles",
       "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Buying guides"
+    },
+    {
+      "path": "/guides/category/ownership",
+      "title": "Ownership guides for used-car decisions | BuyUsedAutomobiles",
+      "descriptionLength": 159,
+      "schemaCount": 2,
+      "h1": "Ownership guides"
+    },
+    {
+      "path": "/guides/page/2",
+      "title": "Used car buying guides — Page 2 | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "A little research.A better car decision."
+    },
+    {
+      "path": "/guides/page/3",
+      "title": "Used car buying guides — Page 3 | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "A little research.A better car decision."
+    },
+    {
+      "path": "/guides/page/4",
+      "title": "Used car buying guides — Page 4 | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "A little research.A better car decision."
+    },
+    {
+      "path": "/guides/category/buying/page/2",
+      "title": "Buying used car guides — Page 2 | BuyUsedAutomobiles",
+      "descriptionLength": 160,
+      "schemaCount": 2,
+      "h1": "Buying guides"
+    },
+    {
+      "path": "/guides/category/buying/page/3",
+      "title": "Buying used car guides — Page 3 | BuyUsedAutomobiles",
+      "descriptionLength": 160,
       "schemaCount": 2,
       "h1": "Buying guides"
     },
@@ -153,6 +195,83 @@
       "h1": "Car sales tax calculator"
     },
     {
+      "path": "/tools/pakistan/car-running-cost-calculator",
+      "title": "Pakistan car running cost calculator (PKR) | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "Pakistan car running cost calculator"
+    },
+    {
+      "path": "/tools/uae/car-running-cost-calculator",
+      "title": "UAE car running cost calculator (AED) | BuyUsedAutomobiles",
+      "descriptionLength": 148,
+      "schemaCount": 2,
+      "h1": "UAE car running cost calculator"
+    },
+    {
+      "path": "/tools/uk/car-running-cost-calculator",
+      "title": "UK car running cost calculator (GBP) | BuyUsedAutomobiles",
+      "descriptionLength": 147,
+      "schemaCount": 2,
+      "h1": "UK car running cost calculator"
+    },
+    {
+      "path": "/tools/germany/car-running-cost-calculator",
+      "title": "Germany car running cost calculator (EUR) | BuyUsedAutomobiles",
+      "descriptionLength": 152,
+      "schemaCount": 2,
+      "h1": "Germany car running cost calculator"
+    },
+    {
+      "path": "/guides/complete-used-car-buying-guide",
+      "title": "Complete Used Car Buying Guide: 12 Practical Steps",
+      "descriptionLength": 143,
+      "schemaCount": 2,
+      "h1": "Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car"
+    },
+    {
+      "path": "/guides/how-to-buy-a-used-car-from-a-private-seller",
+      "title": "How to buy a used car from a private seller",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "How to buy a used car from a private seller"
+    },
+    {
+      "path": "/guides/buy-used-car-pakistan",
+      "title": "How to Buy a Used Car in Pakistan 2026: Complete Guide",
+      "descriptionLength": 141,
+      "schemaCount": 2,
+      "h1": "How to Buy a Used Car in Pakistan in 2026: Complete Step-by-Step Guide"
+    },
+    {
+      "path": "/guides/buy-used-car-uae",
+      "title": "Buying a Used Car in UAE 2026: Dubai & Abu Dhabi Guide",
+      "descriptionLength": 130,
+      "schemaCount": 2,
+      "h1": "How to Buy a Used Car in UAE in 2026: Complete Dubai, Abu Dhabi and Sharjah Guide"
+    },
+    {
+      "path": "/guides/buy-used-car-usa",
+      "title": "How to Buy a Used Car in USA 2026: Complete Checklist",
+      "descriptionLength": 148,
+      "schemaCount": 2,
+      "h1": "How to Buy a Used Car in the USA in 2026: Complete Guide for American Buyers"
+    },
+    {
+      "path": "/guides/buy-used-car-uk",
+      "title": "Buying a Used Car in UK 2026: MOT, DVLA & Full Checklist",
+      "descriptionLength": 134,
+      "schemaCount": 2,
+      "h1": "How to Buy a Used Car in the UK in 2026: Complete MOT, DVLA and Vehicle Inspection Guide"
+    },
+    {
+      "path": "/guides/buy-used-car-europe",
+      "title": "Buying a Used Car in Europe 2026: EU Registration & VAT",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "How to Buy a Used Car in Europe in 2026: Complete EU Buying, Import and Registration Guide"
+    },
+    {
       "path": "/guides/how-to-inspect-a-used-car",
       "title": "How to inspect a used car before you buy | BuyUsedAutomobiles",
       "descriptionLength": 151,
@@ -202,6 +321,48 @@
       "h1": "Used car buying checks by country: official resources"
     },
     {
+      "path": "/guides/best-time-to-buy-a-used-car",
+      "title": "Best Time to Buy a Used Car in 2026: When Can You Save the Most?",
+      "descriptionLength": 150,
+      "schemaCount": 2,
+      "h1": "Best Time to Buy a Used Car in 2026: When Can You Save the Most?"
+    },
+    {
+      "path": "/guides/how-many-miles-is-too-many-for-a-used-car",
+      "title": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide"
+    },
+    {
+      "path": "/guides/used-car-buying-checklist-first-time-buyers",
+      "title": "Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers",
+      "descriptionLength": 149,
+      "schemaCount": 2,
+      "h1": "Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers"
+    },
+    {
+      "path": "/guides/used-car-vs-new-car",
+      "title": "Used Car vs New Car in 2026: Which Offers Better Value?",
+      "descriptionLength": 157,
+      "schemaCount": 2,
+      "h1": "Used Car vs New Car in 2026: Which Offers Better Value?"
+    },
+    {
+      "path": "/guides/how-to-avoid-used-car-scams",
+      "title": "How to Avoid Used Car Scams: 10 Warning Signs",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know"
+    },
+    {
+      "path": "/guides/used-car-maintenance-costs",
+      "title": "Used Car Maintenance Costs in 2026: How Much Should You Budget?",
+      "descriptionLength": 155,
+      "schemaCount": 2,
+      "h1": "Used Car Maintenance Costs in 2026: How Much Should You Budget?"
+    },
+    {
       "path": "/car-loan-calculator/10000-car-loan",
       "title": "$10,000 car loan: leave room for repairs | BuyUsedAutomobiles",
       "descriptionLength": 157,
@@ -248,7 +409,7 @@
       "title": "Pakistan car financing calculator: PKR estimates",
       "descriptionLength": 156,
       "schemaCount": 2,
-      "h1": "Pakistan car financing calculator"
+      "h1": "Pakistan car financing calculator."
     },
     {
       "path": "/pk/guides/conventional-vs-islamic-car-finance",

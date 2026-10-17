@@ -3,6 +3,7 @@ import {internationalGuide} from "./international-guide";
 import {newGuides} from "./new-guides";
 import {pillarGuide} from "./pillar-guide";
 import {countryGuides} from "./country-guides";
+import {privateSellerGuide} from "./private-seller-guide";
 
 export type GuideSection = {
   heading: string;
@@ -32,6 +33,7 @@ export type Guide = {
 
 export const guides: Guide[] = [
   pillarGuide,
+  privateSellerGuide,
   ...countryGuides,
   {
     slug: 'how-to-inspect-a-used-car',
@@ -207,7 +209,7 @@ export const guides: Guide[] = [
   },
   {
     slug: 'how-to-negotiate-a-used-car-price',
-    updated: '2026-10-16',
+    updated: '2026-10-18',
     reviewedOn: '2026-10-16',
     title: 'How to negotiate a used-car price with evidence',
     description: 'Negotiate a used-car price using comparable listings, inspection findings, an itemized purchase quote, and a firm budget. Work through a realistic example.',
@@ -257,6 +259,7 @@ export const guides: Guide[] = [
       },
       {
         heading: '5. Evaluate the whole counteroffer',
+        subsections: [{heading:'How do I negotiate a used-car price when paying cash?',paragraphs:['Request a written total for a cash purchase and compare it with any financing-conditioned quote. Cash does not guarantee a discount. A smaller financed purchase price can still cost more after interest, fees and conditions are included. Use the same vehicle, included products and government-charge assumptions when comparing; do not take a loan solely for a discount without reading its total cost and repayment terms.']}],
         links: [{title: 'CFPB: compare loan amount, APR, interest rate and term', url: 'https://www.consumerfinance.gov/ask-cfpb/how-do-i-compare-auto-loan-offers-what-should-i-look-at-besides-the-monthly-payment-en-753/'}],
         paragraphs: [
           'A lower vehicle price can be offset by another charge, a smaller trade-in allowance, or a different finance arrangement. Compare the new worksheet against the previous version line by line. Track the sale of your current vehicle separately so you can see what the dealer is paying for it and how much debt must be settled.',
@@ -274,7 +277,8 @@ export const guides: Guide[] = [
       },
       {
         heading: '7. Close only when the final numbers match',
-        links: [{title: 'FTC: review add-on prices and terms before signing', url: 'https://consumer.ftc.gov/consumer-alerts/2020/07/ftc-announces-auto-buyers-study-reports'}],
+                subsections: [{heading:'How much should I offer below the asking price?',paragraphs:['There is no universal percentage. Begin with comparable vehicles, condition and documented work, then set your own ceiling. In the worked example above, the $15,200 opening offer follows a $15,500 condition-adjusted reference; neither figure predicts acceptance.']},{heading:'What should I check when buying from a private seller?',paragraphs:['Verify ownership and any lien, arrange independent inspection, and coordinate the agreed payment with the required transfer documents. Follow the private-seller buying guide before paying.']}],
+        links: [{title: 'FTC: review add-on prices and terms before signing', url: 'https://consumer.ftc.gov/consumer-alerts/2020/07/ftc-announces-auto-buyers-study-reports'},{title:'Private-seller buying, payment and title checklist',url:'/guides/how-to-buy-a-used-car-from-a-private-seller'}],
         paragraphs: [
           'Read the final purchase and finance documents at your own pace. Check the VIN, mileage, selling price, taxes, fees, products, trade-in amount, payoff, and cash due. Ask for a corrected document when a figure differs; a verbal explanation does not update a signed agreement.',
           'The FTC advises buyers to review proposed add-ons and their costs. Assess any product against its coverage, exclusions, deductible, cancellation terms, and price. A product you decide to buy belongs in your total budget, including the interest if it is financed. Do not let a small monthly presentation hide its full cost.',
