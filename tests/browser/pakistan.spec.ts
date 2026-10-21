@@ -28,7 +28,7 @@ test("Pakistan modes keep borrowing separate from quoted Islamic cash flows",asy
   const accessibility=await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze();
   expect(accessibility.violations).toEqual([]);
 });
-test("Pakistan bundle is crawlable and sitemap index has country segments",async({browser,request})=>{
+test("Pakistan bundle is crawlable and sitemap index exposes all content groups",async({browser,request})=>{
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();
   for(const path of ["/pk/car-financing-calculator","/pk/guides/conventional-vs-islamic-car-finance","/pk/guides/used-car-financing-quote-checklist"]){
     await page.goto(path);await expect(page.locator("h1")).toHaveCount(1);
@@ -36,7 +36,7 @@ test("Pakistan bundle is crawlable and sitemap index has country segments",async
     await expect(page.locator("main")).toContainText("Diminishing Musharakah");
     await expect(page.locator('link[hreflang]')).toHaveCount(0);
   }
-  const index=await (await request.get("/sitemap.xml")).text();expect(index).toContain("<sitemapindex");expect(index).toContain("/sitemaps/us.xml");expect(index).toContain("/sitemaps/pk.xml");
+  const index=await (await request.get("/sitemap.xml")).text();expect(index).toContain("<sitemapindex");for(const group of ["core","tools","guides","scenarios","pk"])expect(index).toContain(`/sitemaps/${group}.xml`);expect(index).not.toContain("/sitemaps/us.xml");
   const segment=await (await request.get("/sitemaps/pk.xml")).text();expect((segment.match(/<loc>/g)||[])).toHaveLength(3);
   await context.close();
 });

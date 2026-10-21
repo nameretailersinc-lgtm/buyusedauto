@@ -1,6 +1,6 @@
 # Keyword-to-page map
 
-Updated 2026-10-21 from current local production HTML after implementing four multi-currency tools and the existing fuel-page enhancement. Local validation does not establish deployment status.
+Updated 2026-10-21 from current local production HTML after implementing Phase 1 and Phase 2 multi-currency tools and the fuel-page enhancement. The main sitemap index now advertises core, tools, guides, scenarios and Pakistan segments directly. Local validation does not establish deployment status.
 
 New calculator metrics were checked against four Keyword Planner exports for October 2025-September 2026: 4,521 rows and 4,488 unique keywords. See docs/seo/keyword-research-2026-10-21.json and docs/seo-calculator-rollout.md for provenance, corrections and rollout decisions. Bid currency PKR does not establish the search market. Google Ads competition is not organic difficulty. Older brief-only metrics retain their stated evidence limits. Do not sum synonyms or treat volumes as traffic forecasts; GSC performance and target-geography validation remain outstanding.
 
@@ -61,10 +61,9 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
 - H1: Auto loan refinance calculator with fees
 - Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
-- Internal links: /disclaimer, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
 - Priority: P1
-
 
 ### /car-affordability-calculator
 
@@ -122,6 +121,25 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Internal links: /disclaimer, /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /car-sales-tax-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Implemented percentage target, net trade equity, reserve, funding gap and loan scenarios in eight currencies. Article retains explanatory intent.
 - Priority: P1
+
+### /car-loan-apr-calculator
+
+- URL: https://buyusedautomobiles.com/car-loan-apr-calculator
+- Page type: Calculator/tool
+- Primary keyword: car loan apr calculator
+- Secondary keywords: auto loan apr calculator; car loan effective annual rate
+- Long-tail variants: nominal APR vs effective annual rate; upfront vs financed finance charges; equal monthly cash-flow yield
+- Search intent: Estimate annualized borrowing cost with finance charges
+- Search-volume evidence: 5,000 Medium (34) for each APR variant, verified export rows; overlapping synonyms, not additive.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-loan-apr-calculator
+- SEO title: Car loan APR calculator with finance fees | BuyUsedAutomobiles
+- Meta description: Estimate a car loan APR from its contract rate, term, and finance fees. Compare nominal APR, effective annual rate, monthly payments, and total credit cost.
+- H1: Car loan APR calculator with finance fees
+- Recommended H2s (retain current headings): How it works; A worked example; APR and the contract rate answer different questions; Which fees belong in the calculation?; Payment dates and rounding matter; Questions worth asking
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-loan-payoff-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented eight-currency regular-monthly APR estimate with fee classification supplied by the user, separate effective annual rate, and lender-disclosure limitations.
+- Priority: P2
 
 ### /car-loan-calculator
 
@@ -275,6 +293,44 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Implemented distinct existing-balance and required-payment workflow, extra/lump-sum comparison, cent-rounded schedule and eight display currencies. Purchase loan retains new-purchase intent.
 - Priority: P1
 
+### /car-registration-tax-calculator
+
+- URL: https://buyusedautomobiles.com/car-registration-tax-calculator
+- Page type: Calculator/tool
+- Primary keyword: car registration tax calculator
+- Secondary keywords: car registration fee calculator; vehicle tax budget
+- Long-tail variants: one-time vs annual registration costs; sourced UK DVLA first registration fee; manual local tax budget
+- Search intent: Budget registration and recurring vehicle-tax costs
+- Search-volume evidence: 50,000 Low (25), -90% YoY, verified export row. Geography unverified; supplied rule is limited to UK first registration.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-registration-tax-calculator
+- SEO title: Car registration tax and fee calculator | BuyUsedAutomobiles
+- Meta description: Plan car registration and recurring vehicle-tax costs using verified local fees. Separate one-time charges from annual costs, with a sourced UK DVLA option.
+- H1: Car registration tax and fee calculator
+- Recommended H2s (retain current headings): How it works; A worked example; The sourced UK first-registration option; Fee verification and maintenance; Registration budget versus purchase sales tax; Questions worth asking
+- Internal links: /disclaimer, /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /car-down-payment-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented eight-currency manual registration budget plus dated, scope-limited GBP DVLA fee profile with a review cutoff. Purchase sales-tax intent remains with its existing calculator.
+- Priority: P2
+
+### /car-repair-cost-calculator
+
+- URL: https://buyusedautomobiles.com/car-repair-cost-calculator
+- Page type: Calculator/tool
+- Primary keyword: car repair cost calculator
+- Secondary keywords: repair quote calculator; car repair estimate total
+- Long-tail variants: quoted parts plus billed labor hours; confirmed credit and separate contingency; compare itemized quotes
+- Search intent: Total and compare written repair quotes
+- Search-volume evidence: 5,000 Medium (40), verified export row; tool covers quote arithmetic rather than automatic market-price lookup.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-repair-cost-calculator
+- SEO title: Car repair cost calculator from your quote | BuyUsedAutomobiles
+- Meta description: Calculate a car repair budget from quoted parts, labor, diagnostic fees, tax, and confirmed credits. Add a contingency and compare written repair estimates.
+- H1: Car repair cost calculator from your quote
+- Recommended H2s (retain current headings): How it works; A worked example; Quoted labor hours are not always elapsed workshop time; Use reliable evidence for each repair; Credits, taxes and cash reserves; Questions worth asking
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented eight-currency quote-based repair budget. No model-specific repair price data or diagnosis invented; automatic market estimates remain data-dependent.
+- Priority: P2
+
 ### /car-sales-tax-calculator
 
 - URL: https://buyusedautomobiles.com/car-sales-tax-calculator
@@ -283,7 +339,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: auto sales tax calculator; used car sales tax calculator; used car tax calculator; dmv fee calculator used car; ca auto sales tax calculator
 - Long-tail variants: used car sales tax calculator by state; used car sales tax and registration calculator; car sales tax and title fees calculator; calculate taxes and fees on used car; used car tax title and license calculator; car price plus tax calculator; calculate DMV fees for used car; used car out the door price calculator; used car tax calculator with trade in
 - Search intent: Estimate tax and purchase total with verified manual inputs
-- Search-volume evidence: 5,000 Low (1); tax title license calculator 5,000 Low (2), verified export rows. Registration tax keyword 50,000 Low (25), -90% YoY; automatic jurisdiction rollout held.
+- Search-volume evidence: 5,000 Low (1); tax title license calculator 5,000 Low (2), verified export rows. Registration tax keyword 50,000 Low (25), -90% YoY; purchase tax stays manual; a separate registration budget now provides a scoped, sourced UK first-registration fee.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/car-sales-tax-calculator
 - SEO title: Car sales tax calculator | BuyUsedAutomobiles
@@ -1221,7 +1277,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Find the right free tool for your next car decision. Compare loans, estimate ownership costs, inspect a vehicle, and plan a supported offer before buying.
 - H1: The right tool.A clearer decision.
 - Recommended H2s (retain current headings): Buying; Financing; Ownership; Selling; Country-specific car running costs; The numbers are only part of the story.; The right car starts with the right budget.
-- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-sales-tax-calculator, /car-loan-calculator, /car-affordability-calculator, /lease-vs-buy-calculator, /car-loan-payoff-calculator, /auto-loan-refinance-calculator, /car-down-payment-calculator, /car-depreciation-calculator, /total-cost-of-ownership-calculator, /fuel-cost-calculator
+- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-sales-tax-calculator, /car-loan-calculator, /car-affordability-calculator, /lease-vs-buy-calculator, /car-loan-payoff-calculator, /auto-loan-refinance-calculator, /car-down-payment-calculator, /car-loan-apr-calculator, /car-depreciation-calculator, /total-cost-of-ownership-calculator
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 

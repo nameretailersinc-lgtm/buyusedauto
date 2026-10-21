@@ -13,3 +13,4 @@ export const routeGroups={
 // Single-guide collections remain useful navigation pages without competing for indexing.
 export const navigationOnlyCategories=categories.filter(c=>guides.filter(g=>g.category===c).length<2).map(guideCategoryPath);
 export const indexableRouteGroups={...routeGroups,core:routeGroups.core.filter(path=>!navigationOnlyCategories.includes(path))};
+export const sitemapSegments=Object.keys(indexableRouteGroups) as (keyof typeof indexableRouteGroups)[];

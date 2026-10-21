@@ -27,6 +27,7 @@ const paths=Object.keys(manifest.routes).filter(p=>!/^\/(?:_|robots\.txt|sitemap
 const robotsResponse=await get("/robots.txt");const robots=await robotsResponse.text();assert(robotsResponse.status===200,"robots.txt must return 200");
 const disallows=[...robots.matchAll(/^Disallow:\s*(.+)$/gm)].map(m=>m[1].trim());
 for(const [group,path] of [["core","/sitemaps/core.xml"],["tools","/sitemaps/tools.xml"],["guides","/sitemaps/guides.xml"],["scenarios","/sitemaps/scenarios.xml"],["pk","/sitemaps/pk.xml"]]){
+  if(expectIndexable)assert(rootXml("sitemap > loc").toArray().some(node=>new URL(rootXml(node).text()).pathname===path),`${path}: sitemap group must be advertised by the main index`);
   const response=await get(path);assert(response.status===200,`${path}: HTTP ${response.status}`);
   const $=load(await response.text(),{xmlMode:true});const urls=$("url > loc").map((_,el)=>$(el).text()).get();
   sitemaps.push({group,path,status:response.status,urls});
