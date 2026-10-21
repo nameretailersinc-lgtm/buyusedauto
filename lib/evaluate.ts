@@ -5,8 +5,10 @@ import {payoff,refinance,downPayment,evCharging} from "./calculators/planning";
 import {markets,formatMoney,type Market} from "./markets";
 import {carLoanApr,repairQuote,registrationBudget} from "./calculators/phase-two";
 import {ukFirstRegistration} from "../data/registration-rules";
+import {evaluatePhaseThree} from "./evaluate-phase-three";
 export type Result = {market?:Market;ownershipInput?:TcoInput;label:string;value:string;suffix?:string;metrics:{label:string;value:string}[];note:string;chart?:{label:string;value:number}[];chartType?:"bars"|"breakdown";schedule?:PaymentRow[];table?:{headers:string[];rows:string[][];caption:string}};
 export function evaluate(id:ToolId,values:Record<string,string>):Result {
+  if(["maintenance","mile","gasEv"].includes(id))return evaluatePhaseThree(id,values);
   const n=(key:string)=>{if(values[key]===undefined||values[key].trim()==="")throw new Error("Complete every numeric field to calculate a result. Enter 0 when a cost does not apply.");const value=Number(values[key]);if(!Number.isFinite(value))throw new Error("Use finite numbers in every numeric field.");return value;};
   // Old shared URLs and callers can omit newly itemized charges. Blank values still fail validation.
   const charge=(key:string)=>{const value=values[key]===undefined?0:n(key);if(value<0)throw new Error("Itemized charges cannot be negative.");return value;};

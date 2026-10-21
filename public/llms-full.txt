@@ -6,6 +6,9 @@
 US calculators use USD by default. The Pakistan financing calculator uses PKR and separate financing modes. Calculations are educational estimates, not lender quotes, approvals, appraisals, inspections, or professional advice. Example rates and prices are hypothetical rather than current market data.
 
 ## Calculators and checklists
+- [Car maintenance cost calculator](https://buyusedautomobiles.com/car-maintenance-cost-calculator): Service-interval reserve, tire allowance, other annual work and immediate repairs; eight currencies and miles/km.
+- [Car cost per mile calculator](https://buyusedautomobiles.com/car-cost-per-mile-calculator): Recorded-period economic cost or gross cash spending divided by distance; eight currencies and miles/km.
+- [Gas vs electric car cost calculator](https://buyusedautomobiles.com/gas-vs-electric-car-cost-calculator): Matched gas and battery-electric economic ownership costs with explicit energy boundary and editable local figures.
 - [Car loan APR calculator](https://buyusedautomobiles.com/car-loan-apr-calculator): Regular-monthly nominal APR estimate with upfront and financed credit charges, plus a separate effective annual rate.
 - [Car repair cost calculator](https://buyusedautomobiles.com/car-repair-cost-calculator): Itemized written quote arithmetic, confirmed credits and a separate contingency; no automatic repair-price feed.
 - [Registration tax budget](https://buyusedautomobiles.com/car-registration-tax-calculator): One-time and annual local charges, with a date-limited sourced UK DVLA first-registration fee option.

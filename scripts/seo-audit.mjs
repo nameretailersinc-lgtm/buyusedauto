@@ -11,6 +11,7 @@ const output=process.env.SEO_AUDIT_OUTPUT||"reports/seo-after.json";
 const expectIndexable=process.env.SEO_EXPECT_INDEXABLE!=="false";
 const cleanSchema=process.env.SEO_EXPECT_CLEAN_SCHEMA==="true";
 const failures=[],warnings=[],pages=[],statuses=[],sitemaps=[],links=new Map(),images=new Set();
+const contentLinks=new Map();
 const assert=(ok,message)=>{if(!ok)failures.push(message);};
 const normalize=url=>new URL(url).href;
 async function get(path){return fetch(new URL(path,base),{redirect:"manual"});}
@@ -74,11 +75,14 @@ for(const path of paths){
   const paragraphs=$("main article p,main .tool-prose p,main .page-heading p").filter((_,el)=>!$(el).closest(".guide-card,.featured-guide,.article-tool-callout,.article-end").length).map((_,el)=>$(el).text().replace(/\s+/g," ").trim()).get();
   $("main img").each((_,el)=>{const src=$(el).attr("src");if(src){const url=new URL(src,base);if(url.pathname==="/_next/image"){const asset=url.searchParams.get("url");if(asset?.startsWith("/"))images.add(asset);}else if(url.origin===new URL(base).origin)images.add(url.pathname);}assert($(el).attr("alt")!==undefined,`${path}: image missing alt attribute`);});
   $("a[href]").each((_,el)=>{const href=$(el).attr("href");if(!href||/^(mailto:|tel:)/.test(href))return;const url=new URL(href,base+path);if(url.origin===new URL(base).origin||(canonical&&url.origin===new URL(canonical).origin)){const key=url.pathname+url.search+url.hash;if(!links.has(key))links.set(key,new Set());links.get(key).add(path);}});
-  pages.push({path,status:response.status,title,description,canonical,metaRobots,headerRobots,noindex,robotsBlocked,inSitemap:included,schemaTypes:schema.map(s=>s["@type"]),mainWordCount:$("main").text().trim().split(/\s+/).length,paragraphs});
+  $("main a[href]").each((_,el)=>{const href=$(el).attr("href");if(!href||/^(mailto:|tel:)/.test(href))return;const url=new URL(href,base+path);if(url.origin!==new URL(base).origin&&(!canonical||url.origin!==new URL(canonical).origin))return;if(url.pathname===path)return;if(!contentLinks.has(url.pathname))contentLinks.set(url.pathname,new Set());contentLinks.get(url.pathname).add(path);});
+  const outgoingContentLinks=[...contentLinks].filter(([,sources])=>sources.has(path)).map(([target])=>target);
+  assert(outgoingContentLinks.length>0,`${path}: no internal links to other pages within main content`);
+  pages.push({path,status:response.status,title,description,canonical,metaRobots,headerRobots,noindex,robotsBlocked,inSitemap:included,schemaTypes:schema.map(s=>s["@type"]),mainWordCount:$("main").text().trim().split(/\s+/).length,paragraphs,outgoingContentLinks});
   if(path!=="/"){const slash=await get(path+"/");statuses.push({path:path+"/",status:slash.status,location:slash.headers.get("location")});assert([301,308].includes(slash.status),`${path}/: expected permanent redirect`);assert(slash.headers.get("location")===path,`${path}/: redirect must preserve canonical path`);}
 }
 for(const [href,sources] of links){const url=new URL(href,base);const response=await get(url.pathname+url.search);assert(response.status===200,`${[...sources][0]}: internal destination ${href} returned ${response.status}`);if(url.hash){const $=load(await response.text());assert($("[id]").toArray().some(el=>$(el).attr("id")===decodeURIComponent(url.hash.slice(1))),`${href}: missing fragment`);}}
-for(const page of pages){page.inboundPages=[...new Set([...links].filter(([href])=>new URL(href,base).pathname===page.path).flatMap(([,sources])=>[...sources]))].filter(p=>p!==page.path);if(page.path!=="/")assert(page.inboundPages.length>0,`${page.path}: orphan page`);}
+for(const page of pages){page.inboundPages=[...new Set([...links].filter(([href])=>new URL(href,base).pathname===page.path).flatMap(([,sources])=>[...sources]))].filter(p=>p!==page.path);page.contentInboundPages=[...(contentLinks.get(page.path)??[])];if(page.path!=="/"){assert(page.inboundPages.length>0,`${page.path}: orphan page`);assert(page.contentInboundPages.length>0,`${page.path}: no incoming links from other pages' main content`);}}
 for(const path of images){const r=await get(path);assert(r.status===200,`${path}: image HTTP ${r.status}`);}
 for(const path of ["/not-a-real-page","/guides/not-a-real-guide","/guides/category/not-a-category","/car-loan-calculator/not-a-scenario","/car-loan-payment/not-a-scenario","/sitemaps/invalid.xml"]){const r=await get(path);statuses.push({path,status:r.status});assert(r.status===404,`${path}: unknown route must be 404`);}
 for(const path of ["/favicon.ico","/favicon-48.png","/apple-touch-icon.png","/brand/logo-mark.png","/brand/logo-wordmark.svg","/brand/social-avatar.png","/brand/social-cover-1200x630.webp"]){if(cleanSchema){const r=await get(path);assert(r.status===200,`${path}: brand asset HTTP ${r.status}`);}}

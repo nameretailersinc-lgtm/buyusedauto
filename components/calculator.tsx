@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import {type Tool,type Field} from "@/data/tools";
 import {states} from "@/data/states";
 import {evaluate,type Result} from "@/lib/evaluate";
+import {convertPlanningUnits} from "@/lib/calculators/phase-three";
 import {money} from "@/lib/site";
 import {markets,formatMoney,type Market} from "@/lib/markets";
 import {Icon} from "./icon";
@@ -36,6 +37,8 @@ export default function Calculator({tool,prefill={}}:{tool:Tool;prefill?:Inputs}
     markStarted();
     if(key==="market")setSnapshot(null);
     let next={...inputs,[key]:value};
+    if(["maintenance","mile","gasEv"].includes(tool.id)&&key==="units"&&value!==inputs.units){next=convertPlanningUnits(tool.id,inputs,value);setSnapshot(null);}
+    if(tool.id==="mile"&&key==="basis")setSnapshot(null);
     if(tool.id==="fuel"&&key==="units"&&value!==inputs.units){const metric=value==="metric";const ratio=metric?1.609344:1/1.609344;const efficiency=Number(inputs.efficiency);next={...next,distance:String(Math.round(Number(inputs.distance)*ratio*100)/100),annualDistance:String(Math.round(Number(inputs.annualDistance)*ratio)),efficiency:efficiency>0?String(Math.round(235.214583/efficiency*100)/100):"",price:String(Math.round(Number(inputs.price)*(metric?1/3.785411784:3.785411784)*10000)/10000)};}
     if(key==="distanceUnit"&&value!==inputs.distanceUnit)next.mileage=String(Math.round(Number(inputs.mileage)*(value==="km"?1.609344:1/1.609344)));
     setInputs(next);setStatus("");updateUrl(next);
@@ -45,7 +48,7 @@ export default function Calculator({tool,prefill={}}:{tool:Tool;prefill?:Inputs}
   const market=Object.hasOwn(markets,inputs.market)?inputs.market as Market:"US";
   const currency=markets[market].currency;
   const formatScheduleMoney=(value:number)=>formatMoney(value,market,2);
-  function fieldUnit(field:Field){if(tool.multiCurrency&&field.unit?.startsWith("$"))return field.unit.replace("$",currency);if(tool.id==="fuel"&&inputs.units==="metric"){if(["distance","annualDistance"].includes(field.key))return"km";if(field.key==="efficiency")return"L/100 km";if(field.key==="price")return"$/liter";}if(field.key==="mileage")return inputs.distanceUnit;return field.unit;}
+  function fieldUnit(field:Field){const metric=inputs.units==="metric";if(field.unit==="distance")return metric?"km":"miles";if(field.unit==="gasEconomy")return metric?"L/100 km":"US mpg";if(field.unit==="gasPrice")return `${currency}/${metric?"liter":"US gal"}`;if(field.unit==="electricUse")return `kWh/100 ${metric?"km":"mi"}`;if(tool.multiCurrency&&field.unit?.startsWith("$"))return field.unit.replace("$",currency);if(tool.id==="fuel"&&metric){if(["distance","annualDistance"].includes(field.key))return"km";if(field.key==="efficiency")return"L/100 km";if(field.key==="price")return"$/liter";}if(field.key==="mileage")return inputs.distanceUnit;return field.unit;}
   async function share(){updateUrl(inputs);try{await navigator.clipboard.writeText(location.href);setStatus("Link copied. Your inputs are included in the URL.");}catch{setStatus("Your inputs are saved in the address bar. Copy that URL to share.");}}
   function download(){if(!result)return;const rows=[[tool.name,`${currency}; estimated values`],["Input","Value"],...activeFields.map(f=>[f.label,`${inputs[f.key]} ${fieldUnit(f)||""}`]),[],[result.label,result.value],...result.metrics.map(m=>[m.label,m.value]),["Assumptions",result.note]];if(result.schedule)rows.push([],["Month","Payment","Principal","Interest","Balance"],...result.schedule.map(r=>[String(r.month),String(r.payment),String(r.principal),String(r.interest),String(r.balance)]));else if(result.table)rows.push([],result.table.headers,...result.table.rows);saveCsv(`${tool.slug}.csv`,rows);}
   function reset(){started.current=false;completed.current="";setInputs(defaults);setState("");setSnapshot(null);setVehicle("used");setStatus("");updateUrl(defaults,"","used");}

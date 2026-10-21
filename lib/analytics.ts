@@ -12,7 +12,7 @@ export function trackUsage(event:UsageEvent){
     const parameters:Record<string,string>={send_to:ga,country:event.country,page_location:window.location.origin+window.location.pathname,page_referrer:""};
     if(!["calculator_started","calculator_completed","country_selected","outbound_affiliate_click"].includes(event.name))return false;
     if("tool" in event){
-      if(!["loan","depreciation","value","ownership","affordability","fuel","trade","lease","inspection","negotiation","tax","payoff","refinance","down","ev","apr","repair","registration","pk-financing"].includes(event.tool))return false;
+      if(!["loan","depreciation","value","ownership","affordability","fuel","trade","lease","inspection","negotiation","tax","payoff","refinance","down","ev","apr","repair","registration","maintenance","mile","gasEv","pk-financing"].includes(event.tool))return false;
       parameters.tool_id=event.tool;
     }
     window.gtag("event",event.name,parameters);
