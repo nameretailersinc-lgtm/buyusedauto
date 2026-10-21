@@ -60,6 +60,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - SEO title: Auto loan refinance calculator with fees | BuyUsedAutomobiles
 - Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
 
+
 - H1: Auto loan refinance calculator with fees
 - Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
 - Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
