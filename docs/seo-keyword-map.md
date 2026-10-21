@@ -1,6 +1,6 @@
 # Keyword-to-page map
 
-Updated 2026-10-21 from current local production HTML after implementing Phase 1 and Phase 2 multi-currency tools and the fuel-page enhancement. The main sitemap index now advertises core, tools, guides, scenarios and Pakistan segments directly. Local validation does not establish deployment status.
+Updated 2026-10-21 from current local production HTML after implementing Phase 1-3 multi-currency tools and the fuel-page enhancement. The main sitemap index now advertises core, tools, guides, scenarios and Pakistan segments directly. Local validation does not establish deployment status.
 
 New calculator metrics were checked against four Keyword Planner exports for October 2025-September 2026: 4,521 rows and 4,488 unique keywords. See docs/seo/keyword-research-2026-10-21.json and docs/seo-calculator-rollout.md for provenance, corrections and rollout decisions. Bid currency PKR does not establish the search market. Google Ads competition is not organic difficulty. Older brief-only metrics retain their stated evidence limits. Do not sum synonyms or treat volumes as traffic forecasts; GSC performance and target-geography validation remain outstanding.
 
@@ -59,11 +59,9 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Canonical: https://buyusedautomobiles.com/auto-loan-refinance-calculator
 - SEO title: Auto loan refinance calculator with fees | BuyUsedAutomobiles
 - Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
-
-
 - H1: Auto loan refinance calculator with fees
 - Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
-- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
 - Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
 - Priority: P1
 
@@ -82,9 +80,28 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Estimate a car budget with the 20/4/10 guideline, current debt, operating costs, and down payment. See the assumptions and stress-test an affordable payment.
 - H1: Car affordability calculator
 - Recommended H2s (retain current headings): How it works; How much used car can I afford with my salary?; A worked example; A rule of thumb is a starting point; Work backward from the complete purchase; Questions worth asking
-- Internal links: /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /disclaimer, /car-loan-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /disclaimer, /car-loan-calculator, /car-maintenance-cost-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Implemented salary example and explicit insurance/maintenance/tax budgeting links. Retain transparent illustrative constraints.
 - Priority: P2
+
+### /car-cost-per-mile-calculator
+
+- URL: https://buyusedautomobiles.com/car-cost-per-mile-calculator
+- Page type: Calculator/tool
+- Primary keyword: car cost per mile calculator
+- Secondary keywords: car cost per kilometer calculator; actual vehicle running costs
+- Long-tail variants: economic depreciation and interest vs cash loan payments; recorded period expense allocation
+- Search intent: Allocate recorded period costs across actual driving distance
+- Search-volume evidence: 500 Low (3), verified 2026-10-21 export; geography unspecified.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-cost-per-mile-calculator
+- SEO title: Car cost per mile or kilometer calculator | BuyUsedAutomobiles
+- Meta description: Calculate car cost per mile or kilometer from your recorded distance and expenses. Separate economic ownership cost from actual cash spending over the same period.
+- H1: Car cost per mile or kilometer calculator
+- Recommended H2s (retain current headings): How it works; A worked example; Choose a basis that fits the question; Use period totals rather than annual estimates; Questions worth asking
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-maintenance-cost-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs, /guides/complete-used-car-buying-guide, /editorial-policy
+- Content improvements: Implemented distinct economic and gross-cash bases with exclusive inputs, matched recorded period totals, miles/km and eight currencies. No tax or reimbursement rate supplied.
+- Priority: P3
 
 ### /car-depreciation-calculator
 
@@ -101,7 +118,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Explore a car’s estimated value over time using editable depreciation assumptions. Compare annual losses and residual value before planning your purchase.
 - H1: Car depreciation calculator
 - Recommended H2s (retain current headings): How it works; Can I calculate depreciation by model?; A worked example; Choose assumptions for the car you will actually own; Use the curve to compare ownership periods; Questions worth asking
-- Internal links: /disclaimer, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /editorial-policy
+- Internal links: /disclaimer, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /car-cost-per-mile-calculator, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /editorial-policy
 - Content improvements: Retain illustrative percentages and model limitations; no make-specific forecasts.
 - Priority: P2
 
@@ -120,7 +137,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Calculate a car down payment target, cash needed after trade-in equity, savings gap, and estimated loan payment while preserving your chosen cash reserve.
 - H1: Car down payment calculator with trade-in equity
 - Recommended H2s (retain current headings): How it works; A worked example; A target percentage is a planning choice; Keep cash and trade equity separate; Use your local purchase quote; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /car-sales-tax-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /car-sales-tax-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/complete-used-car-buying-guide, /editorial-policy
 - Content improvements: Implemented percentage target, net trade equity, reserve, funding gap and loan scenarios in eight currencies. Article retains explanatory intent.
 - Priority: P1
 
@@ -139,7 +156,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Estimate a car loan APR from its contract rate, term, and finance fees. Compare nominal APR, effective annual rate, monthly payments, and total credit cost.
 - H1: Car loan APR calculator with finance fees
 - Recommended H2s (retain current headings): How it works; A worked example; APR and the contract rate answer different questions; Which fees belong in the calculation?; Payment dates and rounding matter; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-loan-payoff-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-loan-payoff-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /editorial-policy
 - Content improvements: Implemented eight-currency regular-monthly APR estimate with fee classification supplied by the user, separate effective annual rate, and lender-disclosure limitations.
 - Priority: P2
 
@@ -291,9 +308,28 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Calculate payoff time for an existing car loan. Compare extra payments and a lump sum, interest savings, and repayment schedules in your chosen currency.
 - H1: Car loan payoff and extra payment calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Existing debt or a new purchase?; Use local terms with your selected currency; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-affordability-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
 - Content improvements: Implemented distinct existing-balance and required-payment workflow, extra/lump-sum comparison, cent-rounded schedule and eight display currencies. Purchase loan retains new-purchase intent.
 - Priority: P1
+
+### /car-maintenance-cost-calculator
+
+- URL: https://buyusedautomobiles.com/car-maintenance-cost-calculator
+- Page type: Calculator/tool
+- Primary keyword: car maintenance cost calculator
+- Secondary keywords: used car maintenance budget; monthly maintenance reserve
+- Long-tail variants: service time vs mileage intervals; tire sinking fund; immediate repairs vs recurring savings
+- Search intent: Plan a reserve from service intervals and local quotes
+- Search-volume evidence: 500 Low (4), verified 2026-10-21 export; geography unspecified.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-maintenance-cost-calculator
+- SEO title: Car maintenance cost and reserve calculator
+- Meta description: Plan a car maintenance reserve from your service intervals, tire costs and repair budget. Calculate annual and monthly savings in miles or kilometers.
+- H1: Car maintenance cost and reserve calculator
+- Recommended H2s (retain current headings): How it works; A worked example; A reserve is different from a service calendar; Keep maintenance separate from a repair quote; Questions worth asking
+- Internal links: /disclaimer, /car-repair-cost-calculator, /car-cost-per-mile-calculator, /total-cost-of-ownership-calculator, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /guides/used-car-vs-new-car, /editorial-policy
+- Content improvements: Implemented time/distance service reserve, tire allowance, other annual work and separate immediate repairs in eight currencies and miles/km. No vehicle-specific price or service calendar inferred.
+- Priority: P3
 
 ### /car-registration-tax-calculator
 
@@ -329,7 +365,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Calculate a car repair budget from quoted parts, labor, diagnostic fees, tax, and confirmed credits. Add a contingency and compare written repair estimates.
 - H1: Car repair cost calculator from your quote
 - Recommended H2s (retain current headings): How it works; A worked example; Quoted labor hours are not always elapsed workshop time; Use reliable evidence for each repair; Credits, taxes and cash reserves; Questions worth asking
-- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-maintenance-cost-calculator, /guides/used-car-maintenance-costs, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
 - Content improvements: Implemented eight-currency quote-based repair budget. No model-specific repair price data or diagnosis invented; automatic market estimates remain data-dependent.
 - Priority: P2
 
@@ -424,7 +460,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Estimate electric car charging cost from usable battery capacity, charge levels, charging efficiency, energy price, and session fees in your selected currency.
 - H1: EV charging cost calculator with charging losses
 - Recommended H2s (retain current headings): How it works; A worked example; Home and public charging costs; Why kW and kWh are different; Compare costs in one currency; Questions worth asking
-- Internal links: /disclaimer, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-depreciation-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
+- Internal links: /disclaimer, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-depreciation-calculator, /gas-vs-electric-car-cost-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
 - Content improvements: Implemented usable battery, charge range, efficiency, billing boundary, price, flat fee and average-power time in eight currencies. No local tariff inferred.
 - Priority: P1
 
@@ -443,9 +479,28 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Calculate trip and annual fuel costs, measure US MPG, km/L or L/100 km, and compare fuel savings. Use your own fuel prices, distance and efficiency.
 - H1: Fuel cost calculator
 - Recommended H2s (retain current headings): Gas mileage and fuel savings calculator; How it works; A worked example; Make the estimate match your driving; Compare efficiency in dollars; Questions worth asking
-- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-affordability-calculator, /car-depreciation-calculator, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /guides/international-used-car-buying-checks, /editorial-policy
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-affordability-calculator, /car-depreciation-calculator, /gas-vs-electric-car-cost-calculator, /car-cost-per-mile-calculator, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /guides/international-used-car-buying-checks, /editorial-policy
 - Content improvements: Retained trip calculator and added measured fuel efficiency and local-currency annual fuel-only savings on this existing canonical URL.
 - Priority: P1
+
+### /gas-vs-electric-car-cost-calculator
+
+- URL: https://buyusedautomobiles.com/gas-vs-electric-car-cost-calculator
+- Page type: Calculator/tool
+- Primary keyword: gas vs electric car cost calculator
+- Secondary keywords: electric vs gas car cost calculator; EV ownership comparison
+- Long-tail variants: matched gas and EV resale energy insurance maintenance and interest costs; wall vs battery energy
+- Search intent: Compare full gas and battery-electric ownership costs
+- Search-volume evidence: 500 Low (17) for gas-vs-electric; reverse wording 50 Low (6), verified exports. Overlapping intents, not additive.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/gas-vs-electric-car-cost-calculator
+- SEO title: Gas vs electric car ownership cost calculator
+- Meta description: Compare gas and electric car costs over the same years and distance. Include energy, resale, insurance, maintenance, fees, financing interest and a home charger.
+- H1: Gas vs electric car ownership cost calculator
+- Recommended H2s (retain current headings): How it works; A worked example; Energy savings are only one cost component; Keep the charging inputs consistent; Questions worth asking
+- Internal links: /disclaimer, /ev-charging-cost-calculator, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-cost-per-mile-calculator, /guides/real-cost-of-car-ownership, /guides/used-car-vs-new-car, /guides/complete-used-car-buying-guide, /editorial-policy
+- Content improvements: Implemented matched years/distance, editable purchase/resale, fees, charger, period interest, energy and other running costs. Wall/battery boundary prevents double-counting charging losses; eight currencies and physical unit conversion.
+- Priority: P3
 
 ### /guides
 
@@ -1165,7 +1220,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare leasing and buying over the same time period. Include upfront cash, fees, extra mileage, loan balance, and estimated resale equity in one view.
 - H1: Lease vs. buy calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Cash paid is different from cost consumed; Keep the contract details visible; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /total-cost-of-ownership-calculator, /car-affordability-calculator, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Retain equity and disclosed operating-cost exclusions; no PCP/balloon claims.
 - Priority: P2
 
@@ -1374,7 +1429,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare new vs used car ownership costs with your own prices, resale assumptions, insurance, maintenance, fuel and financing. Review equal-period scenarios.
 - H1: Car ownership cost calculator: new vs used
 - Recommended H2s (retain current headings): How it works; Compare a new car with a used car; A worked example; Build a realistic input set; Economic cost and cash flow answer different questions; Questions worth asking
-- Internal links: /guides/real-cost-of-car-ownership, /disclaimer, /car-loan-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
+- Internal links: /guides/real-cost-of-car-ownership, /disclaimer, /car-loan-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /car-maintenance-cost-calculator, /car-cost-per-mile-calculator, /gas-vs-electric-car-cost-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
 - Content improvements: Existing editable insurance, maintenance, fuel, tax, depreciation and interest inputs and matched new/used comparison retained. Insurance intent is budget planning, not quotes.
 - Priority: P2
 

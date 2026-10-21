@@ -6,7 +6,6 @@ import {type Tool,type Field} from "@/data/tools";
 import {states} from "@/data/states";
 import {evaluate,type Result} from "@/lib/evaluate";
 import {convertPlanningUnits} from "@/lib/calculators/phase-three";
-import {money} from "@/lib/site";
 import {markets,formatMoney,type Market} from "@/lib/markets";
 import {Icon} from "./icon";
 import {OwnershipComparison,type SavedScenario} from "./ownership-comparison";

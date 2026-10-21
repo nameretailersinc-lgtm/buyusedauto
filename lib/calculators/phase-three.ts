@@ -46,7 +46,7 @@ export function gasVsElectric(i:VehicleComparisonInput){
 
 /** Convert the physical scenario together, leaving money totals unchanged. */
 export function convertPlanningUnits(id:string,values:Record<string,string>,units:string){
-  const next={...values,units};
+  const next:Record<string,string>={...values,units};
   if(units===values.units)return next;
   const metric=units==="metric",ratio=metric?1.609344:1/1.609344;
   const convert=(key:string,multiplier:number)=>{if(values[key]?.trim()!==""&&values[key]!==undefined&&Number.isFinite(Number(values[key])))next[key]=String(Number((Number(values[key])*multiplier).toPrecision(12)));};

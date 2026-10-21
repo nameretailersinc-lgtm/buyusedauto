@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-for(const [slug,id] of [["car-loan-payoff-calculator","payoff"],["auto-loan-refinance-calculator","refinance"],["car-down-payment-calculator","down"],["ev-charging-cost-calculator","ev"],["car-loan-apr-calculator","apr"],["car-repair-cost-calculator","repair"],["car-registration-tax-calculator","registration"]]){
+for(const [slug,id] of [["car-loan-payoff-calculator","payoff"],["auto-loan-refinance-calculator","refinance"],["car-down-payment-calculator","down"],["ev-charging-cost-calculator","ev"],["car-loan-apr-calculator","apr"],["car-repair-cost-calculator","repair"],["car-registration-tax-calculator","registration"],["car-maintenance-cost-calculator","maintenance"],["car-cost-per-mile-calculator","mile"],["gas-vs-electric-car-cost-calculator","gasEv"]]){
   test(`${slug} preserves currency, clears mixed-currency comparisons, and works on mobile`,async({page})=>{
     await page.goto(`/${slug}`);
     await expect(page.locator(".result-error")).toHaveCount(0);
@@ -46,7 +46,7 @@ test("fuel measurements convert units and compare local-currency annual spending
 
 test("new calculators expose crawlable metadata, method and free application schema without JavaScript",async({browser})=>{
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();
-  for(const slug of ["car-loan-payoff-calculator","auto-loan-refinance-calculator","car-down-payment-calculator","ev-charging-cost-calculator","car-loan-apr-calculator","car-repair-cost-calculator","car-registration-tax-calculator"]){
+  for(const slug of ["car-loan-payoff-calculator","auto-loan-refinance-calculator","car-down-payment-calculator","ev-charging-cost-calculator","car-loan-apr-calculator","car-repair-cost-calculator","car-registration-tax-calculator","car-maintenance-cost-calculator","car-cost-per-mile-calculator","gas-vs-electric-car-cost-calculator"]){
     await page.goto(`/${slug}`);await expect(page.locator("h1")).toHaveCount(1);await expect(page.locator(".formula")).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",`https://buyusedautomobiles.com/${slug}`);
     await expect(page.locator(".result-error")).toHaveCount(0);

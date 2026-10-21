@@ -1,7 +1,7 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 60,
-  "internalLinks": 446,
+  "pages": 77,
+  "internalLinks": 574,
   "failures": [],
   "warnings": [],
   "details": [
@@ -76,6 +76,13 @@
       "h1": "Buying guides"
     },
     {
+      "path": "/guides/category/financing",
+      "title": "Financing guides for used-car decisions | BuyUsedAutomobiles",
+      "descriptionLength": 159,
+      "schemaCount": 2,
+      "h1": "Financing guides"
+    },
+    {
       "path": "/guides/category/ownership",
       "title": "Ownership guides for used-car decisions | BuyUsedAutomobiles",
       "descriptionLength": 159,
@@ -99,6 +106,13 @@
     {
       "path": "/guides/page/4",
       "title": "Used car buying guides — Page 4 | BuyUsedAutomobiles",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "A little research.A better car decision."
+    },
+    {
+      "path": "/guides/page/5",
+      "title": "Used car buying guides — Page 5 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
       "h1": "A little research.A better car decision."
@@ -155,7 +169,7 @@
     {
       "path": "/fuel-cost-calculator",
       "title": "Fuel cost calculator | BuyUsedAutomobiles",
-      "descriptionLength": 154,
+      "descriptionLength": 148,
       "schemaCount": 2,
       "h1": "Fuel cost calculator"
     },
@@ -193,6 +207,76 @@
       "descriptionLength": 156,
       "schemaCount": 2,
       "h1": "Car sales tax calculator"
+    },
+    {
+      "path": "/car-loan-payoff-calculator",
+      "title": "Car loan payoff and extra payment calculator",
+      "descriptionLength": 153,
+      "schemaCount": 2,
+      "h1": "Car loan payoff and extra payment calculator"
+    },
+    {
+      "path": "/auto-loan-refinance-calculator",
+      "title": "Auto loan refinance calculator with fees | BuyUsedAutomobiles",
+      "descriptionLength": 159,
+      "schemaCount": 2,
+      "h1": "Auto loan refinance calculator with fees"
+    },
+    {
+      "path": "/car-down-payment-calculator",
+      "title": "Car down payment calculator with trade-in equity",
+      "descriptionLength": 154,
+      "schemaCount": 2,
+      "h1": "Car down payment calculator with trade-in equity"
+    },
+    {
+      "path": "/ev-charging-cost-calculator",
+      "title": "EV charging cost calculator with charging losses",
+      "descriptionLength": 159,
+      "schemaCount": 2,
+      "h1": "EV charging cost calculator with charging losses"
+    },
+    {
+      "path": "/car-loan-apr-calculator",
+      "title": "Car loan APR calculator with finance fees | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Car loan APR calculator with finance fees"
+    },
+    {
+      "path": "/car-repair-cost-calculator",
+      "title": "Car repair cost calculator from your quote | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Car repair cost calculator from your quote"
+    },
+    {
+      "path": "/car-registration-tax-calculator",
+      "title": "Car registration tax and fee calculator | BuyUsedAutomobiles",
+      "descriptionLength": 156,
+      "schemaCount": 2,
+      "h1": "Car registration tax and fee calculator"
+    },
+    {
+      "path": "/car-maintenance-cost-calculator",
+      "title": "Car maintenance cost and reserve calculator",
+      "descriptionLength": 150,
+      "schemaCount": 2,
+      "h1": "Car maintenance cost and reserve calculator"
+    },
+    {
+      "path": "/car-cost-per-mile-calculator",
+      "title": "Car cost per mile or kilometer calculator | BuyUsedAutomobiles",
+      "descriptionLength": 163,
+      "schemaCount": 2,
+      "h1": "Car cost per mile or kilometer calculator"
+    },
+    {
+      "path": "/gas-vs-electric-car-cost-calculator",
+      "title": "Gas vs electric car ownership cost calculator",
+      "descriptionLength": 161,
+      "schemaCount": 2,
+      "h1": "Gas vs electric car ownership cost calculator"
     },
     {
       "path": "/tools/pakistan/car-running-cost-calculator",
@@ -235,6 +319,41 @@
       "descriptionLength": 157,
       "schemaCount": 2,
       "h1": "How to buy a used car from a private seller"
+    },
+    {
+      "path": "/guides/how-much-down-payment-for-used-car",
+      "title": "Used Car Down Payment Guide 2026: How Much Do You Need?",
+      "descriptionLength": 145,
+      "schemaCount": 2,
+      "h1": "How Much Down Payment Do You Need for a Used Car in 2026?"
+    },
+    {
+      "path": "/guides/how-to-calculate-percentage-increase",
+      "title": "How to Calculate Percentage Increase (Formula + Examples)",
+      "descriptionLength": 135,
+      "schemaCount": 2,
+      "h1": "How to Calculate Percentage Increase: Formula, Examples, and Easy Methods"
+    },
+    {
+      "path": "/guides/how-much-does-a-used-car-depreciate-per-year",
+      "title": "Used Car Depreciation Per Year: Formula & Examples",
+      "descriptionLength": 144,
+      "schemaCount": 2,
+      "h1": "How Much Does a Used Car Depreciate Per Year?"
+    },
+    {
+      "path": "/guides/how-much-car-payment-can-i-afford",
+      "title": "How Much Car Payment Can I Afford? Budget Guide (2026)",
+      "descriptionLength": 149,
+      "schemaCount": 2,
+      "h1": "How Much Car Payment Can I Afford? Complete 2026 Budget Guide"
+    },
+    {
+      "path": "/guides/car-depreciation-chart",
+      "title": "Car Depreciation Chart: 1-10 Year Value Examples",
+      "descriptionLength": 158,
+      "schemaCount": 2,
+      "h1": "Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years"
     },
     {
       "path": "/guides/buy-used-car-pakistan",

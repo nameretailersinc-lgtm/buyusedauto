@@ -38,16 +38,30 @@ On 21 October 2026, search-tool queries and opened provider pages showed distinc
 
 This is a qualitative search-result and product review. It is not a country-specific Google ranking export or an organic-difficulty measurement. Search position, traffic and rankings are not inferred. Multi-currency functionality does not establish which country's search volume the exports describe.
 
-## Later work held for evidence
+## Phase 2 implementation
 
-APR calculation remains a separate future feature: a cash-flow yield and legal APR disclosure are different concepts and require careful fee/timing rules. Repair estimates require reliable model/year/location cost data. A registration/tax calculator needs maintained jurisdiction-specific rules; the high-volume registration row also shows −90% YoY. Maintenance and cost-per-mile intents already have useful components in the ownership calculator; develop distinct pages only if they add a distinct calculation. A full gas-versus-EV ownership comparison needs matched purchase, running-cost and resale inputs beyond the new session-cost tool.
+Added /car-loan-apr-calculator, /car-repair-cost-calculator and /car-registration-tax-calculator. The regular-monthly APR model solves the cash-flow yield with user-classified finance charges and distinguishes nominal APR from effective annual rate. It does not replace a jurisdiction's required disclosure. Repair budgeting uses written quote amounts rather than invented vehicle-specific prices. Registration budgeting accepts verified local amounts in eight currencies, with one sourced GBP DVLA first-registration profile, eligibility limits, a checked date and a review cutoff that disables stale automatic fees.
 
-No Phase 2/3 near-duplicate pages, fabricated repair data, current electricity tariffs, bank rates or automatic registration charges are introduced in this rollout. The fuel measurement enhancement was brought forward because it extends the existing canonical fuel tool without those data dependencies.
+Phase 2 validation passed 205 unit/content tests, a production build, 14 browser checks and a 76-page SEO audit with 74 sitemap URLs and no failures or warnings.
 
-## Local verification
+## Phase 3 implementation
 
-- Production build and TypeScript checks passed.
-- All 172 unit/content tests passed, including independent arithmetic checks, payoff boundaries, refinance fees, charging metering, fuel conversion and eight-currency integration.
-- Seven new browser checks passed for currency restoration, CSV currency labels, clearing mixed-currency comparisons, mobile overflow, calculator accessibility, charging boundaries, fuel measurement and server-rendered content without JavaScript. Five existing navigation/calculator regressions also passed.
-- The final 73-page production SEO audit passed with 71 sitemap URLs, no failures, no warnings and no duplicate-paragraph signals. The guide-publishing check still covers all 17 selected articles and paginated collections.
-- The keyword map was regenerated from the final local production HTML and the audited canonical set. These checks verify local output; this work does not establish a deployment or Search Console indexing status.
+- /car-maintenance-cost-calculator: recurring service reserve using the earlier time/distance interval, tire sinking fund, other annual work and known immediate repairs. It estimates savings, not a service appointment calendar or a vehicle-specific price.
+- /car-cost-per-mile-calculator: recorded-period expenses divided by recorded miles/km. Economic cost uses value change and interest; gross cash spending uses acquisition cash and full payments. Exclusive inputs prevent counting principal twice. This is not a tax mileage rate.
+- /gas-vs-electric-car-cost-calculator: matched ownership years and distance with purchase/resale, upfront fees, charger installation, interest within the period, annual energy and other running costs. Wall consumption already includes charging losses; battery consumption applies efficiency once. No tariffs, incentives, vehicle rankings or resale forecasts are inferred.
+
+All three tools support eight display currencies and convert physical distance/fuel inputs together when switching miles and kilometers. No FX conversion occurs. Sources checked on 21 October 2026 include FTC maintenance guidance, the DOE Vehicle Cost Calculator and DOE/EPA electric-vehicle energy guidance. Sources support the concepts; example prices and service intervals remain editable assumptions.
+
+The four original Keyword Planner exports confirm car maintenance cost calculator at 500 / Low (4), car cost per mile calculator at 500 / Low (3), gas vs electric car cost calculator at 500 / Low (17), and electric vs gas car cost calculator at 50 / Low (6). The latter two are overlapping wording variants, not additive audiences. Market geography remains unspecified. Exact rows and source hashes are retained in docs/seo/keyword-research-2026-10-21.json.
+
+## Sitemap and internal links
+
+The root /sitemap.xml now advertises core.xml, tools.xml, guides.xml, scenarios.xml and pk.xml directly. All published guide and tool routes derive from their content registries, including each Phase 3 tool. The legacy /sitemaps/us.xml aggregate remains available for compatibility. Query variations, page-one aliases and intentionally noindex singleton categories remain outside indexable sitemap sets.
+
+Contextual links connect the maintenance guide, ownership guide, loan-comparison guide, new-vs-used guide and relevant financing articles to the new calculators. Existing ownership, fuel, depreciation, repair, affordability and charging tools link to relevant Phase 3 tools. Calculator pages link back to guides and related tools. Shared navigation, collections and policy cross-links cover the remaining page types.
+
+The production SEO audit checks every rendered page for outgoing links within main content and incoming links from other pages' main content, independently of global header/footer links. It also follows internal destinations and fragments, checks sitemap coverage and rejects orphans. This establishes local crawlability rather than deployment or Search Console indexing.
+
+## Final local verification
+
+Final Phase 3 build, browser and rendered-link audit results are recorded after validation in reports/seo-phase-three.json. The keyword map is regenerated from the same production HTML. No deployment is performed by this work.
