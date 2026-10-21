@@ -65,6 +65,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
 - Priority: P1
 
+
 ### /car-affordability-calculator
 
 - URL: https://buyusedautomobiles.com/car-affordability-calculator
