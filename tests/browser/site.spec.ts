@@ -25,7 +25,7 @@ test("server-rendered content, new branding and contact survive without JavaScri
 });
 test("tools can be filtered, searched, and recovered from no results",async({page})=>{
   await page.goto("/tools");
-  await expect(page.locator(".tool-explorer .tool-card")).toHaveCount(11);
+  await expect(page.locator(".tool-explorer .tool-card")).toHaveCount(15);
   await page.getByRole("button",{name:"Financing",exact:true}).click();
   await expect(page.locator(".tool-explorer .tool-card")).toHaveCount(tools.filter(t=>t.category==="Financing").length);
   await page.getByLabel("Find a tool",{exact:true}).fill("unmatched query");
@@ -50,7 +50,7 @@ test("redesigned page families load imagery and work on mobile",async({page})=>{
 test("reference navbar supports keyboard, dismissal, mobile links, and navigation",async({page})=>{
   await page.goto("/");const trigger=page.getByRole("button",{name:"Tools",exact:true});
   await trigger.focus();await page.keyboard.press("ArrowDown");await expect(trigger).toHaveAttribute("aria-expanded","true");
-  await expect(page.locator(".mega-tool-link")).toHaveCount(11);await expect(page.locator(".mega-tool-link").first()).toBeFocused();
+  await expect(page.locator(".mega-tool-link")).toHaveCount(15);await expect(page.locator(".mega-tool-link").first()).toBeFocused();
   const desktopAudit=await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze();expect(desktopAudit.violations).toEqual([]);
   await page.screenshot({path:"reports/navbar-desktop.png"});
   await page.keyboard.press("Escape");await expect(trigger).toHaveAttribute("aria-expanded","false");await expect(trigger).toBeFocused();

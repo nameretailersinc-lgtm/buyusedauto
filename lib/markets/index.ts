@@ -7,6 +7,7 @@ export const markets = {
   CA: { name: "Canada", currency: "CAD", locale: "en-CA", distance: "kilometers", fuel: "liters" },
   AU: { name: "Australia", currency: "AUD", locale: "en-AU", distance: "kilometers", fuel: "liters" },
   AE: { name: "United Arab Emirates", currency: "AED", locale: "en-AE", distance: "kilometers", fuel: "liters" },
+  EU: { name: "Euro area", currency: "EUR", locale: "en-IE", distance: "kilometers", fuel: "liters" },
 } as const;
 export type Market = keyof typeof markets;
 export type Currency = (typeof markets)[Market]["currency"];

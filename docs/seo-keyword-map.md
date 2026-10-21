@@ -1,128 +1,12 @@
 # Keyword-to-page map
 
-Prepared 2026-10-18 from the current local production HTML. This supersedes historical route counts in older audit documents; it preserves the existing CSV research inputs.
+Updated 2026-10-21 from current local production HTML after implementing four multi-currency tools and the existing fuel-page enhancement. Local validation does not establish deployment status.
 
-Updated 2026-10-21 with five unique supplied articles and their category changes. The two car-depreciation-chart attachments are identical and produce one canonical article. These additions are implemented locally; publication is not confirmed by this document. Article slugs follow the existing `/guides/` URL structure. SEO titles and descriptions for the car-payment budget and depreciation-chart guides were derived from the drafts because separate metadata was not supplied.
-
-Volumes below are approximate monthly Google Keyword Planner estimates supplied in the owner's brief. The original export, market/date settings and GSC data were not available. These are not independent measurements, traffic forecasts or organic difficulty scores. Google Ads competition is not organic difficulty. Do not sum synonyms or overlapping intents. All unmeasured queries require validation.
+New calculator metrics were checked against four Keyword Planner exports for October 2025-September 2026: 4,521 rows and 4,488 unique keywords. See docs/seo/keyword-research-2026-10-21.json and docs/seo-calculator-rollout.md for provenance, corrections and rollout decisions. Bid currency PKR does not establish the search market. Google Ads competition is not organic difficulty. Older brief-only metrics retain their stated evidence limits. Do not sum synonyms or treat volumes as traffic forecasts; GSC performance and target-geography validation remain outstanding.
 
 One canonical owner per distinct intent. Page-one pagination aliases permanently redirect; interactive query strings canonicalize to the clean calculator. No hreflang is introduced because the country guides are not verified equivalent translations.
 
 ## Existing and implemented pages
-
-### /guides/how-much-car-payment-can-i-afford
-
-- URL: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
-- Page type: Guide
-- Category: Financing
-- Primary keyword: how much car payment can I afford
-- Secondary keywords: affordable car payment; monthly car budget; how much should I spend on a car payment
-- Long-tail variants: take-home transportation budget; loan payment vs total running costs; compare 60 and 72 month loan payments
-- Search intent: Informational / household car-payment budgeting
-- Search-volume evidence: No supplied volume; validate
-- Status: Added locally 2026-10-21 from the supplied article
-- Canonical: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
-- SEO title: How Much Car Payment Can I Afford? Budget Guide (2026)
-- Meta description: How much car payment can you afford? Build a monthly budget, include running costs, and compare down payments, loan terms, and total borrowing costs.
-- H1: How Much Car Payment Can I Afford? Complete 2026 Budget Guide
-- Recommended H2s: How to Calculate Your Affordable Monthly Car Payment; Calculate the Total Monthly Cost of Owning a Car; What Is the 10% Rule for Car Payments?; Example: Monthly Payments on a Used Car Loan; Hidden Costs That Make Car Payments More Expensive; Frequently Asked Questions
-- Internal links: /car-affordability-calculator, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide
-- Internal discovery: /guides, /guides/category/financing, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car
-- Content improvements: Preserve three budget/loan tables and hypothetical payment examples. Explain take-home household budgeting vs gross-income calculator inputs and cash-flow vs economic ownership cost. This article owns informational payment-budget intent; `/car-affordability-calculator` owns interactive affordability calculation.
-- Priority: P2
-
-### /guides/car-depreciation-chart
-
-- URL: https://buyusedautomobiles.com/guides/car-depreciation-chart
-- Page type: Guide
-- Category: Ownership
-- Primary keyword: car depreciation chart
-- Secondary keywords: car depreciation curve; 5 year car depreciation chart; 10 year car depreciation chart
-- Long-tail variants: compare lower middle and higher depreciation scenarios; read annual value-loss charts
-- Search intent: Informational / visualize value-loss scenarios
-- Search-volume evidence: No supplied volume; validate
-- Status: Added locally 2026-10-21 from two identical article attachments, published once in local source
-- Canonical: https://buyusedautomobiles.com/guides/car-depreciation-chart
-- SEO title: Car Depreciation Chart: 1-10 Year Value Examples
-- Meta description: Explore a car depreciation chart over 1-10 years. Compare three illustrative decline scenarios, annual value loss, and resale assumptions with clear examples.
-- H1: Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years
-- Recommended H2s: Example Car Depreciation Chart Over Five Years; Car Depreciation Chart: Three Different Scenarios; Car Depreciation Chart for 10 Years; How to Read a Car Depreciation Curve; Car Depreciation vs. Total Cost of Ownership; Frequently Asked Questions
-- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/complete-used-car-buying-guide
-- Internal discovery: /guides, /guides/category/ownership, /guides/complete-used-car-buying-guide, /guides/how-much-does-a-used-car-depreciate-per-year
-- Content improvements: Remove pasted escape markers, verify the five-year table and all three scenarios, and add plotted five- and ten-year examples with matching data tables. Years mean elapsed projection years, starting at the current value. All rates remain hypothetical. This article owns chart-reading intent; the annual-depreciation guide owns formulas and `/car-depreciation-calculator` owns editable projections.
-- Priority: P2
-
-### /guides/how-much-does-a-used-car-depreciate-per-year
-
-- URL: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
-- Page type: Guide
-- Category: Ownership
-- Primary keyword: average car depreciation per year
-- Secondary keywords: how much does a used car depreciate per year; annual car depreciation; used car depreciation formula
-- Long-tail variants: average annual dollar loss vs compound annual decline; five-year used car depreciation example; estimate future resale value
-- Search intent: Informational / ownership-cost planning
-- Search-volume evidence: 500 monthly searches supplied by owner; market, date and original export not verified
-- Ads competition: Low (6/100), supplied by owner; this is not an organic difficulty score
-- Status: Added locally 2026-10-21 from the supplied article
-- Canonical: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
-- SEO title: Used Car Depreciation Per Year: Formula & Examples
-- Meta description: How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.
-- H1: How Much Does a Used Car Depreciate Per Year?
-- Recommended H2s: How to Calculate Car Depreciation Per Year; How to Calculate Average Annual Depreciation; Illustrative Five-Year Used Car Depreciation Example; What Factors Affect Used Car Depreciation?; How to Estimate Future Resale Value; Frequently Asked Questions
-- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /car-loan-calculator, /used-car-inspection-checklist, /guides/how-much-down-payment-for-used-car, /guides/complete-used-car-buying-guide
-- Internal discovery: /guides, /guides/category/ownership, /guides/complete-used-car-buying-guide
-- Content improvements: Preserve the supplied formulas, annual dollar-loss vs compound-rate distinction, worked examples, five-year table and FAQs. Correct the draft's nonexistent `/car-value-estimator` link to `/what-is-my-car-worth`. Use verified CFPB/FTC sources in place of inaccessible Consumer Reports references. Decline rates remain illustrative; no universal average, live appraisal, or model-specific forecast is claimed. The calculator retains ownership of interactive depreciation intent.
-- Priority: P2
-
-### /guides/how-to-calculate-percentage-increase
-
-- URL: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
-- Page type: Guide
-- Category: Mathematics / Calculators
-- Primary keyword: how to calculate percentage increase
-- Secondary keywords: percentage increase formula; how to find percentage increase; calculate percent increase; percentage change formula; percentage increase in Excel
-- Search intent: Informational / calculation
-- Search-volume evidence: No supplied volume; validate
-- Status: Added locally 2026-10-21 from the supplied article
-- Canonical: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
-- SEO title: How to Calculate Percentage Increase (Formula + Examples)
-- Meta description: Learn how to calculate percentage increase using a simple formula. Follow step-by-step examples for prices, salaries, sales, and Excel.
-- H1: How to Calculate Percentage Increase: Formula, Examples, and Easy Methods
-- Recommended H2s: Percentage Increase Formula; How to Calculate Percentage Increase Step by Step; Practical Percentage Increase Examples; How to Calculate Percentage Increase in Excel; Common Mistakes When Calculating Percentage Increase; Frequently Asked Questions
-- Internal discovery: /guides, /guides/category/mathematics-calculators, /guides/how-much-down-payment-for-used-car
-- Content improvements: Preserve worked examples, percentage-point distinctions, zero/negative-base limits, Excel and Google Sheets formulas, FAQs, and Microsoft documentation. Category collection remains navigation-only/noindex while it contains one guide; the article is indexable.
-- Priority: P2
-
-### /guides/how-much-down-payment-for-used-car
-
-- URL: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
-- Page type: Guide
-- Category: Financing
-- Primary keyword: how much down payment for a car
-- Secondary keywords: how much is a good down payment on a car; how much car can I afford; how much car payment can I afford
-- Search intent: Informational / financing planning
-- Search-volume evidence: No supplied volume; validate
-- Status: Added locally 2026-10-21 from the supplied article
-- Canonical: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
-- SEO title: Used Car Down Payment Guide 2026: How Much Do You Need?
-- Meta description: How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.
-- H1: How Much Down Payment Do You Need for a Used Car in 2026?
-- Recommended H2s: Used car down payment examples: 10% vs. 20%; How to calculate a used car down payment; Does a bigger down payment lower monthly payments?; Can a trade-in count as a down payment?; What other upfront costs should you budget for?; Frequently Asked Questions
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /guides/how-to-calculate-percentage-increase
-- Content improvements: Restore missing headings and example tables; include a hypothetical fixed-rate monthly-payment comparison. Keep 10%–20% as a planning range, preserve cash-reserve guidance, and cite CFPB/FTC sources. The affordability calculator retains ownership of interactive affordability intent.
-- Priority: P2
-
-### /guides/category/mathematics-calculators
-
-- Page type: Collection; navigation only, intentionally noindex
-- Category: Mathematics / Calculators
-- Canonical: https://buyusedautomobiles.com/guides/category/mathematics-calculators
-- SEO title: Mathematics / Calculators guides | BuyUsedAutomobiles
-- Meta description: Learn percentage calculations with formulas, worked examples, and spreadsheet instructions. Browse our mathematics and calculator guides.
-- H1: Mathematics / Calculators guides
-- Internal links: /guides/how-to-calculate-percentage-increase
-- Search intent: Navigate calculation guides
-- Status: Added locally 2026-10-21; excluded from the indexable sitemap while it contains one article
 
 ### /
 
@@ -139,7 +23,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Make a more informed used-car decision with free calculators, practical buying guides, and transparent estimates. Plan your budget and total ownership cost.
 - H1: Your next car.A smarter decision.
 - Recommended H2s (retain current headings): Less guesswork. More confidence.; Good decisions start here.; Useful numbers.Honest limits.; The right car starts with the right budget.; How can you plan a used-car purchase?; What do the calculator numbers mean?
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /fuel-cost-calculator, /what-is-my-car-worth, /lease-vs-buy-calculator, /guides/complete-used-car-buying-guide, /guides/buy-used-car-usa, /guides/buy-used-car-pakistan
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /fuel-cost-calculator, /what-is-my-car-worth, /lease-vs-buy-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-down-payment-for-used-car
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 
@@ -162,6 +46,25 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Maintain factual operator/source disclosures and current contact details. Owner confirmation is needed for unresolved identity/mailbox statements; do not pad trust pages for keywords.
 - Priority: P2
 
+### /auto-loan-refinance-calculator
+
+- URL: https://buyusedautomobiles.com/auto-loan-refinance-calculator
+- Page type: Calculator/tool
+- Primary keyword: auto loan refinance calculator
+- Secondary keywords: car loan refinance calculator; auto refinance savings
+- Long-tail variants: refinance with financed fees and prepayment charge; financing-cost break-even vs payment reduction
+- Search intent: Compare future cost of current and replacement loans
+- Search-volume evidence: 50,000 Medium (45), verified export row
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/auto-loan-refinance-calculator
+- SEO title: Auto loan refinance calculator with fees | BuyUsedAutomobiles
+- Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
+- H1: Auto loan refinance calculator with fees
+- Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
+- Internal links: /disclaimer, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
+- Priority: P1
+
 ### /car-affordability-calculator
 
 - URL: https://buyusedautomobiles.com/car-affordability-calculator
@@ -170,14 +73,14 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: used car budget calculator; car buying calculator
 - Long-tail variants: how much used car can i afford with my salary; car affordability calculator with insurance and maintenance; used car budget calculator with down payment
 - Search intent: Set a household purchase budget
-- Search-volume evidence: No supplied volume; validate in GSC/Keyword Planner
+- Search-volume evidence: 50,000 Low (17), verified 2026-10-21 export row; -90% YoY. Market unspecified.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/car-affordability-calculator
 - SEO title: Car affordability calculator | BuyUsedAutomobiles
 - Meta description: Estimate a car budget with the 20/4/10 guideline, current debt, operating costs, and down payment. See the assumptions and stress-test an affordable payment.
 - H1: Car affordability calculator
 - Recommended H2s (retain current headings): How it works; How much used car can I afford with my salary?; A worked example; A rule of thumb is a starting point; Work backward from the complete purchase; Questions worth asking
-- Internal links: /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /disclaimer
+- Internal links: /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /disclaimer, /car-loan-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Implemented salary example and explicit insurance/maintenance/tax budgeting links. Retain transparent illustrative constraints.
 - Priority: P2
 
@@ -189,34 +92,53 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: car resale depreciation
 - Long-tail variants: how to calculate depreciation on a used car; used car depreciation calculator by year; how mileage affects used car resale value
 - Search intent: Project value under editable assumptions
-- Search-volume evidence: No supplied volume; validate
+- Search-volume evidence: 5,000 Low (16), verified 2026-10-21 export row. Market unspecified.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/car-depreciation-calculator
 - SEO title: Car depreciation calculator | BuyUsedAutomobiles
 - Meta description: Explore a car’s estimated value over time using editable depreciation assumptions. Compare annual losses and residual value before planning your purchase.
 - H1: Car depreciation calculator
 - Recommended H2s (retain current headings): How it works; Can I calculate depreciation by model?; A worked example; Choose assumptions for the car you will actually own; Use the curve to compare ownership periods; Questions worth asking
-- Internal links: /disclaimer
+- Internal links: /disclaimer, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /editorial-policy
 - Content improvements: Retain illustrative percentages and model limitations; no make-specific forecasts.
 - Priority: P2
+
+### /car-down-payment-calculator
+
+- URL: https://buyusedautomobiles.com/car-down-payment-calculator
+- Page type: Calculator/tool
+- Primary keyword: car down payment calculator
+- Secondary keywords: calculate car down payment; car deposit calculator
+- Long-tail variants: car down payment with negative equity; cash reserve and down payment funding gap
+- Search intent: Calculate a contribution target and cash needed
+- Search-volume evidence: 5,000 Low (33), verified export row
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-down-payment-calculator
+- SEO title: Car down payment calculator with trade-in equity
+- Meta description: Calculate a car down payment target, cash needed after trade-in equity, savings gap, and estimated loan payment while preserving your chosen cash reserve.
+- H1: Car down payment calculator with trade-in equity
+- Recommended H2s (retain current headings): How it works; A worked example; A target percentage is a planning choice; Keep cash and trade equity separate; Use your local purchase quote; Questions worth asking
+- Internal links: /disclaimer, /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /car-sales-tax-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented percentage target, net trade equity, reserve, funding gap and loan scenarios in eight currencies. Article retains explanatory intent.
+- Priority: P1
 
 ### /car-loan-calculator
 
 - URL: https://buyusedautomobiles.com/car-loan-calculator
 - Page type: Calculator/tool
 - Primary keyword: used car loan calculator
-- Secondary keywords: car payment calculator; car loan payment calculator; used car payment calculator; car payoff calculator
+- Secondary keywords: car payment calculator; car loan payment calculator; used car payment calculator
 - Long-tail variants: used car loan calculator with taxes and fees; car loan calculator with trade in and down payment; used car payment calculator with negative equity; used car loan calculator with extra payments; used car financing calculator bad credit; used car payment calculator including registration fees
-- Search intent: Calculate payments and compare terms/early payoff
-- Search-volume evidence: 50,000 primary; payment synonyms 500,000 each; used car payment 5,000; payoff 50,000. Overlapping estimates; never add.
+- Search intent: Calculate a proposed purchase payment and compare loan terms
+- Search-volume evidence: 50,000 primary; payment synonyms 500,000 each; used car payment 5,000. Historical owner brief, with the car payment row confirmed in the latest export. Overlapping estimates; never add.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/car-loan-calculator
 - SEO title: Used car loan calculator with taxes and fees
 - Meta description: Estimate a used car payment, see total interest, and compare repayment terms. Add a trade-in or extra payments to explore the full amortization schedule.
 - H1: Used car loan calculator with taxes and fees
 - Recommended H2s (retain current headings): How it works; Calculate a used-car payment with taxes, fees and a trade-in; A worked example; Read the rate and the term together; Why your lender’s schedule may differ; Estimate early payoff savings; Questions worth asking
-- Internal links: /car-sales-tax-calculator, /car-affordability-calculator, /total-cost-of-ownership-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-compare-used-car-loans, /disclaimer
-- Content improvements: Implemented itemized tax/title/registration, trade-equity metrics, early-payoff navigation and linked buying steps. No synonym or payoff landing page.
+- Internal links: /car-sales-tax-calculator, /car-affordability-calculator, /total-cost-of-ownership-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-compare-used-car-loans, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Existing purchase calculator retained with itemized fees and trade equity. Links now route existing-debt payoff, refinancing and cash-contribution planning to their distinct tools.
 - Priority: P1
 
 ### /car-loan-calculator/10000-car-loan
@@ -333,6 +255,25 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Preserve existing differentiated example and clean self-canonical; link to the main calculator. Do not generate further parameter permutations.
 - Priority: P2
 
+### /car-loan-payoff-calculator
+
+- URL: https://buyusedautomobiles.com/car-loan-payoff-calculator
+- Page type: Calculator/tool
+- Primary keyword: car loan payoff calculator
+- Secondary keywords: car loan extra payment calculator; auto loan payoff calculator
+- Long-tail variants: existing balance payoff with monthly extra principal and lump sum; payoff schedule and interest savings
+- Search intent: Calculate repayment of an existing debt
+- Search-volume evidence: 50,000 Low (8); extra-payment variant 5,000 Low (11). Verified export rows; do not add synonyms.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/car-loan-payoff-calculator
+- SEO title: Car loan payoff and extra payment calculator
+- Meta description: Calculate payoff time for an existing car loan. Compare extra payments and a lump sum, interest savings, and repayment schedules in your chosen currency.
+- H1: Car loan payoff and extra payment calculator
+- Recommended H2s (retain current headings): How it works; A worked example; Existing debt or a new purchase?; Use local terms with your selected currency; Questions worth asking
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Content improvements: Implemented distinct existing-balance and required-payment workflow, extra/lump-sum comparison, cent-rounded schedule and eight display currencies. Purchase loan retains new-purchase intent.
+- Priority: P1
+
 ### /car-sales-tax-calculator
 
 - URL: https://buyusedautomobiles.com/car-sales-tax-calculator
@@ -341,14 +282,14 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: auto sales tax calculator; used car sales tax calculator; used car tax calculator; dmv fee calculator used car; ca auto sales tax calculator
 - Long-tail variants: used car sales tax calculator by state; used car sales tax and registration calculator; car sales tax and title fees calculator; calculate taxes and fees on used car; used car tax title and license calculator; car price plus tax calculator; calculate DMV fees for used car; used car out the door price calculator; used car tax calculator with trade in
 - Search intent: Estimate tax and purchase total with verified manual inputs
-- Search-volume evidence: 5,000 primary and auto synonym; used-car/DMV/CA variants 500 each. Overlap, no totals.
+- Search-volume evidence: 5,000 Low (1); tax title license calculator 5,000 Low (2), verified export rows. Registration tax keyword 50,000 Low (25), -90% YoY; automatic jurisdiction rollout held.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/car-sales-tax-calculator
 - SEO title: Car sales tax calculator | BuyUsedAutomobiles
 - Meta description: Estimate vehicle sales tax from your verified combined rate, taxable fees, and allowed trade credit. Find official state resources and see the taxable base.
 - H1: Car sales tax calculator
 - Recommended H2s (retain current headings): How it works; State rules, title and registration fees; A worked example; Why a state name is not enough; Know when the simplified model does not fit; Questions worth asking
-- Internal links: /car-loan-calculator#taxes-and-trade, /disclaimer
+- Internal links: /car-loan-calculator#taxes-and-trade, /disclaimer, /car-loan-calculator, /used-car-price-negotiation-calculator, /trade-in-value-estimator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-negotiate-a-used-car-price, /guides/trade-in-vs-private-sale, /editorial-policy
 - Content improvements: Implemented separate user-entered title/registration. Automatic state data unavailable; no 50-state rollout. California intent uses official resources on this page.
 - Priority: P3
 
@@ -409,24 +350,43 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Maintain factual operator/source disclosures and current contact details. Owner confirmation is needed for unresolved identity/mailbox statements; do not pad trust pages for keywords.
 - Priority: P2
 
+### /ev-charging-cost-calculator
+
+- URL: https://buyusedautomobiles.com/ev-charging-cost-calculator
+- Page type: Calculator/tool
+- Primary keyword: ev charging calculator
+- Secondary keywords: electric car charging cost calculator; EV charging cost calculator
+- Long-tail variants: charge session cost with losses and session fee; grid vs battery energy billing
+- Search intent: Calculate electricity and cost for one charging session
+- Search-volume evidence: 5,000 Low (5); electric-car charging variant 5,000 Low (17). Overlapping intents, not additive.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/ev-charging-cost-calculator
+- SEO title: EV charging cost calculator with charging losses
+- Meta description: Estimate electric car charging cost from usable battery capacity, charge levels, charging efficiency, energy price, and session fees in your selected currency.
+- H1: EV charging cost calculator with charging losses
+- Recommended H2s (retain current headings): How it works; A worked example; Home and public charging costs; Why kW and kWh are different; Compare costs in one currency; Questions worth asking
+- Internal links: /disclaimer, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-depreciation-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
+- Content improvements: Implemented usable battery, charge range, efficiency, billing boundary, price, flat fee and average-power time in eight currencies. No local tariff inferred.
+- Priority: P1
+
 ### /fuel-cost-calculator
 
 - URL: https://buyusedautomobiles.com/fuel-cost-calculator
 - Page type: Calculator/tool
 - Primary keyword: fuel cost calculator
-- Secondary keywords: used car fuel budget
-- Long-tail variants: monthly used car fuel cost; US mpg vs litres per 100 km cost
-- Search intent: Calculate fuel expense
-- Search-volume evidence: No supplied volume; validate
+- Secondary keywords: gas mileage calculator; fuel savings calculator; km per liter calculator
+- Long-tail variants: measure MPG from distance and fuel; convert US mpg km/L and L/100 km; compare annual fuel spending
+- Search intent: Calculate fuel expense and measure fuel economy
+- Search-volume evidence: Gas mileage 50,000 Low (0); fuel savings 5,000 Low (1), verified 2026-10-21 export rows. Do not add overlapping intents.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/fuel-cost-calculator
 - SEO title: Fuel cost calculator | BuyUsedAutomobiles
-- Meta description: Calculate trip and annual fuel costs in miles and US gallons or kilometers and liters. Compare efficiency and pump prices with a clear, shareable summary.
+- Meta description: Calculate trip and annual fuel costs, measure US MPG, km/L or L/100 km, and compare fuel savings. Use your own fuel prices, distance and efficiency.
 - H1: Fuel cost calculator
-- Recommended H2s (retain current headings): How it works; A worked example; Make the estimate match your driving; Compare efficiency in dollars; Questions worth asking
-- Internal links: /disclaimer
-- Content improvements: Retain unit conversion and editable pump-price assumptions.
-- Priority: P2
+- Recommended H2s (retain current headings): Gas mileage and fuel savings calculator; How it works; A worked example; Make the estimate match your driving; Compare efficiency in dollars; Questions worth asking
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-affordability-calculator, /car-depreciation-calculator, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /guides/international-used-car-buying-checks, /editorial-policy
+- Content improvements: Retained trip calculator and added measured fuel efficiency and local-currency annual fuel-only savings on this existing canonical URL.
+- Priority: P1
 
 ### /guides
 
@@ -443,7 +403,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Read practical guides to inspecting a used car, checking its history, comparing loans, negotiating the price, and understanding the full cost of ownership.
 - H1: A little research.A better car decision.
 - Recommended H2s (retain current headings): Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car
-- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk
+- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /guides/how-to-calculate-percentage-increase, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-car-payment-can-i-afford
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 
@@ -561,6 +521,25 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: Retain local source qualifications and local currency. Do not treat as an equivalent translation or competing generic US buying hub.
 - Priority: P2
 
+### /guides/car-depreciation-chart
+
+- URL: https://buyusedautomobiles.com/guides/car-depreciation-chart
+- Page type: Guide
+- Primary keyword: car depreciation chart
+- Secondary keywords: car depreciation curve; 5 year car depreciation chart; 10 year car depreciation chart
+- Long-tail variants: compare lower middle and higher depreciation scenarios; read annual value-loss charts
+- Search intent: Informational / visualize value-loss scenarios
+- Search-volume evidence: No supplied volume; validate
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/car-depreciation-chart
+- SEO title: Car Depreciation Chart: 1-10 Year Value Examples
+- Meta description: Explore a car depreciation chart over 1-10 years. Compare three illustrative decline scenarios, annual value loss, and resale assumptions with clear examples.
+- H1: Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years
+- Recommended H2s (retain current headings): Key takeaways; 01Before you compare the numbers; 02What Is a Car Depreciation Chart?; 03Example Car Depreciation Chart Over Five Years; 04Why Does Depreciation Often Slow Over Time?; 05Car Depreciation Chart: Three Different Scenarios; 06Car Depreciation Chart for 10 Years; 07How to Read a Car Depreciation Curve
+- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /guides/how-much-does-a-used-car-depreciate-per-year, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /used-car-inspection-checklist, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/real-cost-of-car-ownership
+- Content improvements: Implemented one article from two identical drafts, repaired pasted table markers, and added interactive five- and ten-year charts with matching tables. The annual-formula guide and interactive calculator retain their distinct intents.
+- Priority: P2
+
 ### /guides/category/buying
 
 - URL: https://buyusedautomobiles.com/guides/category/buying
@@ -621,7 +600,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 ### /guides/category/financing
 
 - URL: https://buyusedautomobiles.com/guides/category/financing
-- Page type: Collection; indexable with two guides as of 2026-10-21
+- Page type: Collection
 - Primary keyword: financing used car guides
 - Secondary keywords: financing research collection
 - Long-tail variants: find practical financing advice and related tools
@@ -632,10 +611,29 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - SEO title: Financing guides for used-car decisions | BuyUsedAutomobiles
 - Meta description: Explore our financing guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Financing guides
-- Recommended H2s (retain current headings): How Much Down Payment Do You Need for a Used Car in 2026?; More on financing
-- Internal links: /guides/how-to-compare-used-car-loans, /guides/how-much-down-payment-for-used-car
-- Content improvements: The new down-payment guide makes this a two-article collection; the existing route policy now includes it in the indexable core sitemap.
+- Recommended H2s (retain current headings): How Much Down Payment Do You Need for a Used Car in 2026?
+- Internal links: /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/how-to-compare-used-car-loans
+- Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
+
+### /guides/category/mathematics-calculators
+
+- URL: https://buyusedautomobiles.com/guides/category/mathematics-calculators
+- Page type: Collection; navigation only, intentionally noindex
+- Primary keyword: No organic campaign; navigation only
+- Secondary keywords: mathematics-calculators research collection
+- Long-tail variants: find practical mathematics-calculators advice and related tools
+- Search intent: Navigate the category's existing articles
+- Search-volume evidence: No supplied category volume; validate
+- Status: Existing
+- Canonical: https://buyusedautomobiles.com/guides/category/mathematics-calculators
+- SEO title: Mathematics / Calculators guides | BuyUsedAutomobiles
+- Meta description: Learn percentage calculations with formulas, worked examples, and spreadsheet instructions. Browse our mathematics and calculator guides.
+- H1: Mathematics / Calculators guides
+- Recommended H2s (retain current headings): How to Calculate Percentage Increase: Formula, Examples, and Easy Methods
+- Internal links: /guides/how-to-calculate-percentage-increase
+- Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
+- Priority: P3 navigation maintenance
 
 ### /guides/category/ownership
 
@@ -651,8 +649,8 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - SEO title: Ownership guides for used-car decisions | BuyUsedAutomobiles
 - Meta description: Explore our ownership guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Ownership guides
-- Recommended H2s (retain current headings): How to calculate the real cost of car ownership
-- Internal links: /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs
+- Recommended H2s (retain current headings): How Much Does a Used Car Depreciate Per Year?
+- Internal links: /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -690,7 +688,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Plan a used car purchase in 12 steps, from budget and vehicle history to inspection, financing, negotiation, and a verified ownership transfer.
 - H1: Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car
 - Recommended H2s (retain current headings): Key takeaways; 01Quick Answer: How Do You Buy a Used Car Safely?; 02Which guide should you read next?; 03Set a Realistic Used Car Budget; 04Research Reliable Used Cars; 05Compare Used Car Market Prices; 06Verify the Vehicle Identification Number and Ownership; 07Check Accident, Flood, and Title History
-- Internal links: /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-buying-checklist-first-time-buyers, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/how-to-avoid-used-car-scams, /guides/used-car-vs-new-car, /guides/used-car-maintenance-costs, /guides/best-time-to-buy-a-used-car, /car-affordability-calculator, /used-car-inspection-checklist, /what-is-my-car-worth, /guides/how-to-check-a-cars-history, /guides/how-to-inspect-a-used-car
+- Internal links: /guides/how-much-car-payment-can-i-afford, /guides/car-depreciation-chart, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-down-payment-for-used-car, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-buying-checklist-first-time-buyers, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/how-to-avoid-used-car-scams, /guides/used-car-vs-new-car, /guides/used-car-maintenance-costs, /guides/best-time-to-buy-a-used-car, /car-affordability-calculator
 - Content improvements: Shortened search title and added private-seller guide link. Keep hub breadth, delegate detailed inspection/negotiation/private-party questions.
 - Priority: P1
 
@@ -711,6 +709,63 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Recommended H2s (retain current headings): Key takeaways; 01What Is Considered High Mileage?; 02Is 100,000 Miles Too Much for a Used Car?; 03Highway Miles vs. City Miles; 04How to Inspect a High-Mileage Used Car; 05Should You Buy a Used Car With 150,000 Miles?; 06Frequently Asked Questions; 07Conclusion
 - Internal links: /used-car-inspection-checklist, /total-cost-of-ownership-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides, /guides/complete-used-car-buying-guide, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
 - Content improvements: Retain current mileage-focused page. History guide's mileage section is supporting context; do not expand it into a competing mileage guide.
+- Priority: P2
+
+### /guides/how-much-car-payment-can-i-afford
+
+- URL: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
+- Page type: Guide
+- Primary keyword: how much car payment can I afford
+- Secondary keywords: affordable car payment; monthly car budget; how much should I spend on a car payment
+- Long-tail variants: take-home transportation budget; loan payment vs total running costs; compare 60 and 72 month loan payments
+- Search intent: Informational / household car-payment budgeting
+- Search-volume evidence: No supplied volume; validate
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
+- SEO title: How Much Car Payment Can I Afford? Budget Guide (2026)
+- Meta description: How much car payment can you afford? Build a monthly budget, include running costs, and compare down payments, loan terms, and total borrowing costs.
+- H1: How Much Car Payment Can I Afford? Complete 2026 Budget Guide
+- Recommended H2s (retain current headings): Key takeaways; 01Before you compare the numbers; 02How Much Car Payment Can You Afford?; 03How to Calculate Your Affordable Monthly Car Payment; 04Calculate the Total Monthly Cost of Owning a Car; 05What Is the 10% Rule for Car Payments?; 06How Does the Car Price Affect Your Monthly Payment?; 07Example: Monthly Payments on a Used Car Loan
+- Internal links: /car-affordability-calculator, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer
+- Content improvements: Implemented supplied Financing draft with cash-flow tables, checked loan examples, gross vs take-home income clarification, and direct links to the canonical affordability and loan calculators.
+- Priority: P2
+
+### /guides/how-much-does-a-used-car-depreciate-per-year
+
+- URL: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
+- Page type: Guide
+- Primary keyword: average car depreciation per year
+- Secondary keywords: how much does a used car depreciate per year; annual car depreciation; used car depreciation formula
+- Long-tail variants: average annual dollar loss vs compound annual decline; five-year used car depreciation example; estimate future resale value
+- Search intent: Informational / ownership-cost planning
+- Search-volume evidence: 500 monthly searches; Google Ads competition Low (6/100), supplied by owner; market/date/export unverified. Ads competition is not organic difficulty.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
+- SEO title: Used Car Depreciation Per Year: Formula & Examples
+- Meta description: How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.
+- H1: How Much Does a Used Car Depreciate Per Year?
+- Recommended H2s (retain current headings): Key takeaways; 01Understanding annual vehicle value loss; 02What Is Car Depreciation?; 03How Much Does a Used Car Depreciate Per Year?; 04How to Calculate Car Depreciation Per Year; 05How to Calculate Average Annual Depreciation; 06Illustrative Five-Year Used Car Depreciation Example; 07What Factors Affect Used Car Depreciation?
+- Internal links: /total-cost-of-ownership-calculator, /car-depreciation-calculator, /what-is-my-car-worth, /guides/car-depreciation-chart, /car-loan-calculator, /guides/how-much-down-payment-for-used-car, /used-car-inspection-checklist, /trade-in-value-estimator, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks
+- Content improvements: Implemented supplied Ownership article with verified illustrative calculations, annualized-rate distinctions, a five-year table, current-value starting assumptions, and links to depreciation, valuation, ownership and loan tools. No universal average or resale forecast claimed.
+- Priority: P2
+
+### /guides/how-much-down-payment-for-used-car
+
+- URL: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
+- Page type: Guide
+- Primary keyword: how much down payment for a car
+- Secondary keywords: how much is a good down payment on a car; how much car can I afford; how much car payment can I afford
+- Long-tail variants: used car down payment 10% vs 20%; trade-in equity; taxes and fees; monthly payment comparison
+- Search intent: Informational / financing planning
+- Search-volume evidence: No supplied volume; validate
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
+- SEO title: Used Car Down Payment Guide 2026: How Much Do You Need?
+- Meta description: How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.
+- H1: How Much Down Payment Do You Need for a Used Car in 2026?
+- Recommended H2s (retain current headings): Key takeaways; 01Planning your used car purchase; 02How much down payment do you need for a used car?; 03What is a car down payment?; 04Used car down payment examples: 10% vs. 20%; 05How to calculate a used car down payment; 06Does a bigger down payment lower monthly payments?; 07Can you buy a used car with no down payment?
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-calculate-percentage-increase, /total-cost-of-ownership-calculator, /guides/how-much-car-payment-can-i-afford, /trade-in-value-estimator, /used-car-inspection-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe
+- Content improvements: Implemented supplied Financing article with down-payment tables, hypothetical loan costs, source references and direct links to loan, affordability, trade-in and ownership-cost calculators.
 - Priority: P2
 
 ### /guides/how-to-avoid-used-car-scams
@@ -751,6 +806,25 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Content improvements: NEW: direct answer, seven steps, lender/lien example, handoff checklist, FAQs, official sources and contextual tool links.
 - Priority: P2
 
+### /guides/how-to-calculate-percentage-increase
+
+- URL: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
+- Page type: Guide
+- Primary keyword: how to calculate percentage increase
+- Secondary keywords: percentage increase formula; how to find percentage increase; calculate percent increase; percentage change formula; percentage increase in Excel
+- Long-tail variants: calculate salary price and sales growth; Excel and Google Sheets percentage change
+- Search intent: Informational / calculation
+- Search-volume evidence: No supplied volume; validate
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
+- SEO title: How to Calculate Percentage Increase (Formula + Examples)
+- Meta description: Learn how to calculate percentage increase using a simple formula. Follow step-by-step examples for prices, salaries, sales, and Excel.
+- H1: How to Calculate Percentage Increase: Formula, Examples, and Easy Methods
+- Recommended H2s (retain current headings): Key takeaways; 01Understanding percentage growth; 02What Is Percentage Increase?; 03Percentage Increase Formula; 04How to Calculate Percentage Increase Step by Step; 05Practical Percentage Increase Examples; 06Percentage Increase Examples Table; 07How to Calculate Percentage Increase in Excel
+- Internal links: /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car
+- Content improvements: Implemented supplied article under Mathematics / Calculators with formulas, worked examples, a comparison table, spreadsheet instructions and zero/negative-base limitations.
+- Priority: P2
+
 ### /guides/how-to-check-a-cars-history
 
 - URL: https://buyusedautomobiles.com/guides/how-to-check-a-cars-history
@@ -785,7 +859,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Learn how monthly car loan interest is calculated, work through a payment example, and compare rates, APR, terms and total borrowing costs.
 - H1: How car loan interest is calculated and how to compare offers
 - Recommended H2s (retain current headings): Key takeaways; 01Establish how much you need to finance; 02Collect offers on comparable terms; 03How interest is calculated on a car loan; 04See what a longer term changes; 05Check flexibility and conditions; 06Keep add-ons and negative equity visible; 07Choose a loan that fits the full ownership plan
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/complete-used-car-buying-guide
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -861,7 +935,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Browse page 2 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
 - H1: A little research.A better car decision.
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /guides/real-cost-of-car-ownership, /guides/how-to-compare-used-car-loans
+- Internal links: /guides/car-depreciation-chart, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -880,7 +954,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Browse page 3 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
 - H1: A little research.A better car decision.
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/trade-in-vs-private-sale, /guides/international-used-car-buying-checks, /guides/best-time-to-buy-a-used-car, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car
+- Internal links: /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /guides/real-cost-of-car-ownership, /guides/how-to-compare-used-car-loans, /guides/trade-in-vs-private-sale
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -899,7 +973,26 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Browse page 4 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
 - H1: A little research.A better car decision.
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/how-to-avoid-used-car-scams, /guides/used-car-maintenance-costs
+- Internal links: /guides/international-used-car-buying-checks, /guides/best-time-to-buy-a-used-car, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car, /guides/how-to-avoid-used-car-scams
+- Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
+- Priority: P3
+
+### /guides/page/5
+
+- URL: https://buyusedautomobiles.com/guides/page/5
+- Page type: Paginated collection
+- Primary keyword: used car buying guides
+- Secondary keywords: buying guide archive
+- Long-tail variants: used car guide archive page 5
+- Search intent: Browse additional existing articles
+- Search-volume evidence: No supplied pagination-specific volume
+- Status: Existing
+- Canonical: https://buyusedautomobiles.com/guides/page/5
+- SEO title: Used car buying guides — Page 5 | BuyUsedAutomobiles
+- Meta description: Browse page 5 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
+- H1: A little research.A better car decision.
+- Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
+- Internal links: /guides/used-car-maintenance-costs
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -918,7 +1011,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare used cars with a complete ownership budget for depreciation, fuel, insurance, maintenance, taxes, and interest. Avoid double-counting the loan.
 - H1: How to calculate the real cost of car ownership
 - Recommended H2s (retain current headings): Key takeaways; 01Choose the comparison period and driving pattern; 02Separate depreciation from loan repayment; 03Calculate energy use with consistent units; 04Replace broad guesses with quotes and schedules; 05Work through one complete five-year example; 06Test the assumptions that can change the result; 07Translate the total into a workable household budget
-- Internal links: /total-cost-of-ownership-calculator, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/used-car-maintenance-costs, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller
+- Internal links: /total-cost-of-ownership-calculator, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/used-car-maintenance-costs
 - Content improvements: Retain worked example and distinction between economic costs and cash flow; calculator owns interactive intent.
 - Priority: P2
 
@@ -937,7 +1030,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare a trade-in with selling privately after loan payoff, selling costs, possible tax treatment, and your time. Work through a clear break-even example.
 - H1: Trade-in vs. private sale: compare your net proceeds
 - Recommended H2s (retain current headings): Key takeaways; 01Get evidence for both selling routes; 02Separate the car’s value from your loan balance; 03Verify whether tax treatment changes the comparison; 04Calculate the private-sale break-even price; 05Put time, logistics, and uncertainty into the decision; 06Prepare a safe, documented private sale; 07Keep the replacement deal and handoff transparent
-- Internal links: /trade-in-value-estimator, /what-is-my-car-worth, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /trade-in-value-estimator, /what-is-my-car-worth, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -975,7 +1068,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Build a realistic used car maintenance budget using service schedules, local repair quotes, tire and brake condition, and a reserve for unexpected repairs.
 - H1: Used Car Maintenance Costs in 2026: How Much Should You Budget?
 - Recommended H2s (retain current headings): Key takeaways; 01Why Used Car Maintenance Costs Matter; 02Common Used Car Maintenance Expenses; 03Example: Annual Maintenance Budget; 04How to Estimate Maintenance Before Buying; 05Are Older Used Cars More Expensive to Maintain?; 06How to Reduce Used Car Maintenance Expenses; 07Frequently Asked Questions
-- Internal links: /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/real-cost-of-car-ownership, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller
+- Internal links: /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/real-cost-of-car-ownership, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart
 - Content improvements: Replace generic costs with quotes and manufacturer schedules; no invented fleet averages.
 - Priority: P2
 
@@ -1013,7 +1106,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare leasing and buying over the same time period. Include upfront cash, fees, extra mileage, loan balance, and estimated resale equity in one view.
 - H1: Lease vs. buy calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Cash paid is different from cost consumed; Keep the contract details visible; Questions worth asking
-- Internal links: /disclaimer
+- Internal links: /disclaimer, /car-loan-calculator, /total-cost-of-ownership-calculator, /car-affordability-calculator, /editorial-policy
 - Content improvements: Retain equity and disclosed operating-cost exclusions; no PCP/balloon claims.
 - Priority: P2
 
@@ -1051,7 +1144,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare a conventional repayment quote, Ijarah rentals and Diminishing Musharakah unit purchases without treating different contracts as the same loan.
 - H1: Conventional vs Islamic car finance in Pakistan
 - Recommended H2s (retain current headings): Key takeaways; 01Identify the contract before comparing installments; 02Read a conventional quote as borrowing; 03Read Ijarah as a rental arrangement; 04Read Diminishing Musharakah as ownership plus use; 05Separate benchmark changes from contract structure; 06Compare complete cash obligations; 07Use a quote review workflow
-- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/used-car-financing-quote-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-compare-used-car-loans
+- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/used-car-financing-quote-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford
 - Content improvements: Retain PKR financing links, source scope and original reviewed dates.
 - Priority: P2
 
@@ -1070,7 +1163,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Check the vehicle, PKR cash requirements, KIBOR terms, takaful, rental or unit-purchase schedule and settlement conditions before financing a used car in Pakistan.
 - H1: Pakistan used-car financing quote checklist
 - Recommended H2s (retain current headings): Key takeaways; 01Match the quote to the used vehicle; 02Obtain dated terms in PKR; 03Reconcile the upfront amount; 04Check rate and reset conventions; 05Audit the monthly and terminal schedule; 06Ask about changing circumstances; 07Build a usable affordability file
-- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/conventional-vs-islamic-car-finance, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-compare-used-car-loans
+- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/conventional-vs-islamic-car-finance, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford
 - Content improvements: Retain PKR financing links, source scope and original reviewed dates.
 - Priority: P2
 
@@ -1127,7 +1220,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Find the right free tool for your next car decision. Compare loans, estimate ownership costs, inspect a vehicle, and plan a supported offer before buying.
 - H1: The right tool.A clearer decision.
 - Recommended H2s (retain current headings): Buying; Financing; Ownership; Selling; Country-specific car running costs; The numbers are only part of the story.; The right car starts with the right budget.
-- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-sales-tax-calculator, /car-loan-calculator, /car-affordability-calculator, /lease-vs-buy-calculator, /car-depreciation-calculator, /total-cost-of-ownership-calculator, /fuel-cost-calculator, /what-is-my-car-worth, /trade-in-value-estimator
+- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-sales-tax-calculator, /car-loan-calculator, /car-affordability-calculator, /lease-vs-buy-calculator, /car-loan-payoff-calculator, /auto-loan-refinance-calculator, /car-down-payment-calculator, /car-depreciation-calculator, /total-cost-of-ownership-calculator, /fuel-cost-calculator
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 
@@ -1222,7 +1315,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare new vs used car ownership costs with your own prices, resale assumptions, insurance, maintenance, fuel and financing. Review equal-period scenarios.
 - H1: Car ownership cost calculator: new vs used
 - Recommended H2s (retain current headings): How it works; Compare a new car with a used car; A worked example; Build a realistic input set; Economic cost and cash flow answer different questions; Questions worth asking
-- Internal links: /guides/real-cost-of-car-ownership, /disclaimer
+- Internal links: /guides/real-cost-of-car-ownership, /disclaimer, /car-loan-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
 - Content improvements: Existing editable insurance, maintenance, fuel, tax, depreciation and interest inputs and matched new/used comparison retained. Insurance intent is budget planning, not quotes.
 - Priority: P2
 
@@ -1234,14 +1327,14 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: estimate trade in value; car trade in value calculator
 - Long-tail variants: how to estimate used car trade in value; how to estimate negative equity on a trade in; private party value vs trade in value
 - Search intent: Estimate trade equity using a disclosed model
-- Search-volume evidence: 50,000 primary and estimate synonym; car variant 5,000. Overlap.
+- Search-volume evidence: Exact car trade in value calculator row: 5,000 Medium (56), verified 2026-10-21 export. Other terms retain historical owner-supplied estimates.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/trade-in-value-estimator
 - SEO title: Trade-in value estimator | BuyUsedAutomobiles
 - Meta description: Estimate a modeled trade-in range and the equity left after your loan payoff. Prepare comparable written offers and separate your trade from the next deal.
 - H1: Trade-in value estimator
 - Recommended H2s (retain current headings): How it works; A worked example; The trade allowance is only one line in the deal; Plan for positive or negative equity; Questions worth asking
-- Internal links: /disclaimer
+- Internal links: /disclaimer, /what-is-my-car-worth, /car-loan-calculator, /car-sales-tax-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /editorial-policy
 - Content improvements: Retain payoff and modeled range; actual dealer bids remain necessary.
 - Priority: P4
 
@@ -1260,7 +1353,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Use a 25-point used car inspection checklist, flag concerns, and print or save a PDF report. Export your observations before an independent inspection.
 - H1: Used car inspection checklist
 - Recommended H2s (retain current headings): How it works; Download a used car inspection checklist PDF; A worked example; Start with identity and records; Observe safely, then ask an expert; Keep useful notes without oversharing; Questions worth asking
-- Internal links: /guides/how-to-inspect-a-used-car#section-1, /guides/international-used-car-buying-checks, /disclaimer
+- Internal links: /guides/how-to-inspect-a-used-car#section-1, /guides/international-used-car-buying-checks, /disclaimer, /used-car-price-negotiation-calculator, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan, /editorial-policy
 - Content improvements: Retain printable observations; inspection guide owns informational query while this route owns the interactive checklist.
 - Priority: P2
 
@@ -1279,7 +1372,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Build a used-car opening offer from comparable value and documented repairs. Separate vehicle price from fees and set a reasoned ceiling before negotiating.
 - H1: Used car price negotiation calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Build evidence before choosing a number; Separate negotiation from the decision to buy; Questions worth asking
-- Internal links: /disclaimer
+- Internal links: /disclaimer, /used-car-inspection-checklist, /car-sales-tax-calculator, /car-affordability-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /editorial-policy
 - Content improvements: Retain input-based offer math; negotiation guide owns advice queries.
 - Priority: P2
 
@@ -1291,14 +1384,14 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Secondary keywords: used car price checker; car resale value calculator
 - Long-tail variants: used car value based on mileage and condition; how to compare used car asking prices
 - Search intent: Understand a modeled value and compare real offers
-- Search-volume evidence: 50,000 primary; price checker 5,000; resale 500
+- Search-volume evidence: Exact car value calculator row: 50,000 High (68), verified 2026-10-21 export. Other terms retain historical owner-supplied estimates.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/what-is-my-car-worth
 - SEO title: What is my car worth? | BuyUsedAutomobiles
 - Meta description: Model a used car’s private-sale, trade-in, and retail value range from age, mileage, and condition. See transparent assumptions and verify with local offers.
 - H1: What is my car worth?
 - Recommended H2s (retain current headings): How it works; A worked example; What this estimate can and cannot tell you; Turn a broad range into evidence; Questions worth asking
-- Internal links: /disclaimer
+- Internal links: /disclaimer, /trade-in-value-estimator, /car-depreciation-calculator, /used-car-price-negotiation-calculator, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/how-to-check-a-cars-history, /editorial-policy
 - Content improvements: Keep educational model disclosures; obtain lawful market data before claiming live vehicle values.
 - Priority: P4
 
@@ -1329,6 +1422,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 | --- | --- | --- |
 | /guides/category/buying/page/1 | 308 permanent redirect | /guides/category/buying |
 | /guides/category/financing/page/1 | 308 permanent redirect | /guides/category/financing |
+| /guides/category/mathematics-calculators/page/1 | 308 permanent redirect | /guides/category/mathematics-calculators |
 | /guides/category/ownership/page/1 | 308 permanent redirect | /guides/category/ownership |
 | /guides/category/selling/page/1 | 308 permanent redirect | /guides/category/selling |
 | /guides/page/1 | 308 permanent redirect | /guides |

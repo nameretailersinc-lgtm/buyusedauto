@@ -1,0 +1,244 @@
+{
+  "reviewedOn": "2026-10-21",
+  "totalRows": 4521,
+  "uniqueKeywords": 4488,
+  "scope": "Keyword Planner exported estimates. PKR is bid currency, not evidence of a search geography. Search volumes are not organic forecasts. Monthly breakdown cells are blank in these exports.",
+  "sources": [
+    {
+      "filename": "Keyword Stats 2026-10-21 at 22_26_12.csv",
+      "period": "October 1, 2025 - September 30, 2026",
+      "rows": 2350,
+      "sha256": "999986c2625509a6e479f44a9ebfa9e25b974a0e1b372fa321d0bf5575afbf2d"
+    },
+    {
+      "filename": "Keyword Stats 2026-10-21 at 22_26_51.csv",
+      "period": "October 1, 2025 - September 30, 2026",
+      "rows": 873,
+      "sha256": "1b61a7d48efc930522a90bda4b3f24be675feec980f1c3411fe6c4aefe36d0ed"
+    },
+    {
+      "filename": "Keyword Stats 2026-10-21 at 22_27_04.csv",
+      "period": "October 1, 2025 - September 30, 2026",
+      "rows": 765,
+      "sha256": "df844d5a1429f67cdfbb260c235e753952015f8e3c88e041bea5224018d1784f"
+    },
+    {
+      "filename": "Keyword Stats 2026-10-21 at 22_28_04.csv",
+      "period": "October 1, 2025 - September 30, 2026",
+      "rows": 533,
+      "sha256": "a7733da0175ac283f38e56ba94e3aa99ccf8fa60277e409541674655be1eecba"
+    }
+  ],
+  "selected": [
+    {
+      "keyword": "car loan payoff calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 8,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "auto loan refinance calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Medium",
+      "adsCompetitionIndex": 45,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car down payment calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 33,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "auto loan apr calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Medium",
+      "adsCompetitionIndex": 34,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car loan extra payment calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 11,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car payment calculator",
+      "currency": "PKR",
+      "monthlySearches": 500000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 29,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car affordability calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "-90%",
+      "yoyChange": "-90%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 17,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car loan apr calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Medium",
+      "adsCompetitionIndex": 34,
+      "source": "Keyword Stats 2026-10-21 at 22_26_12.csv"
+    },
+    {
+      "keyword": "car depreciation calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 16,
+      "source": "Keyword Stats 2026-10-21 at 22_26_51.csv"
+    },
+    {
+      "keyword": "car trade in value calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Medium",
+      "adsCompetitionIndex": 56,
+      "source": "Keyword Stats 2026-10-21 at 22_26_51.csv"
+    },
+    {
+      "keyword": "car value calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "High",
+      "adsCompetitionIndex": 68,
+      "source": "Keyword Stats 2026-10-21 at 22_26_51.csv"
+    },
+    {
+      "keyword": "car maintenance cost calculator",
+      "currency": "PKR",
+      "monthlySearches": 500,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 4,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "car cost per mile calculator",
+      "currency": "PKR",
+      "monthlySearches": 500,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 3,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "car sales tax calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 1,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "car repair cost calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Medium",
+      "adsCompetitionIndex": 40,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "car registration tax calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "0%",
+      "yoyChange": "-90%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 25,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "tax title license calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "900%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 2,
+      "source": "Keyword Stats 2026-10-21 at 22_27_04.csv"
+    },
+    {
+      "keyword": "electric car charging cost calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 17,
+      "source": "Keyword Stats 2026-10-21 at 22_28_04.csv"
+    },
+    {
+      "keyword": "fuel savings calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "900%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 1,
+      "source": "Keyword Stats 2026-10-21 at 22_28_04.csv"
+    },
+    {
+      "keyword": "gas mileage calculator",
+      "currency": "PKR",
+      "monthlySearches": 50000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 0,
+      "source": "Keyword Stats 2026-10-21 at 22_28_04.csv"
+    },
+    {
+      "keyword": "ev charging calculator",
+      "currency": "PKR",
+      "monthlySearches": 5000,
+      "threeMonthChange": "0%",
+      "yoyChange": "0%",
+      "adsCompetition": "Low",
+      "adsCompetitionIndex": 5,
+      "source": "Keyword Stats 2026-10-21 at 22_28_04.csv"
+    }
+  ]
+}

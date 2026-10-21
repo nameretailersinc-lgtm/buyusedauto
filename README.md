@@ -1,6 +1,6 @@
 # BuyUsedAutomobiles
 
-A US-focused used-car research product built with Next.js 16 App Router, React 19, TypeScript, and Tailwind CSS 4. Eleven browser-based tools, six original guides, and six distinct financing examples. No database, live market feed, advertising account, or affiliate account is assumed.
+A used-car research product built with Next.js 16 App Router, React 19, TypeScript, and Tailwind CSS 4. Fifteen core browser-based tools, regional tools, practical guides, and six financing examples. New payoff, refinance, down-payment and EV charging tools support eight display currencies; other core tools retain their stated US scope. No database, live market feed, advertising account, or affiliate account is assumed.
 
 ## Run locally
 

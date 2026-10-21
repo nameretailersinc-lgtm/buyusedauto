@@ -11,8 +11,9 @@ import {guides} from "@/data/guides";
 import {siteUrl} from "@/lib/site";
 import {scenarios,scenarioPath} from "@/data/scenarios";
 import {toolImages,toolImageAlt} from "@/data/visuals";
+import {FuelEfficiency} from "./fuel-efficiency";
 export function ToolPage({tool}:{tool:Tool}){
-  const content=toolContent[tool.id];const relatedGuides=guides.filter(g=>g.relatedTools.includes(tool.slug)).slice(0,3);const isLoan=tool.id==="loan";
+  const content=toolContent[tool.id];const relatedGuides=guides.filter(g=>g.relatedTools.includes(tool.slug)||(tool.multiCurrency&&g.relatedTools.some(slug=>content.related.includes(slug)))).slice(0,3);const isLoan=tool.id==="loan";
   return <div className={`tool-page has-calculator ${isLoan?"loan-page":""}`}>
     <section className={`tool-hero tool-hero-scenic tool-scene-${tool.id}`}>
       <Image src={`/images/${toolImages[tool.id]}.webp`} alt={toolImageAlt[tool.id]} fill preload sizes="100vw" className="tool-hero-image"/>
@@ -23,6 +24,8 @@ export function ToolPage({tool}:{tool:Tool}){
       {isLoan&&<nav aria-label="Loan calculator sections" className="button-row"><a href="#results" className="text-link">Payment results</a><a href="#amortization" className="text-link">Amortization schedule</a><a href="#early-payoff" className="text-link">Early payoff comparison</a><a href="#taxes-and-trade" className="text-link">Taxes and trade-in equity</a></nav>}
       {tool.id!=="inspection"&&<noscript><p className="method-note">Enable JavaScript to change calculator inputs. The methodology, examples, sources and buying guidance below remain available.</p></noscript>}
       {tool.id==="inspection"?<Inspection/>:<Calculator tool={tool}/>}
+      {tool.id==="fuel"&&<FuelEfficiency/>}
+      {isLoan&&<p className="notice">Repaying an existing balance? Use the <Link href="/car-loan-payoff-calculator">payoff and extra-payment calculator</Link>. Compare a replacement offer with the <Link href="/auto-loan-refinance-calculator">refinance calculator</Link>, or plan your cash with the <Link href="/car-down-payment-calculator">down-payment calculator</Link>.</p>}
       <div className="content-layout"><article className="prose tool-prose"><h2 id="methodology">How it works</h2>
         {tool.id==="ownership"&&<section id="new-vs-used"><h2>Compare a new car with a used car</h2><p>Model one vehicle with your purchase quote, expected resale value, insurance quote, maintenance plan and financing terms. Save it for comparison, then select the other vehicle type and replace its inputs. The saved assumptions stay visible. Vehicle labels do not supply prices, rates or reliability claims.</p><p>Keep ownership period and annual distance the same. The comparison shows the difference in economic cost and each cost component; it pauses if the period or distance differs. Test more cautious resale and repair assumptions before making a decision. Neither a new nor a used car is assumed to win.</p><p>Read <Link href="/guides/real-cost-of-car-ownership">how to build a complete ownership budget</Link> and distinguish average economic cost from the cash needed each month.</p></section>}
         {content.explanation.map(p=><p key={p}>{p}</p>)}

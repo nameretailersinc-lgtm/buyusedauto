@@ -14,6 +14,10 @@ describe("consent-gated usage events",()=>{
     expect(send).toHaveBeenCalledWith("event","calculator_completed",{send_to:"G-TEST123",country:"US",tool_id:"loan",page_location:"https://example.invalid/car-loan-calculator",page_referrer:""});
     expect(JSON.stringify(send.mock.calls)).not.toContain("12345");
   });
+  it("accepts new tools and supported market identifiers without input values",()=>{
+    expect(trackUsage({name:"calculator_completed",tool:"ev",country:"EU"})).toBe(true);
+    expect(send).toHaveBeenCalledWith("event","calculator_completed",expect.objectContaining({tool_id:"ev",country:"EU"}));
+  });
   it("does nothing without a real configured property or explicit consent",()=>{
     vi.stubEnv("NEXT_PUBLIC_GA_ID","");expect(trackUsage({name:"country_selected",country:"PK"})).toBe(false);
     vi.stubEnv("NEXT_PUBLIC_GA_ID","G-TEST123");vi.stubGlobal("localStorage",{getItem:()=>"rejected"});
