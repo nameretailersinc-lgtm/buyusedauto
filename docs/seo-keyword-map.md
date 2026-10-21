@@ -2,13 +2,55 @@
 
 Prepared 2026-10-18 from the current local production HTML. This supersedes historical route counts in older audit documents; it preserves the existing CSV research inputs.
 
-Updated 2026-10-21 with the three supplied articles and their category changes. These additions are implemented locally; publication is not confirmed by this document. Article slugs follow the existing `/guides/` URL structure.
+Updated 2026-10-21 with five unique supplied articles and their category changes. The two car-depreciation-chart attachments are identical and produce one canonical article. These additions are implemented locally; publication is not confirmed by this document. Article slugs follow the existing `/guides/` URL structure. SEO titles and descriptions for the car-payment budget and depreciation-chart guides were derived from the drafts because separate metadata was not supplied.
 
 Volumes below are approximate monthly Google Keyword Planner estimates supplied in the owner's brief. The original export, market/date settings and GSC data were not available. These are not independent measurements, traffic forecasts or organic difficulty scores. Google Ads competition is not organic difficulty. Do not sum synonyms or overlapping intents. All unmeasured queries require validation.
 
 One canonical owner per distinct intent. Page-one pagination aliases permanently redirect; interactive query strings canonicalize to the clean calculator. No hreflang is introduced because the country guides are not verified equivalent translations.
 
 ## Existing and implemented pages
+
+### /guides/how-much-car-payment-can-i-afford
+
+- URL: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
+- Page type: Guide
+- Category: Financing
+- Primary keyword: how much car payment can I afford
+- Secondary keywords: affordable car payment; monthly car budget; how much should I spend on a car payment
+- Long-tail variants: take-home transportation budget; loan payment vs total running costs; compare 60 and 72 month loan payments
+- Search intent: Informational / household car-payment budgeting
+- Search-volume evidence: No supplied volume; validate
+- Status: Added locally 2026-10-21 from the supplied article
+- Canonical: https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford
+- SEO title: How Much Car Payment Can I Afford? Budget Guide (2026)
+- Meta description: How much car payment can you afford? Build a monthly budget, include running costs, and compare down payments, loan terms, and total borrowing costs.
+- H1: How Much Car Payment Can I Afford? Complete 2026 Budget Guide
+- Recommended H2s: How to Calculate Your Affordable Monthly Car Payment; Calculate the Total Monthly Cost of Owning a Car; What Is the 10% Rule for Car Payments?; Example: Monthly Payments on a Used Car Loan; Hidden Costs That Make Car Payments More Expensive; Frequently Asked Questions
+- Internal links: /car-affordability-calculator, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide
+- Internal discovery: /guides, /guides/category/financing, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car
+- Content improvements: Preserve three budget/loan tables and hypothetical payment examples. Explain take-home household budgeting vs gross-income calculator inputs and cash-flow vs economic ownership cost. This article owns informational payment-budget intent; `/car-affordability-calculator` owns interactive affordability calculation.
+- Priority: P2
+
+### /guides/car-depreciation-chart
+
+- URL: https://buyusedautomobiles.com/guides/car-depreciation-chart
+- Page type: Guide
+- Category: Ownership
+- Primary keyword: car depreciation chart
+- Secondary keywords: car depreciation curve; 5 year car depreciation chart; 10 year car depreciation chart
+- Long-tail variants: compare lower middle and higher depreciation scenarios; read annual value-loss charts
+- Search intent: Informational / visualize value-loss scenarios
+- Search-volume evidence: No supplied volume; validate
+- Status: Added locally 2026-10-21 from two identical article attachments, published once in local source
+- Canonical: https://buyusedautomobiles.com/guides/car-depreciation-chart
+- SEO title: Car Depreciation Chart: 1-10 Year Value Examples
+- Meta description: Explore a car depreciation chart over 1-10 years. Compare three illustrative decline scenarios, annual value loss, and resale assumptions with clear examples.
+- H1: Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years
+- Recommended H2s: Example Car Depreciation Chart Over Five Years; Car Depreciation Chart: Three Different Scenarios; Car Depreciation Chart for 10 Years; How to Read a Car Depreciation Curve; Car Depreciation vs. Total Cost of Ownership; Frequently Asked Questions
+- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/complete-used-car-buying-guide
+- Internal discovery: /guides, /guides/category/ownership, /guides/complete-used-car-buying-guide, /guides/how-much-does-a-used-car-depreciate-per-year
+- Content improvements: Remove pasted escape markers, verify the five-year table and all three scenarios, and add plotted five- and ten-year examples with matching data tables. Years mean elapsed projection years, starting at the current value. All rates remain hypothetical. This article owns chart-reading intent; the annual-depreciation guide owns formulas and `/car-depreciation-calculator` owns editable projections.
+- Priority: P2
 
 ### /guides/how-much-does-a-used-car-depreciate-per-year
 

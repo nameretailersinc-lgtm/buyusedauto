@@ -4,6 +4,8 @@ import {load} from 'cheerio';
 // Run after next build: verify the actual HTML and generated route manifest.
 const pillar = 'complete-used-car-buying-guide';
 const requiredLinks = {
+  'how-much-car-payment-can-i-afford': ['/car-affordability-calculator', '/car-loan-calculator', '/total-cost-of-ownership-calculator', '/guides/how-much-down-payment-for-used-car'],
+  'car-depreciation-chart': ['/car-depreciation-calculator', '/what-is-my-car-worth', '/trade-in-value-estimator', '/total-cost-of-ownership-calculator', '/guides/how-much-does-a-used-car-depreciate-per-year'],
   'how-much-does-a-used-car-depreciate-per-year': ['/car-depreciation-calculator', '/what-is-my-car-worth', '/total-cost-of-ownership-calculator', '/trade-in-value-estimator', '/car-loan-calculator', '/guides/how-much-down-payment-for-used-car'],
   'how-much-down-payment-for-used-car': ['/car-loan-calculator', '/car-affordability-calculator', '/trade-in-value-estimator', '/total-cost-of-ownership-calculator', '/guides/how-to-calculate-percentage-increase'],
   'how-to-calculate-percentage-increase': [],
@@ -48,6 +50,20 @@ for (const slug of [pillar, ...Object.keys(requiredLinks)]) {
   const submitted = ['how-much-down-payment-for-used-car', 'how-to-calculate-percentage-increase'].includes(slug);
   const expected = slug === pillar ? Object.keys(requiredLinks).filter(other=>!other.startsWith('buy-used-car-')&&!['how-to-calculate-percentage-increase'].includes(other)).map(other => `/guides/${other}`) : [...requiredLinks[slug], ...(submitted?[]:[`/guides/${pillar}`])];
   for (const href of expected) assert(links.has(href), `${path}: missing contextual link ${href}`);
+  if (slug === 'how-much-car-payment-can-i-afford') {
+    assert($('title').text() === 'How Much Car Payment Can I Afford? Budget Guide (2026)', `${path}: incorrect SEO title`);
+    assert(article.articleSection === 'Financing' && $('article table').length === 3, `${path}: missing budget and loan tables`);
+    assert($('article').text().includes('take-home') && $('article').text().includes('gross income') && $('article').text().includes('cash-flow'), `${path}: missing income or cost-model distinctions`);
+    assert($('article table').text().includes('$315.60'), `${path}: missing loan comparison`);
+  }
+  if (slug === 'car-depreciation-chart') {
+    assert($('title').text() === 'Car Depreciation Chart: 1-10 Year Value Examples', `${path}: incorrect SEO title`);
+    assert(article.articleSection === 'Ownership' && $('article table').length === 3, `${path}: missing depreciation tables`);
+    const plots=$('article .result-chart');
+    assert(plots.length === 2 && plots.eq(0).find('button').length === 6 && plots.eq(1).find('button').length === 11, `${path}: incomplete five- or ten-year charts`);
+    assert($('article table').last().find('tbody tr').length === 11, `${path}: incomplete ten-year accessible table`);
+    assert(!$('article').text().includes('<escape>'), `${path}: leaked paste markup`);
+  }
   if (slug === 'how-much-does-a-used-car-depreciate-per-year') {
     assert($('title').text() === 'Used Car Depreciation Per Year: Formula & Examples', `${path}: supplied SEO title changed`);
     assert($('meta[name="description"]').attr('content') === 'How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.', `${path}: supplied description changed`);

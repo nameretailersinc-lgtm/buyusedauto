@@ -38,6 +38,8 @@ export const pillarGuide: Guide = {
         "Use this page to plan the full purchase. Follow the detailed guides below for your budget, mileage, inspection, seller verification, and timing questions."
       ],
       "links": [
+        {"title": "How much car payment can I afford?", "url": "/guides/how-much-car-payment-can-i-afford"},
+        {"title": "Car depreciation chart over 1-10 years", "url": "/guides/car-depreciation-chart"},
         {"title": "How much does a used car depreciate per year?", "url": "/guides/how-much-does-a-used-car-depreciate-per-year"},
         {"title": "How much down payment do you need for a used car?", "url": "/guides/how-much-down-payment-for-used-car"},
         {"title": "How to buy a used car from a private seller", "url": "/guides/how-to-buy-a-used-car-from-a-private-seller"},

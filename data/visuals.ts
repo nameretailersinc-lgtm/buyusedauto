@@ -1,5 +1,7 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "how-much-car-payment-can-i-afford": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
+  "car-depreciation-chart": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],
   "how-much-does-a-used-car-depreciate-per-year": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],
   "how-to-calculate-percentage-increase": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "how-much-down-payment-for-used-car": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],

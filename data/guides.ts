@@ -13,6 +13,7 @@ export type GuideSection = {
   bullets?: string[];
   links?: {title: string; url: string}[];
   table?: {headers: string[]; rows: string[][]};
+  chart?: {label: string; value: number}[];
   subsections?: GuideSection[];
 };
 
