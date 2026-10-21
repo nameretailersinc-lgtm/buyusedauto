@@ -23,7 +23,13 @@ test("itemized loan costs survive sharing, export and mobile layouts",async({pag
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`${width}px layout`).toBe(true);
   }
   await page.setViewportSize({width:390,height:844});
+  await page.locator('a[href="#taxes-and-trade"]').click();
+  await expect(page.locator("#taxes-and-trade h2")).toBeInViewport();
   expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
+  await page.emulateMedia({media:"print"});
+  expect(await page.locator(".content-layout").evaluate(element=>getComputedStyle(element).contentVisibility)).toBe("visible");
+  await expect(page.locator("#taxes-and-trade")).toBeVisible();
+  await page.emulateMedia({media:"screen"});
   await page.screenshot({path:"reports/loan-itemized-mobile.png",fullPage:true});
 });
 
@@ -39,7 +45,7 @@ test("manual tax fees and state selection remain explicit",async({page})=>{
   await expect(page.locator("#tax-title")).toHaveValue("100");
 });
 
-test("private-seller guidance and regional metadata are server rendered",async({browser})=>{
+test("private-seller guidance and regional metadata are server rendered",async({browser,page:interactivePage})=>{
   const context=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
   const page=await context.newPage();
   await page.goto("/guides/how-to-buy-a-used-car-from-a-private-seller");
@@ -48,7 +54,6 @@ test("private-seller guidance and regional metadata are server rendered",async({
   await expect(page.locator(".editorial-prose")).toContainText("$16,300");
   await expect(page.locator('article a[href="/car-sales-tax-calculator"]').first()).toBeVisible();
   await expect(page.getByText("Can I buy a used car from a private seller with a loan?",{exact:true})).toBeVisible();
-  expect((await new AxeBuilder({page}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   await page.screenshot({path:"reports/private-seller-mobile.png",fullPage:true});
   for(const path of ["/guides/buy-used-car-uk","/tools/uk/car-running-cost-calculator"]){
@@ -56,4 +61,8 @@ test("private-seller guidance and regional metadata are server rendered",async({
     await expect(page.locator('meta[property="og:locale"]')).toHaveAttribute("content","en_GB");
   }
   await context.close();
+  // axe injects executable scripts; run it in a separate JavaScript-enabled page.
+  await interactivePage.setViewportSize({width:390,height:844});
+  await interactivePage.goto("/guides/how-to-buy-a-used-car-from-a-private-seller");
+  expect((await new AxeBuilder({page:interactivePage}).withTags(["wcag2a","wcag2aa","wcag21aa"]).analyze()).violations).toEqual([]);
 });

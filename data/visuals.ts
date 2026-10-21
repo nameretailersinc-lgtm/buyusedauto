@@ -1,5 +1,8 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "how-much-does-a-used-car-depreciate-per-year": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],
+  "how-to-calculate-percentage-increase": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
+  "how-much-down-payment-for-used-car": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "how-to-buy-a-used-car-from-a-private-seller": ["car-keys", "Illustration of car keys being handed over beside a parked sedan."],
   "conventional-vs-islamic-car-finance": ["guide-financing", "Calculator and vehicle finance paperwork on a desk."],
   "used-car-financing-quote-checklist": ["guide-country-pakistan", "Buyer and mechanic inspecting a used car in Pakistan."],
@@ -32,6 +35,7 @@ for (const [slug, [image, alt]] of Object.entries(newGuideVisuals)) {
   guideImageAlt[slug] = alt;
 }
 export const categoryCopy={
+  "Mathematics / Calculators":{icon:"calculator",image:"guide-financing",title:"Understand the numbers.",description:"Learn calculation methods with clear formulas, worked examples, and spreadsheet instructions."},
   Buying:{icon:"check",image:"inspection-workshop",title:"Buy with your eyes open.",description:"Inspect the car, understand its history, and build an offer you can explain."},
   Financing:{icon:"calculator",image:"coastal-sedan",title:"Look beyond the monthly payment.",description:"Understand the loan, check your budget, and compare the full cost of borrowing."},
   Ownership:{icon:"wallet",image:"fuel-stop",title:"Plan for the miles ahead.",description:"Make room for fuel, maintenance, insurance, and the value a car may lose."},

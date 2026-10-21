@@ -4,6 +4,9 @@ import {load} from 'cheerio';
 // Run after next build: verify the actual HTML and generated route manifest.
 const pillar = 'complete-used-car-buying-guide';
 const requiredLinks = {
+  'how-much-does-a-used-car-depreciate-per-year': ['/car-depreciation-calculator', '/what-is-my-car-worth', '/total-cost-of-ownership-calculator', '/trade-in-value-estimator', '/car-loan-calculator', '/guides/how-much-down-payment-for-used-car'],
+  'how-much-down-payment-for-used-car': ['/car-loan-calculator', '/car-affordability-calculator', '/trade-in-value-estimator', '/total-cost-of-ownership-calculator', '/guides/how-to-calculate-percentage-increase'],
+  'how-to-calculate-percentage-increase': [],
   'buy-used-car-pakistan': ['/pk/car-financing-calculator', '/used-car-inspection-checklist'],
   'buy-used-car-uae': ['/used-car-inspection-checklist', '/guides/buy-used-car-pakistan'],
   'buy-used-car-usa': ['/car-loan-calculator', '/guides/buy-used-car-uk'],
@@ -42,8 +45,28 @@ for (const slug of [pillar, ...Object.keys(requiredLinks)]) {
   assert(article.dateModified === $('.author-row time').attr('datetime'), `${path}: visible and structured update dates disagree`);
   assert(breadcrumbs?.itemListElement.at(-1)?.item === canonical, `${path}: breadcrumb does not identify this article`);
   const links = new Set($('article a[href]').toArray().map(node => $(node).attr('href')));
-  const expected = slug === pillar ? Object.keys(requiredLinks).filter(other=>!other.startsWith('buy-used-car-')).map(other => `/guides/${other}`) : [...requiredLinks[slug], `/guides/${pillar}`];
+  const submitted = ['how-much-down-payment-for-used-car', 'how-to-calculate-percentage-increase'].includes(slug);
+  const expected = slug === pillar ? Object.keys(requiredLinks).filter(other=>!other.startsWith('buy-used-car-')&&!['how-to-calculate-percentage-increase'].includes(other)).map(other => `/guides/${other}`) : [...requiredLinks[slug], ...(submitted?[]:[`/guides/${pillar}`])];
   for (const href of expected) assert(links.has(href), `${path}: missing contextual link ${href}`);
+  if (slug === 'how-much-does-a-used-car-depreciate-per-year') {
+    assert($('title').text() === 'Used Car Depreciation Per Year: Formula & Examples', `${path}: supplied SEO title changed`);
+    assert($('meta[name="description"]').attr('content') === 'How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.', `${path}: supplied description changed`);
+    assert(article.articleSection === 'Ownership', `${path}: incorrect category`);
+    assert($('article table tbody tr').length === 6, `${path}: missing five-year projection`);
+    assert($('article table').text().includes('$12,294') && $('article').text().includes('12.64%'), `${path}: missing worked calculations`);
+    assert(!$('a[href="/car-value-estimator"]').length, `${path}: broken draft valuation route`);
+  }
+  if (submitted) {
+    const math = slug === 'how-to-calculate-percentage-increase';
+    assert($('title').text() === (math ? 'How to Calculate Percentage Increase (Formula + Examples)' : 'Used Car Down Payment Guide 2026: How Much Do You Need?'), `${path}: supplied SEO title changed`);
+    assert($('meta[name="description"]').attr('content') === (math ? 'Learn how to calculate percentage increase using a simple formula. Follow step-by-step examples for prices, salaries, sales, and Excel.' : 'How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.'), `${path}: supplied description changed`);
+    assert($('article table').length >= (math ? 1 : 3), `${path}: missing example tables`);
+    assert($('article').text().includes(math ? '=(B2-A2)/A2' : '$364.98'), `${path}: missing worked calculation`);
+    if (math) {
+      assert($('a[href="/guides/category/mathematics-calculators"]').length > 0, `${path}: missing mathematics category navigation`);
+      assert($('.guide-payment-card,.buying-workflow,.article-related-tools').length === 0, `${path}: unrelated car-buying widgets on mathematics article`);
+    }
+  }
   for (const node of $('a[href]').toArray()) {
     const href = $(node).attr('href');
     if (!href.startsWith('/') || href.startsWith('//')) continue;
@@ -63,4 +86,4 @@ for(const path of ['/guides',...pageRoutes]){
   for(const item of schema.mainEntity.itemListElement)assert($(`a[href="${new URL(item.url).pathname}"]`).length,`${path}: schema item missing from visible listing`);
   assert($('.guide-pagination [aria-current="page"]').length===1,`${path}: missing current-page indicator`);
 }
-console.log('Verified twelve articles and paginated collections: canonicals, visible answers, authorship/dates, schemas, sitemap entries, and internal links.');
+console.log(`Verified ${Object.keys(requiredLinks).length+1} articles and paginated collections: metadata, worked calculations, canonicals, visible answers, authorship/dates, schemas, sitemap entries, and internal links.`);

@@ -2,7 +2,7 @@ import {describe,it,expect} from "vitest";
 import {indexingEnabled,normalizeSiteOrigin} from "../lib/seo-config";
 import {routeGroups,indexableRouteGroups,navigationOnlyCategories} from "../lib/routes";
 import {guides} from "../data/guides";
-import {categories} from "../data/tools";
+import {guideCategories as categories,guideCategoryPath} from "../data/guide-categories";
 describe("indexing and canonical configuration",()=>{
   it("protects Vercel previews/development without blocking crawler access",()=>{
     expect(indexingEnabled({VERCEL_ENV:"preview",SITE_INDEXING:"enabled"})).toBe(false);
@@ -17,9 +17,9 @@ describe("indexing and canonical configuration",()=>{
     for(const value of ["http://example.com","https://example.com/tools","https://example.com/?x=1","https://example.com/#x","https://user:password@example.com","not-a-url"])expect(()=>normalizeSiteOrigin(value)).toThrow();
   });
   it("keeps singleton collections available but out of indexable sitemap sets",()=>{
-    expect(navigationOnlyCategories).toEqual(["/guides/category/financing","/guides/category/selling"]);
+    expect(navigationOnlyCategories).toEqual(["/guides/category/selling","/guides/category/mathematics-calculators"]);
     for(const category of categories){
-      const path=`/guides/category/${category.toLowerCase()}`;
+      const path=guideCategoryPath(category);
       const count=guides.filter(g=>g.category===category).length;
       expect(routeGroups.core).toContain(path);
       expect(indexableRouteGroups.core.includes(path),`${category}: ${count} guides`).toBe(count>=2);

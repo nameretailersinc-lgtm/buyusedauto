@@ -4,6 +4,8 @@ import {newGuides} from "./new-guides";
 import {pillarGuide} from "./pillar-guide";
 import {countryGuides} from "./country-guides";
 import {privateSellerGuide} from "./private-seller-guide";
+import {submittedGuides} from "./submitted-guides";
+import type {GuideCategory} from "./guide-categories";
 
 export type GuideSection = {
   heading: string;
@@ -20,7 +22,7 @@ export type Guide = {
   slug: string;
   title: string;
   description: string;
-  category: 'Buying' | 'Financing' | 'Ownership' | 'Selling';
+  category: GuideCategory;
   intro: string;
   readingMinutes: number;
   updated?: string;
@@ -34,6 +36,7 @@ export type Guide = {
 export const guides: Guide[] = [
   pillarGuide,
   privateSellerGuide,
+  ...submittedGuides,
   ...countryGuides,
   {
     slug: 'how-to-inspect-a-used-car',

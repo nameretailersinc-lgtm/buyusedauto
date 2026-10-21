@@ -1,9 +1,9 @@
 import {guides, type Guide} from "../data/guides";
-import {categories} from "../data/tools";
+import {guideCategories as categories,guideCategoryPath} from "../data/guide-categories";
 
 export const guidePageSize = 6;
 export function guidePagePath(page: number, category?: string) {
-  const base = category ? `/guides/category/${category.toLowerCase()}` : "/guides";
+  const base = category ? guideCategoryPath(category) : "/guides";
   return page === 1 ? base : `${base}/page/${page}`;
 }
 export function paginateGuides(items: Guide[], page: number) {

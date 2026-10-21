@@ -1,14 +1,14 @@
 import {notFound,permanentRedirect} from "next/navigation";
 import {metadata} from "@/lib/site";
-import {categories} from "@/data/tools";
+import {guideCategories as categories,guideCategorySlug} from "@/data/guide-categories";
 import {guides} from "@/data/guides";
 import {guidePageSize,guidePagePath,paginateGuides} from "@/lib/guide-pagination";
 import {GuidesCollection} from "@/components/guides-collection";
 
 export const dynamicParams=false;
-export function generateStaticParams(){return categories.flatMap(category=>Array.from({length:Math.max(1,Math.ceil(guides.filter(guide=>guide.category===category).length/guidePageSize))},(_,index)=>({category:category.toLowerCase(),page:String(index+1)})));}
+export function generateStaticParams(){return categories.flatMap(category=>Array.from({length:Math.max(1,Math.ceil(guides.filter(guide=>guide.category===category).length/guidePageSize))},(_,index)=>({category:guideCategorySlug(category),page:String(index+1)})));}
 async function resolve(params:Promise<{category:string;page:string}>){
-  const values=await params;const category=categories.find(category=>category.toLowerCase()===values.category);
+  const values=await params;const category=categories.find(category=>guideCategorySlug(category)===values.category);
   if(!category||!/^[1-9]\d*$/.test(values.page)||!paginateGuides(guides.filter(guide=>guide.category===category),Number(values.page)))notFound();
   return {category,page:Number(values.page)};
 }

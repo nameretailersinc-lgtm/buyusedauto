@@ -2,11 +2,85 @@
 
 Prepared 2026-10-18 from the current local production HTML. This supersedes historical route counts in older audit documents; it preserves the existing CSV research inputs.
 
+Updated 2026-10-21 with the three supplied articles and their category changes. These additions are implemented locally; publication is not confirmed by this document. Article slugs follow the existing `/guides/` URL structure.
+
 Volumes below are approximate monthly Google Keyword Planner estimates supplied in the owner's brief. The original export, market/date settings and GSC data were not available. These are not independent measurements, traffic forecasts or organic difficulty scores. Google Ads competition is not organic difficulty. Do not sum synonyms or overlapping intents. All unmeasured queries require validation.
 
 One canonical owner per distinct intent. Page-one pagination aliases permanently redirect; interactive query strings canonicalize to the clean calculator. No hreflang is introduced because the country guides are not verified equivalent translations.
 
 ## Existing and implemented pages
+
+### /guides/how-much-does-a-used-car-depreciate-per-year
+
+- URL: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
+- Page type: Guide
+- Category: Ownership
+- Primary keyword: average car depreciation per year
+- Secondary keywords: how much does a used car depreciate per year; annual car depreciation; used car depreciation formula
+- Long-tail variants: average annual dollar loss vs compound annual decline; five-year used car depreciation example; estimate future resale value
+- Search intent: Informational / ownership-cost planning
+- Search-volume evidence: 500 monthly searches supplied by owner; market, date and original export not verified
+- Ads competition: Low (6/100), supplied by owner; this is not an organic difficulty score
+- Status: Added locally 2026-10-21 from the supplied article
+- Canonical: https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year
+- SEO title: Used Car Depreciation Per Year: Formula & Examples
+- Meta description: How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.
+- H1: How Much Does a Used Car Depreciate Per Year?
+- Recommended H2s: How to Calculate Car Depreciation Per Year; How to Calculate Average Annual Depreciation; Illustrative Five-Year Used Car Depreciation Example; What Factors Affect Used Car Depreciation?; How to Estimate Future Resale Value; Frequently Asked Questions
+- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /car-loan-calculator, /used-car-inspection-checklist, /guides/how-much-down-payment-for-used-car, /guides/complete-used-car-buying-guide
+- Internal discovery: /guides, /guides/category/ownership, /guides/complete-used-car-buying-guide
+- Content improvements: Preserve the supplied formulas, annual dollar-loss vs compound-rate distinction, worked examples, five-year table and FAQs. Correct the draft's nonexistent `/car-value-estimator` link to `/what-is-my-car-worth`. Use verified CFPB/FTC sources in place of inaccessible Consumer Reports references. Decline rates remain illustrative; no universal average, live appraisal, or model-specific forecast is claimed. The calculator retains ownership of interactive depreciation intent.
+- Priority: P2
+
+### /guides/how-to-calculate-percentage-increase
+
+- URL: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
+- Page type: Guide
+- Category: Mathematics / Calculators
+- Primary keyword: how to calculate percentage increase
+- Secondary keywords: percentage increase formula; how to find percentage increase; calculate percent increase; percentage change formula; percentage increase in Excel
+- Search intent: Informational / calculation
+- Search-volume evidence: No supplied volume; validate
+- Status: Added locally 2026-10-21 from the supplied article
+- Canonical: https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase
+- SEO title: How to Calculate Percentage Increase (Formula + Examples)
+- Meta description: Learn how to calculate percentage increase using a simple formula. Follow step-by-step examples for prices, salaries, sales, and Excel.
+- H1: How to Calculate Percentage Increase: Formula, Examples, and Easy Methods
+- Recommended H2s: Percentage Increase Formula; How to Calculate Percentage Increase Step by Step; Practical Percentage Increase Examples; How to Calculate Percentage Increase in Excel; Common Mistakes When Calculating Percentage Increase; Frequently Asked Questions
+- Internal discovery: /guides, /guides/category/mathematics-calculators, /guides/how-much-down-payment-for-used-car
+- Content improvements: Preserve worked examples, percentage-point distinctions, zero/negative-base limits, Excel and Google Sheets formulas, FAQs, and Microsoft documentation. Category collection remains navigation-only/noindex while it contains one guide; the article is indexable.
+- Priority: P2
+
+### /guides/how-much-down-payment-for-used-car
+
+- URL: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
+- Page type: Guide
+- Category: Financing
+- Primary keyword: how much down payment for a car
+- Secondary keywords: how much is a good down payment on a car; how much car can I afford; how much car payment can I afford
+- Search intent: Informational / financing planning
+- Search-volume evidence: No supplied volume; validate
+- Status: Added locally 2026-10-21 from the supplied article
+- Canonical: https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car
+- SEO title: Used Car Down Payment Guide 2026: How Much Do You Need?
+- Meta description: How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.
+- H1: How Much Down Payment Do You Need for a Used Car in 2026?
+- Recommended H2s: Used car down payment examples: 10% vs. 20%; How to calculate a used car down payment; Does a bigger down payment lower monthly payments?; Can a trade-in count as a down payment?; What other upfront costs should you budget for?; Frequently Asked Questions
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /guides/how-to-calculate-percentage-increase
+- Content improvements: Restore missing headings and example tables; include a hypothetical fixed-rate monthly-payment comparison. Keep 10%–20% as a planning range, preserve cash-reserve guidance, and cite CFPB/FTC sources. The affordability calculator retains ownership of interactive affordability intent.
+- Priority: P2
+
+### /guides/category/mathematics-calculators
+
+- Page type: Collection; navigation only, intentionally noindex
+- Category: Mathematics / Calculators
+- Canonical: https://buyusedautomobiles.com/guides/category/mathematics-calculators
+- SEO title: Mathematics / Calculators guides | BuyUsedAutomobiles
+- Meta description: Learn percentage calculations with formulas, worked examples, and spreadsheet instructions. Browse our mathematics and calculator guides.
+- H1: Mathematics / Calculators guides
+- Internal links: /guides/how-to-calculate-percentage-increase
+- Search intent: Navigate calculation guides
+- Status: Added locally 2026-10-21; excluded from the indexable sitemap while it contains one article
 
 ### /
 
@@ -505,8 +579,8 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 ### /guides/category/financing
 
 - URL: https://buyusedautomobiles.com/guides/category/financing
-- Page type: Collection; navigation only, intentionally noindex
-- Primary keyword: No organic campaign; navigation only
+- Page type: Collection; indexable with two guides as of 2026-10-21
+- Primary keyword: financing used car guides
 - Secondary keywords: financing research collection
 - Long-tail variants: find practical financing advice and related tools
 - Search intent: Navigate the category's existing articles
@@ -516,10 +590,10 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - SEO title: Financing guides for used-car decisions | BuyUsedAutomobiles
 - Meta description: Explore our financing guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Financing guides
-- Recommended H2s (retain current headings): How car loan interest is calculated and how to compare offers
-- Internal links: /guides/how-to-compare-used-car-loans
-- Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
-- Priority: P3 navigation maintenance
+- Recommended H2s (retain current headings): How Much Down Payment Do You Need for a Used Car in 2026?; More on financing
+- Internal links: /guides/how-to-compare-used-car-loans, /guides/how-much-down-payment-for-used-car
+- Content improvements: The new down-payment guide makes this a two-article collection; the existing route policy now includes it in the indexable core sitemap.
+- Priority: P3
 
 ### /guides/category/ownership
 
