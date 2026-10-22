@@ -64,29 +64,40 @@ export const calculatorGuides:Guide[] = [
       {
         "heading": "A worked out-the-door price example",
         "paragraphs": [
-          "Suppose you are comparing a used car with the following hypothetical inputs:",
-          "For this simplified scenario:",
-          "Sales tax = $18,000 × 0.06 = $1,080",
-          "Illustrative out-the-door total = $18,000 + $1,080 + $300 + $250 = $19,630",
-          "The 6% rate is only an example, not a statement of the correct rate for a specific state or country. Some applicable taxes may use a different taxable base, and a dealer's advertised price may already be required to include its mandatory fees. Avoid double-counting any charge.",
-          "A Car Sales Tax & Fees Calculator is most useful when it lets you enter the verified rate, applicable taxable amount, and individual fees instead of silently guessing your location or rules.",
-          "For this arithmetic example only, assume the $250 dealer charge is nontaxable under the verified local rules. If it is taxable, add it to the taxable base and recalculate. The example is not permission to add a mandatory dealer charge to an advertised price; applicable advertising and disclosure rules still apply."
+          "Suppose you are comparing a used car with the following hypothetical inputs:"
         ],
-        "bullets": [
-          "Vehicle price: $18,000",
-          "Assumed sales-tax rate: 6% applied to the full vehicle price",
-          "Government title and registration charges: $300",
-          "Dealer fee not already included in that quoted vehicle price: $250",
-          "No trade-in, exemptions, or optional add-ons"
-        ],
-        "links": [
+        "subsections": [
           {
-            "title": "Car Sales Tax & Fees Calculator",
-            "url": "/car-sales-tax-calculator"
+            "heading": "Hypothetical purchase inputs",
+            "paragraphs": [],
+            "bullets": [
+              "Vehicle price: $18,000",
+              "Assumed sales-tax rate: 6% applied to the full vehicle price",
+              "Government title and registration charges: $300",
+              "Dealer fee not already included in that quoted vehicle price: $250",
+              "No trade-in, exemptions, or optional add-ons"
+            ]
           },
           {
-            "title": "Plan separate registration and recurring vehicle taxes",
-            "url": "/car-registration-tax-calculator"
+            "heading": "Calculate the hypothetical total",
+            "paragraphs": [
+              "For this simplified scenario:",
+              "Sales tax = $18,000 × 0.06 = $1,080",
+              "Illustrative out-the-door total = $18,000 + $1,080 + $300 + $250 = $19,630",
+              "The 6% rate is only an example, not a statement of the correct rate for a specific state or country. Some applicable taxes may use a different taxable base, and a dealer's advertised price may already be required to include its mandatory fees. Avoid double-counting any charge.",
+              "A Car Sales Tax & Fees Calculator is most useful when it lets you enter the verified rate, applicable taxable amount, and individual fees instead of silently guessing your location or rules.",
+              "For this arithmetic example only, assume the $250 dealer charge is nontaxable under the verified local rules. If it is taxable, add it to the taxable base and recalculate. The example is not permission to add a mandatory dealer charge to an advertised price; applicable advertising and disclosure rules still apply."
+            ],
+            "links": [
+              {
+                "title": "Car Sales Tax & Fees Calculator",
+                "url": "/car-sales-tax-calculator"
+              },
+              {
+                "title": "Plan separate registration and recurring vehicle taxes",
+                "url": "/car-registration-tax-calculator"
+              }
+            ]
           }
         ]
       },
@@ -220,19 +231,26 @@ export const calculatorGuides:Guide[] = [
         "heading": "Example: charging from 20% to 80%",
         "paragraphs": [
           "Hypothetical example: all prices, battery figures and efficiency assumptions below are illustrative.",
-          "Imagine an EV with a 60 kWh usable battery, a charge that starts at 20%, a target of 80%, an illustrative 90% charging efficiency, and electricity priced at $0.18 per kWh.",
-          "That example is not a quoted charging price or a real-world average. A charger that applies a session fee, time-based billing, taxes, or a variable rate may cost more. Charging speed can also vary during a session.",
-          "Use an EV Charging Cost Calculator to substitute your own battery size, target charge, efficiency, and local rate."
+          "Imagine an EV with a 60 kWh usable battery, a charge that starts at 20%, a target of 80%, an illustrative 90% charging efficiency, and electricity priced at $0.18 per kWh."
         ],
         "bullets": [
           "Battery energy added: 60 × (0.80 − 0.20) = 36 kWh.",
           "Energy purchased after assumed losses: 36 ÷ 0.90 = 40 kWh.",
           "Charging cost: 40 × $0.18 = $7.20."
         ],
-        "links": [
+        "subsections": [
           {
-            "title": "EV Charging Cost Calculator",
-            "url": "/ev-charging-cost-calculator"
+            "heading": "Read the result alongside your tariff",
+            "paragraphs": [
+              "That example is not a quoted charging price or a real-world average. A charger that applies a session fee, time-based billing, taxes, or a variable rate may cost more. Charging speed can also vary during a session.",
+              "Use an EV Charging Cost Calculator to substitute your own battery size, target charge, efficiency, and local rate."
+            ],
+            "links": [
+              {
+                "title": "EV Charging Cost Calculator",
+                "url": "/ev-charging-cost-calculator"
+              }
+            ]
           }
         ]
       },
@@ -275,7 +293,7 @@ export const calculatorGuides:Guide[] = [
       {
         "heading": "How to calculate electric-car cost per mile",
         "paragraphs": [
-          "EV efficiency is often given in kWh per 100 miles. Assume your vehicle uses 30 kWh per 100 miles and your effective electricity price is $0.18 per kWh, measured at the wall, with charging losses already included:",
+          "EV efficiency is often given in kWh per 100 miles. For this hypothetical example, assume the vehicle uses 30 wall kWh per 100 miles, with charging losses already included, and the electricity price is $0.18 per kWh:",
           "Energy cost per mile = (30 ÷ 100) × $0.18 = $0.054, or approximately 5.4 cents per mile.",
           "If consumption instead measures battery energy, divide it by charging efficiency once before applying the wall-energy price. Do not add another loss factor to wall-energy or EPA consumption figures that already include charging losses. You can then compare that figure with a gasoline car's cost per mile based on its miles per gallon and the price of fuel.",
           "Remember that energy is only part of ownership cost. Insurance, tires, depreciation, financing, and maintenance can change the overall comparison."

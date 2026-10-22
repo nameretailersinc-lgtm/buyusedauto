@@ -69,7 +69,10 @@ for (const slug of [pillar, ...Object.keys(requiredLinks)]) {
     assert($('title').text() === 'Used Car Depreciation Per Year: Formula & Examples', `${path}: supplied SEO title changed`);
     assert($('meta[name="description"]').attr('content') === 'How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.', `${path}: supplied description changed`);
     assert(article.articleSection === 'Ownership', `${path}: incorrect category`);
-    assert($('article table tbody tr').length === 6, `${path}: missing five-year projection`);
+    const projection=$('article table').filter((_,node)=>$(node).find('thead').text().includes('Projection Year'));
+    assert(projection.length===1&&projection.find('tbody tr').length===6&&projection.text().includes('$12,294'), `${path}: missing five-year projection`);
+    const constantRate=$('article table').filter((_,node)=>$(node).find('thead').text().includes('Modeled value at 12% annually'));
+    assert(constantRate.length===1&&constantRate.find('tbody tr').length===4&&constantRate.text().includes('$10,555'), `${path}: missing added constant-rate scenario`);
     assert($('article table').text().includes('$12,294') && $('article').text().includes('12.64%'), `${path}: missing worked calculations`);
     assert(!$('a[href="/car-value-estimator"]').length, `${path}: broken draft valuation route`);
   }
