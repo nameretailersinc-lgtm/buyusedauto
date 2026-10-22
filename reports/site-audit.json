@@ -1,30 +1,30 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 77,
-  "internalLinks": 574,
+  "pages": 78,
+  "internalLinks": 587,
   "failures": [],
   "warnings": [],
   "details": [
     {
       "path": "/",
-      "title": "Free used car tools for better buying decisions",
+      "title": "Free Used Car Calculators & Buying Guides | BuyUsedAutomobiles",
       "descriptionLength": 156,
       "schemaCount": 3,
-      "h1": "Your next car.A smarter decision."
+      "h1": "Free Used Car Calculators& Buying Guides"
     },
     {
       "path": "/tools",
       "title": "Used car calculators and planning tools | BuyUsedAutomobiles",
       "descriptionLength": 154,
       "schemaCount": 2,
-      "h1": "The right tool.A clearer decision."
+      "h1": "Free used car calculatorsand planning tools"
     },
     {
       "path": "/guides",
       "title": "Used car buying guides and practical advice",
       "descriptionLength": 155,
       "schemaCount": 2,
-      "h1": "A little research.A better car decision."
+      "h1": "Used car buying guidesand ownership advice"
     },
     {
       "path": "/about",
@@ -94,28 +94,28 @@
       "title": "Used car buying guides — Page 2 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "A little research.A better car decision."
+      "h1": "Used car buying guidesand ownership advice"
     },
     {
       "path": "/guides/page/3",
       "title": "Used car buying guides — Page 3 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "A little research.A better car decision."
+      "h1": "Used car buying guidesand ownership advice"
     },
     {
       "path": "/guides/page/4",
       "title": "Used car buying guides — Page 4 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "A little research.A better car decision."
+      "h1": "Used car buying guidesand ownership advice"
     },
     {
       "path": "/guides/page/5",
       "title": "Used car buying guides — Page 5 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "A little research.A better car decision."
+      "h1": "Used car buying guidesand ownership advice"
     },
     {
       "path": "/guides/category/buying/page/2",
@@ -175,10 +175,10 @@
     },
     {
       "path": "/trade-in-value-estimator",
-      "title": "Trade-in value estimator | BuyUsedAutomobiles",
-      "descriptionLength": 155,
+      "title": "Trade-In Value Calculator & Equity Estimator | Free Tool",
+      "descriptionLength": 156,
       "schemaCount": 2,
-      "h1": "Trade-in value estimator"
+      "h1": "Trade-In Value Calculator"
     },
     {
       "path": "/lease-vs-buy-calculator",
@@ -319,6 +319,13 @@
       "descriptionLength": 157,
       "schemaCount": 2,
       "h1": "How to buy a used car from a private seller"
+    },
+    {
+      "path": "/guides/how-to-pay-off-a-car-loan-early",
+      "title": "How to Pay Off a Car Loan Early: Costs & Savings",
+      "descriptionLength": 138,
+      "schemaCount": 2,
+      "h1": "How to Pay Off a Car Loan Early and Save on Interest"
     },
     {
       "path": "/guides/how-much-down-payment-for-used-car",

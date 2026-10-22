@@ -493,6 +493,10 @@ export const pillarGuide: Guide = {
           },
           "links": [
             {
+              "title": "Before repaying early: payoff quotes and principal allocation",
+              "url": "/guides/how-to-pay-off-a-car-loan-early"
+            },
+            {
               "title": "Car Loan Calculator",
               "url": "/car-loan-calculator"
             }

@@ -1,5 +1,7 @@
 # Input provenance - 22 October 2026
 
+Keyword-map rows may share a canonical URL. Their GSC page metrics are repeated for context, not attributable to each cluster and not additive. No query/page join or total demand calculation is implied.
+
 Read the local owner export \Downloads\Keyword Stats 2026-10-22 at 17_43_05.csv without modifying or copying it. SHA-256: 81636c33d22816fc6e060d0e3a6644860074bfee641ad681bbb9ad34e39f3c48. Parsed 892 keyword rows; tab-separated export with date headers. Historical period: "October 1, 2025 - September 30, 2026". Bid currency: PKR. Location targeting and search-network settings are not provided. Monthly breakdown columns are blank in sampled rows; 900% changes do not establish large absolute growth. Paid competition is not organic difficulty. Close-variant volumes must not be summed.
 
 The IDE-referenced temporary Pages.csv was absent at its supplied path. Search appearance CSV was not used. GSC figures in the map are the page-level samples transcribed from the request, with unknown period/country/device; query figures are separate and no query-to-page attribution has been inferred. The new map supersedes older US-volume assumptions in historical documents; it does not rewrite their historical record. No authenticated Google account access.

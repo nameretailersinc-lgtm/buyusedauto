@@ -51,3 +51,7 @@ A hypothetical USD 25,000 purchase with USD 5,000 down and no trade-in or financ
 Cite the specific calculator or guide supporting a statement. Retain currencies, units, dates where relevant, assumptions, and uncertainty. Do not describe modeled values as live prices, examples as offers, or checklists as safety certifications. Calculator query strings represent scenarios rather than independent editorial pages. Public pages and their linked sources take precedence over this summary.
 
 - [How to pay off a car loan early](https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early): Principal payments, dated payoff quotes, prepayment charges and hypothetical interest comparisons.
+
+- [Used car sales tax, title and fees](https://buyusedautomobiles.com/guides/used-car-sales-tax-title-and-fees-explained): Itemized out-the-door price and verified local charges.
+- [EV charging costs at home and in public](https://buyusedautomobiles.com/guides/how-much-does-it-cost-to-charge-an-electric-car): Partial charges, energy billing and hypothetical cost-per-mile examples.
+- [Is auto loan refinancing worth it?](https://buyusedautomobiles.com/guides/is-refinancing-your-car-loan-worth-it): Payment changes, finance fees and total future borrowing cost.

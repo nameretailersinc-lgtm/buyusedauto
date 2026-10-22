@@ -39,7 +39,7 @@ test("trade disclosures and localized examples render without JavaScript",async(
     await expect(page.locator('article a[href="/car-depreciation-calculator"]')).toBeVisible();
   }
   await page.goto("/guides/buy-used-car-europe");
-  await expect(page.locator('article a[href*="www.dgt.es"]')).toBeVisible();
+  await expect(page.getByRole("link",{name:"DGT: registering a vehicle from another EU country (checked 22 October 2026)",exact:true})).toBeVisible();
   await expect(page.locator('article a[href="/tools/germany/car-running-cost-calculator"]')).toBeVisible();
   await context.close();
 });

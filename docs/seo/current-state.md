@@ -14,7 +14,7 @@ User-supplied GSC page/query samples have unknown reporting window, country and 
 
 Keyword Planner export dated 2026-10-22 covers 2025-10-01 through 2026-09-30. Location targeting unknown; PKR bids do not establish geography. Paid competition is not organic difficulty; close variants must not be summed. The new keyword-map.csv supersedes conflicting historical volume/geography assumptions for this program.
 
-Fresh rendered route inventory, before/after HTTP checks and performance evidence will be appended after the baseline build and audits run. Historical reports are not fresh passes.
+Fresh baseline inventory and performance evidence follow. Final checks are recorded in qa-2026-10-22.md; historical reports are not fresh passes.
 
 ## Fresh baseline evidence
 
@@ -110,3 +110,9 @@ Intent is inferred from actual H1 and route role; page-level GSC samples only. A
 | /used-car-inspection-checklist | Calculate Used car inspection checklist | Used car inspection checklist / BuyUsedAutomobiles | Used car inspection checklist | https://buyusedautomobiles.com/used-car-inspection-checklist | index, follow; sitemap | /, /about, /auto-loan-refinance-calculator | unknown | Retain; existing checks pass, measure query intent |
 | /used-car-price-negotiation-calculator | Calculate Used car price negotiation calculator | Used car price negotiation calculator / BuyUsedAutomobiles | Used car price negotiation calculator | https://buyusedautomobiles.com/used-car-price-negotiation-calculator | index, follow; sitemap | /, /about, /auto-loan-refinance-calculator | unknown | Retain; existing checks pass, measure query intent |
 | /what-is-my-car-worth | Calculate What is my car worth? | What is my car worth? / BuyUsedAutomobiles | What is my car worth? | https://buyusedautomobiles.com/what-is-my-car-worth | index, follow; sitemap | /, /about, /auto-loan-refinance-calculator | unknown | Retain; existing checks pass, measure query intent |
+
+## Implemented changes and remaining evidence
+
+Trade-in now offers a user-entered proceeds comparison, alongside the preserved depreciation model. Before: Trade-in value estimator / modeled midpoint only. After: Trade-In Value Calculator / three offers, payoff, fees, private sale and explicit shortfalls. Homepage/tools/guides now state their purpose in H1s. Germany and UK have distinct original worked examples and local official references. Europe section 8 now explains Spanish documentation/tax checks and cites DGT; section 9 accurately labels transport, emissions and EV checks. The pillar links its financing example to the existing payoff guide. All prior canonical paths remain.
+
+New post-change HTTP audits pass; the paragraph-similarity flag for home/tools reflects repeated catalog cards, not evidence for merging the hubs. No page was removed or newly noindexed. Manual Search Console inspection, production release checks, operator/contact confirmation and field CWV remain pending. See implementation-log.md and qa-2026-10-22.md for exact files and executed checks.

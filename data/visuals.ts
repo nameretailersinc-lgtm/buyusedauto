@@ -1,5 +1,8 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "used-car-sales-tax-title-and-fees-explained": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
+  "how-much-does-it-cost-to-charge-an-electric-car": ["fuel-stop", "Illustration of a car parked beside a roadside service station."],
+  "is-refinancing-your-car-loan-worth-it": ["guide-financing", "Illustration of a calculator and vehicle financing paperwork on a desk."],
   "how-to-pay-off-a-car-loan-early": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "how-much-car-payment-can-i-afford": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "car-depreciation-chart": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],

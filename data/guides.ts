@@ -6,6 +6,7 @@ import {countryGuides} from "./country-guides";
 import {privateSellerGuide} from "./private-seller-guide";
 import {submittedGuides} from "./submitted-guides";
 import {payoffGuide} from "./payoff-guide";
+import {calculatorGuides} from "./calculator-guides";
 import type {GuideCategory} from "./guide-categories";
 
 export type GuideSection = {
@@ -39,6 +40,7 @@ export const guides: Guide[] = [
   pillarGuide,
   privateSellerGuide,
   payoffGuide,
+  ...calculatorGuides,
   ...submittedGuides,
   ...countryGuides,
   {

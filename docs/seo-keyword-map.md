@@ -40,6 +40,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Canonical: https://buyusedautomobiles.com/about
 - SEO title: About BuyUsedAutomobiles | BuyUsedAutomobiles
 - Meta description: Learn why BuyUsedAutomobiles builds free, transparent calculators and practical guides to help people make more informed used-car decisions before purchase.
+
 - H1: About BuyUsedAutomobiles
 - Recommended H2s (retain current headings): Useful by design; Clear about the limits; Research you can follow; Contact details; A clearer road to your next car; Transparent tools, limited claims; How the site may earn money
 - Internal links: /tools

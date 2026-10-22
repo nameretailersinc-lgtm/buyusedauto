@@ -1,14 +1,14 @@
 import type {Guide} from "./guides";
 
 // Imported from the owner's complete payoff draft supplied on 2026-10-21.
-// The other five rows in the editorial plan are not complete article sources.
+// The other five drafts arrived separately on 2026-10-22; see calculator-guides.ts and the import record.
 export const payoffGuide:Guide={
   slug:"how-to-pay-off-a-car-loan-early",
   title:"How to Pay Off a Car Loan Early and Save on Interest",
   seoTitle:"How to Pay Off a Car Loan Early: Costs & Savings",
   description:"Learn how extra car loan payments affect interest, how to request a payoff quote, and when paying off a car loan early may not save money.",
-  category:"Financing",region:"US",language:"en-US",updated:"2026-10-21",reviewedOn:"2026-10-21",readingMinutes:5,
-  intro:"A practical guide to car loan payoff quotes, extra principal payments, prepayment fees, and how to estimate the interest you could save.",
+  category:"Financing",region:"US",language:"en-US",updated:"2026-10-22",reviewedOn:"2026-10-21",readingMinutes:5,
+  intro:"A practical guide to car loan payoff quotes, extra principal payments, prepayment fees, and how to estimate the interest you could save. Ask your lender how extra payments are allocated, request a dated payoff quote, and compare interest saved after any fees while keeping an emergency reserve.",
   sections:[
     {heading:"Before you make an extra payment",paragraphs:[
       "When you have extra money available, putting it toward your car loan can feel like an easy decision. But paying off a car loan early is not automatically the best financial move. The interest you could save depends on your remaining balance, rate, loan structure, and any fees. You also need enough cash left for emergencies and maintenance.",
@@ -33,7 +33,7 @@ export const payoffGuide:Guide={
       "Confirm principal allocation. Ask the servicer how to mark extra payments and how the next due date will be treated.",
       "Request a dated payoff quote. The amount required to close the loan can differ from the displayed balance because of accrued interest or charges.",
       "Keep proof of closure. After paying in full, verify the account is closed and that any lien-release or title process is completed."
-    ],links:[{title:"Car Loan Payoff & Extra Payment Calculator",url:"/car-loan-payoff-calculator"}]},
+    ],links:[{title:"Planning a replacement? Follow the complete used-car buying guide",url:"/guides/complete-used-car-buying-guide"},{title:"Car Loan Payoff & Extra Payment Calculator",url:"/car-loan-payoff-calculator"}]},
     {heading:"Should you pay off a car loan or keep your savings?",paragraphs:[
       "An early payoff reduces debt, but it also uses cash you cannot instantly recover. Consider urgent repairs, insurance deductibles, job uncertainty, and other higher-cost debt before committing a large lump sum. If your loan rate is low and your emergency savings are thin, a smaller recurring extra payment may offer a more sustainable compromise.",
       "Also compare payoff with refinancing. A refinance may lower your rate, but lender fees and a longer term can erase some or all of the savings. Evaluate total remaining repayment cost, not only the monthly payment."

@@ -1,0 +1,134 @@
+{
+  "importedOn": "2026-10-22",
+  "attachmentSha256": "7a29c35428382c0754e6004e13ec8d28f2e17006e2432ba7153698820e7c4c92",
+  "source": "62a961e7-e218-486e-9978-574ee36e2841/Pasted text.txt",
+  "drafts": [
+    {
+      "file": "02-how-much-does-a-car-depreciate-each-year.md",
+      "metadata": {
+        "title": "How Much Does a Car Depreciate Each Year? A Practical Used-Car Guide",
+        "slug": "how-much-does-a-car-depreciate-each-year",
+        "meta_title": "Car Depreciation by Year: Formula & Examples",
+        "meta_description": "Understand car depreciation by year, how to model resale value, and why mileage, condition and market prices can change the estimate.",
+        "excerpt": "Learn the difference between a depreciation model and actual market value, with example calculations and factors that affect resale prices.",
+        "primary_keyword": "car depreciation calculator",
+        "category": "Car Valuation",
+        "secondary_keywords": [
+          "used car depreciation calculator",
+          "car depreciation per year",
+          "used car resale value",
+          "vehicle depreciation"
+        ],
+        "calculator_cta_label": "Car Depreciation Calculator",
+        "calculator_cta_url": "{{CAR_DEPRECIATION_URL}}",
+        "status": "draft",
+        "content_review_date": "2026-10-21"
+      },
+      "canonical": "/guides/how-much-does-a-used-car-depreciate-per-year",
+      "action": "refresh existing canonical"
+    },
+    {
+      "file": "03-used-car-sales-tax-title-and-fees-explained.md",
+      "metadata": {
+        "title": "Used Car Sales Tax, Title and Fees: How to Estimate the Final Price",
+        "slug": "used-car-sales-tax-title-and-fees-explained",
+        "meta_title": "Used Car Sales Tax, Title & Fees Explained",
+        "meta_description": "Estimate a used car’s out-the-door price by separating vehicle price, sales tax, title and registration charges, dealer fees and optional add-ons.",
+        "excerpt": "Understand the charges behind the advertised price and calculate a realistic budget without confusing government fees with dealer add-ons.",
+        "primary_keyword": "car sales tax calculator",
+        "category": "Used-Car Buying",
+        "secondary_keywords": [
+          "used car sales tax calculator",
+          "tax title license calculator",
+          "car dealer fees",
+          "out the door car price"
+        ],
+        "calculator_cta_label": "Car Sales Tax & Fees Calculator",
+        "calculator_cta_url": "{{CAR_SALES_TAX_URL}}",
+        "status": "draft",
+        "content_review_date": "2026-10-21"
+      },
+      "canonical": "/guides/used-car-sales-tax-title-and-fees-explained",
+      "action": "new guide"
+    },
+    {
+      "file": "04-how-much-does-it-cost-to-charge-an-electric-car.md",
+      "metadata": {
+        "title": "How Much Does It Cost to Charge an Electric Car at Home or in Public?",
+        "slug": "how-much-does-it-cost-to-charge-an-electric-car",
+        "meta_title": "EV Charging Cost Calculator: Home vs Public",
+        "meta_description": "Calculate EV charging costs from battery size, state of charge, electricity rate and charging losses, then compare cost per mile at home and in public.",
+        "excerpt": "Use simple kWh calculations to estimate home and public EV charging costs, with examples for partial charges and cost per mile.",
+        "primary_keyword": "electric car charging cost calculator",
+        "category": "Electric & Hybrid Cars",
+        "secondary_keywords": [
+          "ev charging calculator",
+          "cost to charge electric car",
+          "ev charging cost per mile",
+          "electric car charging cost"
+        ],
+        "calculator_cta_label": "EV Charging Cost Calculator",
+        "calculator_cta_url": "{{EV_CHARGING_URL}}",
+        "status": "draft",
+        "content_review_date": "2026-10-21"
+      },
+      "canonical": "/guides/how-much-does-it-cost-to-charge-an-electric-car",
+      "action": "new guide"
+    },
+    {
+      "file": "05-is-refinancing-your-car-loan-worth-it.md",
+      "metadata": {
+        "title": "Is Refinancing Your Car Loan Worth It? Compare Payments and Total Cost",
+        "slug": "is-refinancing-your-car-loan-worth-it",
+        "meta_title": "Auto Loan Refinancing: Is It Worth It?",
+        "meta_description": "Learn when refinancing an auto loan can save interest, when a longer term costs more, and how to compare new payments, fees and total repayment.",
+        "excerpt": "A practical way to compare your existing car loan against refinance offers, including interest savings, fees, and remaining loan terms.",
+        "primary_keyword": "auto loan refinance calculator",
+        "category": "Car Financing",
+        "secondary_keywords": [
+          "car refinance calculator",
+          "refinance car loan calculator",
+          "auto loan interest savings",
+          "refinance monthly payment"
+        ],
+        "calculator_cta_label": "Car Loan Refinance Calculator",
+        "calculator_cta_url": "{{CAR_REFINANCE_URL}}",
+        "status": "draft",
+        "content_review_date": "2026-10-21"
+      },
+      "canonical": "/guides/is-refinancing-your-car-loan-worth-it",
+      "action": "new guide"
+    },
+    {
+      "file": "06-how-much-should-you-put-down-on-a-used-car.md",
+      "metadata": {
+        "title": "How Much Should You Put Down on a Used Car? Calculate the Trade-Offs",
+        "slug": "how-much-should-you-put-down-on-a-used-car",
+        "meta_title": "Used Car Down Payment: How Much Is Enough?",
+        "meta_description": "See how a used-car down payment changes loan size, monthly payments and interest, plus why keeping cash for taxes and repairs matters.",
+        "excerpt": "Learn how to choose a used-car down payment by balancing monthly payments, total interest, emergency savings and ownership costs.",
+        "primary_keyword": "car down payment calculator",
+        "category": "Car Financing",
+        "secondary_keywords": [
+          "used car down payment",
+          "down payment for a car",
+          "car payment calculator with down payment",
+          "how much to put down on a used car"
+        ],
+        "calculator_cta_label": "Car Down Payment Calculator",
+        "calculator_cta_url": "{{CAR_DOWN_PAYMENT_URL}}",
+        "status": "draft",
+        "content_review_date": "2026-10-21"
+      },
+      "canonical": "/guides/how-much-down-payment-for-used-car",
+      "action": "refresh existing canonical"
+    }
+  ],
+  "routes": {
+    "CAR_DEPRECIATION_URL": "/car-depreciation-calculator",
+    "CAR_SALES_TAX_URL": "/car-sales-tax-calculator",
+    "EV_CHARGING_URL": "/ev-charging-cost-calculator",
+    "CAR_REFINANCE_URL": "/auto-loan-refinance-calculator",
+    "CAR_DOWN_PAYMENT_URL": "/car-down-payment-calculator"
+  }
+}

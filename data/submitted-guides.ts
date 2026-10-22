@@ -9,9 +9,9 @@ export const submittedGuides: Guide[] = [
     "description": "How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.",
     "category": "Financing",
     "region": "US",
-    "updated": "2026-10-21",
-    "reviewedOn": "2026-10-21",
-    "readingMinutes": 10,
+    "updated": "2026-10-22",
+    "reviewedOn": "2026-10-22",
+    "readingMinutes": 12,
     "intro": "A down payment of 10% to 20% is a useful comparison range when planning a used-car purchase, but it is not a universal lender requirement or a guarantee of loan approval. On a $20,000 car, 10% is $2,000 and 20% is $4,000. Compare the resulting monthly payments while keeping money available for insurance, fees, maintenance, and repairs.",
     "sections": [
       {
@@ -365,6 +365,55 @@ export const submittedGuides: Guide[] = [
         ]
       },
       {
+        "heading": "Calculate the amount you need to borrow",
+        "paragraphs": [
+          "For a simplified purchase:",
+          "Amount financed = Vehicle price + financed taxes and fees + financed add-ons − cash down payment − net trade-in equity",
+          "This is a planning formula. Whether taxes or fees can be financed, and the order in which credits are applied, depend on the transaction and lender."
+        ]
+      },
+      {
+        "heading": "Worked example: a $20,000 used car",
+        "paragraphs": [
+          "Suppose you agree to buy a vehicle for $20,000 and the combined taxes and fees you plan to finance total $1,600. You put $5,000 down, have no trade-in, and obtain a hypothetical 9% fixed annual rate for 60 months.",
+          "Amount financed: $20,000 + $1,600 − $5,000 = $16,600.",
+          "With standard monthly amortization, the projected payment is about $344.59 per month, and modeled interest over 60 months is about $4,075. The total loan payments add up to roughly $20,675, plus the $5,000 cash paid upfront. This example excludes insurance, maintenance, fuel, and any lender-specific fees not already entered.",
+          "Now change only the cash down payment, keeping a 9% rate and 60-month term:",
+          "These are mathematical scenarios, not recommended minimum down payments. The best choice also depends on cash reserves and the maintenance needs of the specific vehicle.",
+          "Try your own amounts in the Car Down Payment Calculator instead of relying on a general percentage rule."
+        ],
+        "table": {
+          "headers": [
+            "Cash down payment",
+            "Amount financed",
+            "Approx. monthly payment"
+          ],
+          "rows": [
+            [
+              "$1,600",
+              "$20,000",
+              "$415.17"
+            ],
+            [
+              "$5,000",
+              "$16,600",
+              "$344.59"
+            ],
+            [
+              "$6,600",
+              "$15,000",
+              "$311.38"
+            ]
+          ]
+        },
+        "links": [
+          {
+            "title": "Car Down Payment Calculator",
+            "url": "/car-down-payment-calculator"
+          }
+        ]
+      },
+      {
         "heading": "Frequently Asked Questions",
         "paragraphs": [],
         "subsections": [
@@ -409,6 +458,12 @@ export const submittedGuides: Guide[] = [
             "paragraphs": [
               "Avoid making a nonrefundable commitment before verifying the vehicle and understanding the sale conditions. If a deposit is requested, obtain the terms in writing, including any inspection contingency and refund conditions."
             ]
+          },
+          {
+            "heading": "Should I finance sales tax and fees?",
+            "paragraphs": [
+              "Whether it is possible depends on the lender and transaction. Paying them upfront reduces the balance financed but also uses cash, so compare both options."
+            ]
           }
         ]
       },
@@ -425,6 +480,10 @@ export const submittedGuides: Guide[] = [
           {
             "title": "BuyUsedAutomobiles Car Loan Calculator",
             "url": "/car-loan-calculator"
+          },
+          {
+            "title": "Car Down Payment Calculator",
+            "url": "/car-down-payment-calculator"
           }
         ]
       }
@@ -437,13 +496,22 @@ export const submittedGuides: Guide[] = [
       {
         "title": "FTC: Financing or leasing a car",
         "url": "https://consumer.ftc.gov/articles/financing-or-leasing-car"
+      },
+      {
+        "title": "CFPB: How much can I afford to borrow for a car?",
+        "url": "https://www.consumerfinance.gov/ask-cfpb/how-much-can-i-afford-to-borrow-for-a-car-or-auto-loan-en-751/"
+      },
+      {
+        "title": "FTC: Buying a used car from a dealer",
+        "url": "https://consumer.ftc.gov/articles/buying-used-car-dealer"
       }
     ],
     "relatedTools": [
       "car-loan-calculator",
       "car-affordability-calculator",
       "trade-in-value-estimator",
-      "total-cost-of-ownership-calculator"
+      "total-cost-of-ownership-calculator",
+      "car-down-payment-calculator"
     ]
   },
   {
@@ -858,9 +926,9 @@ export const submittedGuides: Guide[] = [
     "title": "How Much Does a Used Car Depreciate Per Year?",
     "description": "How much does a used car depreciate per year? Learn how to calculate annual value loss, compare real examples, and estimate future resale value.",
     "category": "Ownership",
-    "updated": "2026-10-21",
-    "reviewedOn": "2026-10-21",
-    "readingMinutes": 9,
+    "updated": "2026-10-22",
+    "reviewedOn": "2026-10-22",
+    "readingMinutes": 11,
     "intro": "There is no single average car depreciation rate that applies to every used car. Annual value loss depends on the vehicle, its starting age, mileage, condition, and local market. Calculate dollar depreciation by subtracting ending value from starting value. Divide that loss by starting value and multiply by 100 for the percentage loss. For example, a decline from $18,000 to $15,300 is $2,700, or 15%, in a hypothetical year.",
     "sections": [
       {
@@ -876,14 +944,8 @@ export const submittedGuides: Guide[] = [
       {
         "heading": "What Is Car Depreciation?",
         "paragraphs": [
-          "Car depreciation is the decrease in a vehicle's market value over time.",
-          "For example, imagine buying a used vehicle for $18,000. After three years, comparable vehicles in similar condition sell for approximately $12,000.",
-          "Your estimated depreciation is:",
-          "$18,000 − $12,000 = $6,000.",
-          "Over the three-year ownership period, the car has lost approximately one-third of its original purchase value.",
-          "Depreciation matters because a vehicle is not simply an expense you pay for once. Its remaining resale value determines how much of your purchase cost you can recover when you sell it.",
-          "A vehicle that retains value relatively well may be less expensive to own than another car that costs less initially but loses value faster.",
-          "However, depreciation is only one component of ownership cost. Fuel, insurance, repairs, financing, registration, and taxes also matter."
+          "Depreciation is the decline in a car's value over time. If you bought a car for $25,000 and later sold it for $18,000, the difference is $7,000, excluding transaction costs and money spent operating the vehicle. Expressed as a percentage of the original price, that is a 28% decrease.",
+          "Not every vehicle loses value smoothly. Major repairs, unusual scarcity, condition changes, or a market-wide shift can cause a vehicle's asking and selling prices to change abruptly. Classic or collectible vehicles may behave very differently from ordinary daily drivers."
         ],
         "links": [
           {
@@ -1144,6 +1206,61 @@ export const submittedGuides: Guide[] = [
         ]
       },
       {
+        "heading": "A simple car depreciation formula",
+        "paragraphs": [
+          "One common planning model assumes a constant percentage loss each year:",
+          "Estimated future value = Starting value × (1 − annual depreciation rate) ^ years",
+          "For example, assume a car is worth $20,000 today and that you want to test a purely hypothetical 12% annual depreciation rate:",
+          "The percentages are illustrative assumptions, not an industry average or prediction. If you choose a different annual rate, every value changes. The model is a scenario-planning tool; it should never be presented as a live dealership offer.",
+          "Try different rates in the Car Depreciation Calculator to see how much the assumed percentage matters."
+        ],
+        "table": {
+          "headers": [
+            "Time from today",
+            "Modeled value at 12% annually"
+          ],
+          "rows": [
+            [
+              "Today",
+              "$20,000"
+            ],
+            [
+              "After 1 year",
+              "$17,600"
+            ],
+            [
+              "After 3 years",
+              "$13,629"
+            ],
+            [
+              "After 5 years",
+              "$10,555"
+            ]
+          ]
+        },
+        "links": [
+          {
+            "title": "Car Depreciation Calculator",
+            "url": "/car-depreciation-calculator"
+          }
+        ]
+      },
+      {
+        "heading": "Model value versus market value",
+        "paragraphs": [
+          "A depreciation calculator estimates a path based on assumptions. A market valuation tries to estimate what similar vehicles are actually selling for. Neither guarantees what someone will pay for your particular car.",
+          "Before listing or trading in a vehicle, compare several recent local listings for the same year, trim, engine, approximate mileage, and condition. Where available, review actual sale data rather than advertised asking prices alone. If an offer is far above or below your modeled value, investigate why instead of assuming the calculator is wrong—or the offer is automatically good."
+        ]
+      },
+      {
+        "heading": "How buyers and sellers can use depreciation estimates",
+        "paragraphs": [
+          "Used-car buyers: Model likely resale value at the end of the ownership period. A lower purchase price does not always mean lower total ownership cost if repairs or financing are unusually expensive.",
+          "Private sellers: Use the estimate to set a range for further market research, then adjust based on real comparable vehicles and condition.",
+          "Owners considering replacement: Compare the expected loss in vehicle value with the anticipated repair and replacement costs. Depreciation is a cost of ownership even when no monthly bill arrives."
+        ]
+      },
+      {
         "heading": "Frequently Asked Questions",
         "paragraphs": [],
         "subsections": [
@@ -1181,6 +1298,24 @@ export const submittedGuides: Guide[] = [
             "heading": "Is depreciation included in monthly car payments?",
             "paragraphs": [
               "No. A car payment includes repayment of borrowed principal and financing costs. Depreciation is the change in the vehicle's market value."
+            ]
+          },
+          {
+            "heading": "Does a car depreciate the same amount each year?",
+            "paragraphs": [
+              "No. Some vehicles fall faster at certain stages than others. A constant annual rate is useful for scenarios but cannot reproduce every car's real price history."
+            ]
+          },
+          {
+            "heading": "Is depreciation based on mileage or age?",
+            "paragraphs": [
+              "Both can matter. Condition, history, trim, market demand, and region also influence resale value."
+            ]
+          },
+          {
+            "heading": "Is depreciation the same as the remaining loan balance?",
+            "paragraphs": [
+              "No. Depreciation concerns vehicle value. Loan balance depends on the loan's principal, interest, payment schedule, and any added charges. The two move independently."
             ]
           }
         ]
