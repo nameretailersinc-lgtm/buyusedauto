@@ -1,5 +1,6 @@
 import type {ToolId} from "./tools";
 const newGuideVisuals = {
+  "how-to-pay-off-a-car-loan-early": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "how-much-car-payment-can-i-afford": ["guide-financing", "Illustration of a calculator, paperwork, pen and car key on a desk."],
   "car-depreciation-chart": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],
   "how-much-does-a-used-car-depreciate-per-year": ["coastal-sedan", "Illustration of a sedan parked at a coastal overlook."],

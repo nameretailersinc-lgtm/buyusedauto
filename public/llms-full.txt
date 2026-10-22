@@ -12,7 +12,7 @@ US calculators use USD by default. The Pakistan financing calculator uses PKR an
 - [Car loan APR calculator](https://buyusedautomobiles.com/car-loan-apr-calculator): Regular-monthly nominal APR estimate with upfront and financed credit charges, plus a separate effective annual rate.
 - [Car repair cost calculator](https://buyusedautomobiles.com/car-repair-cost-calculator): Itemized written quote arithmetic, confirmed credits and a separate contingency; no automatic repair-price feed.
 - [Registration tax budget](https://buyusedautomobiles.com/car-registration-tax-calculator): One-time and annual local charges, with a date-limited sourced UK DVLA first-registration fee option.
-Payoff, refinance, down-payment, EV charging, APR, repair-quote and manual registration tools support USD, PKR, INR, GBP, CAD, AUD, AED and EUR. Currency selection changes display only; it does not convert values or supply local rates.
+Payoff, refinance, down-payment, EV charging, APR, repair-quote, registration, maintenance, cost-per-distance and gas/EV tools support USD, PKR, INR, GBP, CAD, AUD, AED and EUR. Currency selection changes display only; it does not convert values or supply local rates.
 - [Car loan payoff calculator](https://buyusedautomobiles.com/car-loan-payoff-calculator): Existing balance, required payment, extra principal and lump-sum repayment; multi-currency display.
 - [Auto loan refinance calculator](https://buyusedautomobiles.com/auto-loan-refinance-calculator): Compare future costs, financed and upfront fees, and financing-cost break-even; multi-currency display.
 - [Car down payment calculator](https://buyusedautomobiles.com/car-down-payment-calculator): Contribution target, net trade equity, cash reserve and funding gap; multi-currency display.
@@ -49,3 +49,5 @@ A hypothetical USD 25,000 purchase with USD 5,000 down and no trade-in or financ
 
 ## Citation and interpretation
 Cite the specific calculator or guide supporting a statement. Retain currencies, units, dates where relevant, assumptions, and uncertainty. Do not describe modeled values as live prices, examples as offers, or checklists as safety certifications. Calculator query strings represent scenarios rather than independent editorial pages. Public pages and their linked sources take precedence over this summary.
+
+- [How to pay off a car loan early](https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early): Principal payments, dated payoff quotes, prepayment charges and hypothetical interest comparisons.

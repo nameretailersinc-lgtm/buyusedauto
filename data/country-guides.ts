@@ -1741,7 +1741,7 @@ export const countryGuides: Guide[] = [
     "category": "Buying",
     "region": "EU",
     "language": "en",
-    "updated": "2026-10-17",
+    "updated": "2026-10-22",
     "readingMinutes": 8,
     "intro": "To buy a used car in Europe, research prices in your target country, verify the vehicle identification number and registration documents, review maintenance and inspection records, arrange an independent inspection, confirm applicable VAT and registration taxes, and complete the ownership transfer according to national requirements. If purchasing across borders, verify import, insurance, temporary plate, and registration requirements before paying.",
     "sections": [
@@ -1986,29 +1986,28 @@ export const countryGuides: Guide[] = [
         ]
       },
       {
-        "heading": "8. Confirm Spanish registration and tax requirements.",
-        "paragraphs": []
+        "heading": "8. Confirm Spanish registration and tax requirements",
+        "paragraphs": ["For a vehicle bought in another EU country, Spain has its own registration process. DGT distinguishes private purchases from dealer invoices and lists the technical and tax evidence required. Check the exact case before paying; an intra-EU purchase does not mean no Spanish taxes or registration work.", "Obtain the original foreign documents and confirm the Spanish ITV technical documentation and proof of purchase needed. Check registration-tax payment, exemption or non-liability and municipal IVTM requirements with the responsible authorities. Do not treat another country’s inspection certificate as automatic completion of the Spanish procedure."],
+        "links": [{"title": "DGT: registering a vehicle from another EU country (checked 22 October 2026)", "url": "https://www.dgt.es/nuestros-servicios/tu-vehiculo/quieres-traer-o-llevarte-un-vehiculo-del-extranjero/matricular-un-vehiculo-proveniente-de-la-ue/"}]
       },
       {
-        "heading": "9. Complete the registration process in Spain.",
+        "heading": "9. Check transport, emissions zones and EV suitability",
         "paragraphs": [
           "Do not assume that temporary plates issued in Germany will be accepted in every country along your route.",
           "Many European cities operate environmental zones or other vehicle-access restrictions.",
           "Requirements differ by city and country.",
           "Investigate:",
           "A used diesel vehicle may be affordable to purchase but unsuitable for some urban driving patterns.",
-          "Europe offers a substantial selection of used electric and hybrid vehicles.",
+          "For an electric or hybrid vehicle, assess its suitability separately from the import paperwork.",
           "Before buying an EV, investigate:",
           "For plug-in hybrids, check both the combustion engine and high-voltage battery system."
         ],
         "bullets": [
-          "Check Emissions Standards and City Restrictions",
           "Vehicle emissions classification",
           "Diesel restrictions",
           "Low-emission-zone requirements",
           "Environmental stickers or permits",
           "Local registration requirements",
-          "Consider Electric and Hybrid Vehicles",
           "Battery state of health",
           "Remaining battery warranty",
           "Charging connector compatibility",
@@ -2166,8 +2165,8 @@ export const countryGuides: Guide[] = [
             "url": "/car-loan-calculator"
           },
           {
-            "title": "Total cost of ownership calculator",
-            "url": "/total-cost-of-ownership-calculator"
+            "title": "Germany running costs in EUR: fuel, Kfz-Steuer and HU reserve",
+            "url": "/tools/germany/car-running-cost-calculator"
           },
           {
             "title": "Buying in Pakistan",
@@ -2189,6 +2188,7 @@ export const countryGuides: Guide[] = [
       }
     ],
     "sources": [
+      {"title":"DGT: registering a vehicle from another EU country (section checked 2026-10-22)","url":"https://www.dgt.es/nuestros-servicios/tu-vehiculo/quieres-traer-o-llevarte-un-vehiculo-del-extranjero/matricular-un-vehiculo-proveniente-de-la-ue/"},
       {
         "title": "Your Europe: vehicle VAT when buying or selling abroad",
         "url": "https://europa.eu/youreurope/citizens/vehicles/cars/vat-buying-selling-cars/"

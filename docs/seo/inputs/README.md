@@ -1,3 +1,5 @@
+Update 22 October 2026: the local Keyword Planner export was read (892 rows; historical period 2025-10-01 to 2026-09-30; PKR bids). Target geography remains unknown. The request provides small GSC samples with unknown reporting window/country/device; the temporary Pages.csv path was unavailable. See ../input-provenance.md, ../keyword-map.csv and ../gsc-measurement-plan.md for current evidence. Earlier absence and US-targeting notes below are historical, not current targeting verification.
+
 # Owner-supplied SEO inputs
 
 Update 18 October 2026: the new master brief supplies approximate Keyword Planner monthly estimates for US keyword clusters. They are recorded in `docs/seo-keyword-map.md` as owner-provided figures, without an original export date or targeting configuration. The historical paragraph below describes the earlier baseline. No actual GSC export was found during this checkpoint; the IDE-referenced `Table.csv` was absent at its supplied path.

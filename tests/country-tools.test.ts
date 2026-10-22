@@ -4,6 +4,12 @@ import {countryTools,countryToolPath} from "../data/country-tools";
 import {routeGroups} from "../lib/routes";
 const input:RunningCostInput={distance:12000,efficiency:12,fuelPrice:3,insurance:600,maintenance:400,fees:100,other:100,purchase:20000,resale:14000,years:3,interest:900};
 describe("localized running cost tools",()=>{
+  it("reproduces the disclosed Germany and UK examples without rounding fuel early",()=>{
+    const german=countryRunningCost({distance:12000,efficiency:6.5,fuelPrice:1.8,insurance:900,maintenance:800,fees:300,other:240,purchase:20000,resale:14000,years:3,interest:900},"l/100km");
+    expect(german).toMatchObject({litres:780,fuel:1404,operating:3644,annual:5944,monthly:495.33});
+    const uk=countryRunningCost({distance:10000,efficiency:50,fuelPrice:1.5,insurance:700,maintenance:600,fees:250,other:120,purchase:15000,resale:9000,years:3,interest:0},"imperial mpg");
+    expect(uk).toMatchObject({fuel:1363.83,annual:5033.83,monthly:419.49});
+  });
   it("separates economic cost from operating cash and principal repayments",()=>{const result=countryRunningCost(input,"km/l");expect(result.litres).toBe(1000);expect(result.fuel).toBe(3000);expect(result.operating).toBe(4200);expect(result.depreciation).toBe(2000);expect(result.annual).toBe(6500);expect(result.period).toBe(19500);expect(result.monthly).toBe(541.67);});
   it("converts imperial gallons rather than US gallons",()=>{expect(countryRunningCost({...input,distance:100,efficiency:50},"imperial mpg").litres).toBe(9.09);});
   it("calculates litres per 100 kilometres",()=>{expect(countryRunningCost({...input,efficiency:8},"l/100km").litres).toBe(960);});

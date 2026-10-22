@@ -1,0 +1,16 @@
+[
+  {
+    "page": "/",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 86,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 4001.7834000000007,
+    "cls": 0,
+    "tbtMs": 134.00000000000045,
+    "inp": "Not measured; requires field interaction data"
+  }
+]

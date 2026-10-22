@@ -61,7 +61,8 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
 - H1: Auto loan refinance calculator with fees
 - Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
-- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
+- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordabil
+ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
 - Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
 - Priority: P1
 

@@ -1,0 +1,44 @@
+[
+  {
+    "page": "/",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 93,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 3168.783275,
+    "cls": 0,
+    "tbtMs": 43,
+    "inp": "Not measured; requires field interaction data"
+  },
+  {
+    "page": "/car-loan-calculator",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 97,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2532.570275,
+    "cls": 0,
+    "tbtMs": 58.49999999999977,
+    "inp": "Not measured; requires field interaction data"
+  },
+  {
+    "page": "/guides/how-to-inspect-a-used-car",
+    "mode": "mobile simulated throttling; local production server",
+    "scores": {
+      "performance": 95,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100
+    },
+    "lcpMs": 2833.1989999999996,
+    "cls": 0,
+    "tbtMs": 39.50000000000023,
+    "inp": "Not measured; requires field interaction data"
+  }
+]

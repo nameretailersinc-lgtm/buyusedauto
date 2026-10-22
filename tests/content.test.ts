@@ -6,15 +6,17 @@ import {newGuides} from "../data/new-guides";
 import {pillarGuide} from "../data/pillar-guide";
 import {countryGuides} from "../data/country-guides";
 import {submittedGuides} from "../data/submitted-guides";
+import {payoffGuide} from "../data/payoff-guide";
 import {scenarios,scenarioPath} from "../data/scenarios";
 import {states} from "../data/states";
+import {countryTools,countryToolPath} from "../data/country-tools";
 describe("content and routing contracts",()=>{
   it("publishes each guide once with distinct metadata and resolvable image assets",async()=>{const {guideImages,guideImageAlt}=await import("../data/visuals");const {existsSync}=await import("node:fs");expect(new Set(guides.map(g=>g.slug)).size).toBe(guides.length);expect(new Set(guides.map(g=>g.title)).size).toBe(guides.length);expect(new Set(guides.map(g=>g.description)).size).toBe(guides.length);for(const g of guides){expect(existsSync(`public/images/${guideImages[g.slug]}.webp`)).toBe(true);expect(guideImageAlt[g.slug]).toBeTruthy();}});
   it("keeps tool and scenario scope focused and route slugs unique",()=>{expect(tools).toHaveLength(21);expect(guides.length).toBeGreaterThanOrEqual(5);expect(scenarios.length).toBeLessThanOrEqual(30);const routes=[...tools.map(t=>`/${t.slug}`),...guides.map(g=>`/guides/${g.slug}`),...scenarios.map(scenarioPath)];expect(new Set(routes).size).toBe(routes.length);});
   it("every tool has distinct methodology, five FAQs, and resolved related links",()=>{for(const t of tools){const c=toolContent[t.id];expect(c.formula.length).toBeGreaterThan(40);expect(c.faq.length).toBeGreaterThanOrEqual(5);expect(new Set(c.faq.map(f=>f.question)).size).toBe(c.faq.length);for(const slug of c.related)expect(tools.some(t=>t.slug===slug)).toBe(true);expect(c.sources.every(s=>s.url.startsWith("https://"))).toBe(true);}});
   it("guides have substantive content, primary-source references, and working tool slugs",()=>{
-    const suppliedSlugs=new Set([...newGuides,pillarGuide,...countryGuides,...submittedGuides].map(g=>g.slug));
-    const primarySourceHosts=new Set(["consumer.ftc.gov","www.nhtsa.gov","www.consumerfinance.gov","vehiclehistory.bja.ojp.gov","www.nicb.org","comptroller.texas.gov","www.dmv.ca.gov","excise.punjab.gov.pk","www.excise.gos.pk","islamabadexcise.gov.pk","www.kpexcise.gov.pk","rta.ae","www.moi.gov.ae","www.gov.uk","europa.eu","support.microsoft.com"]);
+    const suppliedSlugs=new Set([...newGuides,pillarGuide,...countryGuides,...submittedGuides,payoffGuide].map(g=>g.slug));
+    const primarySourceHosts=new Set(["consumer.ftc.gov","www.nhtsa.gov","www.consumerfinance.gov","vehiclehistory.bja.ojp.gov","www.nicb.org","comptroller.texas.gov","www.dmv.ca.gov","excise.punjab.gov.pk","www.excise.gos.pk","islamabadexcise.gov.pk","www.kpexcise.gov.pk","rta.ae","www.moi.gov.ae","www.gov.uk","www.dgt.es","europa.eu","support.microsoft.com"]);
     for(const g of guides){
       if(suppliedSlugs.has(g.slug)){
         expect(g.sections.length,g.slug).toBeGreaterThanOrEqual(5);
@@ -30,7 +32,7 @@ describe("content and routing contracts",()=>{
       for(const slug of g.relatedTools)expect(tools.some(t=>t.slug===slug),`${g.slug}: ${slug}`).toBe(true);
       for(const section of g.sections){
         if(section.table){expect(section.table.headers.length).toBeGreaterThan(1);for(const row of section.table.rows)expect(row).toHaveLength(section.table.headers.length);}
-        for(const link of section.links??[]){if(link.url.startsWith("/")){const path=new URL(link.url,"https://buyusedautomobiles.com").pathname;expect(path==="/guides"||path==="/pk/car-financing-calculator"||tools.some(t=>path===`/${t.slug}`)||guides.some(other=>path===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}}
+        for(const link of section.links??[]){if(link.url.startsWith("/")){const path=new URL(link.url,"https://buyusedautomobiles.com").pathname;expect(path==="/guides"||path==="/pk/car-financing-calculator"||countryTools.some(t=>path===countryToolPath(t.country))||tools.some(t=>path===`/${t.slug}`)||guides.some(other=>path===`/guides/${other.slug}`),`${g.slug}: ${link.url}`).toBe(true);}}
       }
     }
   });

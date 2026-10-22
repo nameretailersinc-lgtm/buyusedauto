@@ -4,6 +4,7 @@ import {load} from 'cheerio';
 // Run after next build: verify the actual HTML and generated route manifest.
 const pillar = 'complete-used-car-buying-guide';
 const requiredLinks = {
+  'how-to-pay-off-a-car-loan-early': ['/car-loan-payoff-calculator', '/auto-loan-refinance-calculator', '/car-maintenance-cost-calculator', '/guides/how-to-compare-used-car-loans'],
   'how-much-car-payment-can-i-afford': ['/car-affordability-calculator', '/car-loan-calculator', '/total-cost-of-ownership-calculator', '/guides/how-much-down-payment-for-used-car'],
   'car-depreciation-chart': ['/car-depreciation-calculator', '/what-is-my-car-worth', '/trade-in-value-estimator', '/total-cost-of-ownership-calculator', '/guides/how-much-does-a-used-car-depreciate-per-year'],
   'how-much-does-a-used-car-depreciate-per-year': ['/car-depreciation-calculator', '/what-is-my-car-worth', '/total-cost-of-ownership-calculator', '/trade-in-value-estimator', '/car-loan-calculator', '/guides/how-much-down-payment-for-used-car'],
