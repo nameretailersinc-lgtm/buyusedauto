@@ -24,7 +24,7 @@ const articleDrafts: Guide[] = [
   },
   {
     slug: "how-many-miles-is-too-many-for-a-used-car", title: "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide",
-    description: "Evaluate used car mileage alongside age, maintenance records, mechanical condition, and upcoming repairs instead of relying on a universal mileage cutoff.",
+    description: "What mileage is good for a used car? Weigh mileage alongside age, maintenance records, mechanical condition, and upcoming repairs instead of a universal cutoff.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 4,
     intro: "There is no universal mileage limit for buying a used car. A vehicle with 120,000 miles and excellent maintenance records may be a better purchase than one with 60,000 miles and neglected servicing. Mileage should be evaluated alongside age, mechanical condition, driving history, and price.",
     sections: [

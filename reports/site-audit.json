@@ -1,7 +1,7 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
-  "pages": 78,
-  "internalLinks": 587,
+  "pages": 81,
+  "internalLinks": 629,
   "failures": [],
   "warnings": [],
   "details": [
@@ -326,6 +326,27 @@
       "descriptionLength": 138,
       "schemaCount": 2,
       "h1": "How to Pay Off a Car Loan Early and Save on Interest"
+    },
+    {
+      "path": "/guides/used-car-sales-tax-title-and-fees-explained",
+      "title": "Used Car Sales Tax, Title & Fees Explained | BuyUsedAutomobiles",
+      "descriptionLength": 146,
+      "schemaCount": 2,
+      "h1": "Used Car Sales Tax, Title and Fees: How to Estimate the Final Price"
+    },
+    {
+      "path": "/guides/how-much-does-it-cost-to-charge-an-electric-car",
+      "title": "EV Charging Cost Calculator: Home vs Public",
+      "descriptionLength": 151,
+      "schemaCount": 2,
+      "h1": "How Much Does It Cost to Charge an Electric Car at Home or in Public?"
+    },
+    {
+      "path": "/guides/is-refinancing-your-car-loan-worth-it",
+      "title": "Auto Loan Refinancing: Is It Worth It? | BuyUsedAutomobiles",
+      "descriptionLength": 144,
+      "schemaCount": 2,
+      "h1": "Is Refinancing Your Car Loan Worth It? Compare Payments and Total Cost"
     },
     {
       "path": "/guides/how-much-down-payment-for-used-car",

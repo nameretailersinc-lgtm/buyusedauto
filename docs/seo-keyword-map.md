@@ -1,6 +1,6 @@
 # Keyword-to-page map
 
-Updated 2026-10-21 from current local production HTML after implementing Phase 1-3 multi-currency tools and the fuel-page enhancement. The main sitemap index now advertises core, tools, guides, scenarios and Pakistan segments directly. Local validation does not establish deployment status.
+Updated 2026-10-22 from current local production HTML after implementing Phase 1-3 calculators and importing the complete six-draft editorial package as four new guides and two canonical refreshes. The main sitemap index now advertises core, tools, guides, scenarios and Pakistan segments directly. Local validation does not establish deployment status.
 
 New calculator metrics were checked against four Keyword Planner exports for October 2025-September 2026: 4,521 rows and 4,488 unique keywords. See docs/seo/keyword-research-2026-10-21.json and docs/seo-calculator-rollout.md for provenance, corrections and rollout decisions. Bid currency PKR does not establish the search market. Google Ads competition is not organic difficulty. Older brief-only metrics retain their stated evidence limits. Do not sum synonyms or treat volumes as traffic forecasts; GSC performance and target-geography validation remain outstanding.
 
@@ -19,11 +19,11 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Search-volume evidence: No supplied directory-specific volume; do not assign component-query totals
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com
-- SEO title: Free used car tools for better buying decisions
+- SEO title: Free Used Car Calculators & Buying Guides | BuyUsedAutomobiles
 - Meta description: Make a more informed used-car decision with free calculators, practical buying guides, and transparent estimates. Plan your budget and total ownership cost.
-- H1: Your next car.A smarter decision.
+- H1: Free Used Car Calculators& Buying Guides
 - Recommended H2s (retain current headings): Less guesswork. More confidence.; Good decisions start here.; Useful numbers.Honest limits.; The right car starts with the right budget.; How can you plan a used-car purchase?; What do the calculator numbers mean?
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /fuel-cost-calculator, /what-is-my-car-worth, /lease-vs-buy-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-down-payment-for-used-car
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /trade-in-value-estimator, /total-cost-of-ownership-calculator, /used-car-inspection-checklist, /fuel-cost-calculator, /what-is-my-car-worth, /lease-vs-buy-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/how-to-pay-off-a-car-loan-early
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 
@@ -62,8 +62,7 @@ One canonical owner per distinct intent. Page-one pagination aliases permanently
 - Meta description: Compare an existing auto loan with a refinance offer. Include upfront and financed fees, payment changes, total borrowing costs, and financing-cost break-even.
 - H1: Auto loan refinance calculator with fees
 - Recommended H2s (retain current headings): How it works; A worked example; Why a lower payment can cost more; Break-even with the remaining balance in view; What currency selection means; Questions worth asking
-- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordabil
-ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
+- Internal links: /disclaimer, /car-loan-apr-calculator, /car-loan-payoff-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it, /guides/how-to-compare-used-car-loans, /editorial-policy
 - Content improvements: Implemented current vs replacement cost, upfront/financed fees, total savings and cumulative financing-cost break-even. No live rates or eligibility supplied.
 - Priority: P1
 
@@ -101,7 +100,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Calculate car cost per mile or kilometer from your recorded distance and expenses. Separate economic ownership cost from actual cash spending over the same period.
 - H1: Car cost per mile or kilometer calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Choose a basis that fits the question; Use period totals rather than annual estimates; Questions worth asking
-- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-maintenance-cost-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs, /guides/complete-used-car-buying-guide, /editorial-policy
+- Internal links: /disclaimer, /total-cost-of-ownership-calculator, /car-maintenance-cost-calculator, /fuel-cost-calculator, /car-depreciation-calculator, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs, /editorial-policy
 - Content improvements: Implemented distinct economic and gross-cash bases with exclusive inputs, matched recorded period totals, miles/km and eight currencies. No tax or reimbursement rate supplied.
 - Priority: P3
 
@@ -158,7 +157,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate a car loan APR from its contract rate, term, and finance fees. Compare nominal APR, effective annual rate, monthly payments, and total credit cost.
 - H1: Car loan APR calculator with finance fees
 - Recommended H2s (retain current headings): How it works; A worked example; APR and the contract rate answer different questions; Which fees belong in the calculation?; Payment dates and rounding matter; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-loan-payoff-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-loan-payoff-calculator, /guides/is-refinancing-your-car-loan-worth-it, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /editorial-policy
 - Content improvements: Implemented eight-currency regular-monthly APR estimate with fee classification supplied by the user, separate effective annual rate, and lender-disclosure limitations.
 - Priority: P2
 
@@ -177,7 +176,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate a used car payment, see total interest, and compare repayment terms. Add a trade-in or extra payments to explore the full amortization schedule.
 - H1: Used car loan calculator with taxes and fees
 - Recommended H2s (retain current headings): How it works; Calculate a used-car payment with taxes, fees and a trade-in; A worked example; Read the rate and the term together; Why your lender’s schedule may differ; Estimate early payoff savings; Questions worth asking
-- Internal links: /car-sales-tax-calculator, /car-affordability-calculator, /total-cost-of-ownership-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-compare-used-car-loans, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /car-sales-tax-calculator, /car-affordability-calculator, /total-cost-of-ownership-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-compare-used-car-loans, /disclaimer, /guides/complete-used-car-buying-guide, /guides/used-car-sales-tax-title-and-fees-explained, /editorial-policy
 - Content improvements: Existing purchase calculator retained with itemized fees and trade equity. Links now route existing-debt payoff, refinancing and cash-contribution planning to their distinct tools.
 - Priority: P1
 
@@ -310,7 +309,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Calculate payoff time for an existing car loan. Compare extra payments and a lump sum, interest savings, and repayment schedules in your chosen currency.
 - H1: Car loan payoff and extra payment calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Existing debt or a new purchase?; Use local terms with your selected currency; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-affordability-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /auto-loan-refinance-calculator, /car-affordability-calculator, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it, /guides/how-to-compare-used-car-loans, /editorial-policy
 - Content improvements: Implemented distinct existing-balance and required-payment workflow, extra/lump-sum comparison, cent-rounded schedule and eight display currencies. Purchase loan retains new-purchase intent.
 - Priority: P1
 
@@ -329,7 +328,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Plan a car maintenance reserve from your service intervals, tire costs and repair budget. Calculate annual and monthly savings in miles or kilometers.
 - H1: Car maintenance cost and reserve calculator
 - Recommended H2s (retain current headings): How it works; A worked example; A reserve is different from a service calendar; Keep maintenance separate from a repair quote; Questions worth asking
-- Internal links: /disclaimer, /car-repair-cost-calculator, /car-cost-per-mile-calculator, /total-cost-of-ownership-calculator, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /guides/used-car-vs-new-car, /editorial-policy
+- Internal links: /disclaimer, /car-repair-cost-calculator, /car-cost-per-mile-calculator, /total-cost-of-ownership-calculator, /guides/how-to-pay-off-a-car-loan-early, /guides/how-much-car-payment-can-i-afford, /guides/real-cost-of-car-ownership, /editorial-policy
 - Content improvements: Implemented time/distance service reserve, tire allowance, other annual work and separate immediate repairs in eight currencies and miles/km. No vehicle-specific price or service calendar inferred.
 - Priority: P3
 
@@ -348,7 +347,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Plan car registration and recurring vehicle-tax costs using verified local fees. Separate one-time charges from annual costs, with a sourced UK DVLA option.
 - H1: Car registration tax and fee calculator
 - Recommended H2s (retain current headings): How it works; A worked example; The sourced UK first-registration option; Fee verification and maintenance; Registration budget versus purchase sales tax; Questions worth asking
-- Internal links: /disclaimer, /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /car-down-payment-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-sales-tax-calculator, /total-cost-of-ownership-calculator, /car-down-payment-calculator, /guides/used-car-sales-tax-title-and-fees-explained, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /editorial-policy
 - Content improvements: Implemented eight-currency manual registration budget plus dated, scope-limited GBP DVLA fee profile with a review cutoff. Purchase sales-tax intent remains with its existing calculator.
 - Priority: P2
 
@@ -386,7 +385,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate vehicle sales tax from your verified combined rate, taxable fees, and allowed trade credit. Find official state resources and see the taxable base.
 - H1: Car sales tax calculator
 - Recommended H2s (retain current headings): How it works; State rules, title and registration fees; A worked example; Why a state name is not enough; Know when the simplified model does not fit; Questions worth asking
-- Internal links: /car-loan-calculator#taxes-and-trade, /disclaimer, /car-loan-calculator, /used-car-price-negotiation-calculator, /trade-in-value-estimator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-negotiate-a-used-car-price, /guides/trade-in-vs-private-sale, /editorial-policy
+- Internal links: /car-loan-calculator#taxes-and-trade, /disclaimer, /car-loan-calculator, /used-car-price-negotiation-calculator, /trade-in-value-estimator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained, /guides/how-to-negotiate-a-used-car-price, /editorial-policy
 - Content improvements: Implemented separate user-entered title/registration. Automatic state data unavailable; no 50-state rollout. California intent uses official resources on this page.
 - Priority: P3
 
@@ -462,7 +461,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate electric car charging cost from usable battery capacity, charge levels, charging efficiency, energy price, and session fees in your selected currency.
 - H1: EV charging cost calculator with charging losses
 - Recommended H2s (retain current headings): How it works; A worked example; Home and public charging costs; Why kW and kWh are different; Compare costs in one currency; Questions worth asking
-- Internal links: /disclaimer, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-depreciation-calculator, /gas-vs-electric-car-cost-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /editorial-policy
+- Internal links: /disclaimer, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-depreciation-calculator, /gas-vs-electric-car-cost-calculator, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /editorial-policy
 - Content improvements: Implemented usable battery, charge range, efficiency, billing boundary, price, flat fee and average-power time in eight currencies. No local tariff inferred.
 - Priority: P1
 
@@ -500,7 +499,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare gas and electric car costs over the same years and distance. Include energy, resale, insurance, maintenance, fees, financing interest and a home charger.
 - H1: Gas vs electric car ownership cost calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Energy savings are only one cost component; Keep the charging inputs consistent; Questions worth asking
-- Internal links: /disclaimer, /ev-charging-cost-calculator, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-cost-per-mile-calculator, /guides/real-cost-of-car-ownership, /guides/used-car-vs-new-car, /guides/complete-used-car-buying-guide, /editorial-policy
+- Internal links: /disclaimer, /ev-charging-cost-calculator, /fuel-cost-calculator, /total-cost-of-ownership-calculator, /car-cost-per-mile-calculator, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/real-cost-of-car-ownership, /guides/used-car-vs-new-car, /editorial-policy
 - Content improvements: Implemented matched years/distance, editable purchase/resale, fees, charger, period interest, energy and other running costs. Wall/battery boundary prevents double-counting charging losses; eight currencies and physical unit conversion.
 - Priority: P3
 
@@ -517,9 +516,9 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/guides
 - SEO title: Used car buying guides and practical advice
 - Meta description: Read practical guides to inspecting a used car, checking its history, comparing loans, negotiating the price, and understanding the full cost of ownership.
-- H1: A little research.A better car decision.
+- H1: Used car buying guidesand ownership advice
 - Recommended H2s (retain current headings): Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car
-- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /guides/how-to-calculate-percentage-increase, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-car-payment-can-i-afford
+- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-pay-off-a-car-loan-early, /guides/used-car-sales-tax-title-and-fees-explained, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/is-refinancing-your-car-loan-worth-it
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
 - Priority: P1
 
@@ -538,7 +537,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Explore year-end shopping, monthly sales targets, seasonal demand, older inventory, and financing to find a used car deal that fits your local market.
 - H1: Best Time to Buy a Used Car in 2026: When Can You Save the Most?
 - Recommended H2s (retain current headings): Key takeaways; 01Does the Time of Year Affect Used Car Prices?; 02Consider Shopping Near the End of the Year; 03Check Prices at the End of the Month; 04Monitor Seasonal Demand; 05Look for Older Inventory; 06Compare Financing Offers Before Buying; 07Frequently Asked Questions
-- Internal links: /car-loan-calculator, /used-car-price-negotiation-calculator, /guides/how-to-negotiate-a-used-car-price, /what-is-my-car-worth, /guides, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /car-loan-calculator, /used-car-price-negotiation-calculator, /guides/how-to-negotiate-a-used-car-price, /what-is-my-car-worth, /guides, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -557,7 +556,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Learn how to buy a used car in Europe. Compare Germany, France, Spain and Italy, understand EU VAT, registration, inspections and cross-border purchases.
 - H1: How to Buy a Used Car in Europe in 2026: Complete EU Buying, Import and Registration Guide
 - Recommended H2s (retain current headings): Key takeaways; 01Quick Answer: How Do You Buy a Used Car in Europe?; 02Which official resources should Europe (EU) buyers use?; 03Choose the Country Where You Want to Buy; 04Set Your Budget in Euros; 05Research Suitable Used Vehicles; 06Verify Vehicle Identity and Documentation; 07Understand Technical Inspections in Europe
-- Internal links: /used-car-inspection-checklist, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer
+- Internal links: /used-car-inspection-checklist, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /car-loan-calculator, /tools/germany/car-running-cost-calculator, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer
 - Content improvements: Retain local source qualifications and local currency. Do not treat as an equivalent translation or competing generic US buying hub.
 - Priority: P2
 
@@ -652,7 +651,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Explore a car depreciation chart over 1-10 years. Compare three illustrative decline scenarios, annual value loss, and resale assumptions with clear examples.
 - H1: Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years
 - Recommended H2s (retain current headings): Key takeaways; 01Before you compare the numbers; 02What Is a Car Depreciation Chart?; 03Example Car Depreciation Chart Over Five Years; 04Why Does Depreciation Often Slow Over Time?; 05Car Depreciation Chart: Three Different Scenarios; 06Car Depreciation Chart for 10 Years; 07How to Read a Car Depreciation Curve
-- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /guides/how-much-does-a-used-car-depreciate-per-year, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /used-car-inspection-checklist, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/real-cost-of-car-ownership
+- Internal links: /car-depreciation-calculator, /what-is-my-car-worth, /guides/how-much-does-a-used-car-depreciate-per-year, /total-cost-of-ownership-calculator, /trade-in-value-estimator, /used-car-inspection-checklist, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-it-cost-to-charge-an-electric-car
 - Content improvements: Implemented one article from two identical drafts, repaired pasted table markers, and added interactive five- and ten-year charts with matching tables. The annual-formula guide and interactive calculator retain their distinct intents.
 - Priority: P2
 
@@ -671,7 +670,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Explore our buying guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Buying guides
 - Recommended H2s (retain current headings): Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car
-- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk
+- Internal links: /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -690,7 +689,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Browse page 2 of our buying guides for used car decisions, with practical vehicle checks, clear worked examples, official resources, and related planning tools.
 - H1: Buying guides
 - Recommended H2s (retain current headings): More on buying; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /guides/international-used-car-buying-checks, /guides/best-time-to-buy-a-used-car
+- Internal links: /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /guides/international-used-car-buying-checks
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -709,7 +708,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Browse page 3 of our buying guides for used car decisions, with practical vehicle checks, clear worked examples, official resources, and related planning tools.
 - H1: Buying guides
 - Recommended H2s (retain current headings): More on buying; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car, /guides/how-to-avoid-used-car-scams
+- Internal links: /guides/best-time-to-buy-a-used-car, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car, /guides/how-to-avoid-used-car-scams
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -727,8 +726,8 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - SEO title: Financing guides for used-car decisions | BuyUsedAutomobiles
 - Meta description: Explore our financing guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Financing guides
-- Recommended H2s (retain current headings): How Much Down Payment Do You Need for a Used Car in 2026?
-- Internal links: /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/how-to-compare-used-car-loans
+- Recommended H2s (retain current headings): How to Pay Off a Car Loan Early and Save on Interest
+- Internal links: /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/how-to-compare-used-car-loans
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -765,8 +764,8 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - SEO title: Ownership guides for used-car decisions | BuyUsedAutomobiles
 - Meta description: Explore our ownership guides for used-car decisions. Find practical steps, clear examples, official sources, and related tools to help you plan your next move.
 - H1: Ownership guides
-- Recommended H2s (retain current headings): How Much Does a Used Car Depreciate Per Year?
-- Internal links: /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs
+- Recommended H2s (retain current headings): How Much Does It Cost to Charge an Electric Car at Home or in Public?
+- Internal links: /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership, /guides/used-car-maintenance-costs
 - Content improvements: Retain useful collection navigation and page-specific canonicals. Singleton categories stay noindex; avoid publishing filler for category count.
 - Priority: P3
 
@@ -823,7 +822,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Evaluate used car mileage alongside age, maintenance records, mechanical condition, and upcoming repairs instead of relying on a universal mileage cutoff.
 - H1: How Many Miles Is Too Many for a Used Car? Complete 2026 Guide
 - Recommended H2s (retain current headings): Key takeaways; 01What Is Considered High Mileage?; 02Is 100,000 Miles Too Much for a Used Car?; 03Highway Miles vs. City Miles; 04How to Inspect a High-Mileage Used Car; 05Should You Buy a Used Car With 150,000 Miles?; 06Frequently Asked Questions; 07Conclusion
-- Internal links: /used-car-inspection-checklist, /total-cost-of-ownership-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides, /guides/complete-used-car-buying-guide, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /used-car-inspection-checklist, /total-cost-of-ownership-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides, /guides/complete-used-car-buying-guide, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain current mileage-focused page. History guide's mileage section is supporting context; do not expand it into a competing mileage guide.
 - Priority: P2
 
@@ -842,7 +841,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: How much car payment can you afford? Build a monthly budget, include running costs, and compare down payments, loan terms, and total borrowing costs.
 - H1: How Much Car Payment Can I Afford? Complete 2026 Budget Guide
 - Recommended H2s (retain current headings): Key takeaways; 01Before you compare the numbers; 02How Much Car Payment Can You Afford?; 03How to Calculate Your Affordable Monthly Car Payment; 04Calculate the Total Monthly Cost of Owning a Car; 05What Is the 10% Rule for Car Payments?; 06How Does the Car Price Affect Your Monthly Payment?; 07Example: Monthly Payments on a Used Car Loan
-- Internal links: /car-affordability-calculator, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer
+- Internal links: /car-affordability-calculator, /car-loan-calculator, /total-cost-of-ownership-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-to-compare-used-car-loans, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it
 - Content improvements: Implemented supplied Financing draft with cash-flow tables, checked loan examples, gross vs take-home income clarification, and direct links to the canonical affordability and loan calculators.
 - Priority: P2
 
@@ -862,7 +861,26 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - H1: How Much Does a Used Car Depreciate Per Year?
 - Recommended H2s (retain current headings): Key takeaways; 01Understanding annual vehicle value loss; 02What Is Car Depreciation?; 03How Much Does a Used Car Depreciate Per Year?; 04How to Calculate Car Depreciation Per Year; 05How to Calculate Average Annual Depreciation; 06Illustrative Five-Year Used Car Depreciation Example; 07What Factors Affect Used Car Depreciation?
 - Internal links: /total-cost-of-ownership-calculator, /car-depreciation-calculator, /what-is-my-car-worth, /guides/car-depreciation-chart, /car-loan-calculator, /guides/how-much-down-payment-for-used-car, /used-car-inspection-checklist, /trade-in-value-estimator, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks
-- Content improvements: Implemented supplied Ownership article with verified illustrative calculations, annualized-rate distinctions, a five-year table, current-value starting assumptions, and links to depreciation, valuation, ownership and loan tools. No universal average or resale forecast claimed.
+- Content improvements: Implemented supplied Ownership article with verified illustrative calculations, annualized-rate distinctions, a five-year table, current-value starting assumptions, and links to depreciation, valuation, ownership and loan tools. No universal average or resale forecast claimed. Refreshed on 22 October with the overlapping draft: a constant-12% scenario table, model-versus-market distinction, buyer/seller use cases and additional FAQs. No competing URL created.
+- Priority: P2
+
+### /guides/how-much-does-it-cost-to-charge-an-electric-car
+
+- URL: https://buyusedautomobiles.com/guides/how-much-does-it-cost-to-charge-an-electric-car
+- Page type: Guide
+- Primary keyword: how much does it cost to charge an electric car
+- Secondary keywords: home vs public EV charging costs; EV energy cost per mile
+- Long-tail variants: partial charge from 20 to 80 percent; wall vs battery energy; charging losses and fees
+- Search intent: Understand charging energy and local tariffs
+- Search-volume evidence: No separate informational volume supplied. EV calculator intent remains assigned to the session-cost tool.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-much-does-it-cost-to-charge-an-electric-car
+- SEO title: EV Charging Cost Calculator: Home vs Public
+- Meta description: Calculate EV charging costs from battery size, state of charge, electricity rate and charging losses, then compare cost per mile at home and in public.
+- H1: How Much Does It Cost to Charge an Electric Car at Home or in Public?
+- Recommended H2s (retain current headings): Key takeaways; 01Start with energy and price; 02The basic EV charging-cost formula; 03Example: charging from 20% to 80%; 04Cost at home versus public charging; 05How to calculate electric-car cost per mile; 06What affects the accuracy of the estimate?; 07Frequently asked questions
+- Internal links: /ev-charging-cost-calculator, /gas-vs-electric-car-cost-calculator, /car-cost-per-mile-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/real-cost-of-car-ownership
+- Content improvements: Imported the complete charging draft with its comparison table and four FAQs. Made percentage conversion explicit, clarified energy billing boundaries and prevented double-counting losses on wall-energy ratings. Reciprocal tool links included.
 - Priority: P2
 
 ### /guides/how-much-down-payment-for-used-car
@@ -880,8 +898,8 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: How much down payment do you need for a used car? Compare 10% and 20% down payments, monthly loan costs, trade-ins, and practical financing tips.
 - H1: How Much Down Payment Do You Need for a Used Car in 2026?
 - Recommended H2s (retain current headings): Key takeaways; 01Planning your used car purchase; 02How much down payment do you need for a used car?; 03What is a car down payment?; 04Used car down payment examples: 10% vs. 20%; 05How to calculate a used car down payment; 06Does a bigger down payment lower monthly payments?; 07Can you buy a used car with no down payment?
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-calculate-percentage-increase, /total-cost-of-ownership-calculator, /guides/how-much-car-payment-can-i-afford, /trade-in-value-estimator, /used-car-inspection-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe
-- Content improvements: Implemented supplied Financing article with down-payment tables, hypothetical loan costs, source references and direct links to loan, affordability, trade-in and ownership-cost calculators.
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-calculate-percentage-increase, /total-cost-of-ownership-calculator, /guides/how-much-car-payment-can-i-afford, /trade-in-value-estimator, /used-car-inspection-checklist, /car-down-payment-calculator, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk
+- Content improvements: Implemented supplied Financing article with down-payment tables, hypothetical loan costs, source references and direct links to loan, affordability, trade-in and ownership-cost calculators. Refreshed on 22 October with the overlapping draft: explicit amount-financed formula, a $20,000 / 9% / 60-month fee-inclusive comparison, a fees-financing FAQ and the dedicated down-payment CTA. Existing metadata and canonical retained.
 - Priority: P2
 
 ### /guides/how-to-avoid-used-car-scams
@@ -899,7 +917,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Recognize ten used car scam warning signs, verify sellers and vehicle records, and plan inspections, payments, and ownership transfers before committing.
 - H1: How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know
 - Recommended H2s (retain current headings): Key takeaways; 01Suspiciously Low Prices; 02Fake Online Listings; 03Requests for Advance Payment; 04Fake Vehicle History Reports; 05Odometer Fraud; 06Title Washing; 07Stolen Vehicles
-- Internal links: /used-car-inspection-checklist, /what-is-my-car-worth, /guides/how-to-check-a-cars-history, /guides/used-car-buying-checklist-first-time-buyers, /guides, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /used-car-inspection-checklist, /what-is-my-car-worth, /guides/how-to-check-a-cars-history, /guides/used-car-buying-checklist-first-time-buyers, /guides, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -937,7 +955,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Learn how to calculate percentage increase using a simple formula. Follow step-by-step examples for prices, salaries, sales, and Excel.
 - H1: How to Calculate Percentage Increase: Formula, Examples, and Easy Methods
 - Recommended H2s (retain current headings): Key takeaways; 01Understanding percentage growth; 02What Is Percentage Increase?; 03Percentage Increase Formula; 04How to Calculate Percentage Increase Step by Step; 05Practical Percentage Increase Examples; 06Percentage Increase Examples Table; 07How to Calculate Percentage Increase in Excel
-- Internal links: /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car
+- Internal links: /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-pay-off-a-car-loan-early
 - Content improvements: Implemented supplied article under Mathematics / Calculators with formulas, worked examples, a comparison table, spreadsheet instructions and zero/negative-base limitations.
 - Priority: P2
 
@@ -956,7 +974,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Build a useful vehicle history check from VIN matching, title records, recall searches, mileage evidence, and an inspection. Learn what reports cannot prove.
 - H1: How to check a car’s history before buying
 - Recommended H2s (retain current headings): Key takeaways; 01Start with the identity of the actual vehicle; 02Understand what title-history data contains; 03Free VIN checks: theft records and open recalls; 04How much mileage is too much for a used car?; 05Read damage and maintenance records as questions; 06Build a small evidence file before negotiating; 07Decide which uncertainties you can accept
-- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain reviewed primary sources and report limitations. Private-seller guide owns the full transaction; this page owns detailed record checks.
 - Priority: P2
 
@@ -975,7 +993,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Learn how monthly car loan interest is calculated, work through a payment example, and compare rates, APR, terms and total borrowing costs.
 - H1: How car loan interest is calculated and how to compare offers
 - Recommended H2s (retain current headings): Key takeaways; 01Establish how much you need to finance; 02Collect offers on comparable terms; 03How interest is calculated on a car loan; 04See what a longer term changes; 05Check flexibility and conditions; 06Keep add-ons and negative equity visible; 07Choose a loan that fits the full ownership plan
-- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford, /guides/complete-used-car-buying-guide
+- Internal links: /car-loan-calculator, /car-affordability-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it, /guides/how-much-down-payment-for-used-car
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -994,7 +1012,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Inspect a used car with a practical sequence for documents, condition, a test drive, and an independent mechanic. Turn findings into a buying decision.
 - H1: How to inspect a used car before you buy
 - Recommended H2s (retain current headings): Key takeaways; 01Questions to ask a private seller before the appointment; 02Match the car to the paperwork; 03Walk around, then inspect the cabin; 04How to check a used car engine before buying; 05Take a normal, lawful test drive; 06Turn findings into a repair budget; 07Save your used car inspection checklist and evidence
-- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain substantial reviewed guide and question checklist. Link to private-seller transaction workflow via related guides; no separate questions page.
 - Priority: P2
 
@@ -1013,8 +1031,27 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Negotiate a used-car price using comparable listings, inspection findings, an itemized purchase quote, and a firm budget. Work through a realistic example.
 - H1: How to negotiate a used-car price with evidence
 - Recommended H2s (retain current headings): Key takeaways; 01Set the limit you will actually honor; 02Compare vehicles that are actually comparable; 03Ask for one itemized out-the-door quote; 04Turn inspection evidence into an offer; 05Evaluate the whole counteroffer; 06Decide how promised repairs will be handled; 07Close only when the final numbers match
-- Internal links: /used-car-price-negotiation-calculator, /car-affordability-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/buy-used-car-pakistan
+- Internal links: /used-car-price-negotiation-calculator, /car-affordability-calculator, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Implemented cash-purchase comparison answer and focused FAQs; retain worked counteroffer and state qualifications.
+- Priority: P2
+
+### /guides/how-to-pay-off-a-car-loan-early
+
+- URL: https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early
+- Page type: Guide
+- Primary keyword: how to pay off a car loan early
+- Secondary keywords: pay off car loan early; extra principal payments; auto loan payoff quote
+- Long-tail variants: principal allocation vs advancing a due date; prepayment fees; remaining interest; dated payoff quote
+- Search intent: Understand early repayment and verify lender payoff terms
+- Search-volume evidence: No distinct informational volume supplied. The 50,000 payoff-calculator estimate belongs to the calculator and is not reassigned here.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early
+- SEO title: How to Pay Off a Car Loan Early: Costs & Savings
+- Meta description: Learn how extra car loan payments affect interest, how to request a payoff quote, and when paying off a car loan early may not save money.
+- H1: How to Pay Off a Car Loan Early and Save on Interest
+- Recommended H2s (retain current headings): Key takeaways; 01Before you make an extra payment; 02What happens when you pay extra on a car loan?; 03A car loan payoff example; 04How to estimate an early payoff date; 05Should you pay off a car loan or keep your savings?; 06Common mistakes to avoid; 07Frequently Asked Questions
+- Internal links: /car-loan-payoff-calculator, /auto-loan-refinance-calculator, /guides/complete-used-car-buying-guide, /car-maintenance-cost-calculator, /guides/how-to-compare-used-car-loans, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history
+- Content improvements: Imported complete owner draft with source metadata, hypothetical 48/36-month example, native table, four FAQs, checked CFPB sources and reciprocal links to the live-route payoff tool. The remaining five full drafts arrived on 22 October: three distinct guides were added and depreciation/down-payment drafts refreshed existing canonical owners.
 - Priority: P2
 
 ### /guides/international-used-car-buying-checks
@@ -1032,8 +1069,27 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Find official used-car checks for the UK, Australia, Pakistan and UAE. Separate vehicle history, seller authority and transfer requirements before paying.
 - H1: Used car buying checks by country: official resources
 - Recommended H2s (retain current headings): Key takeaways; 01Build a country-specific evidence file; 02United Kingdom: checks before buying privately; 03Australia: a PPSR search and its limits; 04Pakistan: identify the province, then check Punjab services; 05UAE: check Dubai ownership through RTA; 06Keep currency and distance consistent; 07Use a handover decision checklist
-- Internal links: /used-car-inspection-checklist, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /used-car-inspection-checklist, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
+- Priority: P2
+
+### /guides/is-refinancing-your-car-loan-worth-it
+
+- URL: https://buyusedautomobiles.com/guides/is-refinancing-your-car-loan-worth-it
+- Page type: Guide
+- Primary keyword: is refinancing your car loan worth it
+- Secondary keywords: auto loan refinance fees; refinance total cost vs monthly payment
+- Long-tail variants: compare future loan costs; longer term vs interest savings; upfront vs financed refinance fees
+- Search intent: Compare a refinance decision using written offers
+- Search-volume evidence: No separate informational volume supplied. Refinance calculator search demand is not reassigned to this guide.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/is-refinancing-your-car-loan-worth-it
+- SEO title: Auto Loan Refinancing: Is It Worth It? | BuyUsedAutomobiles
+- Meta description: Learn when refinancing an auto loan can save interest, when a longer term costs more, and how to compare new payments, fees and total repayment.
+- H1: Is Refinancing Your Car Loan Worth It? Compare Payments and Total Cost
+- Recommended H2s (retain current headings): Key takeaways; 01Compare costs from today onward; 02When could refinancing help?; 03Example: same balance, same remaining term; 04Four questions to ask before refinancing; 05How to compare offers fairly; 06Frequently asked questions; 07Next step
+- Internal links: /auto-loan-refinance-calculator, /car-loan-apr-calculator, /guides/how-to-pay-off-a-car-loan-early, /guides/complete-used-car-buying-guide, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks
+- Content improvements: Imported the complete refinancing draft, table and four FAQs. Corrected payment reduction to $25.49 from unrounded figures and specified upfront payment for the $500 fee example. Links to refinance, APR and payoff tools and the payoff guide.
 - Priority: P2
 
 ### /guides/page/2
@@ -1049,9 +1105,9 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/guides/page/2
 - SEO title: Used car buying guides — Page 2 | BuyUsedAutomobiles
 - Meta description: Browse page 2 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
-- H1: A little research.A better car decision.
+- H1: Used car buying guidesand ownership advice
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/car-depreciation-chart, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe
+- Internal links: /guides/how-much-down-payment-for-used-car, /guides/how-to-calculate-percentage-increase, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/how-much-car-payment-can-i-afford, /guides/car-depreciation-chart, /guides/buy-used-car-pakistan
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -1068,9 +1124,9 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/guides/page/3
 - SEO title: Used car buying guides — Page 3 | BuyUsedAutomobiles
 - Meta description: Browse page 3 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
-- H1: A little research.A better car decision.
+- H1: Used car buying guidesand ownership advice
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/how-to-negotiate-a-used-car-price, /guides/real-cost-of-car-ownership, /guides/how-to-compare-used-car-loans, /guides/trade-in-vs-private-sale
+- Internal links: /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -1087,9 +1143,9 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/guides/page/4
 - SEO title: Used car buying guides — Page 4 | BuyUsedAutomobiles
 - Meta description: Browse page 4 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
-- H1: A little research.A better car decision.
+- H1: Used car buying guidesand ownership advice
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/international-used-car-buying-checks, /guides/best-time-to-buy-a-used-car, /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car, /guides/how-to-avoid-used-car-scams
+- Internal links: /guides/how-to-negotiate-a-used-car-price, /guides/real-cost-of-car-ownership, /guides/how-to-compare-used-car-loans, /guides/trade-in-vs-private-sale, /guides/international-used-car-buying-checks, /guides/best-time-to-buy-a-used-car
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -1106,9 +1162,9 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/guides/page/5
 - SEO title: Used car buying guides — Page 5 | BuyUsedAutomobiles
 - Meta description: Browse page 5 of our used car buying guides. Find practical vehicle checks, local registration advice, financing examples, and ownership budget planning.
-- H1: A little research.A better car decision.
+- H1: Used car buying guidesand ownership advice
 - Recommended H2s (retain current headings): More useful reads; Know how the guidance is made.; The right car starts with the right budget.
-- Internal links: /guides/used-car-maintenance-costs
+- Internal links: /guides/how-many-miles-is-too-many-for-a-used-car, /guides/used-car-buying-checklist-first-time-buyers, /guides/used-car-vs-new-car, /guides/how-to-avoid-used-car-scams, /guides/used-car-maintenance-costs
 - Content improvements: Retain self-canonical, distinct article subset, crawlable previous/next links and improved description. No separate keyword campaign for pagination.
 - Priority: P3
 
@@ -1127,7 +1183,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare used cars with a complete ownership budget for depreciation, fuel, insurance, maintenance, taxes, and interest. Avoid double-counting the loan.
 - H1: How to calculate the real cost of car ownership
 - Recommended H2s (retain current headings): Key takeaways; 01Choose the comparison period and driving pattern; 02Separate depreciation from loan repayment; 03Calculate energy use with consistent units; 04Replace broad guesses with quotes and schedules; 05Work through one complete five-year example; 06Test the assumptions that can change the result; 07Translate the total into a workable household budget
-- Internal links: /total-cost-of-ownership-calculator, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /guides/used-car-maintenance-costs
+- Internal links: /total-cost-of-ownership-calculator, /fuel-cost-calculator, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart
 - Content improvements: Retain worked example and distinction between economic costs and cash flow; calculator owns interactive intent.
 - Priority: P2
 
@@ -1146,7 +1202,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare a trade-in with selling privately after loan payoff, selling costs, possible tax treatment, and your time. Work through a clear break-even example.
 - H1: Trade-in vs. private sale: compare your net proceeds
 - Recommended H2s (retain current headings): Key takeaways; 01Get evidence for both selling routes; 02Separate the car’s value from your loan balance; 03Verify whether tax treatment changes the comparison; 04Calculate the private-sale break-even price; 05Put time, logistics, and uncertainty into the decision; 06Prepare a safe, documented private sale; 07Keep the replacement deal and handoff transparent
-- Internal links: /trade-in-value-estimator, /what-is-my-car-worth, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car
+- Internal links: /trade-in-value-estimator, /what-is-my-car-worth, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-to-pay-off-a-car-loan-early
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -1165,7 +1221,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Follow a first-time buyer checklist for budgeting, vehicle research, documents, inspections, test drives, financing, and a secure ownership transfer.
 - H1: Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers
 - Recommended H2s (retain current headings): Key takeaways; 01Step 1: Determine Your Budget; 02Step 2: Research the Vehicle; 03Step 3: Verify Vehicle Documents; 04Step 4: Inspect the Exterior; 05Step 5: Inspect the Interior; 06Step 6: Inspect the Engine; 07Step 7: Test Drive the Car
-- Internal links: /car-affordability-calculator, /used-car-inspection-checklist, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /car-affordability-calculator, /used-car-inspection-checklist, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -1184,8 +1240,27 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Build a realistic used car maintenance budget using service schedules, local repair quotes, tire and brake condition, and a reserve for unexpected repairs.
 - H1: Used Car Maintenance Costs in 2026: How Much Should You Budget?
 - Recommended H2s (retain current headings): Key takeaways; 01Why Used Car Maintenance Costs Matter; 02Common Used Car Maintenance Expenses; 03Example: Annual Maintenance Budget; 04How to Estimate Maintenance Before Buying; 05Are Older Used Cars More Expensive to Maintain?; 06How to Reduce Used Car Maintenance Expenses; 07Frequently Asked Questions
-- Internal links: /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/real-cost-of-car-ownership, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart
+- Internal links: /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/real-cost-of-car-ownership, /guides/how-to-inspect-a-used-car, /guides/complete-used-car-buying-guide, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-does-it-cost-to-charge-an-electric-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart
 - Content improvements: Replace generic costs with quotes and manufacturer schedules; no invented fleet averages.
+- Priority: P2
+
+### /guides/used-car-sales-tax-title-and-fees-explained
+
+- URL: https://buyusedautomobiles.com/guides/used-car-sales-tax-title-and-fees-explained
+- Page type: Guide
+- Primary keyword: used car sales tax title and fees
+- Secondary keywords: out the door car price; dealer fees vs title fees
+- Long-tail variants: written purchase quote; taxable base; government charges vs dealer add-ons
+- Search intent: Understand and verify the final purchase price
+- Search-volume evidence: No separate informational volume supplied. Calculator-query metrics remain assigned to the tool.
+- Status: New page implemented in this change
+- Canonical: https://buyusedautomobiles.com/guides/used-car-sales-tax-title-and-fees-explained
+- SEO title: Used Car Sales Tax, Title & Fees Explained | BuyUsedAutomobiles
+- Meta description: Estimate a used car’s out-the-door price by separating vehicle price, sales tax, title and registration charges, dealer fees and optional add-ons.
+- H1: Used Car Sales Tax, Title and Fees: How to Estimate the Final Price
+- Recommended H2s (retain current headings): Key takeaways; 01Why the advertised price is only a starting point; 02The key parts of a used-car purchase price; 03A worked out-the-door price example; 04Dealership purchases versus private-party purchases; 05Questions to ask before you sign; 06Frequently asked questions; 07Next step
+- Internal links: /car-sales-tax-calculator, /car-registration-tax-calculator, /guides/complete-used-car-buying-guide, /guides/how-much-down-payment-for-used-car, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks
+- Content improvements: Imported the complete tax/fees draft with its table, four FAQs, hypothetical 6% example, nontaxable dealer-fee assumption, verified official sources and reciprocal calculator links.
 - Priority: P2
 
 ### /guides/used-car-vs-new-car
@@ -1203,7 +1278,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare new and used cars by purchase price, depreciation, maintenance, warranty, financing, insurance, and the total cost of your intended ownership period.
 - H1: Used Car vs New Car in 2026: Which Offers Better Value?
 - Recommended H2s (retain current headings): Key takeaways; 01Purchase Price Comparison; 02Depreciation; 03Maintenance and Repair Costs; 04Warranty Protection; 05Financing Costs; 06Insurance Costs; 07Used Car vs New Car Comparison
-- Internal links: /total-cost-of-ownership-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/buy-used-car-pakistan
+- Internal links: /total-cost-of-ownership-calculator, /car-loan-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-inspect-a-used-car, /guides/how-to-check-a-cars-history, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained
 - Content improvements: Retain source-backed examples and focused intent; use links to the canonical calculator or detailed transaction guide.
 - Priority: P2
 
@@ -1222,7 +1297,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare leasing and buying over the same time period. Include upfront cash, fees, extra mileage, loan balance, and estimated resale equity in one view.
 - H1: Lease vs. buy calculator
 - Recommended H2s (retain current headings): How it works; A worked example; Cash paid is different from cost consumed; Keep the contract details visible; Questions worth asking
-- Internal links: /disclaimer, /car-loan-calculator, /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/how-much-down-payment-for-used-car, /editorial-policy
+- Internal links: /disclaimer, /car-loan-calculator, /total-cost-of-ownership-calculator, /car-affordability-calculator, /guides/complete-used-car-buying-guide, /guides/how-to-buy-a-used-car-from-a-private-seller, /guides/used-car-sales-tax-title-and-fees-explained, /editorial-policy
 - Content improvements: Retain equity and disclosed operating-cost exclusions; no PCP/balloon claims.
 - Priority: P2
 
@@ -1260,7 +1335,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Compare a conventional repayment quote, Ijarah rentals and Diminishing Musharakah unit purchases without treating different contracts as the same loan.
 - H1: Conventional vs Islamic car finance in Pakistan
 - Recommended H2s (retain current headings): Key takeaways; 01Identify the contract before comparing installments; 02Read a conventional quote as borrowing; 03Read Ijarah as a rental arrangement; 04Read Diminishing Musharakah as ownership plus use; 05Separate benchmark changes from contract structure; 06Compare complete cash obligations; 07Use a quote review workflow
-- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/used-car-financing-quote-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford
+- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/used-car-financing-quote-checklist, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it
 - Content improvements: Retain PKR financing links, source scope and original reviewed dates.
 - Priority: P2
 
@@ -1279,7 +1354,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Check the vehicle, PKR cash requirements, KIBOR terms, takaful, rental or unit-purchase schedule and settlement conditions before financing a used car in Pakistan.
 - H1: Pakistan used-car financing quote checklist
 - Recommended H2s (retain current headings): Key takeaways; 01Match the quote to the used vehicle; 02Obtain dated terms in PKR; 03Reconcile the upfront amount; 04Check rate and reset conventions; 05Audit the monthly and terminal schedule; 06Ask about changing circumstances; 07Build a usable affordability file
-- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/conventional-vs-islamic-car-finance, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-much-down-payment-for-used-car, /guides/how-much-car-payment-can-i-afford
+- Internal links: /used-car-inspection-checklist, /pk/car-financing-calculator, /pk/guides/conventional-vs-islamic-car-finance, /guides/buy-used-car-pakistan, /guides/buy-used-car-uae, /guides/buy-used-car-usa, /guides/buy-used-car-uk, /guides/buy-used-car-europe, /guides/international-used-car-buying-checks, /disclaimer, /guides/how-to-pay-off-a-car-loan-early, /guides/is-refinancing-your-car-loan-worth-it
 - Content improvements: Retain PKR financing links, source scope and original reviewed dates.
 - Priority: P2
 
@@ -1334,7 +1409,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Canonical: https://buyusedautomobiles.com/tools
 - SEO title: Used car calculators and planning tools | BuyUsedAutomobiles
 - Meta description: Find the right free tool for your next car decision. Compare loans, estimate ownership costs, inspect a vehicle, and plan a supported offer before buying.
-- H1: The right tool.A clearer decision.
+- H1: Free used car calculatorsand planning tools
 - Recommended H2s (retain current headings): Buying; Financing; Ownership; Selling; Country-specific car running costs; The numbers are only part of the story.; The right car starts with the right budget.
 - Internal links: /used-car-inspection-checklist, /used-car-price-negotiation-calculator, /car-sales-tax-calculator, /car-loan-calculator, /car-affordability-calculator, /lease-vs-buy-calculator, /car-loan-payoff-calculator, /auto-loan-refinance-calculator, /car-down-payment-calculator, /car-loan-apr-calculator, /car-depreciation-calculator, /total-cost-of-ownership-calculator
 - Content improvements: Preserve crawlable links and concise introductions; individual tools/guides own detailed search intents.
@@ -1354,8 +1429,8 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - SEO title: Germany car running cost calculator (EUR) | BuyUsedAutomobiles
 - Meta description: Estimate Germany car fuel and ownership costs in EUR. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.
 - H1: Germany car running cost calculator
-- Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Frequently asked questions; Keep planning
-- Internal links: /guides/buy-used-car-europe, /used-car-inspection-checklist, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
+- Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Budget for Kfz-Steuer, insurance and HU/TÜV; A worked EUR example; Frequently asked questions; Keep planning
+- Internal links: /guides/buy-used-car-europe, /used-car-inspection-checklist, /car-depreciation-calculator, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
 - Content improvements: Implemented correct Open Graph locale; preserve explicit manual local fees, insurance and resale. No auto tax or insurance quotes.
 - Priority: P2
 
@@ -1374,7 +1449,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate Pakistan car fuel and ownership costs in PKR. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.
 - H1: Pakistan car running cost calculator
 - Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Frequently asked questions; Keep planning
-- Internal links: /guides/buy-used-car-pakistan, /used-car-inspection-checklist, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
+- Internal links: /guides/buy-used-car-pakistan, /used-car-inspection-checklist, /car-depreciation-calculator, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
 - Content improvements: Implemented correct Open Graph locale; preserve explicit manual local fees, insurance and resale. No auto tax or insurance quotes.
 - Priority: P2
 
@@ -1393,7 +1468,7 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Meta description: Estimate UAE car fuel and ownership costs in AED. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.
 - H1: UAE car running cost calculator
 - Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Frequently asked questions; Keep planning
-- Internal links: /guides/buy-used-car-uae, /used-car-inspection-checklist, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
+- Internal links: /guides/buy-used-car-uae, /used-car-inspection-checklist, /car-depreciation-calculator, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
 - Content improvements: Implemented correct Open Graph locale; preserve explicit manual local fees, insurance and resale. No auto tax or insurance quotes.
 - Priority: P2
 
@@ -1411,8 +1486,8 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - SEO title: UK car running cost calculator (GBP) | BuyUsedAutomobiles
 - Meta description: Estimate UK car fuel and ownership costs in GBP. Enter local insurance, tax, inspection, maintenance and finance costs to compare an annual budget.
 - H1: UK car running cost calculator
-- Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Frequently asked questions; Keep planning
-- Internal links: /guides/buy-used-car-uk, /used-car-inspection-checklist, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
+- Recommended H2s (retain current headings): How much will your car cost to run?; How the estimate works; Which local costs should you include?; Budget for VED, MOT and UK driving costs; A worked GBP example; Frequently asked questions; Keep planning
+- Internal links: /guides/buy-used-car-uk, /used-car-inspection-checklist, /car-depreciation-calculator, /tools/pakistan/car-running-cost-calculator, /tools/uae/car-running-cost-calculator, /tools/uk/car-running-cost-calculator, /tools/germany/car-running-cost-calculator
 - Content improvements: Implemented correct Open Graph locale; preserve explicit manual local fees, insurance and resale. No auto tax or insurance quotes.
 - Priority: P2
 
@@ -1446,11 +1521,11 @@ ity-calculator, /guides/how-to-compare-used-car-loans, /guides/complete-used-car
 - Search-volume evidence: Exact car trade in value calculator row: 5,000 Medium (56), verified 2026-10-21 export. Other terms retain historical owner-supplied estimates.
 - Status: Existing
 - Canonical: https://buyusedautomobiles.com/trade-in-value-estimator
-- SEO title: Trade-in value estimator | BuyUsedAutomobiles
-- Meta description: Estimate a modeled trade-in range and the equity left after your loan payoff. Prepare comparable written offers and separate your trade from the next deal.
-- H1: Trade-in value estimator
-- Recommended H2s (retain current headings): How it works; A worked example; The trade allowance is only one line in the deal; Plan for positive or negative equity; Questions worth asking
-- Internal links: /disclaimer, /what-is-my-car-worth, /car-loan-calculator, /car-sales-tax-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /editorial-policy
+- SEO title: Trade-In Value Calculator & Equity Estimator | Free Tool
+- Meta description: Compare trade-in offers, loan equity and private-sale net proceeds after selling fees. Explore a disclosed depreciation scenario without live market quotes.
+- H1: Trade-In Value Calculator
+- Recommended H2s (retain current headings): How it works; Negative equity: a worked offer comparison; A worked example; The trade allowance is only one line in the deal; Plan for positive or negative equity; Questions worth asking
+- Internal links: /guides/trade-in-vs-private-sale, /car-loan-calculator#taxes-and-trade, /total-cost-of-ownership-calculator, /disclaimer, /what-is-my-car-worth, /car-loan-calculator, /car-sales-tax-calculator, /guides/how-much-down-payment-for-used-car, /guides/how-much-does-a-used-car-depreciate-per-year, /guides/car-depreciation-chart, /editorial-policy
 - Content improvements: Retain payoff and modeled range; actual dealer bids remain necessary.
 - Priority: P4
 
