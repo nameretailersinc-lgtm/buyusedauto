@@ -49,6 +49,7 @@ Owner-reported daily impressions: 24 Oct 187, 25 Oct 167, 26 Oct 174, 27 Oct 114
 - At a few dozen impressions a day, treat swings under about 30% as noise.
 - Record every deployment date in `SEO_PROGRESS.md` so changes can be matched to outcomes.
 
+
 ## Search Console data received 2026-11-05 (owner export, Web, daily to 2 Nov, page list undated)
 
 
