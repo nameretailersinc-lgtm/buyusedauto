@@ -47,8 +47,7 @@ Owner-reported daily impressions: 24 Oct 187, 25 Oct 167, 26 Oct 174, 27 Oct 114
 - GSC data lags by roughly 2-3 days; compare complete days only.
 - Compare like periods (7 vs 7, 28 vs 28) and note any change in query mix.
 - At a few dozen impressions a day, treat swings under about 30% as noise.
-- Record every deployment date in `SEO_PROGRESS.md` so changes can be matched to outcomes.
-
+- Record every deployment date in `SEO_PROGRESS.md` so changes can be matched to outcome
 
 ## Search Console data received 2026-11-05 (owner export, Web, daily to 2 Nov, page list undated)
 
