@@ -1,20 +1,20 @@
 {
   "scope": "Local HTTP checks; schema shape and visible-content checks, not Google rich-result validation",
   "pages": 81,
-  "internalLinks": 629,
+  "internalLinks": 628,
   "failures": [],
   "warnings": [],
   "details": [
     {
       "path": "/",
-      "title": "Free Used Car Calculators & Buying Guides | BuyUsedAutomobiles",
+      "title": "Free Used Car Calculators & Buying Guides",
       "descriptionLength": 153,
       "schemaCount": 3,
       "h1": "Free Used Car Calculators & Buying Guides"
     },
     {
       "path": "/tools",
-      "title": "Used car calculators and planning tools | BuyUsedAutomobiles",
+      "title": "Used car calculators and planning tools",
       "descriptionLength": 149,
       "schemaCount": 2,
       "h1": "Free used car calculatorsand planning tools"
@@ -56,35 +56,35 @@
     },
     {
       "path": "/disclaimer",
-      "title": "Estimates, assumptions, and disclaimers | BuyUsedAutomobiles",
+      "title": "Estimates, assumptions, and disclaimers",
       "descriptionLength": 143,
       "schemaCount": 2,
       "h1": "Estimates, assumptions, and disclaimers"
     },
     {
       "path": "/editorial-policy",
-      "title": "Our editorial and calculation policy | BuyUsedAutomobiles",
+      "title": "Our editorial and calculation policy",
       "descriptionLength": 150,
       "schemaCount": 2,
       "h1": "Our editorial and calculation policy"
     },
     {
       "path": "/guides/category/buying",
-      "title": "Buying guides for used-car decisions | BuyUsedAutomobiles",
+      "title": "Buying guides for used-car decisions",
       "descriptionLength": 156,
       "schemaCount": 2,
       "h1": "Buying guides"
     },
     {
       "path": "/guides/category/financing",
-      "title": "Financing guides for used-car decisions | BuyUsedAutomobiles",
+      "title": "Financing guides for used-car decisions",
       "descriptionLength": 159,
       "schemaCount": 2,
       "h1": "Financing guides"
     },
     {
       "path": "/guides/category/ownership",
-      "title": "Ownership guides for used-car decisions | BuyUsedAutomobiles",
+      "title": "Ownership guides for used-car decisions",
       "descriptionLength": 159,
       "schemaCount": 2,
       "h1": "Ownership guides"
@@ -94,42 +94,42 @@
       "title": "Used car buying guides — Page 2 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "Used car buying guidesand ownership advice"
+      "h1": "Used car buying guidesand ownership advice (page 2)"
     },
     {
       "path": "/guides/page/3",
       "title": "Used car buying guides — Page 3 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "Used car buying guidesand ownership advice"
+      "h1": "Used car buying guidesand ownership advice (page 3)"
     },
     {
       "path": "/guides/page/4",
       "title": "Used car buying guides — Page 4 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "Used car buying guidesand ownership advice"
+      "h1": "Used car buying guidesand ownership advice (page 4)"
     },
     {
       "path": "/guides/page/5",
       "title": "Used car buying guides — Page 5 | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "Used car buying guidesand ownership advice"
+      "h1": "Used car buying guidesand ownership advice (page 5)"
     },
     {
       "path": "/guides/category/buying/page/2",
       "title": "Buying used car guides — Page 2 | BuyUsedAutomobiles",
       "descriptionLength": 160,
       "schemaCount": 2,
-      "h1": "Buying guides"
+      "h1": "Buying guides (page 2)"
     },
     {
       "path": "/guides/category/buying/page/3",
       "title": "Buying used car guides — Page 3 | BuyUsedAutomobiles",
       "descriptionLength": 160,
       "schemaCount": 2,
-      "h1": "Buying guides"
+      "h1": "Buying guides (page 3)"
     },
     {
       "path": "/car-loan-calculator",
@@ -182,7 +182,7 @@
     },
     {
       "path": "/lease-vs-buy-calculator",
-      "title": "Lease vs buy calculator: which costs less? | BuyUsedAutomobiles",
+      "title": "Lease vs buy calculator: which costs less?",
       "descriptionLength": 134,
       "schemaCount": 2,
       "h1": "Lease vs buy calculator: which costs less?"
@@ -280,28 +280,28 @@
     },
     {
       "path": "/tools/pakistan/car-running-cost-calculator",
-      "title": "Pakistan car running cost calculator (PKR) | BuyUsedAutomobiles",
+      "title": "Pakistan car running cost calculator (PKR)",
       "descriptionLength": 153,
       "schemaCount": 2,
       "h1": "Pakistan car running cost calculator"
     },
     {
       "path": "/tools/uae/car-running-cost-calculator",
-      "title": "UAE car running cost calculator (AED) | BuyUsedAutomobiles",
+      "title": "UAE car running cost calculator (AED)",
       "descriptionLength": 148,
       "schemaCount": 2,
       "h1": "UAE car running cost calculator"
     },
     {
       "path": "/tools/uk/car-running-cost-calculator",
-      "title": "UK car running cost calculator (GBP) | BuyUsedAutomobiles",
+      "title": "UK car running cost calculator (GBP)",
       "descriptionLength": 147,
       "schemaCount": 2,
       "h1": "UK car running cost calculator"
     },
     {
       "path": "/tools/germany/car-running-cost-calculator",
-      "title": "Germany car running cost calculator (EUR) | BuyUsedAutomobiles",
+      "title": "Germany car running cost calculator (EUR)",
       "descriptionLength": 152,
       "schemaCount": 2,
       "h1": "Germany car running cost calculator"
@@ -311,7 +311,7 @@
       "title": "Used Car Buying Guide: 12 Steps From Budget to Title",
       "descriptionLength": 151,
       "schemaCount": 2,
-      "h1": "Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car"
+      "h1": "Complete Used Car Buying Guide: 12 Steps for 2026"
     },
     {
       "path": "/guides/how-to-buy-a-used-car-from-a-private-seller",
@@ -329,7 +329,7 @@
     },
     {
       "path": "/guides/used-car-sales-tax-title-and-fees-explained",
-      "title": "Used Car Sales Tax, Title & Fees Explained | BuyUsedAutomobiles",
+      "title": "Used Car Sales Tax, Title & Fees Explained",
       "descriptionLength": 141,
       "schemaCount": 2,
       "h1": "Used Car Sales Tax, Title and Fees: How to Estimate the Final Price"
@@ -343,7 +343,7 @@
     },
     {
       "path": "/guides/is-refinancing-your-car-loan-worth-it",
-      "title": "Auto Loan Refinancing: Is It Worth It? | BuyUsedAutomobiles",
+      "title": "Auto Loan Refinancing: Is It Worth It?",
       "descriptionLength": 142,
       "schemaCount": 2,
       "h1": "Is Refinancing Your Car Loan Worth It? Compare Payments and Total Cost"
@@ -360,7 +360,7 @@
       "title": "How to Calculate Percentage Increase (Formula + Examples)",
       "descriptionLength": 146,
       "schemaCount": 2,
-      "h1": "How to Calculate Percentage Increase: Formula, Examples, and Easy Methods"
+      "h1": "How to Calculate Percentage Increase: Formula and Examples"
     },
     {
       "path": "/guides/how-much-does-a-used-car-depreciate-per-year",
@@ -385,7 +385,7 @@
     },
     {
       "path": "/guides/buy-used-car-pakistan",
-      "title": "How to Buy a Used Car in Pakistan (2026): Checks and Transfer",
+      "title": "How to Buy a Used Car in Pakistan: Checks and Transfer",
       "descriptionLength": 155,
       "schemaCount": 2,
       "h1": "How to Buy a Used Car in Pakistan in 2026: Complete Step-by-Step Guide"
@@ -395,39 +395,39 @@
       "title": "Buying a Used Car in the UAE (2026): Dubai and Abu Dhabi",
       "descriptionLength": 153,
       "schemaCount": 2,
-      "h1": "How to Buy a Used Car in UAE in 2026: Complete Dubai, Abu Dhabi and Sharjah Guide"
+      "h1": "How to Buy a Used Car in the UAE: Dubai, Abu Dhabi, Sharjah"
     },
     {
       "path": "/guides/buy-used-car-usa",
-      "title": "How to Buy a Used Car in the USA (2026): Step-by-Step Checklist",
+      "title": "How to Buy a Used Car in the USA: Step-by-Step",
       "descriptionLength": 155,
       "schemaCount": 2,
-      "h1": "How to Buy a Used Car in the USA in 2026: Complete Guide for American Buyers"
+      "h1": "How to Buy a Used Car in the USA: A 2026 Buyer’s Guide"
     },
     {
       "path": "/guides/buy-used-car-uk",
-      "title": "Buying a Used Car in the UK (2026): MOT, V5C and DVLA Checks",
+      "title": "Buying a Used Car in the UK: MOT, V5C and DVLA Checks",
       "descriptionLength": 157,
       "schemaCount": 2,
-      "h1": "How to Buy a Used Car in the UK in 2026: Complete MOT, DVLA and Vehicle Inspection Guide"
+      "h1": "How to Buy a Used Car in the UK: MOT, DVLA and Inspection"
     },
     {
       "path": "/guides/buy-used-car-europe",
       "title": "Buying a Used Car in Europe (2026): EU Registration and VAT",
       "descriptionLength": 152,
       "schemaCount": 2,
-      "h1": "How to Buy a Used Car in Europe in 2026: Complete EU Buying, Import and Registration Guide"
+      "h1": "How to Buy a Used Car in Europe: EU Buying and Registration"
     },
     {
       "path": "/guides/how-to-inspect-a-used-car",
-      "title": "How to inspect a used car before you buy | BuyUsedAutomobiles",
+      "title": "How to inspect a used car before you buy",
       "descriptionLength": 149,
       "schemaCount": 2,
       "h1": "How to inspect a used car before you buy"
     },
     {
       "path": "/guides/how-to-check-a-cars-history",
-      "title": "How to check a car’s history before buying | BuyUsedAutomobiles",
+      "title": "How to check a car’s history before buying",
       "descriptionLength": 154,
       "schemaCount": 2,
       "h1": "How to check a car’s history before buying"
@@ -469,24 +469,24 @@
     },
     {
       "path": "/guides/best-time-to-buy-a-used-car",
-      "title": "Best Time to Buy a Used Car in 2026: When Can You Save the Most?",
+      "title": "Best Time to Buy a Used Car: When You Save the Most",
       "descriptionLength": 145,
       "schemaCount": 2,
-      "h1": "Best Time to Buy a Used Car in 2026: When Can You Save the Most?"
+      "h1": "Best Time to Buy a Used Car: When You Save the Most"
     },
     {
       "path": "/guides/how-many-miles-is-too-many-for-a-used-car",
-      "title": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide",
+      "title": "How Many Miles Is Too Many for a Used Car? (2026)",
       "descriptionLength": 140,
       "schemaCount": 2,
-      "h1": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide"
+      "h1": "How Many Miles Is Too Many for a Used Car? (2026)"
     },
     {
       "path": "/guides/used-car-buying-checklist-first-time-buyers",
-      "title": "Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers",
+      "title": "Used Car Buying Checklist for First-Time Buyers (2026)",
       "descriptionLength": 145,
       "schemaCount": 2,
-      "h1": "Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers"
+      "h1": "Used Car Buying Checklist for First-Time Buyers (2026)"
     },
     {
       "path": "/guides/used-car-vs-new-car",
@@ -500,32 +500,32 @@
       "title": "How to Avoid Used Car Scams: 10 Warning Signs",
       "descriptionLength": 138,
       "schemaCount": 2,
-      "h1": "How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know"
+      "h1": "How to Avoid Used Car Scams: 10 Warning Signs"
     },
     {
       "path": "/guides/used-car-maintenance-costs",
-      "title": "Used Car Maintenance Costs in 2026: How Much Should You Budget?",
+      "title": "Used Car Maintenance Costs: What to Budget (2026)",
       "descriptionLength": 148,
       "schemaCount": 2,
-      "h1": "Used Car Maintenance Costs in 2026: How Much Should You Budget?"
+      "h1": "Used Car Maintenance Costs: What to Budget (2026)"
     },
     {
       "path": "/car-loan-calculator/10000-car-loan",
-      "title": "$10,000 car loan: leave room for repairs | BuyUsedAutomobiles",
+      "title": "$10,000 car loan: leave room for repairs",
       "descriptionLength": 158,
       "schemaCount": 2,
       "h1": "$10,000 car loan: leave room for repairs"
     },
     {
       "path": "/car-loan-calculator/25000-car-loan",
-      "title": "$25,000 car loan: compare down payments | BuyUsedAutomobiles",
+      "title": "$25,000 car loan: compare down payments",
       "descriptionLength": 165,
       "schemaCount": 2,
       "h1": "$25,000 car loan: compare down payments"
     },
     {
       "path": "/car-loan-calculator/40000-car-loan",
-      "title": "$40,000 car loan: test the full car budget | BuyUsedAutomobiles",
+      "title": "$40,000 car loan: test the full car budget",
       "descriptionLength": 145,
       "schemaCount": 2,
       "h1": "$40,000 car loan: test the full car budget"

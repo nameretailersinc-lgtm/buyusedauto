@@ -477,7 +477,7 @@ export const submittedGuides: Guide[] = [
   {
     "slug": "how-to-calculate-percentage-increase",
     "seoTitle": "How to Calculate Percentage Increase (Formula + Examples)",
-    "title": "How to Calculate Percentage Increase: Formula, Examples, and Easy Methods",
+    "title": "How to Calculate Percentage Increase: Formula and Examples",
     "description": "Percentage increase is (new − original) ÷ original × 100. See worked examples for prices, pay, and traffic, plus Excel and Google Sheets formulas.",
     "category": "Mathematics / Calculators",
     "updated": "2026-10-21",

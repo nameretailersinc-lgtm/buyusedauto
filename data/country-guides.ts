@@ -5,7 +5,7 @@ export const countryGuides: Guide[] = [
   {
     "slug": "buy-used-car-pakistan",
     "title": "How to Buy a Used Car in Pakistan in 2026: Complete Step-by-Step Guide",
-    "seoTitle": "How to Buy a Used Car in Pakistan (2026): Checks and Transfer",
+    "seoTitle": "How to Buy a Used Car in Pakistan: Checks and Transfer",
     "description": "How to buy a used car in Pakistan: verify registration with the right excise office, match engine and chassis numbers, inspect it, then transfer ownership.",
     "category": "Buying",
     "region": "PK",
@@ -473,7 +473,7 @@ export const countryGuides: Guide[] = [
   },
   {
     "slug": "buy-used-car-uae",
-    "title": "How to Buy a Used Car in UAE in 2026: Complete Dubai, Abu Dhabi and Sharjah Guide",
+    "title": "How to Buy a Used Car in the UAE: Dubai, Abu Dhabi, Sharjah",
     "seoTitle": "Buying a Used Car in the UAE (2026): Dubai and Abu Dhabi",
     "description": "Buying a used car in the UAE: check GCC spec and accident history, get an independent inspection, clear fines and finance, then transfer in your emirate.",
     "category": "Buying",
@@ -899,8 +899,8 @@ export const countryGuides: Guide[] = [
   },
   {
     "slug": "buy-used-car-usa",
-    "title": "How to Buy a Used Car in the USA in 2026: Complete Guide for American Buyers",
-    "seoTitle": "How to Buy a Used Car in the USA (2026): Step-by-Step Checklist",
+    "title": "How to Buy a Used Car in the USA: A 2026 Buyer’s Guide",
+    "seoTitle": "How to Buy a Used Car in the USA: Step-by-Step",
     "description": "Buying a used car in the USA: check the VIN, title and open recalls, get an independent inspection, compare out-the-door prices and register in your state.",
     "category": "Buying",
     "region": "US",
@@ -1320,8 +1320,8 @@ export const countryGuides: Guide[] = [
   },
   {
     "slug": "buy-used-car-uk",
-    "title": "How to Buy a Used Car in the UK in 2026: Complete MOT, DVLA and Vehicle Inspection Guide",
-    "seoTitle": "Buying a Used Car in the UK (2026): MOT, V5C and DVLA Checks",
+    "title": "How to Buy a Used Car in the UK: MOT, DVLA and Inspection",
+    "seoTitle": "Buying a Used Car in the UK: MOT, V5C and DVLA Checks",
     "description": "Buying a used car in the UK: check DVLA details, MOT history and the V5C, look for outstanding finance and write-offs, then insure and tax it before driving.",
     "category": "Buying",
     "region": "GB",
@@ -1735,7 +1735,7 @@ export const countryGuides: Guide[] = [
   },
   {
     "slug": "buy-used-car-europe",
-    "title": "How to Buy a Used Car in Europe in 2026: Complete EU Buying, Import and Registration Guide",
+    "title": "How to Buy a Used Car in Europe: EU Buying and Registration",
     "seoTitle": "Buying a Used Car in Europe (2026): EU Registration and VAT",
     "description": "Buying a used car in the EU: VAT, registration, inspections and cross-border purchases, with notes on Germany, France, Spain, Italy and the Netherlands.",
     "category": "Buying",

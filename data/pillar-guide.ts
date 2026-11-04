@@ -4,7 +4,7 @@ import type {Guide} from './guides';
 export const pillarGuide: Guide = {
   "slug": "complete-used-car-buying-guide",
   "seoTitle": "Used Car Buying Guide: 12 Steps From Budget to Title",
-  "title": "Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car",
+  "title": "Complete Used Car Buying Guide: 12 Steps for 2026",
   "description": "Buy a used car in 12 steps: set a budget, check the VIN and history, inspect, test drive, get a mechanic's opinion, compare loans and verify paperwork.",
   "category": "Buying",
   "updated": "2026-10-17",

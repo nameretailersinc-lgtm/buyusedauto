@@ -7,7 +7,7 @@ const ownershipTool = "total-cost-of-ownership-calculator";
 
 const articleDrafts: Guide[] = [
   {
-    slug: "best-time-to-buy-a-used-car", title: "Best Time to Buy a Used Car in 2026: When Can You Save the Most?",
+    slug: "best-time-to-buy-a-used-car", title: "Best Time to Buy a Used Car: When You Save the Most",
     description: "No month guarantees the lowest used car price, but year-end, slow seasons and aging inventory can help. Here's how to time your purchase locally.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 4,
     intro: "There's no single best month to buy a used car. Prices follow local demand, what's in stock, how motivated the seller is, and financing conditions. Year-end sales periods and slow shopping seasons can give you more room to negotiate in some markets, but no month guarantees the lowest price.",
@@ -23,7 +23,7 @@ const articleDrafts: Guide[] = [
     ], sources: [ftc], relatedTools: ["car-loan-calculator", "used-car-price-negotiation-calculator"]
   },
   {
-    slug: "how-many-miles-is-too-many-for-a-used-car", title: "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide",
+    slug: "how-many-miles-is-too-many-for-a-used-car", title: "How Many Miles Is Too Many for a Used Car? (2026)",
     description: "What mileage is too high for a used car? There's no cutoff. Weigh miles against age, service records, mechanical condition and repair costs.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 4,
     intro: "No mileage figure is automatically too high for a used car. A car with 120,000 miles and thorough service records can be a better buy than one with 60,000 miles and neglected servicing. Judge mileage alongside age, mechanical condition, how the car was driven, and price.",
@@ -38,7 +38,7 @@ const articleDrafts: Guide[] = [
     ], sources: [ftc, {title: "NHTSA: Odometer fraud", url: "https://www.nhtsa.gov/vehicle-safety/odometer-fraud"}], relatedTools: ["used-car-inspection-checklist", ownershipTool]
   },
   {
-    slug: "used-car-buying-checklist-first-time-buyers", title: "Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers",
+    slug: "used-car-buying-checklist-first-time-buyers", title: "Used Car Buying Checklist for First-Time Buyers (2026)",
     description: "A 10-step used car checklist for first-time buyers: budget, research, documents, inspection, test drive, price check, financing and safe payment.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 5,
     intro: "Before you buy a used car, verify ownership, review the vehicle history, inspect its mechanical condition, take a test drive, compare market prices, and add up the full cost. Never pay until you've confirmed the documents needed to transfer ownership. This 10-step checklist walks a first-time buyer through each of those checks.",
@@ -77,7 +77,7 @@ const articleDrafts: Guide[] = [
     ], sources: [ftc], relatedTools: [ownershipTool, "car-loan-calculator"]
   },
   {
-    slug: "how-to-avoid-used-car-scams", seoTitle: "How to Avoid Used Car Scams: 10 Warning Signs", title: "How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know",
+    slug: "how-to-avoid-used-car-scams", seoTitle: "How to Avoid Used Car Scams: 10 Warning Signs", title: "How to Avoid Used Car Scams: 10 Warning Signs",
     description: "Ten warning signs of a used car scam, from too-good prices to refused inspections, and how to verify sellers, records and payments safely.",
     category: "Buying", updated: "2026-10-17", readingMinutes: 5,
     intro: "To avoid used car scams, verify the seller's identity, confirm who owns the car, compare the VIN with official records, inspect the car in person, and pay only by a secure method. Be especially wary of prices that seem too low, pressure to pay right away, and sellers who won't allow an independent inspection.",
@@ -98,7 +98,7 @@ const articleDrafts: Guide[] = [
     ], sources: [ftc, {title: "NHTSA: Odometer fraud", url: "https://www.nhtsa.gov/vehicle-safety/odometer-fraud"}], relatedTools: ["used-car-inspection-checklist", "what-is-my-car-worth"]
   },
   {
-    slug: "used-car-maintenance-costs", title: "Used Car Maintenance Costs in 2026: How Much Should You Budget?",
+    slug: "used-car-maintenance-costs", title: "Used Car Maintenance Costs: What to Budget (2026)",
     description: "How to budget for used car maintenance using the service schedule, local repair quotes, tire and brake condition and a reserve for surprise repairs.",
     category: "Ownership", updated: "2026-10-17", readingMinutes: 5,
     intro: "Used car maintenance costs vary widely with the car's age, model, mileage, condition, your driving, and local labor rates, so a single annual figure can mislead. Build your budget from the manufacturer's service schedule, local repair quotes, the condition of the tires and brakes, and a reserve for emergencies.",
