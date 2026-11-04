@@ -3,19 +3,19 @@ import type {Guide} from './guides';
 // Adapted from the supplied pillar draft; examples are hypothetical.
 export const pillarGuide: Guide = {
   "slug": "complete-used-car-buying-guide",
-  "seoTitle": "Complete Used Car Buying Guide: 12 Practical Steps",
+  "seoTitle": "Used Car Buying Guide: 12 Steps From Budget to Title",
   "title": "Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car",
-  "description": "Plan a used car purchase in 12 steps, from budget and vehicle history to inspection, financing, negotiation, and a verified ownership transfer.",
+  "description": "Buy a used car in 12 steps: set a budget, check the VIN and history, inspect, test drive, get a mechanic's opinion, compare loans and verify paperwork.",
   "category": "Buying",
   "updated": "2026-10-17",
   "readingMinutes": 12,
-  "intro": "To buy a used car safely, set a realistic budget, research suitable models, verify ownership and vehicle history, inspect the car, arrange an independent mechanical inspection, compare prices, and review every document before paying. These checks reduce risk but cannot guarantee future reliability.",
+  "intro": "To buy a used car safely, set a budget that covers more than the sticker price, pick a model with a good track record, confirm the seller can legally sell it, and have an independent mechanic inspect it before you pay. No checklist guarantees a car won't break down later, but these 12 steps catch most of the problems that cost buyers real money.",
   "sections": [
     {
       "heading": "Quick Answer: How Do You Buy a Used Car Safely?",
       "paragraphs": [
-        "Follow these 12 steps:",
-        "A vehicle that looks attractive in photographs may still have hidden mechanical or documentation problems. Careful research helps reduce these risks."
+        "Work through these 12 steps in order. Each one can end the deal, and that's the point: it's far cheaper to walk away early than to fix a problem after you've paid.",
+        "A car that looks great in photos can still hide mechanical or paperwork problems. Doing the research up front is how you find them while you can still walk away."
       ],
       "bullets": [
         "Determine your total vehicle budget.",
@@ -35,7 +35,7 @@ export const pillarGuide: Guide = {
     {
       "heading": "Which guide should you read next?",
       "paragraphs": [
-        "Use this page to plan the full purchase. Follow the detailed guides below for your budget, mileage, inspection, seller verification, and timing questions."
+        "Use this page to plan the whole purchase, then jump to a detailed guide for budget, mileage, inspection, seller checks, or timing."
       ],
       "links": [
         {"title": "How much car payment can I afford?", "url": "/guides/how-much-car-payment-can-i-afford"},
@@ -72,8 +72,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "1. Set a Realistic Used Car Budget",
       "paragraphs": [
-        "Before searching for a vehicle, determine how much you can comfortably spend.",
-        "Your budget should cover more than the advertised purchase price.",
+        "Before you open a single listing, decide what you can comfortably spend in total.",
+        "The asking price is only part of it. Your budget also has to cover:",
         "Consider:"
       ],
       "bullets": [
@@ -89,10 +89,10 @@ export const pillarGuide: Guide = {
         {
           "heading": "Example: Used Car Purchase Budget",
           "paragraphs": [
-            "Suppose you're considering a used vehicle priced at $15,000.",
-            "These are hypothetical planning amounts, not actual quotes. Local taxes, fees, and repair expenses vary.",
-            "Buying tip: Keep a separate emergency maintenance reserve rather than spending your entire available budget on the purchase.",
-            "Use the Car Affordability Calculator to help evaluate your budget."
+            "Say you're looking at a used car priced at $15,000. Here's how the first-month cost could add up.",
+            "These are hypothetical planning amounts, not quotes. Taxes, fees, and repair costs vary a lot by location.",
+            "Buying tip: Don't spend your entire budget on the car. Keep a separate reserve for surprise repairs.",
+            "The Car Affordability Calculator can help you turn your income and expenses into a realistic ceiling."
           ],
           "table": {
             "headers": [
@@ -134,14 +134,14 @@ export const pillarGuide: Guide = {
     {
       "heading": "2. Research Reliable Used Cars",
       "paragraphs": [
-        "The best used car isn't necessarily the cheapest vehicle available.",
-        "Look for a model that meets your transportation needs while offering reasonable maintenance costs, suitable safety equipment, and a documented service history."
+        "The best used car usually isn't the cheapest one on the lot.",
+        "Look for a model that fits how you actually drive, with affordable parts, good safety equipment, and a documented service history."
       ],
       "subsections": [
         {
           "heading": "What makes a good used car?",
           "paragraphs": [
-            "Consider these factors:",
+            "Weigh these factors for the exact model, engine, and year you're considering:",
             "Reliability: Research known mechanical problems for the specific model, engine, transmission, and production year.",
             "Fuel efficiency: Compare estimated fuel consumption based on your driving habits.",
             "Maintenance costs: Check the availability and prices of replacement parts.",
@@ -153,7 +153,7 @@ export const pillarGuide: Guide = {
         {
           "heading": "Used car types to consider",
           "paragraphs": [
-            "Always research the exact vehicle rather than assuming every model from a particular brand has the same reliability."
+            "Reliability varies by engine, transmission, and model year, not just by brand, so research the specific car rather than the badge."
           ],
           "table": {
             "headers": [
@@ -200,9 +200,9 @@ export const pillarGuide: Guide = {
     {
       "heading": "3. Compare Used Car Market Prices",
       "paragraphs": [
-        "Before contacting a seller, compare several vehicles with similar specifications.",
-        "Look for listings with matching:",
-        "A vehicle advertised significantly below comparable listings deserves additional investigation."
+        "Before you contact a seller, line up several similar cars so you know what a fair price looks like.",
+        "Compare listings that match on:",
+        "A car priced well below comparable listings isn't a bargain until you know why."
       ],
       "bullets": [
         "Model year and trim level",
@@ -217,10 +217,10 @@ export const pillarGuide: Guide = {
         {
           "heading": "How do you know if a used car is overpriced?",
           "paragraphs": [
-            "Compare the asking price against similar local vehicles, then account for mileage, condition, service records, accident history, and necessary repairs.",
-            "For example, if comparable cars are advertised between $14,000 and $16,000, a $17,500 asking price may require justification through condition, equipment, or other measurable differences.",
-            "Remember that advertised prices are not necessarily final transaction prices.",
-            "Use a Car Value Estimate as an additional planning reference, not a guaranteed appraisal."
+            "A used car is overpriced when its asking price sits above similar local listings without a measurable reason. Compare it with cars of the same year, trim, and mileage, then adjust for condition, service records, accident history, and repairs it needs.",
+            "For example, if comparable cars are listed between $14,000 and $16,000, a $17,500 ask needs a good reason, such as lower mileage, better condition, or extra equipment.",
+            "Keep in mind that listing prices aren't what cars actually sell for.",
+            "A Car Value Estimate is a useful extra reference point, though not a guaranteed appraisal."
           ],
           "links": [
             {
@@ -234,15 +234,15 @@ export const pillarGuide: Guide = {
     {
       "heading": "4. Verify the Vehicle Identification Number and Ownership",
       "paragraphs": [
-        "A vehicle identification number (VIN) helps identify a specific vehicle and investigate available history records.",
-        "For many modern vehicles, particularly in the United States, the VIN contains 17 characters."
+        "A vehicle identification number (VIN) identifies one specific car and is the key to looking up its history records.",
+        "Most modern cars, including all those sold in the United States, have a 17-character VIN."
       ],
       "subsections": [
         {
           "heading": "How to check a used car's VIN",
           "paragraphs": [
-            "A mismatch between vehicle identifiers and official documentation is a serious warning sign.",
-            "In markets such as Pakistan, verification procedures differ. Check the relevant provincial vehicle registration authority, chassis and engine numbers, and available ownership records."
+            "Check that the VIN on the car, the VIN in the paperwork, and the VIN in any history report all match. A mismatch is a serious warning sign.",
+            "Procedures differ by country. In Pakistan, for example, check the chassis and engine numbers and ownership records with the relevant provincial vehicle registration authority."
           ],
           "bullets": [
             "Locate the VIN on the vehicle.",
@@ -257,8 +257,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "5. Check Accident, Flood, and Title History",
       "paragraphs": [
-        "A vehicle history report can provide useful information about previous events, but it cannot guarantee that a vehicle is free of problems.",
-        "Depending on the country and data provider, available records may include:"
+        "A vehicle history report shows what was reported about a car in the past. It can't promise the car is free of problems.",
+        "Depending on the country and the data provider, a report may show:"
       ],
       "bullets": [
         "Reported accidents",
@@ -273,10 +273,10 @@ export const pillarGuide: Guide = {
         {
           "heading": "Can a used car have a clean history report but still be damaged?",
           "paragraphs": [
-            "Yes. A clean vehicle history report does not prove that a car has never been damaged.",
-            "Some accidents, repairs, and maintenance activities may never appear in commercial databases.",
-            "Use history reports alongside a physical inspection and independent mechanic's assessment.",
-            "For additional guidance, read our Vehicle History Checking Guide."
+            "Yes. A clean report only means nothing damaging was reported, not that nothing happened.",
+            "Plenty of accidents, cash repairs, and routine servicing never reach a commercial database.",
+            "Treat the report as one input, and pair it with your own inspection and a mechanic's assessment.",
+            "Our Vehicle History Checking Guide explains what to look for."
           ],
           "links": [
             {
@@ -290,8 +290,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "6. Inspect the Used Car Before Buying",
       "paragraphs": [
-        "A physical inspection is one of the most important parts of purchasing a secondhand vehicle.",
-        "Inspect the car in daylight, ideally when the engine is cold."
+        "Your own walk-around is where many bad cars give themselves away.",
+        "Look at the car in daylight, and ask the seller not to warm the engine up beforehand. A cold start shows problems a warm engine can hide."
       ],
       "subsections": [
         {
@@ -323,9 +323,9 @@ export const pillarGuide: Guide = {
         {
           "heading": "Engine inspection checklist",
           "paragraphs": [
-            "Do not open a hot cooling system or touch moving engine components.",
-            "Important: A visual inspection cannot replace a professional mechanical assessment.",
-            "Read our complete Used Car Inspection Guide for a more detailed process."
+            "Never open a hot cooling system or touch moving engine parts.",
+            "Keep in mind that a visual check can't replace a professional mechanical assessment.",
+            "Our Used Car Inspection Guide covers the process in more detail."
           ],
           "bullets": [
             "Check for visible fluid leaks.",
@@ -347,20 +347,20 @@ export const pillarGuide: Guide = {
     {
       "heading": "7. Test Drive the Vehicle",
       "paragraphs": [
-        "A test drive helps reveal problems that may not be visible when a vehicle is parked.",
-        "Drive on suitable roads and, where legal and safe, include different speeds and driving conditions."
+        "A test drive shows problems you can't see while the car is parked.",
+        "Cover a mix of roads and, where it's legal and safe, a mix of speeds, including a stretch of highway and a few stops."
       ],
       "subsections": [
         {
           "heading": "What should you check during a test drive?",
           "paragraphs": [
-            "Engine performance: The vehicle should accelerate smoothly without unexpected hesitation or abnormal noises.",
-            "Transmission: Gear changes should be appropriate for the transmission type, without excessive slipping, harsh engagement, or unusual delay.",
-            "Braking: Brakes should respond predictably without excessive vibration or pulling.",
-            "Steering: Watch for unusual looseness, vibration, or directional pulling.",
-            "Suspension: Listen for knocking noises over uneven surfaces.",
-            "Electronics: Confirm that relevant controls and features operate properly.",
-            "If a seller refuses a reasonable test drive or independent inspection, consider that a significant warning sign."
+            "Engine performance: It should accelerate smoothly, with no hesitation or odd noises.",
+            "Transmission: Shifts should feel normal for the transmission type, with no slipping, harsh engagement, or long delays.",
+            "Braking: The car should stop predictably, without shaking or pulling to one side.",
+            "Steering: Watch for looseness, vibration, or drifting.",
+            "Suspension: Listen for knocks over bumps.",
+            "Electronics: Try the controls and features you'll use every day.",
+            "If a seller refuses a reasonable test drive or an independent inspection, treat that as a major warning sign."
           ]
         }
       ]
@@ -368,8 +368,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "8. Arrange an Independent Mechanic's Inspection",
       "paragraphs": [
-        "A pre-purchase inspection is particularly valuable when buying an older or higher-mileage vehicle.",
-        "An independent mechanic may identify:"
+        "A pre-purchase inspection pays off most on older or higher-mileage cars, where hidden wear is more likely.",
+        "An independent mechanic can spot things like:"
       ],
       "bullets": [
         "Engine or transmission leaks",
@@ -384,9 +384,9 @@ export const pillarGuide: Guide = {
         {
           "heading": "Is a pre-purchase inspection worth it?",
           "paragraphs": [
-            "In most cases, yes. The inspection costs money upfront, but it may identify repairs that materially change the vehicle's value or make the purchase unsuitable.",
-            "Ask for a written report and repair estimates where possible.",
-            "If serious safety or structural concerns remain unresolved, be prepared to reject the vehicle."
+            "In most cases, yes. The fee is small next to the repairs it can uncover, and what it finds can change your offer or end the deal.",
+            "Ask for a written report and, if possible, repair estimates.",
+            "If serious safety or structural concerns aren't resolved, be ready to walk away."
           ]
         }
       ]
@@ -394,16 +394,16 @@ export const pillarGuide: Guide = {
     {
       "heading": "9. Calculate the True Cost of Car Ownership",
       "paragraphs": [
-        "The purchase price is only one component of vehicle ownership.",
-        "A more complete budget includes depreciation, fuel, insurance, maintenance, registration, and financing costs."
+        "What you pay at purchase is only the start of what the car costs you.",
+        "A fuller picture adds depreciation, fuel, insurance, maintenance, registration, and financing."
       ],
       "subsections": [
         {
           "heading": "Example: Annual Used Car Ownership Costs",
           "paragraphs": [
-            "This example excludes depreciation and financing interest. Actual costs depend on the vehicle, location, usage, and insurance profile.",
-            "When comparing cash purchases and financed purchases, distinguish financing cash flow from economic ownership costs to avoid counting principal repayment twice.",
-            "Explore the Cost of Ownership Calculator."
+            "This hypothetical example leaves out depreciation and loan interest. Your own costs depend on the car, where you live, how much you drive, and your insurance profile.",
+            "When you compare paying cash with financing, don't count loan principal repayments as a running cost on top of the purchase price, or you'll count the same money twice.",
+            "The Cost of Ownership Calculator lets you plug in your own numbers."
           ],
           "table": {
             "headers": [
@@ -445,8 +445,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "10. Compare Used Car Financing Options",
       "paragraphs": [
-        "Financing allows buyers to spread the purchase cost across monthly payments, but borrowing increases the total amount paid.",
-        "Before accepting a loan, compare:"
+        "A loan spreads the cost over monthly payments, but you'll pay more in total because of interest.",
+        "Before you accept an offer, compare these on every loan:"
       ],
       "bullets": [
         "Annual percentage rate (APR)",
@@ -461,11 +461,11 @@ export const pillarGuide: Guide = {
         {
           "heading": "Example: Used Car Loan Calculation",
           "paragraphs": [
-            "Suppose you finance $12,000 at a fixed annual interest rate of 8%, with monthly payments and no additional fees.",
-            "These figures are illustrative and rounded. They assume standard monthly amortization.",
-            "A longer term lowers the monthly payment but generally increases total interest when other loan conditions are equal.",
-            "Key takeaway: Compare total borrowing costs, not just monthly payments.",
-            "Use our Car Loan Calculator to model your financing scenario."
+            "Suppose you finance $12,000 at a fixed 8% annual rate with monthly payments and no extra fees.",
+            "These figures are illustrative, rounded, and assume standard monthly amortization. They aren't current rate quotes.",
+            "A longer term lowers the monthly payment but, all else equal, raises the total interest you pay.",
+            "Key takeaway: Compare the total cost of borrowing, not just the monthly payment.",
+            "The Car Loan Calculator lets you test your own amount, rate, and term."
           ],
           "table": {
             "headers": [
@@ -507,8 +507,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "11. Negotiate the Used Car Price",
       "paragraphs": [
-        "Successful negotiation begins with evidence.",
-        "Research comparable vehicles and document any problems identified during inspection."
+        "Negotiating works best when you bring evidence.",
+        "Bring comparable listings and any problems the inspection turned up."
       ],
       "subsections": [
         {
@@ -526,11 +526,11 @@ export const pillarGuide: Guide = {
         {
           "heading": "Used car negotiation example",
           "paragraphs": [
-            "Imagine a vehicle is advertised for $15,500.",
-            "Comparable listings suggest a value near $14,800, and an independent inspection identifies approximately $700 in repairs.",
-            "You could use those findings to justify a lower offer, while recognizing that the seller may disagree and comparable listing prices may not represent actual sale prices.",
-            "Avoid aggressive tactics or unsupported claims.",
-            "Read our Used Car Price Negotiation Guide."
+            "Imagine a car is listed at $15,500.",
+            "Comparable listings point to a value near $14,800, and an independent inspection finds about $700 in needed repairs.",
+            "Those two facts support a lower offer. The seller may still disagree, and listing prices aren't always what cars sell for, so stay ready to walk away.",
+            "Stick to facts you can show and skip the pressure tactics.",
+            "Our Used Car Price Negotiation Guide goes deeper."
           ],
           "links": [
             {
@@ -544,8 +544,8 @@ export const pillarGuide: Guide = {
     {
       "heading": "12. Verify Paperwork Before Making Payment",
       "paragraphs": [
-        "Before completing a purchase, confirm that all required documents are authentic, consistent, and sufficient for a legal transfer.",
-        "Depending on your location, these may include:"
+        "Before any money changes hands, make sure the documents are genuine, match each other, and are enough to legally transfer ownership.",
+        "Depending on where you live, you may need:"
       ],
       "bullets": [
         "Ownership certificate or title",
@@ -560,9 +560,9 @@ export const pillarGuide: Guide = {
         {
           "heading": "How to avoid used car buying scams",
           "paragraphs": [
-            "Be cautious when a seller:",
-            "Use a secure, traceable payment method and complete the required ownership transfer through the appropriate authority.",
-            "Do not assume a signed receipt alone establishes legal ownership."
+            "Be cautious if a seller:",
+            "Pay by a secure, traceable method, and complete the ownership transfer through the proper authority.",
+            "A signed receipt on its own doesn't prove you legally own the car."
           ],
           "bullets": [
             "Refuses to provide ownership documents.",
@@ -578,9 +578,9 @@ export const pillarGuide: Guide = {
     {
       "heading": "Common Used Car Buying Mistakes",
       "paragraphs": [
-        "Many expensive mistakes happen because buyers focus on the advertised price rather than the vehicle's overall condition and long-term cost.",
-        "Avoid these common problems:",
-        "The best protection is a consistent research and inspection process."
+        "Most expensive mistakes come from focusing on the asking price instead of the car's condition and long-term cost.",
+        "These are the ones to avoid:",
+        "The best protection is following the same research and inspection routine every time."
       ],
       "bullets": [
         "Buying without checking ownership records",
@@ -600,49 +600,49 @@ export const pillarGuide: Guide = {
         {
           "heading": "What is the first thing to check when buying a used car?",
           "paragraphs": [
-            "Start by confirming the vehicle's identity and ownership documentation. Then review available history records and inspect the vehicle's condition before making a financial commitment."
+            "Confirm the car is what the paperwork says it is and that the seller can legally sell it. Then review the history records and inspect the car before you commit any money."
           ]
         },
         {
           "heading": "What mileage is too high for a used car?",
           "paragraphs": [
-            "There is no universal mileage limit. Maintenance history, driving conditions, age, vehicle design, and mechanical condition are more useful than mileage alone. A well-maintained higher-mileage car may be preferable to a poorly maintained lower-mileage example."
+            "There's no universal limit. Service history, age, how the car was driven, its design, and its current condition tell you more than the odometer alone. A well-maintained high-mileage car can be a better buy than a neglected low-mileage one."
           ]
         },
         {
           "heading": "How old should a used car be?",
           "paragraphs": [
-            "There is no single ideal age. Compare depreciation, reliability, safety features, remaining warranty coverage, repair costs, and available budget. The best choice depends on the specific vehicle."
+            "There's no single ideal age. Weigh depreciation, reliability, safety features, any remaining warranty, likely repair costs, and your budget. The right answer depends on the specific car."
           ]
         },
         {
           "heading": "Is buying a used car from a dealership safer than buying privately?",
           "paragraphs": [
-            "Dealerships may offer additional consumer protections, financing options, or warranties, depending on local laws and contract terms. Private sellers may offer different prices or negotiation flexibility. Both require careful verification."
+            "Not automatically. Dealers may offer warranties, financing, or consumer protections, depending on local law and the contract you sign. Private sellers may price lower or negotiate more. Either way, verify the car and the paperwork yourself."
           ]
         },
         {
           "heading": "Can you buy a used car without a mechanic's inspection?",
           "paragraphs": [
-            "You can, but doing so increases the risk of missing mechanical problems. An independent pre-purchase inspection is strongly recommended, particularly for older vehicles or cars without comprehensive service records."
+            "You can, but you're more likely to miss mechanical problems. An independent pre-purchase inspection is strongly recommended, especially for older cars or ones without full service records."
           ]
         },
         {
           "heading": "How much should you negotiate on a used car?",
           "paragraphs": [
-            "There is no fixed percentage. Base your offer on comparable prices, documented condition, necessary repairs, and your budget rather than assuming every seller has the same negotiation margin."
+            "There's no fixed percentage. Base your offer on comparable prices, the car's documented condition, needed repairs, and your budget instead of assuming every seller has the same room to move."
           ]
         },
         {
           "heading": "Should you pay cash or finance a used car?",
           "paragraphs": [
-            "Cash avoids borrowing interest but reduces available savings. Financing preserves some liquidity but creates repayment obligations and may increase the total purchase cost. Compare both options against your emergency savings and financial priorities."
+            "Cash saves you interest but drains savings. Financing keeps some cash on hand but adds a monthly obligation and raises the total cost. Compare both against your emergency fund and other goals."
           ]
         },
         {
           "heading": "How can you check if a used car has an open safety recall?",
           "paragraphs": [
-            "In the United States, use the official NHTSA recall lookup with the vehicle's VIN. Outside the United States, check the relevant manufacturer or national vehicle safety authority. Recall database coverage differs by market."
+            "In the United States, enter the VIN in the official NHTSA recall lookup. Elsewhere, check the manufacturer or your national vehicle safety authority, since recall database coverage differs by market."
           ],
           "links": [
             {
@@ -654,13 +654,13 @@ export const pillarGuide: Guide = {
         {
           "heading": "What is the biggest risk when buying a used car?",
           "paragraphs": [
-            "One of the most significant risks is purchasing a vehicle with undisclosed mechanical, structural, legal, or ownership problems. Combining documentation checks, independent inspections, and market research helps reduce this risk."
+            "Buying a car with a problem nobody told you about, whether mechanical, structural, legal, or an ownership issue. Document checks, an independent inspection, and price research together cut that risk."
           ]
         },
         {
           "heading": "Is a cheaper used car always better value?",
           "paragraphs": [
-            "No. A lower purchase price can be offset by repairs, poor fuel economy, expensive insurance, or rapid depreciation. Compare the total expected cost of ownership rather than the advertised price alone."
+            "No. Repairs, poor fuel economy, high insurance, or fast depreciation can wipe out a low price. Compare expected total ownership cost, not just the asking price."
           ]
         }
       ]
@@ -668,7 +668,7 @@ export const pillarGuide: Guide = {
     {
       "heading": "Final Used Car Buying Checklist",
       "paragraphs": [
-        "Before completing your purchase, confirm that:"
+        "Before you pay, confirm that:"
       ],
       "bullets": [
         "The vehicle fits your budget.",
@@ -688,11 +688,11 @@ export const pillarGuide: Guide = {
     {
       "heading": "Make a Smarter Used Car Decision",
       "paragraphs": [
-        "Buying a reliable used car requires more than finding an attractive listing.",
-        "The strongest purchase decisions combine research, financial planning, vehicle-history verification, mechanical inspection, and careful documentation.",
-        "At BuyUsedAutomobiles, our guides and calculators help you compare important costs and understand the decisions involved in buying, owning, and selling vehicles.",
-        "Start with our Car Loan Calculator, explore the Cost of Ownership Calculator, or browse our Used Car Buying Guides.",
-        "Research carefully. Compare confidently. Buy smarter."
+        "A good listing is only the starting point.",
+        "The best purchases combine price research, a realistic budget, history checks, a mechanical inspection, and clean paperwork.",
+        "The guides and calculators on BuyUsedAutomobiles.com are there to help you compare costs and understand each decision when you buy, own, or sell a car.",
+        "A good next step is the Car Loan Calculator, then the Cost of Ownership Calculator, or browse all our Used Car Buying Guides.",
+        "Take your time, compare more than one car, and don't pay until the paperwork checks out."
       ],
       "links": [
         {

@@ -48,9 +48,9 @@ export const guides: Guide[] = [
     updated: '2026-10-16',
     reviewedOn: '2026-10-16',
     title: 'How to inspect a used car before you buy',
-    description: 'Inspect a used car with a practical sequence for documents, condition, a test drive, and an independent mechanic. Turn findings into a buying decision.',
+    description: 'Step-by-step used car inspection: seller questions, paperwork, walk-around, test drive, and when to pay a mechanic. Includes a repair-budget example.',
     category: 'Buying',
-    intro: 'Inspect a used car in three stages: check its identity and records, observe its condition and behavior, then pay an independent mechanic to investigate anything you cannot verify. A checklist organizes evidence; it does not certify safety. Agree on inspection access before paying a deposit or committing to the purchase.',
+    intro: 'Inspect a used car in three passes: confirm it matches its paperwork, check its condition and how it drives, then pay an independent mechanic to look at whatever you can’t judge yourself. A checklist organizes what you see; it doesn’t certify the car is safe. Agree on inspection access before you hand over a deposit.',
     readingMinutes: 7,
     sections: [
       {
@@ -61,7 +61,7 @@ export const guides: Guide[] = [
           'Ask for the VIN, current mileage, service records, title status, and permission for an independent inspection before you travel. Confirm which shop will inspect the car, who pays, and how it will get there. Choose a shop familiar with that powertrain. A general inspection may need a separate specialist for a high-voltage battery, modified vehicle, or suspected structural repair.',
           'Schedule daylight and enough time to look without rushing. Ask the seller to leave the engine cold if practical; a pre-warmed engine changes what you can observe at startup. Bring a flashlight, a phone for permitted photos, and your written questions. Avoid inspecting on a roadside or crawling beneath an unsupported vehicle. You do not need to perform repairs to be a careful buyer.',
           'For a dealer purchase, the FTC suggests a mobile mechanic or asking the dealer to take the car to your chosen facility if off-site access is restricted. If independent inspection is refused altogether, consider another dealer. Agree on access before paying for a report or traveling.',
-          'Set a simple boundary in advance: an unexplained identity discrepancy, refusal of a reasonable inspection, or unresolved safety concern means you pause. That boundary is easier to maintain before you have spent hours negotiating or become attached to a particular color.'
+          'Set one rule before you start: an identity mismatch, a refused inspection, or an unresolved safety concern means you pause. It’s much easier to hold that line before you’ve spent hours negotiating or fallen for the color.'
         ]
       },
       {
@@ -112,11 +112,11 @@ export const guides: Guide[] = [
       {
         heading: '7. Save your used car inspection checklist and evidence',
         paragraphs: [
-          'There is no universal mileage cutoff that this checklist can certify. Compare the odometer with service records, the maintenance schedule for the exact engine and transmission, and the inspection findings. Ask which scheduled jobs are due and price those jobs before deciding whether a high-mileage car fits your budget.',
+          'This checklist can’t give you a mileage cutoff, because none is universal. Compare the odometer with service records, the maintenance schedule for that exact engine and transmission, and the inspection findings. Ask which scheduled jobs are due and price them before deciding whether a high-mileage car fits your budget.',
           'Compare the inspected vehicle with your alternatives using total cost, suitability, and unresolved risk. Keep the inspection report, quote, warranty terms, and promised-work agreement together. Before collection, confirm promised work was completed and inspect the car again for changes in condition or mileage.',
-          'A checklist with every box marked does not predict the next failure or replace a professional assessment. Its value is that it makes unanswered questions visible. Use the ownership calculator to add insurance, fuel, maintenance, and financing before deciding that the purchase price fits your budget.',
+          'Even a checklist with every box ticked can’t predict the next failure or replace a professional assessment. Its value is that it shows you which questions are still unanswered. Add insurance, fuel, maintenance and financing in the ownership calculator before deciding the purchase price fits.',
           'For a printable used car inspection checklist, open our checklist tool and choose Print / save PDF. Save a blank copy before the visit or mark your observations and save the resulting report. The PDF contains your recorded notes, not an inspection certificate. Keep the independent mechanic’s report alongside it.',
-          'If you decline the car, save the useful lessons and move on. The money spent on an inspection can still have served its purpose by identifying a purchase that does not match your needs.'
+          'If you decide against the car, keep what you learned and move on. An inspection that steers you away from the wrong purchase has still done its job.'
         ]
       }
     ],
@@ -133,9 +133,9 @@ export const guides: Guide[] = [
     updated: '2026-10-16',
     reviewedOn: '2026-10-16',
     title: 'How to check a car’s history before buying',
-    description: 'Build a useful vehicle history check from VIN matching, title records, recall searches, mileage evidence, and an inspection. Learn what reports cannot prove.',
+    description: 'How to check a used car’s history: match the VIN, read title and NMVTIS data, run free recall and theft checks, and verify mileage. See what reports miss.',
     category: 'Buying',
-    intro: 'Check a car’s history by combining its VIN, title records, reported events, service documents, and present condition. Each source answers a different question. No report proves that a vehicle has never been damaged, and a clean-looking title does not establish that its mechanical condition is good.',
+    intro: 'To check a used car’s history, match the VIN to the title and the seller’s documents, then add title-brand data (NMVTIS), a free NHTSA recall lookup, and an inspection. Each source answers a different question, and none can prove a car was never damaged. A clean report also says nothing about mechanical condition.',
     readingMinutes: 7,
     sections: [
       {
@@ -147,7 +147,7 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '2. Understand what title-history data contains',
+        heading: '2. What does title-history data actually tell you?',
         links: [{title: 'DOJ: NMVTIS consumer information and state title records', url: 'https://vehiclehistory.bja.ojp.gov/nmvtis_consumers'}],
         paragraphs: [
           'The Department of Justice describes NMVTIS as a source of title, brand, odometer, and certain salvage or total-loss information. Access consumer reports through an approved provider linked from the official NMVTIS site. A brand is a designation applied to a vehicle’s record; terms and thresholds vary by state.',
@@ -176,7 +176,7 @@ export const guides: Guide[] = [
         heading: '4. How much mileage is too much for a used car?',
         links: [{title: 'NHTSA: compare odometer, title and maintenance records', url: 'https://www.nhtsa.gov/vehicle-safety/odometer-fraud'}],
         paragraphs: [
-          'There is no universal mileage cutoff that establishes whether a used car is a good purchase. Compare documented maintenance, age, driving use, upcoming scheduled work and an independent inspection. A lower odometer reading does not replace that evidence. Use the exact model maintenance schedule and written repair estimates to compare two candidates at the same total budget.',
+          'No mileage figure is automatically too high. Compare documented maintenance, age, how the car was used, upcoming scheduled work and an independent inspection. A low odometer reading doesn’t replace that evidence. Use the exact model’s maintenance schedule and written repair estimates to compare two candidates at the same total budget.',
           'Create a list with date, mileage, source, and notes for each available record. NHTSA recommends comparing the displayed odometer with title and maintenance records and considering whether physical wear fits the mileage. Wear is a clue, not a precise measuring device: a replacement seat or a heavily used city car can complicate the picture.',
           'Suppose a hypothetical car shows 41,200 miles in a service record, 48,900 at inspection, and 47,300 in a later listing. The sequence needs explanation. A typing mistake is possible, but so are more serious problems. Ask the record provider or seller for the underlying document and a documented correction; do not quietly remove the inconvenient entry from your comparison.',
           'Record units as well as numbers. An imported or cross-border vehicle may have kilometer-based records, and a replaced instrument cluster needs documentation. Do not infer fraud solely from an apparent decline before examining units and original records. If the discrepancy remains unresolved, regard the stated mileage and valuation as uncertain.'
@@ -191,7 +191,7 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '6. Build a small evidence file before negotiating',
+        heading: '6. Build a small evidence file before you negotiate',
         paragraphs: [
           'Put the listing, VIN photo, report, recall results, inspection findings, and seller answers in one folder. Label each unresolved point and the action needed to close it. For example: missing maintenance invoice means obtain a receipt or budget the service; ambiguous lien status means confirm release with the lender before payment.',
           'Consider a hypothetical car advertised at $14,000 with a documented $900 service due. If a comparable car at $14,600 has that same service verified, the cheaper listing could cost more immediately: $14,900 versus $14,600 before other charges. This comparison assumes equal condition elsewhere and uses invented scenario amounts, not a valuation of either car.',
@@ -199,11 +199,11 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '7. Decide which uncertainties you can accept',
+        heading: '7. Which uncertainties can you live with?',
         paragraphs: [
-          'The right endpoint is not a report with a reassuring color. It is a purchase you understand well enough to make: transferable ownership, a coherent mileage history, manageable condition, and a price reflecting the evidence. Some uncertainty is unavoidable, but it should be explicit in your decision.',
+          'The goal isn’t a report with a reassuring color. It’s a purchase you understand: transferable ownership, a coherent mileage history, manageable condition, and a price that reflects the evidence. Some uncertainty is unavoidable, but it should be a choice you’ve made on purpose.',
           'Pause when identity, title authority, or a material safety concern cannot be resolved. Ask your insurer and prospective lender about any branded-title restrictions before assuming you can insure or finance a car. Requirements and offers differ, so use written answers for the actual VIN.',
-          'Keep records after purchase. They help you follow up on repairs and explain the car’s history when you eventually sell. This guide provides a research workflow, not a title opinion or a guarantee against hidden defects; state agencies and qualified inspectors handle the questions that require their authority or expertise.'
+          'Keep your records after you buy. They help you follow up on repairs and explain the car’s history when you sell. This guide is a research workflow, not a title opinion or a guarantee against hidden defects; state agencies and qualified inspectors handle questions that need their authority or expertise.'
         ]
       }
     ],
@@ -220,17 +220,17 @@ export const guides: Guide[] = [
     updated: '2026-10-18',
     reviewedOn: '2026-10-16',
     title: 'How to negotiate a used-car price with evidence',
-    description: 'Negotiate a used-car price using comparable listings, inspection findings, an itemized purchase quote, and a firm budget. Work through a realistic example.',
+    description: 'Negotiate a used-car price with comparable listings, an out-the-door quote, and inspection findings. Includes a worked offer example and a budget ceiling.',
     category: 'Buying',
-    intro: 'Negotiate from a written total purchase price, comparable vehicles, and documented condition. Keep the car price, trade-in, and financing figures visible so changes are easy to track. Set your maximum before the conversation, then decide whether the complete deal meets it rather than chasing a particular discount.',
+    intro: 'To negotiate a used-car price, work from a written out-the-door total, comparable listings, and documented condition, and set your maximum before you talk. Judge every counteroffer by the full deal, not the headline price. If the final numbers pass your limit, walking away is a valid result.',
     readingMinutes: 7,
     sections: [
       {
         heading: '1. Set the limit you will actually honor',
         paragraphs: [
-          'Begin with how much cash you can commit and what monthly ownership costs your household can support. Include insurance, parking, fuel, maintenance, and a repair reserve. If you will borrow, obtain actual financing terms when available. An illustrative rate in a calculator is not an approval or an offer you can demand from a lender.',
+          'Start with how much cash you can commit and what monthly ownership costs your household can carry, including insurance, parking, fuel, maintenance and a repair reserve. If you’ll borrow, get real financing terms when you can. A sample rate in a calculator isn’t an approval or an offer you can demand from a lender.',
           'Write two limits: a total purchase ceiling and a comfortable ongoing budget. A car can satisfy the first and fail the second. For example, an affordable purchase may have expensive insurance for your household or unusually costly tires. Replace estimates with vehicle-specific quotes before deciding that the numbers fit.',
-          'Keep your maximum private if that helps you negotiate, but be honest about factual claims. You do not need to invent another offer or misstate a defect. Your strongest alternative is a real vehicle you could buy, or the ability to wait. If waiting has costs, such as a rental, include them in your own decision.'
+          'Keeping your maximum to yourself is fine, but stay truthful about facts. You don’t need to invent a competing offer or misstate a defect. Your strongest alternative is a real car you could buy, or the ability to wait. If waiting costs you something, such as a rental, count it in your own decision.'
         ]
       },
       {
@@ -288,9 +288,9 @@ export const guides: Guide[] = [
                 subsections: [{heading:'How much should I offer below the asking price?',paragraphs:['There is no universal percentage. Begin with comparable vehicles, condition and documented work, then set your own ceiling. In the worked example above, the $15,200 opening offer follows a $15,500 condition-adjusted reference; neither figure predicts acceptance.']},{heading:'What should I check when buying from a private seller?',paragraphs:['Verify ownership and any lien, arrange independent inspection, and coordinate the agreed payment with the required transfer documents. Follow the private-seller buying guide before paying.']}],
         links: [{title: 'FTC: review add-on prices and terms before signing', url: 'https://consumer.ftc.gov/consumer-alerts/2020/07/ftc-announces-auto-buyers-study-reports'},{title:'Private-seller buying, payment and title checklist',url:'/guides/how-to-buy-a-used-car-from-a-private-seller'}],
         paragraphs: [
-          'Read the final purchase and finance documents at your own pace. Check the VIN, mileage, selling price, taxes, fees, products, trade-in amount, payoff, and cash due. Ask for a corrected document when a figure differs; a verbal explanation does not update a signed agreement.',
+          'Read the final purchase and finance documents at your own pace. Check the VIN, mileage, selling price, taxes, fees, products, trade-in amount, payoff, and cash due. If a figure differs from what you agreed, ask for a corrected document; a verbal explanation doesn’t change a signed agreement.',
           'The FTC advises buyers to review proposed add-ons and their costs. Assess any product against its coverage, exclusions, deductible, cancellation terms, and price. A product you decide to buy belongs in your total budget, including the interest if it is financed. Do not let a small monthly presentation hide its full cost.',
-          'If the final deal exceeds your limit or unresolved questions remain, pause. Save the quote so you can compare another car using the same method. Negotiation succeeds when you make a purchase you can explain and afford, including the decision to decline an unsuitable deal.'
+          'If the final deal is over your limit or questions remain, pause. Save the quote so you can compare the next car the same way. A good negotiation ends in a purchase you can explain and afford, and declining an unsuitable deal counts as one.'
         ]
       }
     ],
@@ -304,11 +304,11 @@ export const guides: Guide[] = [
   {
     slug: 'real-cost-of-car-ownership',
     title: 'How to calculate the real cost of car ownership',
-    description: 'Compare used cars with a complete ownership budget for depreciation, fuel, insurance, maintenance, taxes, and interest. Avoid double-counting the loan.',
+    description: 'What a used car really costs to own: depreciation, fuel, insurance, maintenance, fees and interest, with a five-year example that avoids double-counting.',
     category: 'Ownership',
     updated: '2026-10-15',
     reviewedOn: '2026-10-15',
-    intro: 'Ownership cost is the value your car loses plus the money spent using, maintaining, insuring, and financing it. Compare cars over the same period and mileage. Keep this economic cost separate from your monthly cash budget so you do not count both loan principal and depreciation as separate costs.',
+    intro: 'The cost of owning a car is what it loses in value plus what you spend to run, insure, maintain and finance it. Compare cars over the same years and mileage, and keep that total separate from your monthly cash budget so you don’t count loan principal and depreciation twice.',
     readingMinutes: 7,
     sections: [
       {
@@ -320,7 +320,7 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '2. Separate depreciation from loan repayment',
+        heading: '2. Why depreciation and loan repayment aren’t the same cost',
         paragraphs: [
           'Depreciation over your ownership period is purchase price minus the amount you expect to receive when you sell. If a hypothetical car costs $20,000 and you assume it can be sold for $9,000 after five years, depreciation is $11,000. That resale value is an assumption to test, not a guaranteed offer.',
           'Loan principal is the amount borrowed to acquire the asset. Repaying it changes your cash and debt; it does not create another full vehicle cost on top of depreciation. In an economic ownership calculation, add financing interest and applicable financing costs to depreciation. In a cash-flow budget, track down payment, loan payments, operating expenses, and eventual net sale proceeds.',
@@ -363,9 +363,9 @@ export const guides: Guide[] = [
       {
         heading: '7. Translate the total into a workable household budget',
         paragraphs: [
-          'Use the ownership calculator for the overall comparison, then the loan and fuel calculators for their components. For your monthly cash plan, add the actual loan payment, insurance payment, energy spending, parking, and money set aside for irregular expenses. Treat annual bills as monthly savings requirements even when you pay them once a year.',
+          'Use the ownership calculator for the overall comparison, then the loan and fuel calculators for the pieces. For your monthly cash plan, add the actual loan payment, insurance, energy, parking, and money set aside for irregular expenses. Treat annual bills as monthly savings even if you pay them once a year.',
           'Before purchasing, confirm you can cover the down payment, transaction charges, immediate inspection findings, and a reserve without relying on the estimated resale value. Resale is future money and is uncertain. A car that has a reasonable lifetime cost can still demand more initial cash than you can comfortably provide.',
-          'Review your assumptions after several months of ownership using actual receipts and mileage. That record makes the next purchase comparison more useful. This method supports planning; it does not provide personalized financial advice, predict market values, or substitute for insurance, repair, tax, or lending quotes.'
+          'After a few months of ownership, check your assumptions against real receipts and mileage. That makes your next comparison sharper. This method is for planning; it isn’t personalized financial advice, a market-value forecast, or a substitute for insurance, repair, tax or lending quotes.'
         ]
       }
     ],
@@ -379,11 +379,11 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-compare-used-car-loans',
     title: 'How car loan interest is calculated and how to compare offers',
-    description: 'Learn how monthly car loan interest is calculated, work through a payment example, and compare rates, APR, terms and total borrowing costs.',
+    description: 'See how monthly car loan interest is calculated, then compare offers by APR, term, fees and total cost, with worked examples and a longer-term check.',
     category: 'Financing',
     updated: '2026-10-15',
     reviewedOn: '2026-10-15',
-    intro: 'Compare used-car loans using the same amount financed and term, then examine APR, finance charges, fees, and payment rules. A smaller payment can come from borrowing for longer and cost more overall. Use actual lender disclosures for the decision; a calculator illustrates assumptions and is not a credit offer.',
+    intro: 'To compare used-car loans, line up offers with the same amount financed and term, then compare APR, finance charge, fees and payment rules. A lower payment often comes from a longer term and costs more overall. Decide from lender disclosures; a calculator only illustrates assumptions and isn’t a credit offer.',
     readingMinutes: 7,
     sections: [
       {
@@ -403,7 +403,7 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '3. How interest is calculated on a car loan',
+        heading: '3. How is interest calculated on a car loan?',
         paragraphs: [
           'For this fixed-rate monthly model, monthly rate = annual contract rate divided by 1,200; interest for a month = opening balance multiplied by monthly rate. Subtract that interest from the payment to find principal repaid, then use the reduced balance for the next month. The division converts an annual percentage to a monthly decimal rate; it does not mean that APR and the contractual interest rate are interchangeable.',
           monthlyInterestExample,
@@ -437,11 +437,11 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '7. Choose a loan that fits the full ownership plan',
+        heading: '7. Pick a loan that fits your whole budget',
         paragraphs: [
           'Place the preferred payment beside insurance, fuel, parking, maintenance savings, and your other obligations. Check whether the combined amount remains workable in a less favorable month. Rules of thumb can prompt a useful review, but they do not know your household’s priorities, irregular income, or essential expenses.',
           'Use the loan calculator to compare terms and the affordability calculator to test your budget. Then confirm the final documents still match the agreed car price, amount financed, rate, term, and products. A changed purchase price can erase a financing advantage, so compare the complete transaction.',
-          'Keep copies of everything you sign and verify the lender or servicer’s payment instructions independently. This guide explains comparison mechanics; it does not predict approval, recommend a specific lender, or promise a rate. Your contract and verified disclosures determine the actual obligation.'
+          'Keep copies of everything you sign, and confirm the lender’s or servicer’s payment instructions through a channel you found yourself. This guide explains how to compare offers; it doesn’t predict approval, recommend a lender, or promise a rate. Your contract and verified disclosures set the real obligation.'
         ]
       }
     ],
@@ -461,9 +461,9 @@ export const guides: Guide[] = [
     updated: '2026-10-17',
     reviewedOn: '2026-10-17',
     title: 'Trade-in vs. private sale: compare your net proceeds',
-    description: 'Compare a trade-in with selling privately after loan payoff, selling costs, possible tax treatment, and your time. Work through a clear break-even example.',
+    description: 'Trade-in or private sale? Compare net proceeds after loan payoff, selling costs and tax treatment, with a break-even example for selling privately.',
     category: 'Selling',
-    intro: 'Compare trade-in and private sale using net proceeds, any verified tax difference, selling expenses, and the time involved. A private asking price is not money you have received, and a trade-in allowance may be tied to the replacement-car deal. Get written offers and compare the complete transactions.',
+    intro: 'To choose between a trade-in and a private sale, compare net proceeds: the offer or sale price, minus loan payoff and selling costs, plus any tax benefit you’ve verified. Private sales often pay more but cost time and effort. Get written offers and compare complete transactions.',
     readingMinutes: 7,
     sections: [
       {
@@ -492,7 +492,7 @@ export const guides: Guide[] = [
         ]
       },
       {
-        heading: '4. Calculate the private-sale break-even price',
+        heading: '4. At what price does a private sale beat the trade-in?',
         paragraphs: [
           'Use a scenario rather than a promise. Suppose a written trade offer is $10,000, a verified transaction-specific tax benefit would be $600, and payoff is $6,000. The trade route provides $4,600 of combined equity and tax benefit. Suppose a private buyer would pay $11,500 and you expect $250 of selling costs. Private net cash after payoff is $5,250.',
           'The private route is ahead by $650 before valuing your time and other costs. In this scenario, its break-even sale price is $10,850: the $10,000 trade offer plus the $600 tax benefit plus $250 of private selling costs. The identical payoff cancels when comparing the routes, although it still matters for the cash you receive. If the routes settle on different dates, obtain a dated payoff for each and include any difference instead of assuming it cancels.',
@@ -530,7 +530,7 @@ export const guides: Guide[] = [
         paragraphs: [
           'When trading, compare the replacement vehicle’s price before and after the allowance is introduced. A generous trade figure can be offset elsewhere in the transaction. Verify payoff handling in writing and follow up with the old lender to confirm the loan has been settled. Keep making required payments until the lender confirms what is due.',
           'Before handing over either a traded or privately sold car, remove personal belongings and account access from infotainment, connected-car services, toll devices, and garage-door settings. Follow the manufacturer’s instructions for data removal. Coordinate insurance and registration changes with the relevant providers and state requirements so the timing is correct.',
-          'Use the trade-in estimator for scenario planning, the tax calculator for a transparent estimate, and the ownership calculator for the replacement decision. Your final choice should be based on verified offers and net amounts. This comparison does not supply a market appraisal, individualized tax advice, or a guarantee that a private buyer will pay your expected price.'
+          'Use the trade-in estimator for scenario planning, the tax calculator for a transparent estimate, and the ownership calculator for the replacement decision. Base the final choice on verified offers and net amounts. This comparison isn’t a market appraisal, individualized tax advice, or a promise that a private buyer will pay your expected price.'
         ]
       }
     ],

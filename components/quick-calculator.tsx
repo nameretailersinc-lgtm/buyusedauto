@@ -19,6 +19,6 @@ export default function QuickCalculator(){
     </div>
     <div className="quick-result" aria-live="polite">{result?<><div><small>{view==="monthly"?"Estimated monthly payment":"Total scheduled loan payments"}</small><strong>{money(view==="monthly"?result.payment:result.total,2)}<span>{view==="monthly"?" /mo":""}</span></strong></div><div className="quick-ring" style={{background:`conic-gradient(#075747 0 ${result.total?result.principal/result.total*100:100}%, #a4ed7e 0 100%)`}} aria-hidden="true"/></>:<p role="alert">Enter a valid price, down payment, and rate.</p>}</div>
     <Link className="button" href={`/car-loan-calculator?${query}`}>View full breakdown <Icon name="arrow"/></Link>
-    <p className="quick-note">Illustrative rate. Excludes taxes, fees, and trade-in.</p>
+    <p className="quick-note">Example rate only. Taxes, fees and trade-in aren’t included.</p>
   </section>;
 }

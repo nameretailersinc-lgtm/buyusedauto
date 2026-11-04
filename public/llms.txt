@@ -1,44 +1,101 @@
 # BuyUsedAutomobiles
 
-> Free US-focused used-car planning tools and practical buying guides. USD by default. Estimates are not quotes, offers, appraisals, inspections, or professional advice.
+> BuyUsedAutomobiles (https://buyusedautomobiles.com) is an independent website with 21 free browser-based calculators and a library of plain-English buying guides for people who are buying, owning or selling a used car. It covers loan payments, affordability, down payments, APR and refinancing, depreciation and car value, trade-ins, ownership and running costs, fuel and EV charging, repairs and maintenance, registration and sales tax, price negotiation and inspection. It does not provide live prices, quotes, lender offers, vehicle valuations or VIN lookups, and nothing on it is financial, legal, tax or mechanical advice.
 
-## Tools
-- [Car maintenance cost calculator](https://buyusedautomobiles.com/car-maintenance-cost-calculator): Service-interval reserve, tire allowance, other annual work and immediate repairs; eight currencies and miles/km.
-- [Car cost per mile calculator](https://buyusedautomobiles.com/car-cost-per-mile-calculator): Recorded-period economic cost or gross cash spending divided by distance; eight currencies and miles/km.
-- [Gas vs electric car cost calculator](https://buyusedautomobiles.com/gas-vs-electric-car-cost-calculator): Matched gas and battery-electric economic ownership costs with explicit energy boundary and editable local figures.
-- [Car loan APR calculator](https://buyusedautomobiles.com/car-loan-apr-calculator): Regular-monthly nominal APR estimate with upfront and financed credit charges, plus a separate effective annual rate.
-- [Car repair cost calculator](https://buyusedautomobiles.com/car-repair-cost-calculator): Itemized written quote arithmetic, confirmed credits and a separate contingency; no automatic repair-price feed.
-- [Registration tax budget](https://buyusedautomobiles.com/car-registration-tax-calculator): One-time and annual local charges, with a date-limited sourced UK DVLA first-registration fee option.
-Payoff, refinance, down-payment, EV charging, APR, repair-quote, registration, maintenance, cost-per-distance and gas/EV tools support USD, PKR, INR, GBP, CAD, AUD, AED and EUR. Currency selection changes display only; it does not convert values or supply local rates.
-- [Car loan payoff calculator](https://buyusedautomobiles.com/car-loan-payoff-calculator): Existing balance, required payment, extra principal and lump-sum repayment; multi-currency display.
-- [Auto loan refinance calculator](https://buyusedautomobiles.com/auto-loan-refinance-calculator): Compare future costs, financed and upfront fees, and financing-cost break-even; multi-currency display.
-- [Car down payment calculator](https://buyusedautomobiles.com/car-down-payment-calculator): Contribution target, net trade equity, cash reserve and funding gap; multi-currency display.
-- [EV charging cost calculator](https://buyusedautomobiles.com/ev-charging-cost-calculator): Session energy, charging losses, billing boundary, local unit price and flat fee; multi-currency display.
-- /car-loan-calculator — Fixed monthly amortization, trade equity, extra payments.
-- /car-depreciation-calculator — Editable compound-decline scenario.
-- /what-is-my-car-worth — Generic modeled value; no live market data.
-- /total-cost-of-ownership-calculator — Depreciation, operating costs, and interest without double-counting principal.
-- /car-affordability-calculator — Explicit 20/4/10 and additional budget constraints.
-- /fuel-cost-calculator — Trip costs plus measured US mpg, km/L and L/100 km; annual fuel-only savings with selectable display currency in the measurement section.
-- /trade-in-value-estimator — Modeled trade range and loan payoff equity.
-- /lease-vs-buy-calculator — Equal-horizon cash costs less buying equity.
-- /used-car-inspection-checklist — Observations and concerns, not safety certification.
-- /used-car-price-negotiation-calculator — User-supplied comparable value and repair deductions.
-- /car-sales-tax-calculator — User-verified rate and taxable base; no automatic current state rates.
+## Scope
+US tools default to US dollars (USD) and US units. Several tools can display USD, PKR, INR, GBP, CAD, AUD, AED or EUR; changing currency only changes the labels and does not convert values or supply local rates. Country running-cost calculators cover Pakistan (PKR), the UAE (AED), the UK (GBP) and Germany (EUR), and the Pakistan financing calculator uses PKR. Country buying guides cover the US, UK, UAE, Europe and Pakistan.
 
-## Context
-- [Compact reference](https://buyusedautomobiles.com/llms-small.txt) — Short site overview and interpretation limits.
-- [Expanded reference](https://buyusedautomobiles.com/llms-full.txt) — Calculator summaries, worked arithmetic, and citation guidance.
-- [AI discovery notes](https://buyusedautomobiles.com/.well-known/ai.txt) — Links to public references and crawler directives.
-- /guides — Practical guides with primary-source references.
-- /editorial-policy — Research, AI assistance, correction, and commercial disclosure standards.
-- /disclaimer — Method limitations.
-- /privacy-policy — Browser calculations, URL sharing, optional analytics.
+## Limits
+The site does not offer live market listings, current interest rates, insurance quotes, lender approvals, appraisals, vehicle-history reports or automatic tax rates. Example figures are hypothetical defaults. Value tools use a generic depreciation model, not make/model or VIN data. Inspection checklists record observations and do not certify safety. Users should confirm prices, rates, taxes, loan terms and vehicle condition with real quotes, official sources and an independent inspection.
 
-Defaults are hypothetical. No invented experts or reviews. Shared calculator queries are not independent content pages. Canonicals omit query strings. No guaranteed rich results, search rankings, or advertising approval.
+## Calculators and checklists
+- [Car payment calculator: used car loan with taxes and fees](https://buyusedautomobiles.com/car-loan-calculator): Monthly payment, total interest and payment schedule, with down payment, trade-in, financed tax and fees, and extra payments.
+- [Car depreciation calculator: what a car loses each year](https://buyusedautomobiles.com/car-depreciation-calculator): Adjustable first-year and later-year decline to project resale value; a planning scenario, not a forecast.
+- [Car value calculator: how much is my car worth?](https://buyusedautomobiles.com/what-is-my-car-worth): Rough private-sale, trade-in and retail value range from age, mileage and condition; modeled, with no live market data or VIN lookup.
+- [Total cost of ownership calculator: new vs used car](https://buyusedautomobiles.com/total-cost-of-ownership-calculator): Depreciation, fuel, insurance, maintenance, taxes and loan interest over the same years; principal is not counted twice.
+- [Car affordability calculator: how much car can I afford?](https://buyusedautomobiles.com/car-affordability-calculator): Budget check using the 20/4/10 rule plus income, debts, running costs and down payment; a planning guide, not lender approval.
+- [Gas mileage and fuel cost calculator: trip and yearly](https://buyusedautomobiles.com/fuel-cost-calculator): Trip and yearly fuel cost in miles/US mpg or kilometers/L per 100 km; excludes charging, maintenance, parking and tolls.
+- [Trade-In Value Calculator](https://buyusedautomobiles.com/trade-in-value-estimator): Compares dealer trade-in offers with a private sale, showing loan equity and proceeds after selling costs.
+- [Lease vs buy calculator: which costs less?](https://buyusedautomobiles.com/lease-vs-buy-calculator): Compares leasing and buying over the same period, including upfront cash, fees, excess mileage, loan balance and resale equity.
+- [Used car inspection checklist: 25 things to check](https://buyusedautomobiles.com/used-car-inspection-checklist): 25-point checklist to record observations and concerns at a viewing; printable; not a safety certification.
+- [Used car price negotiation calculator: set your offer](https://buyusedautomobiles.com/used-car-price-negotiation-calculator): Turns comparable values and documented repair costs into an opening offer and a walk-away price.
+- [Car sales tax calculator: estimate tax on a purchase](https://buyusedautomobiles.com/car-sales-tax-calculator): Estimates sales tax from a rate you verify, taxable fees and trade-in credit; no automatic current state rates.
+- [Car loan payoff calculator: extra payments and early payoff](https://buyusedautomobiles.com/car-loan-payoff-calculator): Effect of extra monthly payments or a lump sum on payoff date and interest saved; multi-currency display.
+- [Auto loan refinance calculator: will refinancing save money?](https://buyusedautomobiles.com/auto-loan-refinance-calculator): Compares a current loan with a refinance offer, including fees, new payment, total cost and break-even point; multi-currency display.
+- [Car down payment calculator: how much to put down](https://buyusedautomobiles.com/car-down-payment-calculator): Cash needed for a target down payment after trade-in equity, savings gap and estimated monthly payment; multi-currency display.
+- [EV charging cost calculator: what a full charge costs](https://buyusedautomobiles.com/ev-charging-cost-calculator): Cost of a charge from battery size, start and end charge, charging losses, energy price and session fee; multi-currency display.
+- [Car loan APR calculator: see the true cost with fees](https://buyusedautomobiles.com/car-loan-apr-calculator): Nominal APR and effective annual rate once fees are counted, with monthly payment and total credit cost; multi-currency display.
+- [Car repair cost calculator: budget from your quote](https://buyusedautomobiles.com/car-repair-cost-calculator): Adds up a repair quote (parts, labor, diagnostics, tax) with a separate contingency; no automatic repair-price feed.
+- [Car registration tax and fee calculator: yearly costs](https://buyusedautomobiles.com/car-registration-tax-calculator): One-time and yearly registration charges kept apart, using fees you verify locally; includes a dated UK DVLA first-registration fee option.
+- [Car maintenance cost calculator: monthly savings plan](https://buyusedautomobiles.com/car-maintenance-cost-calculator): Monthly savings target from service intervals, tire costs and repair budget; miles or kilometers.
+- [Car cost per mile calculator: miles or kilometers](https://buyusedautomobiles.com/car-cost-per-mile-calculator): Cost of each mile or kilometer from recorded distance and expenses, as economic cost or gross cash spending.
+- [Gas vs electric car cost calculator: which is cheaper?](https://buyusedautomobiles.com/gas-vs-electric-car-cost-calculator): Matched gas and electric ownership costs over the same years and distance, with an explicit energy boundary and editable local figures.
 
-- [How to pay off a car loan early](https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early): Principal payments, dated payoff quotes, prepayment charges and hypothetical interest comparisons.
+## Country tools
+- [Pakistan car running cost calculator](https://buyusedautomobiles.com/tools/pakistan/car-running-cost-calculator): Running costs in PKR with local fuel-economy units and recurring fees you enter.
+- [UAE car running cost calculator](https://buyusedautomobiles.com/tools/uae/car-running-cost-calculator): Running costs in AED with local fuel-economy units and recurring fees you enter.
+- [UK car running cost calculator](https://buyusedautomobiles.com/tools/uk/car-running-cost-calculator): Running costs in GBP with local fuel-economy units and recurring fees you enter.
+- [Germany car running cost calculator](https://buyusedautomobiles.com/tools/germany/car-running-cost-calculator): Running costs in EUR with local fuel-economy units and recurring fees you enter.
+- [Pakistan car financing calculator](https://buyusedautomobiles.com/pk/car-financing-calculator): Separate financing modes in PKR; use a provider's dated quotation, since estimates are not bank product terms.
+- [Conventional vs Islamic car finance in Pakistan](https://buyusedautomobiles.com/pk/guides/conventional-vs-islamic-car-finance)
+- [Pakistan used-car financing quote checklist](https://buyusedautomobiles.com/pk/guides/used-car-financing-quote-checklist)
 
-- [Used car sales tax, title and fees](https://buyusedautomobiles.com/guides/used-car-sales-tax-title-and-fees-explained): Itemized out-the-door price and verified local charges.
-- [EV charging costs at home and in public](https://buyusedautomobiles.com/guides/how-much-does-it-cost-to-charge-an-electric-car): Partial charges, energy billing and hypothetical cost-per-mile examples.
-- [Is auto loan refinancing worth it?](https://buyusedautomobiles.com/guides/is-refinancing-your-car-loan-worth-it): Payment changes, finance fees and total future borrowing cost.
+## Guides
+
+### Buying
+- [Complete Used Car Buying Guide 2026: 12 Essential Steps to Buy a Reliable Car](https://buyusedautomobiles.com/guides/complete-used-car-buying-guide)
+- [How to buy a used car from a private seller](https://buyusedautomobiles.com/guides/how-to-buy-a-used-car-from-a-private-seller)
+- [Used Car Sales Tax, Title and Fees: How to Estimate the Final Price](https://buyusedautomobiles.com/guides/used-car-sales-tax-title-and-fees-explained)
+- [How to Buy a Used Car in Pakistan in 2026: Complete Step-by-Step Guide](https://buyusedautomobiles.com/guides/buy-used-car-pakistan)
+- [How to Buy a Used Car in UAE in 2026: Complete Dubai, Abu Dhabi and Sharjah Guide](https://buyusedautomobiles.com/guides/buy-used-car-uae)
+- [How to Buy a Used Car in the USA in 2026: Complete Guide for American Buyers](https://buyusedautomobiles.com/guides/buy-used-car-usa)
+- [How to Buy a Used Car in the UK in 2026: Complete MOT, DVLA and Vehicle Inspection Guide](https://buyusedautomobiles.com/guides/buy-used-car-uk)
+- [How to Buy a Used Car in Europe in 2026: Complete EU Buying, Import and Registration Guide](https://buyusedautomobiles.com/guides/buy-used-car-europe)
+- [How to inspect a used car before you buy](https://buyusedautomobiles.com/guides/how-to-inspect-a-used-car)
+- [How to check a car’s history before buying](https://buyusedautomobiles.com/guides/how-to-check-a-cars-history)
+- [How to negotiate a used-car price with evidence](https://buyusedautomobiles.com/guides/how-to-negotiate-a-used-car-price)
+- [Used car buying checks by country: official resources](https://buyusedautomobiles.com/guides/international-used-car-buying-checks)
+- [Best Time to Buy a Used Car in 2026: When Can You Save the Most?](https://buyusedautomobiles.com/guides/best-time-to-buy-a-used-car)
+- [How Many Miles Is Too Many for a Used Car? Complete 2026 Guide](https://buyusedautomobiles.com/guides/how-many-miles-is-too-many-for-a-used-car)
+- [Used Car Buying Checklist 2026: Complete Guide for First-Time Buyers](https://buyusedautomobiles.com/guides/used-car-buying-checklist-first-time-buyers)
+- [Used Car vs New Car in 2026: Which Offers Better Value?](https://buyusedautomobiles.com/guides/used-car-vs-new-car)
+- [How to Avoid Used Car Scams in 2026: 10 Warning Signs Every Buyer Should Know](https://buyusedautomobiles.com/guides/how-to-avoid-used-car-scams)
+
+### Financing
+- [How to Pay Off a Car Loan Early and Save on Interest](https://buyusedautomobiles.com/guides/how-to-pay-off-a-car-loan-early)
+- [Is Refinancing Your Car Loan Worth It? Compare Payments and Total Cost](https://buyusedautomobiles.com/guides/is-refinancing-your-car-loan-worth-it)
+- [How Much Down Payment Do You Need for a Used Car in 2026?](https://buyusedautomobiles.com/guides/how-much-down-payment-for-used-car)
+- [How Much Car Payment Can I Afford? Complete 2026 Budget Guide](https://buyusedautomobiles.com/guides/how-much-car-payment-can-i-afford)
+- [How car loan interest is calculated and how to compare offers](https://buyusedautomobiles.com/guides/how-to-compare-used-car-loans)
+
+### Ownership
+- [How Much Does It Cost to Charge an Electric Car at Home or in Public?](https://buyusedautomobiles.com/guides/how-much-does-it-cost-to-charge-an-electric-car)
+- [How Much Does a Used Car Depreciate Per Year?](https://buyusedautomobiles.com/guides/how-much-does-a-used-car-depreciate-per-year)
+- [Car Depreciation Chart: How Vehicle Value Changes Over 1–10 Years](https://buyusedautomobiles.com/guides/car-depreciation-chart)
+- [How to calculate the real cost of car ownership](https://buyusedautomobiles.com/guides/real-cost-of-car-ownership)
+- [Used Car Maintenance Costs in 2026: How Much Should You Budget?](https://buyusedautomobiles.com/guides/used-car-maintenance-costs)
+
+### Selling
+- [Trade-in vs. private sale: compare your net proceeds](https://buyusedautomobiles.com/guides/trade-in-vs-private-sale)
+
+### Mathematics / Calculators
+- [How to Calculate Percentage Increase: Formula, Examples, and Easy Methods](https://buyusedautomobiles.com/guides/how-to-calculate-percentage-increase)
+
+## Core pages
+- [Home](https://buyusedautomobiles.com/): Overview and starting points.
+- [All tools](https://buyusedautomobiles.com/tools): Calculator directory.
+- [All guides](https://buyusedautomobiles.com/guides): Guide directory, with category pages under https://buyusedautomobiles.com/guides/category/.
+- [About](https://buyusedautomobiles.com/about)
+- [Editorial policy](https://buyusedautomobiles.com/editorial-policy): Sources, AI assistance, corrections and commercial disclosure.
+- [Disclaimer](https://buyusedautomobiles.com/disclaimer)
+- [Privacy policy](https://buyusedautomobiles.com/privacy-policy)
+- [Terms of use](https://buyusedautomobiles.com/terms)
+- [Contact and corrections](https://buyusedautomobiles.com/contact)
+
+## Production and citation
+Content in this initial build was prepared with AI assistance and checked against the linked sources. The site uses no invented author profiles, professional credentials or reviewer endorsements, and it does not claim human expert review. Calculator logic is written as tested TypeScript functions, and each calculator publishes its method and assumptions. See the editorial policy for corrections and commercial disclosures. When citing, link the specific calculator or guide, and keep its currency, units, assumptions and limits. Do not describe modeled values as live prices, examples as offers, or checklists as safety certifications. Calculator URLs with query strings are shared scenarios, not separate pages; canonical URLs omit query strings. Public pages take precedence over this summary.
+
+## More references
+- [Compact reference](https://buyusedautomobiles.com/llms-small.txt): Short overview.
+- [Expanded reference](https://buyusedautomobiles.com/llms-full.txt): Longer reference with worked arithmetic and citation guidance.
+- [AI discovery notes](https://buyusedautomobiles.com/.well-known/ai.txt)
