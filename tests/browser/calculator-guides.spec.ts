@@ -6,7 +6,7 @@ for(const guide of calculatorGuides)test(`${guide.slug}: metadata, accessible ar
   const path=`/guides/${guide.slug}`;expect((await page.goto(path))!.status()).toBe(200);
   await expect(page.locator("h1")).toHaveText(guide.title);await expect(page.locator("h1")).toHaveCount(1);
   await expect(page.locator('meta[name="description"]')).toHaveAttribute("content",guide.description);
-  await expect(page).toHaveTitle(guide.seoTitle!.length<43?`${guide.seoTitle} | BuyUsedAutomobiles`:guide.seoTitle!);
+  await expect(page).toHaveTitle(guide.seoTitle!.length<=34?`${guide.seoTitle} | BuyUsedAutomobiles`:guide.seoTitle!);
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",`https://buyusedautomobiles.com${path}`);
   await expect(page.locator('meta[name="robots"]')).not.toHaveAttribute("content",/noindex/);
   expect(await page.locator("main").textContent()).not.toMatch(/\{\{|\ufffd|\u00e2\u20ac/);
