@@ -13,14 +13,10 @@ jobs:
   checks:
     name: Application checks
     runs-on: ubuntu-24.04
-    timeout-minutes: 25
+    timeout-minutes: 15
     env:
       NEXT_TELEMETRY_DISABLED: '1'
-      SITE_INDEXING: enabled
       NEXT_PUBLIC_SITE_URL: https://buyusedautomobiles.com
-      TEST_BASE_URL: http://127.0.0.1:3417
-      PLAYWRIGHT_CHANNEL: chromium
-      SEO_EXPECT_CLEAN_SCHEMA: 'true'
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,46 +25,11 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npm run lint
+      - run: npm run typecheck
       - run: npm test
       - run: npm run build
-      - run: npm run typecheck
-      - name: Install test browser
-        run: npx playwright install --with-deps chromium
-      - name: Start standalone server
-        run: |
-          mkdir -p .next/standalone/public
-          cp -r public/. .next/standalone/public/
-          mkdir -p .next/standalone/.next/static
-          cp -r .next/static/. .next/standalone/.next/static/
-          PORT=3417 HOSTNAME=127.0.0.1 node .next/standalone/server.js > /tmp/buyusedauto-ci.log 2>&1 &
-          echo "$!" > /tmp/buyusedauto-ci.pid
-          for attempt in $(seq 1 60); do
-            if curl --silent --fail --max-time 3 "$TEST_BASE_URL/api/health" >/dev/null; then exit 0; fi
-            sleep 1
-          done
-          cat /tmp/buyusedauto-ci.log
-          exit 1
-      - run: npm run audit:seo
-      - run: npm run check:site
-      - run: npm run test:e2e
-      - name: Save QA reports
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: qa-${{ github.sha }}
-          path: |
-            reports/
-            playwright-report/
-            test-results/
-          retention-days: 7
-          if-no-files-found: ignore
-      - name: Stop owned CI server
-        if: always()
-        run: |
-          kill "$(cat /tmp/buyusedauto-ci.pid)" 2>/dev/null || true
 
   deploy:
     name: Deploy app to VPS

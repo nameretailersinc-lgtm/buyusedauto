@@ -28,6 +28,9 @@ Demand is only counted when the keyword is in the owner's export, whose buckets 
 6. Robots.txt allows search and AI-answer crawlers explicitly; the non-standard `Host:` line was removed.
 7. Copy rewritten across tools, guides, country pages, policies and `llms*.txt` (see `SEO_PROGRESS.md`).
 
+## Status
+Tasks 3, 4, 5 (wording only) and 9 below are implemented in the working tree; tasks 1, 2, 7, 8 need the owner; 6 and 10 are open (payoff wording already carries "extra payments and early payoff"; keyword map still to be regenerated).
+
 ## Next, in order (existing pages first)
 
 | # | Task | Page(s) | Mechanism | Needs |
