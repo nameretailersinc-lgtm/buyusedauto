@@ -3,12 +3,20 @@
   "pages": 81,
   "internalLinks": 629,
   "failures": [],
-  "warnings": [],
+  "warnings": [
+    "/: description length 173",
+    "/used-car-inspection-checklist: description length 123",
+    "/used-car-price-negotiation-calculator: description length 125",
+    "/car-loan-payoff-calculator: description length 118",
+    "/car-down-payment-calculator: description length 126",
+    "/car-loan-apr-calculator: description length 223",
+    "/car-maintenance-cost-calculator: description length 172"
+  ],
   "details": [
     {
       "path": "/",
-      "title": "Free Used Car Calculators & Buying Guides | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Free Car Payment Calculator & Used Car Buying Guides",
+      "descriptionLength": 173,
       "schemaCount": 3,
       "h1": "Free Used Car Calculators& Buying Guides"
     },
@@ -133,150 +141,150 @@
     },
     {
       "path": "/car-loan-calculator",
-      "title": "Used car loan calculator with taxes and fees",
-      "descriptionLength": 153,
+      "title": "Car payment calculator: used car loan with taxes and fees",
+      "descriptionLength": 170,
       "schemaCount": 2,
-      "h1": "Used car loan calculator with taxes and fees"
+      "h1": "Car payment calculator: used car loan with taxes and fees"
     },
     {
       "path": "/car-depreciation-calculator",
-      "title": "Car depreciation calculator | BuyUsedAutomobiles",
-      "descriptionLength": 154,
+      "title": "Car depreciation calculator: what a car loses each year",
+      "descriptionLength": 159,
       "schemaCount": 2,
-      "h1": "Car depreciation calculator"
+      "h1": "Car depreciation calculator: what a car loses each year"
     },
     {
       "path": "/what-is-my-car-worth",
-      "title": "What is my car worth? | BuyUsedAutomobiles",
-      "descriptionLength": 157,
+      "title": "Car value calculator: how much is my car worth?",
+      "descriptionLength": 144,
       "schemaCount": 2,
-      "h1": "What is my car worth?"
+      "h1": "Car value calculator: how much is my car worth?"
     },
     {
       "path": "/total-cost-of-ownership-calculator",
-      "title": "Car ownership cost calculator: new vs used | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Total cost of ownership calculator: new vs used car",
+      "descriptionLength": 149,
       "schemaCount": 2,
-      "h1": "Car ownership cost calculator: new vs used"
+      "h1": "Total cost of ownership calculator: new vs used car"
     },
     {
       "path": "/car-affordability-calculator",
-      "title": "Car affordability calculator | BuyUsedAutomobiles",
-      "descriptionLength": 157,
+      "title": "Car affordability calculator: how much car can I afford?",
+      "descriptionLength": 139,
       "schemaCount": 2,
-      "h1": "Car affordability calculator"
+      "h1": "Car affordability calculator: how much car can I afford?"
     },
     {
       "path": "/fuel-cost-calculator",
-      "title": "Fuel cost calculator | BuyUsedAutomobiles",
-      "descriptionLength": 148,
+      "title": "Gas mileage and fuel cost calculator: trip and yearly",
+      "descriptionLength": 145,
       "schemaCount": 2,
-      "h1": "Fuel cost calculator"
+      "h1": "Gas mileage and fuel cost calculator: trip and yearly"
     },
     {
       "path": "/trade-in-value-estimator",
       "title": "Trade-In Value Calculator & Equity Estimator | Free Tool",
-      "descriptionLength": 156,
+      "descriptionLength": 137,
       "schemaCount": 2,
       "h1": "Trade-In Value Calculator"
     },
     {
       "path": "/lease-vs-buy-calculator",
-      "title": "Lease vs. buy calculator | BuyUsedAutomobiles",
-      "descriptionLength": 151,
+      "title": "Lease vs buy calculator: which costs less? | BuyUsedAutomobiles",
+      "descriptionLength": 134,
       "schemaCount": 2,
-      "h1": "Lease vs. buy calculator"
+      "h1": "Lease vs buy calculator: which costs less?"
     },
     {
       "path": "/used-car-inspection-checklist",
-      "title": "Used car inspection checklist | BuyUsedAutomobiles",
-      "descriptionLength": 151,
+      "title": "Used car inspection checklist: 25 things to check",
+      "descriptionLength": 123,
       "schemaCount": 2,
-      "h1": "Used car inspection checklist"
+      "h1": "Used car inspection checklist: 25 things to check"
     },
     {
       "path": "/used-car-price-negotiation-calculator",
-      "title": "Used car price negotiation calculator | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Used car price negotiation calculator: set your offer",
+      "descriptionLength": 125,
       "schemaCount": 2,
-      "h1": "Used car price negotiation calculator"
+      "h1": "Used car price negotiation calculator: set your offer"
     },
     {
       "path": "/car-sales-tax-calculator",
-      "title": "Car sales tax calculator | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Car sales tax calculator: estimate tax on a purchase",
+      "descriptionLength": 139,
       "schemaCount": 2,
-      "h1": "Car sales tax calculator"
+      "h1": "Car sales tax calculator: estimate tax on a purchase"
     },
     {
       "path": "/car-loan-payoff-calculator",
-      "title": "Car loan payoff and extra payment calculator",
-      "descriptionLength": 153,
+      "title": "Car loan payoff calculator: extra payments and early payoff",
+      "descriptionLength": 118,
       "schemaCount": 2,
-      "h1": "Car loan payoff and extra payment calculator"
+      "h1": "Car loan payoff calculator: extra payments and early payoff"
     },
     {
       "path": "/auto-loan-refinance-calculator",
-      "title": "Auto loan refinance calculator with fees | BuyUsedAutomobiles",
-      "descriptionLength": 159,
+      "title": "Auto loan refinance calculator: will refinancing save money?",
+      "descriptionLength": 134,
       "schemaCount": 2,
-      "h1": "Auto loan refinance calculator with fees"
+      "h1": "Auto loan refinance calculator: will refinancing save money?"
     },
     {
       "path": "/car-down-payment-calculator",
-      "title": "Car down payment calculator with trade-in equity",
-      "descriptionLength": 154,
+      "title": "Car down payment calculator: how much to put down",
+      "descriptionLength": 126,
       "schemaCount": 2,
-      "h1": "Car down payment calculator with trade-in equity"
+      "h1": "Car down payment calculator: how much to put down"
     },
     {
       "path": "/ev-charging-cost-calculator",
-      "title": "EV charging cost calculator with charging losses",
-      "descriptionLength": 159,
+      "title": "EV charging cost calculator: what a full charge costs",
+      "descriptionLength": 131,
       "schemaCount": 2,
-      "h1": "EV charging cost calculator with charging losses"
+      "h1": "EV charging cost calculator: what a full charge costs"
     },
     {
       "path": "/car-loan-apr-calculator",
-      "title": "Car loan APR calculator with finance fees | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Car loan APR calculator: see the true cost with fees",
+      "descriptionLength": 223,
       "schemaCount": 2,
-      "h1": "Car loan APR calculator with finance fees"
+      "h1": "Car loan APR calculator: see the true cost with fees"
     },
     {
       "path": "/car-repair-cost-calculator",
-      "title": "Car repair cost calculator from your quote | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Car repair cost calculator: budget from your quote",
+      "descriptionLength": 158,
       "schemaCount": 2,
-      "h1": "Car repair cost calculator from your quote"
+      "h1": "Car repair cost calculator: budget from your quote"
     },
     {
       "path": "/car-registration-tax-calculator",
-      "title": "Car registration tax and fee calculator | BuyUsedAutomobiles",
-      "descriptionLength": 156,
+      "title": "Car registration tax and fee calculator: yearly costs",
+      "descriptionLength": 162,
       "schemaCount": 2,
-      "h1": "Car registration tax and fee calculator"
+      "h1": "Car registration tax and fee calculator: yearly costs"
     },
     {
       "path": "/car-maintenance-cost-calculator",
-      "title": "Car maintenance cost and reserve calculator",
-      "descriptionLength": 150,
+      "title": "Car maintenance cost calculator: monthly savings plan",
+      "descriptionLength": 172,
       "schemaCount": 2,
-      "h1": "Car maintenance cost and reserve calculator"
+      "h1": "Car maintenance cost calculator: monthly savings plan"
     },
     {
       "path": "/car-cost-per-mile-calculator",
-      "title": "Car cost per mile or kilometer calculator | BuyUsedAutomobiles",
+      "title": "Car cost per mile calculator: miles or kilometers",
       "descriptionLength": 163,
       "schemaCount": 2,
-      "h1": "Car cost per mile or kilometer calculator"
+      "h1": "Car cost per mile calculator: miles or kilometers"
     },
     {
       "path": "/gas-vs-electric-car-cost-calculator",
-      "title": "Gas vs electric car ownership cost calculator",
-      "descriptionLength": 161,
+      "title": "Gas vs electric car cost calculator: which is cheaper?",
+      "descriptionLength": 165,
       "schemaCount": 2,
-      "h1": "Gas vs electric car ownership cost calculator"
+      "h1": "Gas vs electric car cost calculator: which is cheaper?"
     },
     {
       "path": "/tools/pakistan/car-running-cost-calculator",
@@ -477,7 +485,7 @@
     {
       "path": "/guides/how-many-miles-is-too-many-for-a-used-car",
       "title": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide",
-      "descriptionLength": 154,
+      "descriptionLength": 160,
       "schemaCount": 2,
       "h1": "How Many Miles Is Too Many for a Used Car? Complete 2026 Guide"
     },
