@@ -3,20 +3,12 @@
   "pages": 81,
   "internalLinks": 629,
   "failures": [],
-  "warnings": [
-    "/: description length 173",
-    "/used-car-inspection-checklist: description length 123",
-    "/used-car-price-negotiation-calculator: description length 125",
-    "/car-loan-payoff-calculator: description length 118",
-    "/car-down-payment-calculator: description length 126",
-    "/car-loan-apr-calculator: description length 223",
-    "/car-maintenance-cost-calculator: description length 172"
-  ],
+  "warnings": [],
   "details": [
     {
       "path": "/",
       "title": "Free Car Payment Calculator & Used Car Buying Guides",
-      "descriptionLength": 173,
+      "descriptionLength": 153,
       "schemaCount": 3,
       "h1": "Free Used Car Calculators& Buying Guides"
     },
@@ -198,14 +190,14 @@
     {
       "path": "/used-car-inspection-checklist",
       "title": "Used car inspection checklist: 25 things to check",
-      "descriptionLength": 123,
+      "descriptionLength": 143,
       "schemaCount": 2,
       "h1": "Used car inspection checklist: 25 things to check"
     },
     {
       "path": "/used-car-price-negotiation-calculator",
       "title": "Used car price negotiation calculator: set your offer",
-      "descriptionLength": 125,
+      "descriptionLength": 151,
       "schemaCount": 2,
       "h1": "Used car price negotiation calculator: set your offer"
     },
@@ -219,7 +211,7 @@
     {
       "path": "/car-loan-payoff-calculator",
       "title": "Car loan payoff calculator: extra payments and early payoff",
-      "descriptionLength": 118,
+      "descriptionLength": 140,
       "schemaCount": 2,
       "h1": "Car loan payoff calculator: extra payments and early payoff"
     },
@@ -233,7 +225,7 @@
     {
       "path": "/car-down-payment-calculator",
       "title": "Car down payment calculator: how much to put down",
-      "descriptionLength": 126,
+      "descriptionLength": 135,
       "schemaCount": 2,
       "h1": "Car down payment calculator: how much to put down"
     },
@@ -247,7 +239,7 @@
     {
       "path": "/car-loan-apr-calculator",
       "title": "Car loan APR calculator: see the true cost with fees",
-      "descriptionLength": 223,
+      "descriptionLength": 137,
       "schemaCount": 2,
       "h1": "Car loan APR calculator: see the true cost with fees"
     },
@@ -268,7 +260,7 @@
     {
       "path": "/car-maintenance-cost-calculator",
       "title": "Car maintenance cost calculator: monthly savings plan",
-      "descriptionLength": 172,
+      "descriptionLength": 137,
       "schemaCount": 2,
       "h1": "Car maintenance cost calculator: monthly savings plan"
     },
