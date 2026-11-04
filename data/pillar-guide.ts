@@ -9,7 +9,7 @@ export const pillarGuide: Guide = {
   "category": "Buying",
   "updated": "2026-10-17",
   "readingMinutes": 12,
-  "intro": "To buy a used car safely, set a budget that covers more than the sticker price, pick a model with a good track record, confirm the seller can legally sell it, and have an independent mechanic inspect it before you pay. No checklist guarantees a car won't break down later, but these 12 steps catch most of the problems that cost buyers real money.",
+  "intro": "To buy a used car safely, set a budget that covers more than the sticker price, pick a model with a good track record, confirm the seller can legally sell it, and have an independent mechanic inspect it before you pay. No checklist guarantees a car won't break down later, but these 12 steps target the common problems that cost buyers money, though they can't catch every one.",
   "sections": [
     {
       "heading": "Quick Answer: How Do You Buy a Used Car Safely?",

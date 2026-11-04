@@ -199,7 +199,7 @@ export const calculatorGuides:Guide[] = [
   {
     "slug": "how-much-does-it-cost-to-charge-an-electric-car",
     "title": "How Much Does It Cost to Charge an Electric Car at Home or in Public?",
-    "seoTitle": "EV Charging Cost Calculator: Home vs Public",
+    "seoTitle": "What Does It Cost to Charge an Electric Car? Home vs Public",
     "description": "Estimate what an EV charge costs from battery size, start and end charge, price per kWh and charging losses, plus cost per mile at home or in public.",
     "category": "Ownership",
     "language": "en-US",

@@ -1659,7 +1659,7 @@ export const submittedGuides: Guide[] = [
         "heading": "Why a depreciation chart helps",
         "paragraphs": [
           "The purchase price tells you what you pay today, but the resale value you'll get later helps decide what ownership really costs.",
-          "A depreciation chart shows how a car's estimated value changes over several years instead of giving you a single resale number. That helps whether you're buying new, comparing used cars, or planning to sell the one you own.",
+          "A depreciation chart shows how a car's estimated value changes over several years instead of giving you a single resale number. That helps when you're comparing used cars, deciding between new and used, or planning to sell the one you own.",
           "Below you'll learn how to read a chart, compare scenarios, and estimate resale values over 1 to 10 years. The examples are hypothetical mathematical models, not predictions of current market prices for specific cars."
         ]
       },
