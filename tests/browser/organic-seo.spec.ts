@@ -62,7 +62,7 @@ test("international research is crawlable without JavaScript",async({browser})=>
   for(const name of ["United Kingdom","Australia","Pakistan","UAE"]){
     await expect(page.locator("article h2").filter({hasText:name})).toHaveCount(1);
   }
-  await expect(page.locator(".editorial-prose")).toContainText("PPSR does not provide an ownership history");
+  await expect(page.locator(".editorial-prose")).toContainText("PPSR doesn't give you an ownership history");
   await expect(page.locator('time[datetime="2026-10-15"]')).toBeVisible();
   await expect(page.locator('article a[href*="ppsr.gov.au"]').first()).toBeVisible();
   await expect(page.locator('article a[href="/used-car-inspection-checklist"]').first()).toHaveCount(1);

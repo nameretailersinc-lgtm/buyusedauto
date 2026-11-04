@@ -50,7 +50,7 @@ test("private-seller guidance and regional metadata are server rendered",async({
   const page=await context.newPage();
   await page.goto("/guides/how-to-buy-a-used-car-from-a-private-seller");
   await expect(page.locator("h1")).toHaveText("How to buy a used car from a private seller");
-  await expect(page.locator(".article-answer")).toContainText("private-party eligibility");
+  await expect(page.locator(".article-answer")).toContainText("ask your lender about private-party purchases first");
   await expect(page.locator(".editorial-prose")).toContainText("$16,300");
   await expect(page.locator('article a[href="/car-sales-tax-calculator"]').first()).toBeVisible();
   await expect(page.getByText("Can I buy a used car from a private seller with a loan?",{exact:true})).toBeVisible();
