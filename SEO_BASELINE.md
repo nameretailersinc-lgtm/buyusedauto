@@ -51,6 +51,7 @@ Owner-reported daily impressions: 24 Oct 187, 25 Oct 167, 26 Oct 174, 27 Oct 114
 
 ## Search Console data received 2026-11-05 (owner export, Web, daily to 2 Nov, page list undated)
 
+
 Daily series: 15 Oct 45 impressions (pos 62.1); ramp to 189 on 23 Oct (pos 60.6); 187/167/174 on 24-26 Oct (pos ~66); 114 on 27 Oct; 26 on 28 Oct (pos 50.6); 17, 18, 15 on 29-31 Oct (pos 15.3, 17.5, 12.8); 3 on 1 Nov (pos 34.7); 9 on 2 Nov (pos 7). Total in sheet: 7 clicks, 1,624 impressions. 1,534 impressions fell on 15-27 Oct at positions about 60-66; 88 on 28 Oct-2 Nov.
 
 Top pages (clicks / impressions / average position), selected:
