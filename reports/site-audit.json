@@ -7,10 +7,10 @@
   "details": [
     {
       "path": "/",
-      "title": "Free Car Payment Calculator & Used Car Buying Guides",
+      "title": "Free Used Car Calculators & Buying Guides | BuyUsedAutomobiles",
       "descriptionLength": 153,
       "schemaCount": 3,
-      "h1": "Free Used Car Calculators& Buying Guides"
+      "h1": "Free Used Car Calculators & Buying Guides"
     },
     {
       "path": "/tools",
@@ -168,14 +168,14 @@
     },
     {
       "path": "/fuel-cost-calculator",
-      "title": "Gas mileage and fuel cost calculator: trip and yearly",
+      "title": "Gas mileage calculator: trip and yearly fuel cost",
       "descriptionLength": 145,
       "schemaCount": 2,
-      "h1": "Gas mileage and fuel cost calculator: trip and yearly"
+      "h1": "Gas mileage calculator: trip and yearly fuel cost"
     },
     {
       "path": "/trade-in-value-estimator",
-      "title": "Trade-In Value Calculator & Equity Estimator | Free Tool",
+      "title": "Car Trade-In Value Calculator: Compare Offers and Equity",
       "descriptionLength": 137,
       "schemaCount": 2,
       "h1": "Trade-In Value Calculator"
@@ -252,10 +252,10 @@
     },
     {
       "path": "/car-registration-tax-calculator",
-      "title": "Car registration tax and fee calculator: yearly costs",
+      "title": "Car registration tax calculator: yearly costs and fees",
       "descriptionLength": 162,
       "schemaCount": 2,
-      "h1": "Car registration tax and fee calculator: yearly costs"
+      "h1": "Car registration tax calculator: yearly costs and fees"
     },
     {
       "path": "/car-maintenance-cost-calculator",
@@ -336,7 +336,7 @@
     },
     {
       "path": "/guides/how-much-does-it-cost-to-charge-an-electric-car",
-      "title": "EV Charging Cost Calculator: Home vs Public",
+      "title": "What Does It Cost to Charge an Electric Car? Home vs Public",
       "descriptionLength": 149,
       "schemaCount": 2,
       "h1": "How Much Does It Cost to Charge an Electric Car at Home or in Public?"
